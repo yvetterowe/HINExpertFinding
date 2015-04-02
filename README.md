@@ -1,2 +1,2 @@
-# master-thesis
+# Master thesis
 UIUC Master thesis
