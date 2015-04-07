@@ -1,13 +1,5 @@
 import nltk
 
-'''
-    usage:
-    text = "Heterogeneous source consensus learning via decision propagation and negotiation."
-    phrases = NPChuncker.parse_sentence(text)
-    for phrase in phrases:
-        print phrase
-'''
-
 lemmatizer = nltk.WordNetLemmatizer()
 stemmer = nltk.stem.porter.PorterStemmer()
 stopwords = nltk.corpus.stopwords.words('english')
@@ -65,3 +57,12 @@ class NPChuncker(object):
         """Finds NP (nounphrase) leaf nodes of a chunk tree."""
         for subtree in tree.subtrees(filter = lambda t: t.label()=='NP'):
             yield subtree.leaves()
+
+
+'''example usage'''
+'''
+text = "Heterogeneous source consensus learning via decision propagation and negotiation."
+phrases = NPChuncker.parse_sentence(text)
+nps = ';'.join([(' '.join(phrase)) for phrase in phrases])
+print nps
+'''
