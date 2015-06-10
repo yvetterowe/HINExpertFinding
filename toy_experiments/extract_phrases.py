@@ -2,7 +2,7 @@ import nltk
 import os.path
 from nltk.collocations import *
 
-bigram_measures = nltk.collocations.BigramAssocMeasures()
+'''bigram_measures = nltk.collocations.BigramAssocMeasures()
 trigram_measures = nltk.collocations.TrigramAssocMeasures()
 
 DATA_PATH = os.path.dirname(__file__) + '/../dataset/'
@@ -19,4 +19,9 @@ tri_finder.apply_freq_filter(2)
 
 # return the 10 n-grams with the highest PMI
 print bi_finder.nbest(bigram_measures.pmi, 15)
-print tri_finder.nbest(trigram_measures.pmi, 15)
+print tri_finder.nbest(trigram_measures.pmi, 15)'''
+
+from textblob import TextBlob
+text = TextBlob("Truth finding on the deep web: is the problem solved?.")
+print text.tags
+print text.noun_phrases
