@@ -1,0 +1,1035 @@
+#index 210160
+#* Mining quantitative association rules in large relational tables
+#@ 1 2
+#t 1996
+#c SIGMOD '96 Proceedings of the 1996 ACM SIGMOD international conference on Management of data
+#% 36672
+#% 86950
+#% 152934
+#% 201894
+#% 412588
+#% 463883
+#% 481290
+#% 481588
+#% 481754
+#% 481758
+
+#index 227866
+#* Range queries in OLAP data cubes
+#@ 526 2 527 1
+#t 1997
+#c SIGMOD '97 Proceedings of the 1997 ACM SIGMOD international conference on Management of data
+#% 672
+#% 1731
+#% 17858
+#% 36672
+#% 64532
+#% 68091
+#% 69474
+#% 86950
+#% 113841
+#% 210182
+#% 211575
+#% 237202
+#% 317933
+#% 317950
+#% 319601
+#% 442685
+#% 442695
+#% 461921
+#% 462204
+#% 464215
+#% 481288
+#% 481604
+#% 481608
+#% 481945
+#% 481948
+#% 481951
+
+#index 237202
+#* Partial-sum queries in OLAP data cubes using covering codes
+#@ 526 801 2
+#t 1997
+#c PODS '97 Proceedings of the sixteenth ACM SIGACT-SIGMOD-SIGART symposium on Principles of database systems
+#% 113841
+#% 210182
+#% 227866
+#% 442685
+#% 442695
+#% 462204
+#% 464215
+#% 481288
+#% 481604
+#% 481608
+#% 481948
+#% 481951
+
+#index 248792
+#* Automatic subspace clustering of high dimensional data for data mining applications
+#@ 2 1027 794 987
+#t 1998
+#c SIGMOD '98 Proceedings of the 1998 ACM SIGMOD international conference on Management of data
+#% 7511
+#% 35909
+#% 36672
+#% 56411
+#% 80995
+#% 150126
+#% 210160
+#% 210173
+#% 214219
+#% 227866
+#% 227917
+#% 227953
+#% 232102
+#% 232117
+#% 232136
+#% 237187
+#% 237200
+#% 248791
+#% 252400
+#% 369349
+#% 408638
+#% 459008
+#% 459020
+#% 481281
+#% 481779
+#% 481945
+
+#index 248813
+#* Integrating association rule mining with relational database systems: alternatives and implications
+#@ 1049 1050 2
+#t 1998
+#c SIGMOD '98 Proceedings of the 1998 ACM SIGMOD international conference on Management of data
+#% 123589
+#% 152934
+#% 172958
+#% 211931
+#% 216508
+#% 227917
+#% 232102
+#% 232136
+#% 248784
+#% 443091
+#% 459006
+#% 463883
+#% 481758
+#% 481779
+#% 481954
+
+#index 280387
+#* Data mining (Invited talk. Abstract only): crossing the Chasm
+#@ 2
+#t 1999
+#c KDD '99 Proceedings of the fifth ACM SIGKDD international conference on Knowledge discovery and data mining
+
+#index 280436
+#* Mining the most interesting rules
+#@ 226 2
+#t 1999
+#c KDD '99 Proceedings of the fifth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 99396
+#% 152934
+#% 210162
+#% 227917
+#% 232136
+#% 248791
+#% 280436
+#% 376266
+#% 452822
+#% 462234
+#% 479643
+#% 631970
+#% 1272179
+
+#index 300170
+#* A framework for expressing and combining preferences
+#@ 2 3247
+#t 2000
+#c SIGMOD '00 Proceedings of the 2000 ACM SIGMOD international conference on Management of data
+#% 220706
+#% 248010
+#% 406493
+#% 564279
+#% 656701
+
+#index 300184
+#* Privacy-preserving data mining
+#@ 2 1
+#t 2000
+#c SIGMOD '00 Proceedings of the 2000 ACM SIGMOD international conference on Management of data
+#% 149
+#% 1868
+#% 14277
+#% 67453
+#% 136350
+#% 191910
+#% 228355
+#% 236410
+#% 264246
+#% 264267
+#% 285061
+#% 287297
+#% 287298
+#% 287794
+#% 287795
+#% 340475
+#% 346931
+#% 374401
+#% 437974
+#% 442709
+#% 446277
+#% 459008
+#% 480940
+#% 481945
+#% 482049
+#% 482071
+#% 482095
+#% 591487
+#% 601649
+
+#index 458758
+#* Athena: Mining-Based Interactive Management of Text Database
+#@ 2 226 1
+#t 2000
+#c EDBT '00 Proceedings of the 7th International Conference on Extending Database Technology: Advances in Database Technology
+#% 115478
+#% 118771
+#% 159108
+#% 165110
+#% 234992
+#% 249155
+#% 271083
+#% 376266
+#% 458758
+#% 466078
+#% 481945
+#% 482113
+
+#index 459006
+#* Mining Sequential Patterns: Generalizations and Performance Improvements
+#@ 1 2
+#t 1996
+#c EDBT '96 Proceedings of the 5th International Conference on Extending Database Technology: Advances in Database Technology
+
+#index 459008
+#* SLIQ: A Fast Scalable Classifier for Data Mining
+#@ 5249 2 5250
+#t 1996
+#c EDBT '96 Proceedings of the 5th International Conference on Extending Database Technology: Advances in Database Technology
+
+#index 459021
+#* Mining Process Models from Workflow Logs
+#@ 2 794 5264
+#t 1998
+#c EDBT '98 Proceedings of the 6th International Conference on Extending Database Technology: Advances in Database Technology
+
+#index 459025
+#* Discovery-Driven Exploration of OLAP Data Cubes
+#@ 1049 2 527
+#t 1998
+#c EDBT '98 Proceedings of the 6th International Conference on Extending Database Technology: Advances in Database Technology
+
+#index 461911
+#* New and Forgotten Dreams in Database Research (Panel)
+#@ 33 2 3176 5307 5308 690
+#t 1997
+#c ICDE '97 Proceedings of the Thirteenth International Conference on Data Engineering
+
+#index 461921
+#* Modeling Multidimensional Databases
+#@ 2 933 1049
+#t 1997
+#c ICDE '97 Proceedings of the Thirteenth International Conference on Data Engineering
+
+#index 462070
+#* High-Dimensional Similarity Joins
+#@ 1026 1 2
+#t 1997
+#c ICDE '97 Proceedings of the Thirteenth International Conference on Data Engineering
+
+#index 479475
+#* Parallel Algorithms for High-dimensional Similarity Joins for Data Mining Applications
+#@ 6581 2
+#t 1997
+#c VLDB '97 Proceedings of the 23rd International Conference on Very Large Data Bases
+#% 13032
+#% 86951
+#% 152937
+#% 172949
+#% 210186
+#% 210187
+#% 227932
+#% 285932
+#% 415957
+#% 442700
+#% 443397
+#% 460862
+#% 462070
+#% 464205
+#% 481609
+#% 527012
+
+#index 481945
+#* SPRINT: A Scalable Parallel Classifier for Data Mining
+#@ 6581 2 5249
+#t 1996
+#c VLDB '96 Proceedings of the 22th International Conference on Very Large Data Bases
+#% 4868
+#% 90661
+#% 136350
+#% 153021
+#% 191910
+#% 340670
+#% 369236
+#% 369349
+#% 442700
+#% 449588
+#% 452821
+#% 459008
+#% 480940
+#% 481945
+#% 672250
+
+#index 481951
+#* On the Computation of Multidimensional Aggregates
+#@ 6864 2 5133 933 112 36 1049
+#t 1996
+#c VLDB '96 Proceedings of the 22th International Conference on Very Large Data Bases
+#% 136740
+#% 201883
+#% 210182
+#% 408396
+#% 442685
+#% 442695
+#% 442918
+#% 464215
+#% 481749
+#% 481948
+#% 482049
+
+#index 482113
+#* Using Taxonomy, Discriminants, and Signatures for Navigating in Text Databases
+#@ 1044 1045 2 987
+#t 1997
+#c VLDB '97 Proceedings of the 23rd International Conference on Very Large Data Bases
+#% 46803
+#% 80995
+#% 90661
+#% 99690
+#% 103267
+#% 115462
+#% 115476
+#% 115608
+#% 136350
+#% 144023
+#% 144031
+#% 165110
+#% 169781
+#% 191680
+#% 194283
+#% 201073
+#% 204430
+#% 232717
+#% 282102
+#% 375017
+#% 406493
+#% 465747
+
+#index 571073
+#* Scalable feature selection, classification and signature generation for organizing large text databases into hierarchical topic taxonomies
+#@ 1044 1045 2 987
+#t 1998
+#c The VLDB Journal — The International Journal on Very Large Data Bases
+#% 46803
+#% 80995
+#% 99690
+#% 103267
+#% 115462
+#% 115608
+#% 124010
+#% 136350
+#% 144023
+#% 144031
+#% 169781
+#% 191680
+#% 194283
+#% 201073
+#% 202011
+#% 204430
+#% 214073
+#% 219053
+#% 220709
+#% 232717
+#% 248810
+#% 282102
+#% 375017
+#% 406493
+#% 420054
+#% 458389
+#% 465747
+#% 465754
+#% 482113
+#% 979690
+
+#index 576094
+#* Privacy in data systems
+#@ 2
+#t 2003
+#c Proceedings of the twenty-second ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems
+#% 67453
+#% 300184
+#% 333876
+#% 577233
+#% 577289
+#% 577366
+#% 654448
+#% 993943
+#% 993944
+
+#index 577233
+#* Privacy preserving mining of association rules
+#@ 8108 1 2 1027
+#t 2002
+#c Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 67453
+#% 152934
+#% 232136
+#% 248791
+#% 264246
+#% 280387
+#% 300184
+#% 333876
+#% 376266
+#% 449588
+#% 482049
+#% 577289
+#% 601649
+
+#index 577356
+#* Mining newsgroups using networks arising from social behavior
+#@ 2 1062 1 8401
+#t 2003
+#c WWW '03 Proceedings of the 12th international conference on World Wide Web
+#% 67565
+#% 146494
+#% 176082
+#% 190581
+#% 214232
+#% 220708
+#% 248810
+#% 252011
+#% 266292
+#% 342596
+#% 376266
+#% 420064
+#% 420077
+#% 466263
+#% 496116
+#% 593898
+#% 630983
+#% 656714
+#% 722757
+#% 815915
+#% 854646
+
+#index 577366
+#* An XPath-based preference language for P3P
+#@ 2 4688 1 8401
+#t 2003
+#c WWW '03 Proceedings of the 12th international conference on World Wide Web
+#% 300184
+#% 577233
+#% 645317
+#% 654448
+#% 781216
+#% 993943
+#% 993944
+
+#index 654448
+#* Information sharing across private databases
+#@ 2 8108 1
+#t 2003
+#c Proceedings of the 2003 ACM SIGMOD international conference on Management of data
+#% 31034
+#% 67453
+#% 151501
+#% 152980
+#% 169589
+#% 232722
+#% 249181
+#% 269079
+#% 271185
+#% 287297
+#% 287298
+#% 300184
+#% 301569
+#% 301584
+#% 325359
+#% 338439
+#% 350873
+#% 406493
+#% 482049
+#% 545454
+#% 557515
+#% 577233
+#% 577289
+#% 577366
+#% 593711
+#% 593800
+#% 993943
+#% 993944
+#% 993964
+#% 1386192
+
+#index 654516
+#* A system for watermarking relational databases
+#@ 2 78 4688
+#t 2003
+#c Proceedings of the 2003 ACM SIGMOD international conference on Management of data
+#% 726623
+#% 993944
+
+#index 726623
+#* Watermarking relational data: framework, algorithms and analysis
+#@ 2 78 4688
+#t 2003
+#c The VLDB Journal — The International Journal on Very Large Data Bases
+#% 256418
+#% 383830
+#% 389077
+#% 616923
+#% 632213
+#% 1848706
+
+#index 765448
+#* Order preserving encryption for numeric data
+#@ 2 4688 1 8401
+#t 2004
+#c SIGMOD '04 Proceedings of the 2004 ACM SIGMOD international conference on Management of data
+#% 25450
+#% 111315
+#% 129023
+#% 132779
+#% 232409
+#% 350873
+#% 369349
+#% 374401
+#% 397367
+#% 459008
+#% 480125
+#% 664705
+#% 725292
+#% 993942
+#% 993943
+#% 994006
+#% 1015256
+
+#index 765478
+#* Enabling sovereign information sharing using Web Services
+#@ 2 10754 1
+#t 2004
+#c SIGMOD '04 Proceedings of the 2004 ACM SIGMOD international conference on Management of data
+#% 286916
+#% 318418
+#% 654448
+
+#index 765508
+#* Managing healthcare data hippocratically
+#@ 2 10800 10801 10802 8401 10803
+#t 2004
+#c SIGMOD '04 Proceedings of the 2004 ACM SIGMOD international conference on Management of data
+#% 577366
+#% 993943
+
+#index 769945
+#* Learning spatially variant dissimilarity (SVaD) measures
+#@ 8399 8965 2
+#t 2004
+#c Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 309128
+#% 425010
+#% 529216
+#% 1788041
+
+#index 770074
+#* Learning spatially variant dissimilarity (SVaD) measures
+#@ 8399 8965 2
+#t 2004
+#c Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 309128
+#% 425010
+#% 529216
+#% 1788041
+
+#index 799736
+#* Data privacy
+#@ 2
+#t 2004
+#c PKDD '04 Proceedings of the 8th European Conference on Principles and Practice of Knowledge Discovery in Databases
+
+#index 800515
+#* Data Privacy through Optimal k-Anonymization
+#@ 12104 2
+#t 2005
+#c ICDE '05 Proceedings of the 21st International Conference on Data Engineering
+#% 248030
+#% 300184
+#% 443463
+#% 488324
+#% 576761
+#% 576762
+#% 577239
+#% 631970
+#% 801690
+#% 1272179
+
+#index 800603
+#* Extending Relational Database Systems to Automatically Enforce Privacy Policies
+#@ 2 12223 12224 4688 12225 12226
+#t 2005
+#c ICDE '05 Proceedings of the 21st International Conference on Data Engineering
+#% 252481
+#% 606353
+#% 993943
+#% 1016138
+
+#index 810028
+#* Privacy preserving OLAP
+#@ 2 1 11885
+#t 2005
+#c Proceedings of the 2005 ACM SIGMOD international conference on Management of data
+#% 1868
+#% 23638
+#% 67453
+#% 300184
+#% 301569
+#% 333876
+#% 575969
+#% 576111
+#% 577233
+#% 654448
+#% 720449
+#% 810252
+#% 993988
+#% 1707132
+
+#index 844387
+#* On Learning Asymmetric Dissimilarity Measures
+#@ 8399 8965 2
+#t 2005
+#c ICDM '05 Proceedings of the Fifth IEEE International Conference on Data Mining
+#% 266215
+#% 269217
+#% 309128
+#% 342739
+#% 356892
+#% 577224
+#% 729910
+#% 769945
+#% 770074
+#% 770782
+
+#index 864413
+#* Sovereign Joins
+#@ 2 10754 8104 15108
+#t 2006
+#c ICDE '06 Proceedings of the 22nd International Conference on Data Engineering
+
+#index 864479
+#* Taming Compliance with Sarbanes-Oxley Internal Controls Using Database Technology
+#@ 2 15175 4688 5264
+#t 2006
+#c ICDE '06 Proceedings of the 22nd International Conference on Data Engineering
+
+#index 875002
+#* Context-sensitive ranking
+#@ 2 4790 15612
+#t 2006
+#c Proceedings of the 2006 ACM SIGMOD international conference on Management of data
+#% 152934
+#% 249305
+#% 268079
+#% 272510
+#% 287421
+#% 300170
+#% 330769
+#% 333854
+#% 348173
+#% 453464
+#% 465167
+#% 654442
+#% 654466
+#% 654480
+#% 660011
+#% 731407
+#% 745519
+#% 800588
+#% 801673
+#% 810013
+#% 844387
+#% 993957
+#% 1016175
+#% 1016176
+#% 1016203
+#% 1682593
+
+#index 881455
+#* Next frontier
+#@ 2
+#t 2006
+#c Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining
+
+#index 960240
+#* Auditing disclosure by relevance ranking
+#@ 2 8108 4688 17856
+#t 2007
+#c Proceedings of the 2007 ACM SIGMOD international conference on Management of data
+#% 210077
+#% 726623
+#% 765449
+#% 803781
+#% 1016172
+
+#index 993943
+#* Hippocratic databases
+#@ 2 4688 1 8401
+#t 2002
+#c VLDB '02 Proceedings of the 28th international conference on Very Large Data Bases
+#% 149
+#% 1868
+#% 36683
+#% 53706
+#% 67453
+#% 158832
+#% 164560
+#% 228355
+#% 249181
+#% 287297
+#% 287298
+#% 287794
+#% 287795
+#% 317991
+#% 340475
+#% 340827
+#% 346931
+#% 348144
+#% 368248
+#% 374401
+#% 384014
+#% 388487
+#% 389077
+#% 390132
+#% 397367
+#% 428401
+#% 437974
+#% 442709
+#% 480496
+#% 480499
+#% 482049
+#% 616923
+#% 659992
+#% 664705
+#% 781216
+#% 1393825
+
+#index 993944
+#* Watermarking relational databases
+#@ 2 4688
+#t 2002
+#c VLDB '02 Proceedings of the 28th international conference on Very Large Data Bases
+#% 256418
+#% 389077
+#% 616923
+#% 632213
+#% 1848706
+
+#index 994026
+#* Database technologies for electronic commerce
+#@ 2 1 8401
+#t 2002
+#c VLDB '02 Proceedings of the 28th international conference on Very Large Data Bases
+#% 333854
+#% 348164
+#% 480629
+
+#index 1015331
+#* Privacy-preserving indexing of documents on the network
+#@ 3222 226 2
+#t 2003
+#c VLDB '03 Proceedings of the 29th international conference on Very large data bases - Volume 29
+#% 67453
+#% 233480
+#% 249181
+#% 261357
+#% 268079
+#% 287463
+#% 317991
+#% 322884
+#% 340175
+#% 348157
+#% 397367
+#% 414382
+#% 438481
+#% 577361
+#% 593711
+#% 664654
+#% 664705
+#% 963875
+
+#index 1016129
+#* Whither data mining?
+#@ 2 1
+#t 2004
+#c VLDB '04 Proceedings of the Thirtieth international conference on Very large data bases - Volume 30
+
+#index 1016138
+#* Limiting disclosure in hippocratic databases
+#@ 10801 2 1126 36 8401 2360
+#t 2004
+#c VLDB '04 Proceedings of the Thirtieth international conference on Very large data bases - Volume 30
+#% 67453
+#% 69537
+#% 151161
+#% 164560
+#% 204453
+#% 238413
+#% 252481
+#% 346901
+#% 606353
+#% 993943
+
+#index 1016172
+#* Auditing compliance with a Hippocratic database
+#@ 2 4330 578 4688 4790 1
+#t 2004
+#c VLDB '04 Proceedings of the Thirtieth international conference on Very large data bases - Volume 30
+#% 36117
+#% 67453
+#% 116043
+#% 164560
+#% 300179
+#% 320902
+#% 390132
+#% 403195
+#% 442781
+#% 644201
+#% 993943
+#% 1016138
+
+#index 1134501
+#* The Claremont report on database research
+#@ 2 19140 960 1106 98 33 3899 154 47 129 1027 3177 3818 3786 111 79 21566 49 4526 21567 3197 21568 36 1049 1069 3265 690
+#t 2008
+#c ACM SIGMOD Record
+#% 111378
+#% 218149
+#% 275367
+#% 339369
+#% 805821
+#% 1056069
+
+#index 1214736
+#* Improving classification accuracy using automatically extracted training data
+#@ 11909 24060 21205 2 9299 24061
+#t 2009
+#c Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 115608
+#% 577224
+#% 722495
+#% 748550
+#% 815796
+#% 817693
+#% 818281
+#% 869550
+#% 939958
+#% 946521
+#% 983808
+#% 1074093
+#% 1166522
+#% 1682429
+
+#index 1217265
+#* Answering web queries using structured data sources
+#@ 6930 12169 24061 2
+#t 2009
+#c Proceedings of the 2009 ACM SIGMOD International Conference on Management of data
+#% 660011
+#% 765506
+#% 810101
+#% 1015325
+#% 1022234
+#% 1022236
+#% 1022289
+
+#index 1263931
+#* Privacy-preserving indexing of documents on the network
+#@ 3222 25386 2 8105
+#t 2009
+#c The VLDB Journal — The International Journal on Very Large Data Bases
+#% 15395
+#% 17872
+#% 67453
+#% 233480
+#% 249181
+#% 259504
+#% 261357
+#% 268079
+#% 287463
+#% 317991
+#% 322884
+#% 330621
+#% 348157
+#% 397367
+#% 414382
+#% 438481
+#% 536484
+#% 577361
+#% 593711
+#% 635221
+#% 664654
+#% 664705
+
+#index 1581406
+#* Synthesizing products for online catalogs
+#@ 14027 11909 6930 2201 2
+#t 2011
+#c Proceedings of the VLDB Endowment
+#% 17185
+#% 279755
+#% 333990
+#% 572314
+#% 654458
+#% 765433
+#% 786511
+#% 800498
+#% 866989
+#% 939759
+#% 939794
+#% 993982
+#% 1083704
+#% 1108847
+
+#index 1605952
+#* Ameliorating buyer's remorse
+#@ 2 20712 17856
+#t 2011
+#c Proceedings of the 17th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 729921
+#% 891559
+#% 1273928
+
+#index 1605958
+#* Matching unstructured product offers to structured product specifications
+#@ 24060 36090 2 11909
+#t 2011
+#c Proceedings of the 17th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 201889
+#% 248801
+#% 310516
+#% 376266
+#% 398003
+#% 577238
+#% 729913
+#% 788090
+#% 844289
+#% 870896
+#% 893143
+#% 913783
+#% 1016172
+#% 1127423
+#% 1201863
+#% 1267781
+#% 1272213
+#% 1338592
+#% 1426566
+
+#index 1617247
+#* Enriching education through data mining
+#@ 2
+#t 2011
+#c ECML PKDD'11 Proceedings of the 2011 European conference on Machine learning and knowledge discovery in databases - Volume Part I
+#% 1528118
+#% 1560308
+
+#index 1688260
+#* On honesty in sovereign information sharing
+#@ 2 15612
+#t 2006
+#c EDBT'06 Proceedings of the 10th international conference on Advances in Database Technology
+#% 301569
+#% 312599
+#% 325359
+#% 575969
+#% 654448
+#% 717116
+#% 725249
+#% 743280
+#% 781216
+#% 824725
+#% 1650376
+
+#index 1764752
+#* Data mining for improving textbooks
+#@ 2 15587 24060 12880
+#t 2012
+#c ACM SIGKDD Explorations Newsletter
+#% 329430
+#% 347225
+#% 387791
+#% 816186
+#% 907534
+#% 1019083
+#% 1166537
+#% 1220596
+#% 1417787
+#% 1450865
+#% 1468142
+#% 1480225
+#% 1482284
+#% 1493413
+#% 1528118
+#% 1560308
+#% 1642133
+#% 1705142
+#% 1896512
+
+#index 1872282
+#* Aggregating web offers to determine product prices
+#@ 2 20712
+#t 2012
+#c Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 266616
+#% 278011
+#% 577238
+#% 724212
+#% 788090
+#% 857094
+#% 870896
+#% 891559
+#% 913783
+#% 1201863
+#% 1267781
+#% 1272213
+#% 1605952
+#% 1605958
+#% 1641996
+#% 1650666
+
+#index 1872346
+#* Empowering authors to diagnose comprehension burden in textbooks
+#@ 2 41777 15587 24060 12880
+#t 2012
+#c Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 9197
+#% 352869
+#% 747647
+#% 772517
+#% 816186
+#% 1434144
+#% 1468142
+#% 1484302
+#% 1528118
+#% 1560308
+#% 1723951
+

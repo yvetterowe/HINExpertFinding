@@ -1,0 +1,1697 @@
+#index 300120
+#* Mining frequent patterns without candidate generation
+#@ 961 3214 3215
+#t 2000
+#c SIGMOD '00 Proceedings of the 2000 ACM SIGMOD international conference on Management of data
+#% 172386
+#% 201894
+#% 227919
+#% 248785
+#% 248791
+#% 248813
+#% 280409
+#% 329598
+#% 420063
+#% 461909
+#% 463903
+#% 479484
+#% 481290
+#% 481754
+#% 631926
+
+#index 301173
+#* Towards data mining benchmarking: a test bed for performance study of frequent pattern mining
+#@ 3214 3344 3345 3346
+#t 2000
+#c SIGMOD '00 Proceedings of the 2000 ACM SIGMOD international conference on Management of data
+
+#index 310558
+#* Can we push more constraints into frequent pattern mining?
+#@ 3214 961
+#t 2000
+#c Proceedings of the sixth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 248785
+#% 273899
+#% 300120
+#% 481290
+#% 632028
+
+#index 310559
+#* FreeSpan: frequent pattern-projected sequential pattern mining
+#@ 961 3214 3599 3600 508 3601
+#t 2000
+#c Proceedings of the sixth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 210160
+#% 300120
+#% 329598
+#% 420063
+#% 459006
+#% 463903
+#% 481290
+
+#index 333925
+#* Efficient computation of Iceberg cubes with complex measures
+#@ 961 3214 171 1282
+#t 2001
+#c SIGMOD '01 Proceedings of the 2001 ACM SIGMOD international conference on Management of data
+#% 210182
+#% 223781
+#% 227880
+#% 248785
+#% 273899
+#% 273916
+#% 300120
+#% 310558
+#% 420053
+#% 479450
+#% 479795
+#% 481290
+#% 481951
+
+#index 334041
+#* DNA-miner: a system prototype for mining DNA sequences
+#@ 961 3957 1980 3958 3959 3214
+#t 2001
+#c SIGMOD '01 Proceedings of the 2001 ACM SIGMOD international conference on Management of data
+
+#index 338580
+#* Mining frequent patterns by pattern-growth: methodology and implications
+#@ 961 3214
+#t 2000
+#c ACM SIGKDD Explorations Newsletter - Special issue on “Scalable data mining algorithms”
+#% 152934
+#% 227919
+#% 248785
+#% 248791
+#% 273899
+#% 273916
+#% 280409
+#% 300120
+#% 310558
+#% 310559
+#% 329598
+#% 420063
+#% 459006
+#% 463903
+#% 464839
+#% 464989
+#% 464996
+#% 479482
+#% 479484
+#% 479795
+#% 479971
+#% 481290
+#% 631926
+#% 631970
+#% 632028
+
+#index 342817
+#* Scalable frequent-pattern mining methods: an overview
+#@ 961 190 3214
+#t 2001
+#c Tutorial notes of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 152934
+#% 172386
+#% 201894
+#% 210160
+#% 210162
+#% 227917
+#% 227919
+#% 227922
+#% 227953
+#% 248784
+#% 248785
+#% 248791
+#% 248813
+#% 259993
+#% 273899
+#% 273916
+#% 280473
+#% 300120
+#% 310494
+#% 310558
+#% 310559
+#% 318994
+#% 329598
+#% 333925
+#% 420063
+#% 420067
+#% 438134
+#% 459006
+#% 461909
+#% 463903
+#% 464204
+#% 464822
+#% 464839
+#% 464989
+#% 464996
+#% 479482
+#% 479484
+#% 479627
+#% 479795
+#% 479971
+#% 481290
+#% 481588
+#% 481754
+#% 481758
+#% 481779
+#% 481954
+#% 584891
+#% 631926
+#% 632028
+#% 632037
+
+#index 397411
+#* COMMIX: towards effective web information extraction, integration and query answering
+#@ 4611 4612 4613 4614 4615 3214
+#t 2002
+#c Proceedings of the 2002 ACM SIGMOD international conference on Management of data
+
+#index 397417
+#* CubeExplorer: online exploration of data cubes
+#@ 961 4625 171 3214 1282
+#t 2002
+#c Proceedings of the 2002 ACM SIGMOD international conference on Management of data
+#% 333925
+#% 480630
+
+#index 399793
+#* Constrained frequent pattern mining: a pattern-growth view
+#@ 3214 961
+#t 2002
+#c ACM SIGKDD Explorations Newsletter
+#% 172386
+#% 201894
+#% 227919
+#% 248785
+#% 248791
+#% 248813
+#% 273899
+#% 273916
+#% 280409
+#% 300120
+#% 310558
+#% 310559
+#% 338580
+#% 420063
+#% 461909
+#% 463903
+#% 464989
+#% 464996
+#% 465003
+#% 466490
+#% 479484
+#% 481290
+#% 481754
+#% 631926
+#% 631985
+#% 632028
+
+#index 466483
+#* CMAR: Accurate and Efficient Classification Based on Multiple Class-Association Rules
+#@ 5904 961 3214
+#t 2001
+#c ICDM '01 Proceedings of the 2001 IEEE International Conference on Data Mining
+
+#index 466490
+#* H-Mine: Hyper-Structure Mining of Frequent Patterns in Large Databases
+#@ 3214 961 2471 5712 4612 4613
+#t 2001
+#c ICDM '01 Proceedings of the 2001 IEEE International Conference on Data Mining
+
+#index 629606
+#* On Computing Condensed Frequent Pattern Bases
+#@ 3214 171 9304 961
+#t 2002
+#c ICDM '02 Proceedings of the 2002 IEEE International Conference on Data Mining
+
+#index 654446
+#* QC-trees: an efficient summary structure for semantic OLAP
+#@ 190 3214 9681
+#t 2003
+#c Proceedings of the 2003 ACM SIGMOD international conference on Management of data
+#% 152928
+#% 198465
+#% 210182
+#% 227868
+#% 227869
+#% 227880
+#% 227944
+#% 236410
+#% 259995
+#% 273696
+#% 273916
+#% 280448
+#% 287047
+#% 340301
+#% 397388
+#% 459026
+#% 464215
+#% 479450
+#% 480460
+#% 480470
+#% 480820
+#% 481951
+#% 993996
+
+#index 654500
+#* SOCQET: semantic OLAP with compressed cube and summarization
+#@ 190 3214 9681
+#t 2003
+#c Proceedings of the 2003 ACM SIGMOD international conference on Management of data
+#% 654446
+#% 993996
+
+#index 727908
+#* MaPle: A Fast Algorithm for Maximal Pattern-based Clustering
+#@ 3214 10078 10079 4558 850
+#t 2003
+#c ICDM '03 Proceedings of the Third IEEE International Conference on Data Mining
+#% 152934
+#% 248792
+#% 273891
+#% 280417
+#% 300120
+#% 300131
+#% 397382
+#% 464888
+#% 469422
+#% 480124
+#% 481290
+
+#index 729933
+#* CLOSET+: searching for the best strategies for mining frequent closed itemsets
+#@ 4625 961 3214
+#t 2003
+#c Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 152934
+#% 201894
+#% 227917
+#% 248791
+#% 300120
+#% 310494
+#% 342643
+#% 443348
+#% 464714
+#% 465003
+#% 466490
+#% 481290
+#% 481779
+#% 577234
+#% 629644
+
+#index 729972
+#* Interactive exploration of coherent patterns in time-series gene expression data
+#@ 10197 3214 5691
+#t 2003
+#c Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 273890
+#% 397382
+#% 469425
+
+#index 729987
+#* Mining phenotypes and informative genes from gene expression data
+#@ 10215 5691 3214
+#t 2003
+#c Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 248792
+#% 469422
+#% 659967
+
+#index 745457
+#* Data Mining for Intrusion Detection: Techniques, Applications and Systems
+#@ 3214 10505 10506 10507
+#t 2004
+#c ICDE '04 Proceedings of the 20th International Conference on Data Engineering
+
+#index 748010
+#* Towards interactive exploration of gene expression patterns
+#@ 10197 3214 5691
+#t 2003
+#c ACM SIGKDD Explorations Newsletter
+#% 60576
+#% 273890
+#% 324431
+#% 397382
+#% 397631
+#% 438617
+#% 469422
+#% 469425
+#% 589434
+#% 659967
+#% 727908
+#% 729972
+
+#index 769907
+#* Scalable mining of large disk-based graph databases
+#@ 11027 1204 3214 11028 11029
+#t 2004
+#c Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 410276
+#% 466644
+#% 577218
+#% 629603
+#% 629646
+#% 629708
+#% 729938
+#% 765429
+
+#index 769917
+#* A rank sum test method for informative gene discovery
+#@ 11036 3214 10881 5491
+#t 2004
+#c Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 269217
+#% 297684
+#% 328374
+#% 397641
+#% 425048
+#% 451139
+#% 717415
+#% 729437
+#% 769919
+
+#index 769919
+#* Mining coherent gene clusters from gene-sample-time microarray data
+#@ 10197 3214 11038 10215 5691
+#t 2004
+#c Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 328317
+#% 397382
+#% 469422
+#% 727908
+#% 729972
+#% 729987
+
+#index 800531
+#* Mining Cross-Graph Quasi-Cliques in Gene Expression and Protein Interaction Data
+#@ 3214 10197 5691
+#t 2005
+#c ICDE '05 Proceedings of the 21st International Conference on Data Engineering
+#% 397382
+#% 469422
+#% 731609
+
+#index 800634
+#* Online Mining of Data Streams: Applications, Techniques and Progress
+#@ 4558 3214 850
+#t 2005
+#c ICDE '05 Proceedings of the 21st International Conference on Data Engineering
+
+#index 810094
+#* GraphMiner: a structural pattern-mining system for large disk-based graph databases and its applications
+#@ 1204 11027 11028 11029 3214 9413 961
+#t 2005
+#c Proceedings of the 2005 ACM SIGMOD international conference on Management of data
+#% 466644
+#% 629603
+#% 629646
+#% 629708
+#% 729938
+#% 769907
+
+#index 823347
+#* On mining cross-graph quasi-cliques
+#@ 3214 10197 5691
+#t 2005
+#c Proceedings of the eleventh ACM SIGKDD international conference on Knowledge discovery in data mining
+#% 268040
+#% 324431
+#% 397382
+#% 408396
+#% 466644
+#% 466675
+#% 469422
+#% 469425
+#% 498852
+#% 577219
+#% 629708
+#% 729938
+#% 731604
+#% 765429
+#% 769887
+#% 769894
+#% 769907
+
+#index 823424
+#* Pattern-based similarity search for microarray data
+#@ 4558 3214 850
+#t 2005
+#c Proceedings of the eleventh ACM SIGKDD international conference on Knowledge discovery in data mining
+#% 289010
+#% 397382
+#% 468476
+#% 469422
+#% 593863
+
+#index 824672
+#* Catching the best views of skyline: a semantic approach based on decisive subspaces
+#@ 3214 4232 2497 4552
+#t 2005
+#c VLDB '05 Proceedings of the 31st international conference on Very large data bases
+#% 100803
+#% 288976
+#% 333854
+#% 384416
+#% 465167
+#% 479986
+#% 480671
+#% 654480
+#% 800555
+#% 824671
+#% 993954
+#% 993996
+
+#index 844401
+#* Efficiently Mining Frequent Closed Partial Orders
+#@ 3214 14869 4558 1282 850 4625
+#t 2005
+#c ICDM '05 Proceedings of the Fifth IEEE International Conference on Data Mining
+#% 310515
+#% 397632
+#% 420063
+#% 463903
+#% 464996
+#% 729922
+
+#index 864452
+#* SUBSKY: Efficient Computation of Skylines in Subspaces
+#@ 4552 14012 3214
+#t 2006
+#c ICDE '06 Proceedings of the 22nd International Conference on Data Engineering
+
+#index 881507
+#* On privacy preservation against adversarial data mining
+#@ 968 3214 7430
+#t 2006
+#c Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 1868
+#% 300184
+#% 333876
+#% 342614
+#% 577233
+#% 577289
+#% 740764
+#% 769885
+#% 800515
+#% 993988
+
+#index 881543
+#* Suppressing model overfitting in mining concept-drifting data streams
+#@ 4558 7463 3214 850 4839
+#t 2006
+#c Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 95730
+#% 273900
+#% 310500
+#% 333931
+#% 342600
+#% 342639
+#% 378388
+#% 397380
+#% 424997
+#% 594012
+#% 729932
+#% 785339
+#% 823333
+#% 823408
+#% 844341
+#% 993958
+
+#index 881551
+#* Utility-based anonymization using local recoding
+#@ 10589 1204 3214 16138 11029 1241
+#t 2006
+#c Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 248030
+#% 443463
+#% 576761
+#% 576762
+#% 577239
+#% 800515
+#% 801690
+#% 810011
+#% 824726
+#% 864406
+#% 1700134
+
+#index 893204
+#* Using high dimensional indexes to support relevance feedback based interactive images retrieval
+#@ 17355 17356 1204 11029 3214
+#t 2006
+#c VLDB '06 Proceedings of the 32nd international conference on Very large data bases
+#% 318785
+#% 341267
+#% 411758
+#% 427199
+#% 443889
+#% 479462
+#% 479649
+#% 480632
+#% 592183
+#% 810069
+#% 814646
+#% 1775156
+
+#index 907499
+#* Classification spanning correlated data streams
+#@ 9314 1282 1241 10164 3214
+#t 2006
+#c CIKM '06 Proceedings of the 15th ACM international conference on Information and knowledge management
+#% 246831
+#% 273682
+#% 273908
+#% 310500
+#% 378388
+#% 397354
+#% 479787
+#% 594012
+#% 635215
+#% 654444
+#% 729932
+#% 729965
+#% 765494
+#% 809257
+#% 844359
+#% 881938
+#% 993949
+#% 993961
+#% 1015296
+#% 1016156
+#% 1250553
+
+#index 915273
+#* Improving Grouped-Entity Resolution Using Quasi-Cliques
+#@ 17602 14105 2021 672 3214
+#t 2006
+#c ICDM '06 Proceedings of the Sixth International Conference on Data Mining
+
+#index 949572
+#* Utility-based anonymization for privacy preservation with less information loss
+#@ 10589 1204 3214 16138 11029 1241
+#t 2006
+#c ACM SIGKDD Explorations Newsletter
+#% 248030
+#% 321455
+#% 443463
+#% 576761
+#% 576762
+#% 577239
+#% 785363
+#% 800514
+#% 800515
+#% 801690
+#% 810011
+#% 824726
+#% 864406
+#% 1700134
+
+#index 989652
+#* Mining favorable facets
+#@ 10073 3214 1241 1282
+#t 2007
+#c Proceedings of the 13th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 287414
+#% 289148
+#% 427199
+#% 465167
+#% 480671
+#% 800512
+#% 806212
+#% 810024
+#% 824671
+#% 824672
+#% 864451
+#% 875011
+#% 915803
+#% 992635
+#% 993954
+#% 1408811
+#% 1712421
+
+#index 989667
+#* Cleaning disguised missing data: a heuristic approach
+#@ 18696 3214
+#t 2007
+#c Proceedings of the 13th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 17144
+#% 798813
+#% 878941
+#% 1272290
+
+#index 993996
+#* Quotient cube: how to summarize the semantics of a data cube
+#@ 190 3214 961
+#t 2002
+#c VLDB '02 Proceedings of the 28th international conference on Very Large Data Bases
+#% 210182
+#% 227880
+#% 236410
+#% 237202
+#% 259995
+#% 273916
+#% 280448
+#% 397388
+#% 464215
+#% 479450
+#% 480820
+#% 481290
+#% 481951
+
+#index 998861
+#* Introduction to the special issue on data mining for health informatics
+#@ 1020 3214
+#t 2007
+#c ACM SIGKDD Explorations Newsletter - Special issue on data mining for health informatics
+
+#index 1015366
+#* Efficacious data cube exploration by semantic summarization and compression
+#@ 190 3214 9681
+#t 2003
+#c VLDB '03 Proceedings of the 29th international conference on Very large data bases - Volume 29
+#% 207552
+#% 654446
+#% 993996
+
+#index 1016243
+#* GPX: interactive mining of gene expression data
+#@ 10197 3214 5691
+#t 2004
+#c VLDB '04 Proceedings of the Thirtieth international conference on Very large data bases - Volume 30
+#% 729972
+#% 748010
+#% 769919
+
+#index 1022203
+#* Probabilistic skylines on uncertain data
+#@ 3214 19119 10511 12151
+#t 2007
+#c VLDB '07 Proceedings of the 33rd international conference on Very large data bases
+#% 82346
+#% 288976
+#% 289148
+#% 321455
+#% 480671
+#% 654480
+#% 654487
+#% 800555
+#% 810024
+#% 824670
+#% 824671
+#% 824672
+#% 824728
+#% 849816
+#% 864394
+#% 864452
+#% 864453
+#% 875011
+#% 875012
+#% 875025
+#% 893150
+#% 993954
+#% 1016201
+#% 1016202
+#% 1669490
+#% 1688273
+#% 1700131
+#% 1720764
+
+#index 1022247
+#* Minimality attack in privacy preserving data publishing
+#@ 10073 1241 1282 3214
+#t 2007
+#c VLDB '07 Proceedings of the 33rd international conference on Very large data bases
+#% 300184
+#% 576761
+#% 576762
+#% 577233
+#% 785363
+#% 800514
+#% 801690
+#% 810011
+#% 864412
+#% 874988
+#% 874989
+#% 881497
+#% 881546
+#% 881551
+#% 893100
+#% 951837
+#% 960291
+#% 963759
+#% 1700134
+
+#index 1022276
+#* Efficiently answering top-k typicality queries on large databases
+#@ 18696 3214 19181 10511 1530
+#t 2007
+#c VLDB '07 Proceedings of the 33rd international conference on Very large data bases
+#% 22982
+#% 271236
+#% 281750
+#% 333854
+#% 450489
+#% 599545
+#% 743388
+#% 765460
+#% 803119
+#% 841716
+#% 875023
+#% 881500
+#% 890349
+#% 893126
+#% 893127
+#% 942353
+#% 1728321
+
+#index 1044457
+#* Anonymity for continuous data publishing
+#@ 16095 1282 1241 3214
+#t 2008
+#c EDBT '08 Proceedings of the 11th international conference on Extending database technology: Advances in database technology
+#% 576761
+#% 800514
+#% 801690
+#% 810011
+#% 844340
+#% 864406
+#% 864412
+#% 881497
+#% 881546
+#% 960291
+#% 975045
+#% 982549
+#% 1725659
+
+#index 1044491
+#* OrthoCluster: a new tool for mining synteny blocks and applications in comparative genomics
+#@ 19819 19820 3214 1282 19821 19822
+#t 2008
+#c EDBT '08 Proceedings of the 11th international conference on Extending database technology: Advances in database technology
+#% 832949
+#% 1796826
+
+#index 1063520
+#* Ranking queries on uncertain data: a probabilistic threshold approach
+#@ 18696 3214 19934 10511
+#t 2008
+#c Proceedings of the 2008 ACM SIGMOD international conference on Management of data
+#% 663
+#% 32879
+#% 190611
+#% 209725
+#% 333854
+#% 463114
+#% 599545
+#% 654487
+#% 824728
+#% 864394
+#% 864455
+#% 893167
+#% 976984
+#% 977013
+#% 1016201
+#% 1016202
+#% 1022203
+#% 1044478
+#% 1206645
+#% 1206646
+
+#index 1063574
+#* DiMaC: a system for cleaning disguised missing data
+#@ 18696 3214
+#t 2008
+#c Proceedings of the 2008 ACM SIGMOD international conference on Management of data
+#% 17144
+#% 185079
+#% 878941
+#% 989667
+#% 1272290
+
+#index 1063595
+#* Query answering techniques on uncertain and probabilistic data: tutorial summary
+#@ 3214 18696 4552 10511
+#t 2008
+#c Proceedings of the 2008 ACM SIGMOD international conference on Management of data
+#% 663
+#% 32879
+#% 190611
+#% 209725
+#% 442830
+#% 480102
+#% 599545
+#% 654487
+#% 785098
+#% 824718
+#% 824728
+#% 824733
+#% 864394
+#% 864455
+#% 893121
+#% 893167
+#% 893189
+#% 907562
+#% 976984
+#% 977013
+#% 977014
+#% 983259
+#% 1016201
+#% 1016202
+#% 1022203
+#% 1022205
+#% 1022206
+#% 1022259
+#% 1044478
+#% 1063520
+#% 1206645
+#% 1206646
+#% 1207234
+#% 1720764
+
+#index 1077041
+#* Advances in information and knowledge management
+#@ 20322 3214
+#t 2008
+#c ACM SIGIR Forum
+#% 1016295
+#% 1019054
+#% 1019073
+#% 1019102
+#% 1019123
+#% 1019147
+
+#index 1083667
+#* Mining preferences from superior and inferior examples
+#@ 19119 3214 10511 11015 961
+#t 2008
+#c Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 288976
+#% 300170
+#% 331835
+#% 376266
+#% 408396
+#% 420117
+#% 458873
+#% 465167
+#% 566111
+#% 577224
+#% 629667
+#% 729437
+#% 813974
+#% 992635
+#% 993957
+#% 994017
+#% 1026877
+#% 1272396
+
+#index 1083721
+#* Context-aware query suggestion by mining click-through and session data
+#@ 20798 10197 3214 12631 20799 17480 4267
+#t 2008
+#c Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 210173
+#% 232719
+#% 310567
+#% 330617
+#% 348155
+#% 459006
+#% 464996
+#% 479962
+#% 591792
+#% 754125
+#% 766440
+#% 783475
+#% 838531
+#% 869500
+#% 869501
+#% 963669
+#% 987193
+#% 987212
+#% 989578
+#% 1712595
+
+#index 1083747
+#* DiMaC: a disguised missing data cleaning tool
+#@ 18696 3214
+#t 2008
+#c Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 17144
+#% 185079
+#% 878941
+#% 989667
+#% 1272290
+
+#index 1127433
+#* Efficient skyline querying with variable user preferences on nominal attributes
+#@ 10073 1241 3214 21439 21440 21441
+#t 2008
+#c Proceedings of the VLDB Endowment
+#% 287414
+#% 288976
+#% 289148
+#% 465167
+#% 480671
+#% 654480
+#% 800512
+#% 800555
+#% 806212
+#% 810024
+#% 824670
+#% 824671
+#% 824672
+#% 864451
+#% 875011
+#% 912241
+#% 915803
+#% 989652
+#% 992635
+#% 993954
+#% 1022224
+#% 1022226
+#% 1408811
+#% 1712421
+
+#index 1133030
+#* Mining frequent cross-graph quasi-cliques
+#@ 10197 3214
+#t 2009
+#c ACM Transactions on Knowledge Discovery from Data (TKDD)
+#% 268040
+#% 324431
+#% 408396
+#% 466644
+#% 466675
+#% 469425
+#% 498852
+#% 577219
+#% 629708
+#% 729938
+#% 731604
+#% 731609
+#% 765429
+#% 769887
+#% 769894
+#% 769907
+#% 823347
+
+#index 1176943
+#* Publishing Sensitive Transactions for Itemset Utility
+#@ 9314 12103 1282 22225 3214
+#t 2008
+#c ICDM '08 Proceedings of the 2008 Eighth IEEE International Conference on Data Mining
+
+#index 1200862
+#* A brief survey on anonymization techniques for privacy preserving publishing of social network data
+#@ 23020 3214 23021
+#t 2008
+#c ACM SIGKDD Explorations Newsletter
+#% 44876
+#% 215062
+#% 248030
+#% 271120
+#% 576111
+#% 576214
+#% 576761
+#% 629708
+#% 810028
+#% 864406
+#% 864412
+#% 874989
+#% 881551
+#% 893100
+#% 904307
+#% 956511
+#% 975045
+#% 983866
+#% 989570
+#% 1063476
+#% 1127417
+#% 1206582
+#% 1206763
+#% 1415851
+
+#index 1206645
+#* Efficiently Answering Probabilistic Threshold Top-k Queries on Uncertain Data
+#@ 18696 3214 19934 10511
+#t 2008
+#c ICDE '08 Proceedings of the 2008 IEEE 24th International Conference on Data Engineering
+
+#index 1206763
+#* Preserving Privacy in Social Networks Against Neighborhood Attacks
+#@ 23020 3214
+#t 2008
+#c ICDE '08 Proceedings of the 2008 IEEE 24th International Conference on Data Engineering
+
+#index 1206819
+#* Distance-Based Representative Skyline
+#@ 4552 23239 10511 3214
+#t 2009
+#c ICDE '09 Proceedings of the 2009 IEEE International Conference on Data Engineering
+
+#index 1206852
+#* Online Interval Skyline Queries on Time Series
+#@ 19119 3214
+#t 2009
+#c ICDE '09 Proceedings of the 2009 IEEE International Conference on Data Engineering
+
+#index 1206882
+#* Privacy Preserving Publishing on Multiple Quasi-identifiers
+#@ 3214 4552 19919 14012
+#t 2009
+#c ICDE '09 Proceedings of the 2009 IEEE International Conference on Data Engineering
+
+#index 1210519
+#* Mining Uncertain and Probabilistic Data: problems, Challenges, Methods, and Applications
+#@ 3214 18696
+#t 2008
+#c Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining
+
+#index 1211088
+#* Link spam target detection using page farms
+#@ 23020 3214
+#t 2009
+#c ACM Transactions on Knowledge Discovery from Data (TKDD)
+#% 290830
+#% 309749
+#% 410276
+#% 772018
+#% 799632
+#% 807297
+#% 818223
+#% 824694
+#% 869469
+#% 869471
+#% 879603
+#% 882035
+#% 893125
+#% 912202
+#% 957996
+#% 958004
+#% 987245
+#% 1016177
+#% 1279489
+
+#index 1211648
+#* Top-k typicality queries and efficient query answering methods on large databases
+#@ 18696 3214 23718 10511 1530
+#t 2009
+#c The VLDB Journal — The International Journal on Very Large Data Bases
+#% 22982
+#% 210173
+#% 248790
+#% 248792
+#% 271130
+#% 271236
+#% 273890
+#% 281750
+#% 294634
+#% 333854
+#% 438137
+#% 443531
+#% 450489
+#% 566128
+#% 599545
+#% 631988
+#% 743388
+#% 765460
+#% 781774
+#% 803119
+#% 841716
+#% 875023
+#% 881500
+#% 893126
+#% 893127
+#% 942353
+#% 1022276
+#% 1375422
+#% 1861495
+
+#index 1214756
+#* Can we learn a template-independent wrapper for news article extraction from a single training site?
+#@ 20223 17347 20222 3214 18434 20221 18538
+#t 2009
+#c Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 271065
+#% 275915
+#% 312860
+#% 334313
+#% 397605
+#% 480824
+#% 577321
+#% 654469
+#% 754078
+#% 754108
+#% 779889
+#% 805845
+#% 805846
+#% 818233
+#% 869518
+#% 938578
+#% 956642
+#% 989660
+#% 1269910
+
+#index 1214761
+#* OLAP on search logs: an infrastructure supporting data-driven applications in search engines
+#@ 23020 10197 3214 4267
+#t 2009
+#c Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 235941
+#% 348155
+#% 459006
+#% 577224
+#% 591792
+#% 818226
+#% 838531
+#% 869501
+#% 869536
+#% 879565
+#% 879567
+#% 939629
+#% 956546
+#% 956552
+#% 960303
+#% 963669
+#% 987203
+#% 987212
+#% 1055677
+#% 1063518
+#% 1074092
+#% 1083721
+
+#index 1217254
+#* MobileMiner: a real world case study of data mining in mobile communication
+#@ 4611 24029 4614 4613 4612 24220 24221 3214
+#t 2009
+#c Proceedings of the 2009 ACM SIGMOD International Conference on Management of data
+#% 469422
+#% 823347
+#% 1023265
+#% 1176867
+
+#index 1250571
+#* Minimum description length principle: generators are preferable to closed patterns
+#@ 2420 12902 66 3214 171
+#t 2006
+#c AAAI'06 Proceedings of the 21st national conference on Artificial intelligence - Volume 1
+#% 152934
+#% 234979
+#% 300120
+#% 314836
+#% 338594
+#% 431033
+#% 487998
+#% 722493
+#% 729933
+#% 729984
+#% 798763
+#% 824931
+
+#index 1261978
+#* Proceedings of the 1st ACM SIGKDD Workshop on Knowledge Discovery from Uncertain Data
+#@ 3214 3892 12140
+#t 2009
+#c The 15th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining
+
+#index 1267796
+#* Debt Detection in Social Security by Sequence Classification Using Both Positive and Negative Patterns
+#@ 19752 22935 25486 3214 19272 5606 22936
+#t 2009
+#c ECML PKDD '09 Proceedings of the European Conference on Machine Learning and Knowledge Discovery in Databases: Part II
+#% 280441
+#% 280488
+#% 280515
+#% 310559
+#% 329537
+#% 459006
+#% 463903
+#% 464996
+#% 466483
+#% 471264
+#% 577249
+#% 577256
+#% 844035
+#% 844344
+#% 844814
+#% 1040761
+#% 1081949
+#% 1117080
+#% 1155719
+#% 1196009
+#% 1390144
+
+#index 1305497
+#* Early prediction on time series: a nearest neighbor approach
+#@ 18273 3214 850
+#t 2009
+#c IJCAI'09 Proceedings of the 21st international jont conference on Artifical intelligence
+#% 280488
+#% 577221
+#% 737337
+#% 876074
+#% 881545
+#% 1673559
+
+#index 1400780
+#* Threshold-based probabilistic top-k dominating queries
+#@ 19934 10511 10874 3214 1204
+#t 2010
+#c The VLDB Journal — The International Journal on Very Large Data Bases
+#% 663
+#% 4430
+#% 32879
+#% 152937
+#% 235023
+#% 273685
+#% 410276
+#% 427199
+#% 442830
+#% 480671
+#% 527189
+#% 643566
+#% 654487
+#% 806212
+#% 823402
+#% 824728
+#% 864394
+#% 875012
+#% 893189
+#% 915307
+#% 976984
+#% 1016201
+#% 1016202
+#% 1022203
+#% 1022242
+#% 1063520
+#% 1127377
+#% 1147662
+#% 1206716
+#% 1224602
+#% 1408794
+#% 1669490
+
+#index 1426555
+#* Logging every footstep: quantile summaries for the entire history
+#@ 4552 10711 24147 3214 10483
+#t 2010
+#c Proceedings of the 2010 ACM SIGMOD International Conference on Management of data
+#% 56081
+#% 58371
+#% 248820
+#% 273907
+#% 287070
+#% 333931
+#% 453493
+#% 479473
+#% 480817
+#% 482104
+#% 571296
+#% 763997
+#% 800494
+#% 801696
+#% 816392
+#% 993969
+#% 1054486
+#% 1373450
+
+#index 1428417
+#* Summary of the first ACM SIGKDD workshop on knowledge discovery from uncertain data (U'09)
+#@ 3214 3892 12140
+#t 2010
+#c ACM SIGKDD Explorations Newsletter
+
+#index 1450885
+#* Context-aware ranking in web search
+#@ 31231 10197 3214 31232 17480 4267
+#t 2010
+#c Proceedings of the 33rd international ACM SIGIR conference on Research and development in information retrieval
+#% 284796
+#% 577224
+#% 818207
+#% 818221
+#% 818259
+#% 853543
+#% 869501
+#% 869536
+#% 881540
+#% 956552
+#% 987211
+#% 987212
+#% 1083721
+#% 1166517
+#% 1190074
+#% 1227577
+
+#index 1451032
+#* Search and browse log mining for web information retrieval: challenges, methods, and applications
+#@ 10197 3214 4267
+#t 2010
+#c Proceedings of the 33rd international ACM SIGIR conference on Research and development in information retrieval
+
+#index 1451193
+#* Neighbor query friendly compression of social networks
+#@ 31441 3214
+#t 2010
+#c Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 311808
+#% 399764
+#% 410276
+#% 656242
+#% 656281
+#% 656282
+#% 740507
+#% 754117
+#% 1035579
+#% 1214643
+
+#index 1490606
+#* A brief survey on sequence classification
+#@ 18273 3214 3861
+#t 2010
+#c ACM SIGKDD Explorations Newsletter
+#% 235377
+#% 266284
+#% 280488
+#% 289519
+#% 310545
+#% 311027
+#% 344447
+#% 420132
+#% 451055
+#% 458369
+#% 464434
+#% 466501
+#% 501994
+#% 577221
+#% 577227
+#% 722803
+#% 729953
+#% 788670
+#% 793247
+#% 799394
+#% 818236
+#% 832727
+#% 840941
+#% 844035
+#% 844344
+#% 864131
+#% 875991
+#% 876074
+#% 881545
+#% 881823
+#% 902457
+#% 908995
+#% 951838
+#% 992857
+#% 998747
+#% 1044404
+#% 1103307
+#% 1126334
+#% 1127609
+#% 1173693
+#% 1214716
+#% 1305497
+#% 1440242
+#% 1661589
+#% 1717571
+
+#index 1523870
+#* Computing closed skycubes
+#@ 21165 3214 32937
+#t 2010
+#c Proceedings of the VLDB Endowment
+#% 288976
+#% 289148
+#% 384416
+#% 464873
+#% 465167
+#% 480671
+#% 729933
+#% 824671
+#% 824672
+#% 864452
+#% 875011
+#% 912241
+
+#index 1535481
+#* Probabilistic Inference Protection on Anonymized Data
+#@ 10073 1241 1282 9314 3214 850
+#t 2010
+#c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+
+#index 1538418
+#* Ranking queries on uncertain data
+#@ 18696 3214 10511
+#t 2011
+#c The VLDB Journal — The International Journal on Very Large Data Bases
+#% 663
+#% 32879
+#% 190611
+#% 209725
+#% 333854
+#% 453464
+#% 463114
+#% 599545
+#% 654487
+#% 810098
+#% 824728
+#% 864394
+#% 864455
+#% 875023
+#% 893126
+#% 893167
+#% 976984
+#% 977013
+#% 983259
+#% 1016201
+#% 1016202
+#% 1022203
+#% 1044478
+#% 1063520
+#% 1147662
+#% 1206645
+#% 1206646
+#% 1206717
+#% 1206893
+#% 1217141
+#% 1217174
+#% 1229788
+
+#index 1581881
+#* On k-skip shortest paths
+#@ 4552 24147 3214
+#t 2011
+#c Proceedings of the 2011 ACM SIGMOD International Conference on Management of data
+#% 31486
+#% 324484
+#% 410276
+#% 442858
+#% 443208
+#% 443533
+#% 450545
+#% 813718
+#% 839701
+#% 841649
+#% 985951
+#% 1063472
+#% 1181255
+#% 1211643
+#% 1292553
+#% 1328210
+#% 1412885
+#% 1426510
+#% 1482228
+#% 1484129
+#% 1523971
+#% 1676469
+
+#index 1581951
+#* Privacy-aware data management in information networks
+#@ 10208 11746 4346 3214 15612
+#t 2011
+#c Proceedings of the 2011 ACM SIGMOD International Conference on Management of data
+#% 956511
+#% 963241
+#% 1063476
+#% 1127417
+#% 1190107
+#% 1190108
+#% 1190207
+#% 1195950
+#% 1200862
+#% 1206763
+#% 1217125
+#% 1259854
+#% 1318624
+#% 1318653
+#% 1328188
+#% 1366214
+#% 1399968
+#% 1400043
+#% 1415851
+#% 1426540
+#% 1475160
+#% 1478165
+#% 1523886
+#% 1524388
+#% 1535288
+#% 1581409
+#% 1581862
+#% 1740518
+
+#index 1584349
+#* Can the Utility of Anonymized Data be Used for Privacy Breaches?
+#@ 10073 1241 1282 850 3214
+#t 2011
+#c ACM Transactions on Knowledge Discovery from Data (TKDD)
+#% 663
+#% 227919
+#% 481779
+#% 576761
+#% 785363
+#% 800514
+#% 810011
+#% 824733
+#% 864412
+#% 864665
+#% 874988
+#% 881507
+#% 881546
+#% 893100
+#% 960291
+#% 1022205
+#% 1022247
+#% 1083631
+#% 1083653
+#% 1206714
+#% 1206716
+#% 1206745
+#% 1206814
+#% 1206815
+#% 1217156
+#% 1535481
+#% 1700134
+
+#index 1594654
+#* Outlier detection on uncertain data: Objects, instances, and inferences
+#@ 19119 3214
+#t 2011
+#c ICDE '11 Proceedings of the 2011 IEEE 27th International Conference on Data Engineering
+
+#index 1598548
+#* Enhancing web search by mining search and browse logs
+#@ 10197 3214 4267
+#t 2011
+#c Proceedings of the 34th international ACM SIGIR conference on Research and development in Information Retrieval
+
+#index 1606082
+#* Towards bounding sequential patterns
+#@ 21165 3214
+#t 2011
+#c Proceedings of the 17th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 152934
+#% 329537
+#% 459006
+#% 463903
+#% 464996
+#% 466487
+#% 477791
+#% 576118
+#% 577256
+#% 589384
+#% 763551
+#% 789589
+#% 805094
+#% 839173
+#% 864470
+#% 925598
+#% 949146
+#% 1035590
+#% 1063518
+#% 1172640
+#% 1214761
+#% 1440242
+#% 1738861
+
+#index 1606342
+#* On pruning for top-k ranking in uncertain databases
+#@ 36205 26883 26069 8144 3214
+#t 2011
+#c Proceedings of the VLDB Endowment
+#% 663
+#% 480418
+#% 810020
+#% 864455
+#% 1022203
+#% 1063520
+#% 1147662
+#% 1206893
+#% 1217141
+#% 1565405
+
+#index 1673620
+#* A random method for quantifying changing distributions in data streams
+#@ 4558 3214
+#t 2005
+#c PKDD'05 Proceedings of the 9th European conference on Principles and Practice of Knowledge Discovery in Databases
+#% 115608
+#% 342600
+#% 400847
+#% 424997
+#% 443616
+#% 481460
+#% 654489
+#% 729932
+#% 729980
+
+#index 1846803
+#* Random Error Reduction in Similarity Search on Time Series: A Statistical Approach
+#@ 41552 11809 3214
+#t 2012
+#c ICDE '12 Proceedings of the 2012 IEEE 28th International Conference on Data Engineering
+
+#index 1872224
+#* Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining
+#@ 4278 3996 3214
+#t 2012
+#c The 18th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining
+
+#index 1879023
+#* Mining query subtopics from search log data
+#@ 13697 35541 4267 10197 3214 35540
+#t 2012
+#c SIGIR '12 Proceedings of the 35th international ACM SIGIR conference on Research and development in information retrieval
+#% 297550
+#% 310567
+#% 330617
+#% 401405
+#% 577224
+#% 590523
+#% 766433
+#% 817846
+#% 838469
+#% 853542
+#% 879567
+#% 879639
+#% 987203
+#% 987221
+#% 987222
+#% 987223
+#% 987326
+#% 1034802
+#% 1083721
+#% 1130878
+#% 1190055
+#% 1202162
+#% 1213625
+#% 1227619
+#% 1400099
+#% 1536529
+#% 1537503
+
+#index 1978746
+#* Community Preserving Lossy Compression of Social Networks
+#@ 31441 3214
+#t 2012
+#c ICDM '12 Proceedings of the 2012 IEEE 12th International Conference on Data Mining
+

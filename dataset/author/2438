@@ -1,0 +1,1279 @@
+#index 280433
+#* Pruning and summarizing the discovered associations
+#@ 2438 2439 2440
+#t 1999
+#c KDD '99 Proceedings of the fifth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 136350
+#% 152934
+#% 172386
+#% 210160
+#% 227919
+#% 248785
+#% 280433
+#% 420112
+#% 443092
+#% 459008
+#% 461909
+#% 462238
+#% 479484
+#% 481290
+#% 481588
+#% 1499588
+
+#index 280487
+#* Mining association rules with multiple minimum supports
+#@ 2438 2439 2440
+#t 1999
+#c KDD '99 Proceedings of the fifth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 152934
+#% 201894
+#% 227917
+#% 248785
+#% 280433
+#% 280487
+#% 462234
+#% 462238
+#% 481290
+#% 481588
+#% 481758
+
+#index 280522
+#* Mining interesting knowledge using DM-II
+#@ 2438 2439 2440 2529
+#t 1999
+#c KDD '99 Proceedings of the fifth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 136350
+#% 172386
+#% 280433
+#% 280487
+#% 443092
+#% 481290
+#% 637522
+#% 1271849
+#% 1499588
+
+#index 310520
+#* Multi-level organization and summarization of the discovered rules
+#@ 2438 3558 2439
+#t 2000
+#c Proceedings of the sixth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 78791
+#% 136350
+#% 172386
+#% 248785
+#% 280433
+#% 280500
+#% 443092
+#% 481290
+#% 481588
+#% 501204
+#% 529648
+#% 1499588
+
+#index 310571
+#* Exploration mining in diabetic patients databases: findings and conclusions
+#@ 2439 3239 2438 3577
+#t 2000
+#c Proceedings of the sixth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 152934
+#% 172386
+#% 201889
+#% 280433
+#% 310520
+#% 412479
+#% 443092
+#% 1499588
+
+#index 310575
+#* Targeting the right students using data mining
+#@ 2440 2438 3634 850 3635
+#t 2000
+#c Proceedings of the sixth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 136350
+#% 152934
+#% 210162
+#% 227917
+#% 248785
+#% 273900
+#% 280436
+#% 280439
+#% 280442
+#% 280473
+#% 280487
+#% 280494
+#% 462234
+#% 481290
+#% 481588
+#% 481779
+#% 481945
+#% 1272365
+
+#index 320932
+#* Web for data mining: organizing and interpreting the discovered rules using the Web
+#@ 2440 2438 3634
+#t 2000
+#c ACM SIGKDD Explorations Newsletter
+#% 136350
+#% 152934
+#% 172386
+#% 201894
+#% 280433
+#% 310520
+#% 481290
+#% 481758
+#% 631970
+#% 1499588
+
+#index 342605
+#* Discovering unexpected information from your competitors' web sites
+#@ 2438 2440 850
+#t 2001
+#c Proceedings of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 46803
+#% 244103
+#% 248791
+#% 248801
+#% 249110
+#% 261741
+#% 268068
+#% 268079
+#% 281209
+#% 281218
+#% 281251
+#% 282905
+#% 303113
+#% 310496
+#% 310518
+#% 312861
+#% 387427
+#% 406493
+#% 443092
+#% 481290
+#% 1499588
+
+#index 342631
+#* Identifying non-actionable association rules
+#@ 2438 2439 2440
+#t 2001
+#c Proceedings of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 136350
+#% 172386
+#% 280433
+#% 280436
+#% 280485
+#% 280500
+#% 310494
+#% 310496
+#% 443092
+#% 462238
+#% 481290
+#% 481588
+#% 1499588
+
+#index 342632
+#* Discovering the set of fundamental rule changes
+#@ 2438 2439 2440
+#t 2001
+#c Proceedings of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 204531
+#% 273693
+#% 280409
+#% 280433
+#% 310496
+#% 443092
+#% 464204
+#% 481290
+#% 481588
+
+#index 427033
+#* Research activities in database management and information retrieval at University of Illinois at Chicago
+#@ 4685 4686 2438 276 2243 278
+#t 2002
+#c ACM SIGMOD Record
+#% 116048
+#% 249933
+#% 309103
+#% 316253
+#% 348190
+#% 443450
+#% 461923
+#% 464641
+#% 481600
+#% 500896
+#% 538889
+#% 577232
+#% 620060
+#% 637796
+
+#index 455102
+#* Proceedings of the 6th Pacific-Asia Conference on Advances in Knowledge Discovery and Data Mining
+#@ 4845 850 2438
+#t 2002
+#c PAKDD '02 Proceedings of the 6th Pacific-Asia Conference on Advances in Knowledge Discovery and Data Mining
+
+#index 464641
+#* Partially Supervised Classification of Text Documents
+#@ 2438 5658 850 5659
+#t 2002
+#c ICML '02 Proceedings of the Nineteenth International Conference on Machine Learning
+
+#index 466658
+#* Analyzing the Interestingness of Association Rules from the Temporal Dimension
+#@ 2438 2440 6020
+#t 2001
+#c ICDM '01 Proceedings of the 2001 IEEE International Conference on Data Mining
+
+#index 478294
+#* Improving an Association Rule Based Classifier
+#@ 2438 2440 3634
+#t 2000
+#c PKDD '00 Proceedings of the 4th European Conference on Principles of Data Mining and Knowledge Discovery
+#% 136350
+#% 153021
+#% 280439
+#% 481290
+
+#index 501519
+#* Visually Aided Exploration of Interesting Association Rules
+#@ 2438 2439 1282 2529
+#t 1999
+#c PAKDD '99 Proceedings of the Third Pacific-Asia Conference on Methodologies for Knowledge Discovery and Data Mining
+#% 136350
+#% 152934
+#% 172386
+#% 232106
+#% 443092
+#% 481758
+
+#index 577216
+#* Querying multiple sets of discovered rules
+#@ 2494 2438
+#t 2002
+#c Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining
+
+#index 577232
+#* A refinement approach to handling model misfit in text categorization
+#@ 8191 8192 2438 5659
+#t 2002
+#c Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 132938
+#% 169717
+#% 169806
+#% 190581
+#% 197394
+#% 209021
+#% 218961
+#% 219050
+#% 219051
+#% 262085
+#% 266215
+#% 280817
+#% 302391
+#% 309122
+#% 310503
+#% 311034
+#% 318412
+#% 340940
+#% 458379
+#% 465746
+#% 465895
+#% 465919
+#% 466572
+#% 682681
+#% 1271840
+#% 1499573
+
+#index 577326
+#* Mining topic-specific concepts and definitions on the web
+#@ 2438 8338 715
+#t 2003
+#c WWW '03 Proceedings of the 12th international conference on World Wide Web
+#% 209690
+#% 244103
+#% 248791
+#% 255177
+#% 268068
+#% 268073
+#% 268079
+#% 281209
+#% 281218
+#% 281252
+#% 282905
+#% 303113
+#% 310518
+#% 330616
+#% 340295
+#% 348191
+#% 406493
+#% 479969
+#% 481290
+#% 495937
+
+#index 629655
+#* Speed-up Iterative Frequent Itemset Mining with Constraint Changes
+#@ 9362 2438
+#t 2002
+#c ICDM '02 Proceedings of the 2002 IEEE International Conference on Data Mining
+
+#index 727807
+#* Detecting Patterns of Change Using Enhanced Parallel Coordinates Visualization
+#@ 9919 2438 9920 9921
+#t 2003
+#c ICDM '03 Proceedings of the Third IEEE International Conference on Data Mining
+#% 25351
+#% 65341
+#% 136350
+#% 286721
+#% 436116
+#% 481290
+#% 481611
+#% 727807
+
+#index 727883
+#* Building Text Classifiers Using Positive and Unlabeled Examples
+#@ 2438 6051 5659 5658 850
+#t 2003
+#c ICDM '03 Proceedings of the Third IEEE International Conference on Data Mining
+#% 169717
+#% 169806
+#% 190581
+#% 252011
+#% 269217
+#% 280817
+#% 304876
+#% 311027
+#% 406493
+#% 458379
+#% 458758
+#% 464466
+#% 464604
+#% 464631
+#% 464641
+#% 464777
+#% 464780
+#% 466229
+#% 466888
+#% 476553
+#% 564957
+#% 577235
+#% 669214
+#% 722811
+#% 891711
+#% 1279298
+
+#index 729939
+#* Eliminating noisy information in Web pages for data mining
+#@ 10139 2438 5659
+#t 2003
+#c Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 169717
+#% 255137
+#% 271060
+#% 278106
+#% 282905
+#% 310546
+#% 348180
+#% 413617
+#% 438676
+#% 451536
+#% 465754
+#% 577281
+#% 746910
+
+#index 729978
+#* Mining data records in Web pages
+#@ 2438 3675 10204
+#t 2003
+#c Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 65341
+#% 235941
+#% 240955
+#% 271065
+#% 273925
+#% 275915
+#% 312860
+#% 330784
+#% 348146
+
+#index 766197
+#* Proceedings of the 9th ACM SIGMOD workshop on Research issues in data mining and knowledge discovery
+#@ 3660 2438 850
+#t 2004
+#c 9th ACM SIGMOD Workshop on Research Issues in Data Mining and Knowledge Discovery 2004 (co-located with SIGMOD/PODS 2004 Conference)
+
+#index 769892
+#* Mining and summarizing customer reviews
+#@ 3558 2438
+#t 2004
+#c Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 71752
+#% 78171
+#% 118040
+#% 180254
+#% 194251
+#% 211514
+#% 279755
+#% 280835
+#% 457935
+#% 481290
+#% 529193
+#% 577246
+#% 577355
+#% 741940
+#% 746867
+#% 746885
+#% 755835
+#% 756232
+#% 786506
+#% 786539
+#% 815915
+#% 854646
+#% 1250237
+#% 1478826
+
+#index 769926
+#* V-Miner: using enhanced parallel coordinates to mine product design and test data
+#@ 9919 2438 9920 9921
+#t 2004
+#c Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 25351
+#% 65341
+#% 136350
+#% 286721
+#% 436116
+#% 481290
+#% 481611
+#% 529288
+
+#index 794508
+#* Editorial: special issue on web content mining
+#@ 2438 11916
+#t 2004
+#c ACM SIGKDD Explorations Newsletter
+#% 271065
+#% 273925
+#% 281186
+#% 312860
+#% 330767
+#% 330784
+#% 342605
+#% 348146
+#% 348163
+#% 348180
+#% 348187
+#% 348190
+#% 413617
+#% 451536
+#% 464434
+#% 480824
+#% 531459
+#% 577246
+#% 577301
+#% 577326
+#% 577355
+#% 577356
+#% 643004
+#% 654459
+#% 654469
+#% 723243
+#% 729939
+#% 729978
+#% 754068
+#% 754078
+#% 754091
+#% 754102
+#% 754104
+#% 754108
+#% 754124
+#% 765409
+#% 765410
+#% 765411
+#% 766433
+#% 769884
+#% 769890
+#% 769892
+#% 783483
+#% 783791
+#% 815915
+#% 854646
+#% 855119
+#% 1015284
+#% 1250238
+#% 1279218
+
+#index 794533
+#* WebKDD 2004: web mining and web usage analysis post-workshop report
+#@ 10102 9400 2449 2438
+#t 2004
+#c ACM SIGKDD Explorations Newsletter
+#% 575990
+#% 631002
+#% 1674708
+#% 1674709
+#% 1674712
+#% 1674713
+#% 1674714
+
+#index 805846
+#* Web data extraction based on partial tree alignment
+#@ 10204 2438
+#t 2005
+#c WWW '05 Proceedings of the 14th international conference on World Wide Web
+#% 46465
+#% 65341
+#% 103525
+#% 121462
+#% 235941
+#% 240955
+#% 256623
+#% 271065
+#% 273925
+#% 275915
+#% 289193
+#% 312860
+#% 330784
+#% 348146
+#% 348147
+#% 348180
+#% 349489
+#% 413572
+#% 451536
+#% 480824
+#% 577319
+#% 643004
+#% 654469
+#% 729978
+#% 754078
+#% 754102
+#% 754108
+#% 755816
+#% 765411
+
+#index 805873
+#* Opinion observer: analyzing and comparing opinions on the Web
+#@ 2438 3558 12407
+#t 2005
+#c WWW '05 Proceedings of the 14th international conference on World Wide Web
+#% 118040
+#% 271065
+#% 330764
+#% 464434
+#% 481290
+#% 531459
+#% 577246
+#% 577355
+#% 577356
+#% 723399
+#% 729978
+#% 752092
+#% 754068
+#% 755835
+#% 769892
+#% 786539
+#% 805846
+#% 815915
+#% 854646
+#% 855279
+#% 855282
+#% 938707
+#% 938708
+#% 1250238
+
+#index 844348
+#* A Visual Data Mining Framework for Convenient Identification of Useful Knowledge
+#@ 9919 2438 9920 14796
+#t 2005
+#c ICDM '05 Proceedings of the Fifth IEEE International Conference on Data Mining
+#% 136350
+#% 280487
+#% 310525
+#% 310531
+#% 342631
+#% 434613
+#% 443092
+#% 481290
+#% 577216
+#% 641130
+#% 769926
+#% 838395
+
+#index 879595
+#* Identifying comparative sentences in text documents
+#@ 15955 2438
+#t 2006
+#c SIGIR '06 Proceedings of the 29th annual international ACM SIGIR conference on Research and development in information retrieval
+#% 118040
+#% 190581
+#% 269217
+#% 280487
+#% 376266
+#% 577256
+#% 577355
+#% 723399
+#% 742368
+#% 755835
+#% 756207
+#% 769892
+#% 769967
+#% 778732
+#% 786539
+#% 805873
+#% 815915
+#% 828958
+#% 854646
+#% 855279
+#% 855282
+#% 936239
+#% 1250238
+#% 1250367
+
+#index 881485
+#* Rule interestingness analysis using OLAP operations
+#@ 2438 9919 16091 14796
+#t 2006
+#c Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 136350
+#% 172386
+#% 190581
+#% 280436
+#% 280487
+#% 310525
+#% 310531
+#% 316709
+#% 389169
+#% 417589
+#% 420101
+#% 434613
+#% 443092
+#% 443313
+#% 481290
+#% 481954
+#% 501204
+#% 577216
+#% 577252
+#% 729934
+#% 769893
+#% 769926
+#% 844348
+
+#index 881569
+#* Opportunity map: identifying causes of failure - a deployed data mining system
+#@ 9919 2438 16091 14796
+#t 2006
+#c Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 136350
+#% 172386
+#% 190581
+#% 252367
+#% 280436
+#% 280487
+#% 389169
+#% 417589
+#% 420101
+#% 443313
+#% 481290
+#% 481954
+#% 501204
+#% 577214
+#% 577216
+#% 577252
+#% 729934
+#% 769893
+#% 769926
+#% 844348
+
+#index 907596
+#* Measuring the meaning in time series clustering of text search queries
+#@ 2438 2922 17504
+#t 2006
+#c CIKM '06 Proceedings of the 15th ACM international conference on Information and knowledge management
+#% 805839
+#% 869501
+
+#index 915363
+#* Mining Latent Associations of Objects Using a Typed Mixture Model--A Case Study on Expert/Expertise Mining
+#@ 17579 12517 2438 7717 4267
+#t 2006
+#c ICDM '06 Proceedings of the Sixth International Conference on Data Mining
+
+#index 924883
+#* Advances in Web Mining and Web Usage Analysis: 6th International Workshop on Knowledge Discovery on the Web, WEBKDD 2004Seattle, WA, USA, August 22-25, ... Papers (Lecture Notes in Computer Science)
+#@ 9400 10102 2438 2449
+#t 2006
+#c Advances in Web Mining and Web Usage Analysis: 6th International Workshop on Knowledge Discovery on the Web, WEBKDD 2004Seattle, WA, USA, August 22-25, ... Papers (Lecture Notes in Computer Science)
+
+#index 987308
+#* Semantic text classification of disease reporting
+#@ 2429 2438
+#t 2007
+#c SIGIR '07 Proceedings of the 30th annual international ACM SIGIR conference on Research and development in information retrieval
+#% 269217
+#% 280817
+#% 741891
+#% 854933
+
+#index 987340
+#* The utility of linguistic rules in opinion mining
+#@ 18515 2438
+#t 2007
+#c SIGIR '07 Proceedings of the 30th annual international ACM SIGIR conference on Research and development in information retrieval
+#% 746885
+#% 769892
+#% 936239
+#% 939896
+#% 1261566
+
+#index 1023794
+#* KDD Cup and Workshop 2007
+#@ 2438 19271 3731 2426 14937
+#t 2007
+#c Proceedings of the 13th ACM SIGKDD international conference on Knowledge discovery and data mining
+
+#index 1035590
+#* Opinion spam and analysis
+#@ 15955 2438
+#t 2008
+#c WSDM '08 Proceedings of the 2008 International Conference on Web Search and Data Mining
+#% 451536
+#% 577355
+#% 616528
+#% 679843
+#% 769892
+#% 807297
+#% 815915
+#% 818223
+#% 854646
+#% 869469
+#% 869471
+#% 879600
+#% 907490
+#% 912202
+#% 936239
+#% 939896
+#% 956518
+#% 956523
+#% 956559
+#% 963698
+#% 1117058
+#% 1250376
+#% 1663483
+
+#index 1035591
+#* A holistic lexicon-based approach to opinion mining
+#@ 18515 2438 850
+#t 2008
+#c WSDM '08 Proceedings of the 2008 International Conference on Web Search and Data Mining
+#% 118040
+#% 577246
+#% 577355
+#% 723399
+#% 746885
+#% 755835
+#% 769892
+#% 805873
+#% 815915
+#% 848644
+#% 854646
+#% 855279
+#% 855282
+#% 907489
+#% 939346
+#% 939634
+#% 939848
+#% 939896
+#% 983579
+#% 983583
+#% 983599
+#% 987340
+#% 1250238
+#% 1250367
+#% 1261566
+#% 1299640
+#% 1700552
+#% 1708349
+
+#index 1038328
+#* KDD Cup and workshop 2007
+#@ 19271 3731 2438 2426 14937
+#t 2007
+#c ACM SIGKDD Explorations Newsletter - Special issue on visual analytics
+#% 983865
+#% 983903
+
+#index 1083618
+#* Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining
+#@ 4269 2438 1049
+#t 2008
+#c The 14th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining
+
+#index 1100060
+#* Learning to Classify Documents with Only a Small Positive Training Set
+#@ 20883 2438 16082
+#t 2007
+#c ECML '07 Proceedings of the 18th European conference on Machine Learning
+#% 197922
+#% 311027
+#% 406493
+#% 464641
+#% 550254
+#% 564957
+#% 577235
+#% 727829
+#% 729939
+#% 843873
+#% 855602
+#% 1279298
+
+#index 1100189
+#* Semantic Text Classification of Emergent Disease Reports
+#@ 2429 2438
+#t 2007
+#c PKDD 2007 Proceedings of the 11th European conference on Principles and Practice of Knowledge Discovery in Databases
+#% 280817
+#% 344447
+#% 741891
+#% 743629
+#% 939568
+#% 939718
+
+#index 1117058
+#* Analyzing and Detecting Review Spam
+#@ 15955 2438
+#t 2007
+#c ICDM '07 Proceedings of the 2007 Seventh IEEE International Conference on Data Mining
+
+#index 1176882
+#* Time Sensitive Ranking with Application to Publication Search
+#@ 12098 2438 15637
+#t 2008
+#c ICDM '08 Proceedings of the 2008 Eighth IEEE International Conference on Data Mining
+
+#index 1206822
+#* Finding Actionable Knowledge via Automated Comparison
+#@ 11538 2438 16091 17738
+#t 2009
+#c ICDE '09 Proceedings of the 2009 IEEE International Conference on Data Engineering
+
+#index 1214734
+#* Entity discovery and assignment for opinion mining applications
+#@ 18515 2438 11538
+#t 2009
+#c Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 464434
+#% 577355
+#% 746885
+#% 769892
+#% 815915
+#% 818916
+#% 854646
+#% 855279
+#% 939352
+#% 939848
+#% 939896
+#% 940000
+#% 956510
+#% 1035591
+#% 1117045
+#% 1250367
+#% 1251616
+#% 1261526
+#% 1261566
+
+#index 1250186
+#* Text classification by labeling words
+#@ 2438 5659 5658 850
+#t 2004
+#c AAAI'04 Proceedings of the 19th national conference on Artifical intelligence
+#% 36672
+#% 169717
+#% 190581
+#% 252011
+#% 311027
+#% 406493
+#% 458379
+#% 464291
+#% 464604
+#% 464631
+#% 464641
+#% 464777
+#% 465754
+#% 466888
+#% 565531
+#% 577235
+
+#index 1250237
+#* Mining opinion features in customer reviews
+#@ 3558 2438
+#t 2004
+#c AAAI'04 Proceedings of the 19th national conference on Artifical intelligence
+#% 71752
+#% 78171
+#% 194251
+#% 279755
+#% 481290
+#% 577355
+#% 741106
+#% 855043
+#% 1478826
+
+#index 1250367
+#* Mining comparative sentences and relations
+#@ 15955 2438
+#t 2006
+#c AAAI'06 proceedings of the 21st national conference on Artificial intelligence - Volume 2
+#% 269217
+#% 463903
+#% 464434
+#% 577246
+#% 577355
+#% 727877
+#% 742368
+#% 756207
+#% 769892
+#% 815915
+#% 828958
+#% 829971
+#% 854646
+#% 855279
+#% 855282
+#% 879595
+#% 939848
+#% 939896
+#% 1250238
+
+#index 1250423
+#* Opinion extraction and summarization on the web
+#@ 3558 2438
+#t 2006
+#c AAAI'06 proceedings of the 21st national conference on Artificial intelligence - Volume 2
+#% 71752
+#% 118040
+#% 180254
+#% 577246
+#% 577355
+#% 727877
+#% 741106
+#% 769892
+#% 805873
+#% 815915
+#% 828958
+#% 829971
+#% 854646
+#% 855043
+#% 855282
+#% 939848
+#% 939896
+#% 939926
+#% 1250238
+#% 1269535
+#% 1478826
+
+#index 1250439
+#* Automatic wrapper generation using tree matching and partial tree alignment
+#@ 10204 2438
+#t 2006
+#c AAAI'06 proceedings of the 21st national conference on Artificial intelligence - Volume 2
+#% 91245
+#% 271065
+#% 273925
+#% 275915
+#% 312860
+#% 330784
+#% 348146
+#% 424931
+#% 480648
+#% 480824
+#% 488367
+#% 577319
+#% 654469
+#% 660272
+#% 729978
+#% 765411
+#% 805845
+#% 805846
+#% 805847
+
+#index 1271849
+#* Discovering interesting holes in data
+#@ 2438 26751 2439
+#t 1997
+#c IJCAI'97 Proceedings of the Fifteenth international joint conference on Artifical intelligence - Volume 2
+#% 2115
+#% 10131
+#% 24538
+#% 136350
+#% 152934
+#% 451038
+#% 451042
+#% 451052
+#% 1499588
+
+#index 1275203
+#* Learning to identify unexpected instances in the test set
+#@ 20883 2438 16082
+#t 2007
+#c IJCAI'07 Proceedings of the 20th international joint conference on Artifical intelligence
+#% 169717
+#% 464641
+#% 577235
+#% 722811
+#% 770821
+#% 800568
+#% 1279298
+
+#index 1279218
+#* Web page cleaning for web mining through feature weighting
+#@ 10139 2438
+#t 2003
+#c IJCAI'03 Proceedings of the 18th international joint conference on Artificial intelligence
+#% 144012
+#% 269217
+#% 271060
+#% 278106
+#% 282905
+#% 310546
+#% 340919
+#% 348180
+#% 387427
+#% 406493
+#% 413617
+#% 458379
+#% 465754
+#% 577281
+#% 746910
+#% 786504
+#% 786553
+
+#index 1279298
+#* Learning to classify texts using positive and unlabeled data
+#@ 5659 2438
+#t 2003
+#c IJCAI'03 Proceedings of the 18th international joint conference on Artificial intelligence
+#% 169717
+#% 169806
+#% 190581
+#% 252011
+#% 264164
+#% 269217
+#% 280817
+#% 311027
+#% 406493
+#% 464466
+#% 464604
+#% 464631
+#% 464641
+#% 466888
+#% 577235
+
+#index 1305481
+#* Expanding domain sentiment lexicon through double propagation
+#@ 18432 2438 18434 17347
+#t 2009
+#c IJCAI'09 Proceedings of the 21st international jont conference on Artifical intelligence
+#% 464434
+#% 529193
+#% 722308
+#% 746885
+#% 769892
+#% 815915
+#% 838521
+#% 854646
+#% 855282
+#% 939348
+#% 939848
+#% 1261566
+#% 1275184
+
+#index 1358066
+#* Exploring user opinions in recommender systems
+#@ 2438
+#t 2008
+#c Proceedings of the 2nd KDD Workshop on Large-Scale Recommender Systems and the Netflix Prize Competition
+
+#index 1476306
+#* Using constraints to model disjunctions in rule-based reasoning
+#@ 2438 2853
+#t 1996
+#c AAAI'96 Proceedings of the thirteenth national conference on Artificial intelligence - Volume 2
+#% 3463
+#% 35562
+#% 56471
+#% 118278
+#% 126385
+#% 131561
+#% 406437
+#% 520420
+#% 1275303
+#% 1275304
+
+#index 1482272
+#* Detecting product review spammers using rating behaviors
+#@ 4337 28621 15955 2438 19711
+#t 2010
+#c CIKM '10 Proceedings of the 19th ACM international conference on Information and knowledge management
+#% 309095
+#% 314935
+#% 769892
+#% 838490
+#% 939896
+#% 956642
+#% 1022742
+#% 1035590
+#% 1190069
+#% 1227655
+#% 1261574
+#% 1355303
+#% 1482375
+
+#index 1482375
+#* Finding unusual review patterns using unexpected rules
+#@ 15955 2438 4337
+#t 2010
+#c CIKM '10 Proceedings of the 19th ACM international conference on Information and knowledge management
+#% 136350
+#% 869469
+#% 869471
+#% 907490
+#% 1035590
+#% 1482272
+
+#index 1499588
+#* Post-analysis of learned rules
+#@ 2438 2439
+#t 1996
+#c AAAI'96 Proceedings of the thirteenth national conference on Artificial intelligence - Volume 1
+#% 124708
+#% 136350
+#% 179008
+#% 212710
+#% 449566
+#% 1290033
+
+#index 1603758
+#* Constrained LDA for grouping product features in opinion mining
+#@ 36004 2438 36005 36006
+#t 2011
+#c PAKDD'11 Proceedings of the 15th Pacific-Asia conference on Advances in knowledge discovery and data mining - Volume Part I
+#% 464291
+#% 722904
+#% 769892
+#% 805873
+#% 828958
+#% 1085668
+#% 1211693
+#% 1271481
+#% 1292576
+#% 1338553
+#% 1484383
+
+#index 1663671
+#* Discovering overlapping communities of named entities
+#@ 12098 2438 850
+#t 2006
+#c PKDD'06 Proceedings of the 10th European conference on Principle and Practice of Knowledge Discovery in Databases
+#% 268079
+#% 282905
+#% 343768
+#% 438553
+#% 504443
+#% 578775
+#% 756821
+#% 811281
+#% 938705
+#% 1272053
+
+#index 1674704
+#* Proceedings of the 6th international conference on Knowledge Discovery on the Web: advances in Web Mining and Web Usage Analysis
+#@ 9400 10102 2438 2449
+#t 2004
+#c WebKDD'04 Proceedings of the 6th international conference on Knowledge Discovery on the Web: advances in Web Mining and Web Usage Analysis
+
+#index 1688551
+#* Review Graph Based Online Store Review Spammer Detection
+#@ 22224 22238 2438 850
+#t 2011
+#c ICDM '11 Proceedings of the 2011 IEEE 11th International Conference on Data Mining
+
+#index 1699593
+#* Learning from positive and unlabeled examples with different data distributions
+#@ 20883 2438
+#t 2005
+#c ECML'05 Proceedings of the 16th European conference on Machine Learning
+#% 169717
+#% 190581
+#% 252011
+#% 280817
+#% 311027
+#% 464604
+#% 464631
+#% 464641
+#% 466888
+#% 564957
+#% 577235
+#% 727829
+#% 727883
+#% 729927
+#% 770821
+#% 770858
+#% 770870
+#% 1279298
+
+#index 1710575
+#* Hierarchical web-page clustering via in-page and cross-page link structures
+#@ 22155 24022 961 2438
+#t 2010
+#c PAKDD'10 Proceedings of the 14th Pacific-Asia conference on Advances in Knowledge Discovery and Data Mining - Volume Part II
+#% 262045
+#% 279755
+#% 282905
+#% 413608
+#% 481281
+#% 607793
+#% 827127
+#% 907509
+#% 989654
+#% 1090774
+#% 1100188
+#% 1275120
+#% 1410607
+
+#index 1872332
+#* Mining contentions from discussions and debates
+#@ 41764 2438
+#t 2012
+#c Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 458379
+#% 577356
+#% 722904
+#% 788094
+#% 876067
+#% 938737
+#% 956510
+#% 989621
+#% 1055681
+#% 1055682
+#% 1083684
+#% 1117083
+#% 1127964
+#% 1211693
+#% 1211773
+#% 1261563
+#% 1264719
+#% 1264771
+#% 1292503
+#% 1310458
+#% 1328328
+#% 1338553
+#% 1425621
+#% 1450945
+#% 1481541
+#% 1535392
+#% 1536586
+#% 1544065
+#% 1544104
+#% 1591964
+#% 1591967
+#% 1592079
+#% 1650298
+#% 1732740
+

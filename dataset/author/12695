@@ -1,0 +1,806 @@
+#index 807389
+#* Multiple strategies detection in ontology mapping
+#@ 12695 12696 12697
+#t 2005
+#c WWW '05 Special interest tracks and posters of the 14th international conference on World Wide Web
+#% 348187
+#% 732227
+
+#index 823374
+#* Email data cleaning
+#@ 12695 4267 12517 13872
+#t 2005
+#c Proceedings of the eleventh ACM SIGKDD international conference on Knowledge discovery in data mining
+#% 104443
+#% 190581
+#% 197394
+#% 211044
+#% 246836
+#% 248882
+#% 271060
+#% 340394
+#% 348147
+#% 420072
+#% 452992
+#% 464434
+#% 466892
+#% 577281
+#% 578773
+#% 643004
+#% 729939
+#% 741065
+#% 747788
+#% 766442
+#% 786564
+#% 817438
+#% 817555
+#% 817577
+#% 854636
+
+#index 1083734
+#* ArnetMiner: extraction and mining of academic social networks
+#@ 12695 13149 20818 20819 10893 20130
+#t 2008
+#c Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 197394
+#% 220708
+#% 280819
+#% 387427
+#% 464434
+#% 643007
+#% 722904
+#% 760866
+#% 766409
+#% 769881
+#% 769906
+#% 788094
+#% 805885
+#% 809459
+#% 817555
+#% 874510
+#% 879570
+#% 879587
+#% 939393
+#% 956501
+#% 989621
+#% 1117023
+#% 1250184
+
+#index 1117023
+#* Social Network Extraction of Academic Researchers
+#@ 12695 20185 20818
+#t 2007
+#c ICDM '07 Proceedings of the 2007 Seventh IEEE International Conference on Data Mining
+
+#index 1176930
+#* A Topic Modeling Approach and Its Integration into the Random Walk Framework for Academic Search
+#@ 12695 10198 13149
+#t 2008
+#c ICDM '08 Proceedings of the 2008 Eighth IEEE International Conference on Data Mining
+
+#index 1195999
+#* A Discriminative Approach to Topic-Based Citation Recommendation
+#@ 12695 13149
+#t 2009
+#c PAKDD '09 Proceedings of the 13th Pacific-Asia Conference on Advances in Knowledge Discovery and Data Mining
+#% 92145
+#% 415107
+#% 450888
+#% 766409
+#% 891060
+#% 987287
+#% 1083734
+
+#index 1214702
+#* Social influence analysis in large-scale networks
+#@ 12695 10508 24023 24024
+#t 2009
+#c Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 92145
+#% 280819
+#% 283833
+#% 310514
+#% 492962
+#% 722904
+#% 766409
+#% 956521
+#% 956540
+#% 963669
+#% 1055681
+#% 1055737
+#% 1083624
+#% 1083641
+#% 1083734
+#% 1176930
+#% 1176961
+#% 1810385
+
+#index 1217197
+#* A gauss function based approach for unbalanced ontology matching
+#@ 24152 11345 20819 24153 12695 4842 10894
+#t 2009
+#c Proceedings of the 2009 ACM SIGMOD International Conference on Management of data
+#% 333990
+#% 405391
+#% 413582
+#% 465914
+#% 479783
+#% 480645
+#% 660001
+#% 790852
+#% 810078
+#% 824775
+#% 830529
+#% 896031
+#% 941135
+#% 956571
+#% 960271
+#% 993982
+#% 1063532
+#% 1409921
+#% 1705186
+#% 1728980
+#% 1730033
+
+#index 1305623
+#* Towards ontology learning from folksonomies
+#@ 12695 1530 3887 28545 28546
+#t 2009
+#c IJCAI'09 Proceedings of the 21st international jont conference on Artifical intelligence
+#% 406493
+#% 445448
+#% 722904
+#% 726213
+#% 840967
+#% 855601
+#% 956589
+#% 1055681
+#% 1409951
+
+#index 1318662
+#* Topic Distributions over Links on Web
+#@ 12695 13149 4839 24024 18499 28656 10893 20130
+#t 2009
+#c ICDM '09 Proceedings of the 2009 Ninth IEEE International Conference on Data Mining
+
+#index 1411069
+#* A mixture model for expert finding
+#@ 13149 12695 30464 20819
+#t 2008
+#c PAKDD'08 Proceedings of the 12th Pacific-Asia conference on Advances in knowledge discovery and data mining
+#% 200694
+#% 387427
+#% 413573
+#% 457933
+#% 466574
+#% 766409
+#% 768898
+#% 769895
+#% 769967
+#% 869504
+#% 879570
+#% 956501
+#% 987261
+#% 1117023
+#% 1390152
+#% 1650298
+#% 1656345
+
+#index 1451159
+#* Mining advisor-advisee relationships from research publication networks
+#@ 24023 961 31407 12695 20185 24022 31408
+#t 2010
+#c Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 261205
+#% 268079
+#% 387427
+#% 727824
+#% 801324
+#% 891559
+#% 1000502
+#% 1176886
+#% 1214701
+#% 1214703
+#% 1269756
+#% 1465175
+#% 1810385
+
+#index 1451245
+#* Social action tracking via noise tolerant time-varying factor graphs
+#@ 31489 12695 10508 31490 31491
+#t 2010
+#c Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 246836
+#% 283833
+#% 342596
+#% 351347
+#% 464434
+#% 528019
+#% 577217
+#% 729923
+#% 754107
+#% 853535
+#% 1035581
+#% 1055737
+#% 1083624
+#% 1083641
+#% 1083675
+#% 1083734
+#% 1190127
+#% 1214658
+#% 1214696
+#% 1214699
+#% 1214702
+#% 1214703
+#% 1214722
+#% 1355040
+
+#index 1481049
+#* A Combination Approach to Web User Profiling
+#@ 12695 20818 20185 13149
+#t 2010
+#c ACM Transactions on Knowledge Discovery from Data (TKDD)
+#% 73441
+#% 197394
+#% 234992
+#% 246836
+#% 280819
+#% 340948
+#% 375017
+#% 387427
+#% 419139
+#% 452448
+#% 464434
+#% 466892
+#% 722904
+#% 760866
+#% 766409
+#% 769881
+#% 769906
+#% 788094
+#% 805885
+#% 809459
+#% 816181
+#% 817555
+#% 854636
+#% 874510
+#% 879570
+#% 881505
+#% 937552
+#% 939393
+#% 989621
+#% 1019190
+#% 1022353
+#% 1083734
+#% 1176930
+#% 1250184
+#% 1272187
+#% 1696329
+
+#index 1482198
+#* Mining topic-level influence in heterogeneous networks
+#@ 31936 12695 961 31937 31938
+#t 2010
+#c CIKM '10 Proceedings of the 19th ACM international conference on Information and knowledge management
+#% 27724
+#% 342596
+#% 348173
+#% 577217
+#% 729923
+#% 754098
+#% 754107
+#% 956540
+#% 983833
+#% 1055737
+#% 1083624
+#% 1083641
+#% 1083672
+#% 1083684
+#% 1083738
+#% 1181261
+#% 1214638
+#% 1214696
+#% 1214701
+#% 1214702
+#% 1214703
+#% 1214714
+#% 1214722
+#% 1355040
+#% 1399993
+#% 1400031
+#% 1451243
+
+#index 1482370
+#* Recommendation based on object typicality
+#@ 32022 1530 4768 12695 20819
+#t 2010
+#c CIKM '10 Proceedings of the 19th ACM international conference on Information and knowledge management
+#% 220707
+#% 220709
+#% 220711
+#% 234992
+#% 280447
+#% 280852
+#% 301259
+#% 330687
+#% 578684
+#% 813966
+#% 818216
+#% 879627
+#% 987197
+#% 1083734
+#% 1145231
+#% 1305617
+#% 1650298
+
+#index 1482379
+#* Community-based topic modeling for social tagging
+#@ 32151 32152 10394 12695 32153 32154 32155 20819 32156
+#t 2010
+#c CIKM '10 Proceedings of the 19th ACM international conference on Information and knowledge management
+#% 722904
+#% 788094
+#% 1083734
+#% 1176930
+#% 1399996
+
+#index 1482397
+#* Understanding retweeting behaviors in social networks
+#@ 24024 31408 18499 12695 20819 10893 20130
+#t 2010
+#c CIKM '10 Proceedings of the 19th ACM international conference on Information and knowledge management
+#% 1083672
+#% 1214702
+#% 1379671
+#% 1595769
+#% 1810385
+
+#index 1482407
+#* Identifying new categories in community question answering archives: a topic modeling approach
+#@ 32182 20207 12695 32183
+#t 2010
+#c CIKM '10 Proceedings of the 19th ACM international conference on Information and knowledge management
+#% 280819
+#% 769967
+#% 879593
+#% 1019165
+#% 1055683
+#% 1074110
+#% 1074111
+#% 1190068
+#% 1190249
+#% 1227599
+#% 1227600
+#% 1227698
+
+#index 1482446
+#* Combining link and content for collective active learning
+#@ 17491 32246 12695
+#t 2010
+#c CIKM '10 Proceedings of the 19th ACM international conference on Information and knowledge management
+#% 464434
+#% 769942
+#% 842682
+#% 961278
+#% 1030882
+#% 1214681
+#% 1400012
+#% 1673032
+
+#index 1535327
+#* Term Filtering with Bounded Error
+#@ 24024 4538 12695 20819
+#t 2010
+#c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+
+#index 1535341
+#* MoodCast: Emotion Prediction via Dynamic Continuous Factor Graph Model
+#@ 34651 12695 10508 34652 23566
+#t 2010
+#c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+
+#index 1598359
+#* Social context summarization
+#@ 24024 18499 12695 10893 20130 20819
+#t 2011
+#c Proceedings of the 34th international ACM SIGIR conference on Research and development in Information Retrieval
+#% 194251
+#% 262112
+#% 266370
+#% 316520
+#% 340884
+#% 340971
+#% 679873
+#% 790703
+#% 816173
+#% 816181
+#% 818226
+#% 854186
+#% 943826
+#% 992317
+#% 1040837
+#% 1074087
+#% 1074088
+#% 1190068
+#% 1214702
+#% 1275213
+#% 1292504
+#% 1297059
+#% 1306081
+#% 1355042
+#% 1379671
+#% 1399992
+#% 1481542
+#% 1482397
+#% 1484279
+#% 1824959
+
+#index 1598481
+#* Recommending interesting activity-related local entities
+#@ 12695 4381 17435
+#t 2011
+#c Proceedings of the 34th international ACM SIGIR conference on Research and development in Information Retrieval
+#% 818256
+#% 956495
+#% 1055920
+#% 1125717
+#% 1130854
+
+#index 1603766
+#* Knowledge transfer across multilingual corpora via latent topics
+#@ 36023 12695 1350
+#t 2011
+#c PAKDD'11 Proceedings of the 15th Pacific-Asia conference on Advances in knowledge discovery and data mining - Volume Part I
+#% 262870
+#% 280826
+#% 384972
+#% 722904
+#% 732847
+#% 770848
+#% 818313
+#% 939570
+#% 983644
+#% 983828
+#% 983865
+#% 983899
+#% 989585
+#% 1074129
+#% 1083655
+#% 1190212
+#% 1261539
+#% 1297066
+#% 1328329
+#% 1338620
+#% 1377376
+#% 1650298
+
+#index 1606004
+#* Topic-level social network search
+#@ 12695 36131 36132 36133
+#t 2011
+#c Proceedings of the 17th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 729923
+#% 769887
+#% 1083734
+#% 1214641
+#% 1214702
+#% 1481049
+#% 1538534
+#% 1696329
+#% 1755323
+#% 1810385
+
+#index 1606084
+#* User-level sentiment analysis incorporating social networks
+#@ 31489 4073 12695 27245 4066 16088
+#t 2011
+#c Proceedings of the 17th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 577356
+#% 938687
+#% 939346
+#% 1127964
+#% 1176920
+#% 1261563
+#% 1277969
+#% 1299754
+#% 1310464
+#% 1346155
+#% 1470673
+#% 1535408
+#% 1544009
+#% 1544032
+#% 1591944
+
+#index 1607976
+#* Learning to advertise: how many ads are enough?
+#@ 23345 36258 12695 18368 16224 28547
+#t 2011
+#c PAKDD'11 Proceedings of the 15th Pacific-Asia conference on Advances in knowledge discovery and data mining - Volume Part II
+#% 730041
+#% 956546
+#% 956552
+#% 1035578
+#% 1055694
+#% 1074092
+#% 1074101
+#% 1130909
+#% 1190055
+#% 1190056
+#% 1190057
+#% 1190161
+#% 1214642
+#% 1214702
+#% 1227620
+#% 1227642
+#% 1227651
+#% 1292566
+#% 1355048
+#% 1399955
+
+#index 1617365
+#* Learning to infer social ties in large networks
+#@ 36485 36486 12695
+#t 2011
+#c ECML PKDD'11 Proceedings of the 2011 European conference on Machine learning and knowledge discovery in databases - Volume Part III
+#% 283136
+#% 283833
+#% 342596
+#% 729923
+#% 955712
+#% 1000502
+#% 1083734
+#% 1194122
+#% 1214702
+#% 1269756
+#% 1399997
+#% 1400031
+#% 1451159
+#% 1451162
+#% 1451245
+#% 1536568
+#% 1650318
+#% 1673048
+
+#index 1644299
+#* A Voltage Control Scheme of Distribution Static Synchronous Compensator Based on Current Sensorless
+#@ 36595 12695 36596
+#t 2011
+#c ICDMA '11 Proceedings of the 2011 Second International Conference on Digital Manufacturing & Automation
+
+#index 1684732
+#* Semantic similarity based ontology cache
+#@ 30608 12695 20819 30510
+#t 2006
+#c APWeb'06 Proceedings of the 8th Asia-Pacific Web conference on Frontiers of WWW Research and Development
+#% 86945
+#% 348167
+#% 349494
+#% 388301
+#% 481916
+#% 571216
+
+#index 1684753
+#* Weighted ontology-based search exploiting semantic similarity
+#@ 18368 12695 37682 20819 20837
+#t 2006
+#c APWeb'06 Proceedings of the 8th Asia-Pacific Web conference on Frontiers of WWW Research and Development
+#% 25942
+#% 46803
+#% 156337
+#% 187767
+#% 375017
+#% 387427
+#% 434033
+#% 447948
+#% 449217
+#% 495443
+#% 577373
+#% 733833
+#% 754095
+
+#index 1684788
+#* Table detection from plain text using machine learning and document structure
+#@ 20819 12695 37740 37741
+#t 2006
+#c APWeb'06 Proceedings of the 8th Asia-Pacific Web conference on Frontiers of WWW Research and Development
+#% 237328
+#% 348146
+#% 643004
+#% 658664
+#% 755816
+#% 786564
+#% 939790
+#% 1705176
+
+#index 1688429
+#* Detecting Community Kernels in Large Social Networks
+#@ 37939 37940 12695 37941
+#t 2011
+#c ICDM '11 Proceedings of the 2011 IEEE 11th International Conference on Data Mining
+
+#index 1688430
+#* ADANA: Active Name Disambiguation
+#@ 37942 12695 9360 850
+#t 2011
+#c ICDM '11 Proceedings of the 2011 IEEE 11th International Conference on Data Mining
+
+#index 1764761
+#* A conversation with Professors Deyi Li and Jie Tang
+#@ 7320 12695
+#t 2012
+#c ACM SIGKDD Explorations Newsletter
+#% 501206
+#% 1083734
+#% 1214702
+#% 1587256
+
+#index 1872384
+#* Cross-domain collaboration recommendation
+#@ 12695 36131 10508 32043
+#t 2012
+#c Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 220708
+#% 220709
+#% 280819
+#% 283833
+#% 387427
+#% 722904
+#% 734594
+#% 769906
+#% 788043
+#% 844334
+#% 867050
+#% 879570
+#% 881526
+#% 955712
+#% 956521
+#% 989621
+#% 1083734
+#% 1214703
+#% 1227601
+#% 1399997
+#% 1451163
+#% 1451238
+#% 1538534
+#% 1588381
+#% 1598567
+#% 1605963
+#% 1625374
+#% 1642411
+#% 1650437
+
+#index 1872393
+#* PatentMiner: topic-driven patent analysis and mining
+#@ 12695 23345 33702 37973 41829 41830 36132 22253 37741 37974 37975
+#t 2012
+#c Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 262112
+#% 280819
+#% 312701
+#% 340948
+#% 375017
+#% 466574
+#% 722904
+#% 766409
+#% 769906
+#% 840967
+#% 955502
+#% 956510
+#% 963669
+#% 1083734
+#% 1176930
+#% 1214702
+#% 1481049
+#% 1538534
+
+#index 1874834
+#* Learning to diversify expert finding with subtopics
+#@ 32043 12695 41898
+#t 2012
+#c PAKDD'12 Proceedings of the 16th Pacific-Asia conference on Advances in Knowledge Discovery and Data Mining - Volume Part I
+#% 124073
+#% 174161
+#% 262112
+#% 280819
+#% 387427
+#% 642975
+#% 722904
+#% 879570
+#% 879587
+#% 1074025
+#% 1083734
+#% 1166473
+#% 1176930
+#% 1268491
+#% 1312812
+#% 1451162
+#% 1481049
+#% 1606004
+#% 1606043
+
+#index 1874879
+#* Instant social graph search
+#@ 36131 12695 36132
+#t 2012
+#c PAKDD'12 Proceedings of the 16th Pacific-Asia conference on Advances in Knowledge Discovery and Data Mining - Volume Part II
+#% 220708
+#% 328257
+#% 729923
+#% 769887
+#% 805841
+#% 853538
+#% 869503
+#% 1001363
+#% 1083734
+#% 1166473
+#% 1190093
+#% 1214641
+#% 1214702
+#% 1451159
+#% 1451234
+#% 1606004
+#% 1606043
+#% 1617365
+#% 1693935
+
+#index 1880397
+#* Proceedings of the ACM SIGKDD Workshop on Mining Data Semantics
+#@ 10394 961 12695 850
+#t 2012
+#c The 18th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining
+
+#index 1880401
+#* There is more than complex contagion: an indirect influence analysis on Twitter
+#@ 42200 33608 10394 42201 42202 12695
+#t 2012
+#c Proceedings of the ACM SIGKDD Workshop on Mining Data Semantics
+#% 754107
+#% 1083624
+#% 1083641
+#% 1190127
+#% 1482198
+#% 1482397
+#% 1550712
+#% 1560424
+
+#index 1915002
+#* Proceedings of the First ACM International Workshop on Hot Topics on Interdisciplinary Social Networks Research
+#@ 43634 43635 12695
+#t 2012
+#c The 18th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining
+
+#index 1925637
+#* Inferring geographic coincidence in ephemeral social networks
+#@ 36486 42019 36131 1204 43725 12695
+#t 2012
+#c ECML PKDD'12 Proceedings of the 2012 European conference on Machine Learning and Knowledge Discovery in Databases - Volume Part II
+#% 464434
+#% 787175
+#% 813844
+#% 1083734
+#% 1089822
+#% 1135166
+#% 1214702
+#% 1267770
+#% 1425621
+#% 1451232
+#% 1451245
+#% 1531162
+#% 1535341
+#% 1606049
+#% 1617365
+#% 1693935
+#% 1886573
+
+#index 1978832
+#* Link Prediction and Recommendation across Heterogeneous Social Networks
+#@ 38347 12695 36131 32185 5856 23566 20798
+#t 2012
+#c ICDM '12 Proceedings of the 2012 IEEE 12th International Conference on Data Mining
+
+#index 1979049
+#* Accurate Product Name Recognition from User Generated Content
+#@ 36131 44511 12695
+#t 2012
+#c ICDMW '12 Proceedings of the 2012 IEEE 12th International Conference on Data Mining Workshops
+

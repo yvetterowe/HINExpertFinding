@@ -1,0 +1,409 @@
+#index 268073
+#* Automatic resource compilation by analyzing hyperlink structure and associated text
+#@ 1044 1045 987 1062 1848 1849
+#t 1998
+#c WWW7 Proceedings of the seventh international conference on World Wide Web 7
+
+#index 273699
+#* Applications of linear algebra in information retrieval and hypertext analysis
+#@ 1849 2145
+#t 1999
+#c PODS '99 Proceedings of the eighteenth ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems
+#% 3188
+#% 27049
+#% 36672
+#% 41374
+#% 46803
+#% 49501
+#% 54453
+#% 55490
+#% 68091
+#% 115462
+#% 124009
+#% 158687
+#% 161722
+#% 200694
+#% 232912
+#% 248027
+#% 249110
+#% 262059
+#% 262061
+#% 268073
+#% 268079
+#% 281214
+#% 282102
+#% 282481
+#% 282905
+#% 375017
+#% 406493
+#% 465754
+#% 593842
+#% 678759
+#% 748465
+#% 836019
+
+#index 299970
+#* Auditing Boolean attributes
+#@ 1849 3188 987
+#t 2000
+#c PODS '00 Proceedings of the nineteenth ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems
+#% 149
+#% 1868
+#% 13742
+#% 67453
+#% 70370
+#% 286828
+#% 287297
+#% 287462
+#% 287795
+#% 340475
+#% 463560
+
+#index 570885
+#* Clustering categorical data: an approach based on dynamical systems
+#@ 1848 1849 987
+#t 2000
+#c The VLDB Journal — The International Journal on Very Large Data Bases
+#% 14511
+#% 92135
+#% 114736
+#% 152934
+#% 189842
+#% 210173
+#% 217824
+#% 227917
+#% 227919
+#% 232136
+#% 268079
+#% 290830
+#% 359751
+#% 363592
+#% 408396
+#% 437405
+#% 481279
+#% 481290
+#% 481758
+#% 481779
+#% 656714
+
+#index 577220
+#* Bursty and hierarchical structure in streams
+#@ 1849
+#t 2002
+#c Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 9197
+#% 159108
+#% 177468
+#% 193325
+#% 214751
+#% 223630
+#% 230532
+#% 248049
+#% 252755
+#% 259633
+#% 262042
+#% 262043
+#% 271083
+#% 272793
+#% 278106
+#% 280408
+#% 287196
+#% 292235
+#% 308923
+#% 309096
+#% 309100
+#% 341700
+#% 342633
+#% 463903
+#% 466564
+#% 641137
+#% 641150
+#% 647336
+#% 1781027
+
+#index 630970
+#* Auditing Boolean attributes
+#@ 1849 3188 987
+#t 2003
+#c Journal of Computer and System Sciences - Special issue on PODS 2000
+#% 149
+#% 1868
+#% 13742
+#% 67453
+#% 70370
+#% 286828
+#% 287297
+#% 287462
+#% 287795
+#% 340475
+#% 463560
+
+#index 729923
+#* Maximizing the spread of influence through a social network
+#@ 10126 1849 10127
+#t 2003
+#c Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 36698
+#% 210182
+#% 342596
+#% 348527
+#% 577217
+
+#index 730089
+#* The link prediction problem for social networks
+#@ 10357 1849
+#t 2003
+#c CIKM '03 Proceedings of the twelfth international conference on Information and knowledge management
+#% 220708
+#% 268079
+#% 406493
+#% 433988
+#% 577219
+#% 577273
+#% 786511
+
+#index 748017
+#* Overview of the 2003 KDD Cup
+#@ 1027 10637 1849
+#t 2003
+#c ACM SIGKDD Explorations Newsletter
+#% 616104
+
+#index 823342
+#* Graphs over time: densification laws, shrinking diameters and possible explanations
+#@ 10649 1849 578
+#t 2005
+#c Proceedings of the eleventh ACM SIGKDD international conference on Knowledge discovery in data mining
+#% 281214
+#% 283833
+#% 309749
+#% 342592
+#% 577219
+#% 580204
+#% 581160
+#% 593994
+#% 748017
+#% 754058
+#% 763566
+#% 1394202
+
+#index 879563
+#* Social networks, incentives, and search
+#@ 1849
+#t 2006
+#c SIGIR '06 Proceedings of the 29th annual international ACM SIGIR conference on Research and development in information retrieval
+#% 220708
+#% 300078
+#% 337235
+#% 338466
+#% 344448
+#% 447946
+#% 451536
+#% 636008
+#% 643087
+#% 752206
+#% 765248
+#% 818212
+#% 836506
+#% 1289399
+#% 1715596
+#% 1768420
+
+#index 881460
+#* Group formation in large social networks: membership, growth, and evolution
+#@ 11927 16076 1849 16077
+#t 2006
+#c Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 209021
+#% 342596
+#% 387427
+#% 438553
+#% 449588
+#% 480635
+#% 577217
+#% 577220
+#% 729923
+#% 729968
+#% 733847
+#% 771919
+#% 786841
+#% 853535
+#% 868469
+#% 881498
+
+#index 937549
+#* Graph evolution: Densification and shrinking diameters
+#@ 10649 1849 578
+#t 2007
+#c ACM Transactions on Knowledge Discovery from Data (TKDD)
+#% 281214
+#% 283833
+#% 309749
+#% 342592
+#% 577219
+#% 580204
+#% 581160
+#% 593994
+#% 748017
+#% 754058
+#% 763566
+#% 823342
+#% 867050
+#% 868469
+#% 881526
+#% 933558
+#% 1394202
+#% 1673564
+
+#index 1083641
+#* Feedback effects between similarity and social influence in online communities
+#@ 13065 15990 13067 1849 20711
+#t 2008
+#c Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 173879
+#% 202009
+#% 202011
+#% 406493
+#% 414514
+#% 813735
+#% 817655
+#% 868469
+#% 881460
+#% 881523
+#% 905338
+#% 936912
+#% 967642
+
+#index 1083672
+#* The structure of information pathways in a social communication network
+#@ 20741 1849 20742
+#t 2008
+#c Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 35764
+#% 287267
+#% 300115
+#% 320187
+#% 646279
+#% 754107
+#% 868469
+#% 1055763
+
+#index 1214630
+#* Optimizing web traffic via the media scheduling problem
+#@ 11927 1849 2732
+#t 2009
+#c Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 330708
+#% 750148
+#% 956521
+#% 1071515
+#% 1164955
+#% 1189857
+
+#index 1214671
+#* Meme-tracking and the dynamics of the news cycle
+#@ 10649 11927 1849
+#t 2009
+#c Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 164166
+#% 311496
+#% 577220
+#% 641137
+#% 722904
+#% 754106
+#% 754107
+#% 786841
+#% 868089
+#% 875959
+#% 881498
+#% 989650
+
+#index 1426501
+#* The flow of on-line information in global networks
+#@ 1849
+#t 2010
+#c Proceedings of the 2010 ACM SIGMOD International Conference on Management of data
+#% 350859
+#% 577220
+#% 641137
+#% 754107
+#% 786841
+#% 875959
+#% 881460
+#% 881498
+#% 949164
+#% 989650
+#% 1083624
+#% 1083641
+#% 1214671
+#% 1425621
+
+#index 1426639
+#* Crowds, clouds, and algorithms: exploring the human side of "big data" applications
+#@ 3897 3899 1849 589 515
+#t 2010
+#c Proceedings of the 2010 ACM SIGMOD International Conference on Management of data
+#% 835045
+#% 885438
+#% 924327
+#% 1063533
+#% 1328172
+#% 1355046
+#% 1425621
+#% 1612964
+
+#index 1669913
+#* Patterns of influence in a recommendation network
+#@ 10649 37449 1849
+#t 2006
+#c PAKDD'06 Proceedings of the 10th Pacific-Asia conference on Advances in Knowledge Discovery and Data Mining
+#% 478274
+#% 577217
+#% 577360
+#% 629708
+#% 729923
+#% 772830
+#% 794513
+
+#index 1673564
+#* Realistic, mathematically tractable graph generation and evolution, using kronecker multiplication
+#@ 37510 5568 1849 578
+#t 2005
+#c PKDD'05 Proceedings of the 9th European conference on Principles and Practice of Knowledge Discovery in Databases
+#% 283833
+#% 309749
+#% 323925
+#% 342592
+#% 479969
+#% 577219
+#% 771380
+#% 823342
+#% 1394202
+
+#index 1872333
+#* Discovering value from community activity on focused question answering sites: a case study of stack overflow
+#@ 41765 13067 1849 10649
+#t 2012
+#c Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 754098
+#% 879593
+#% 956516
+#% 1019165
+#% 1047396
+#% 1055738
+#% 1071516
+#% 1074111
+#% 1179994
+#% 1183154
+#% 1190069
+#% 1355047
+#% 1384246
+#% 1399997
+#% 1411585
+#% 1450880
+#% 1554240
+#% 1561548
+#% 1573559
+#% 1598375
+#% 1693931
+

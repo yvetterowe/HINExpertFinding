@@ -1,0 +1,981 @@
+#index 248012
+#* A new framework for itemset generation
+#@ 968 850
+#t 1998
+#c PODS '98 Proceedings of the seventeenth ACM SIGACT-SIGMOD-SIGART symposium on Principles of database systems
+#% 152934
+#% 172386
+#% 210160
+#% 227917
+#% 227919
+#% 443082
+#% 443164
+#% 461909
+#% 462238
+#% 481290
+#% 481758
+
+#index 273891
+#* Fast algorithms for projected clustering
+#@ 968 2168 850 2169 849
+#t 1999
+#c SIGMOD '99 Proceedings of the 1999 ACM SIGMOD international conference on Management of data
+#% 36672
+#% 42408
+#% 202011
+#% 210173
+#% 237187
+#% 248790
+#% 248792
+#% 252400
+#% 451052
+#% 462243
+#% 479659
+#% 481281
+#% 527022
+
+#index 273920
+#* A new method for similarity indexing of market basket data
+#@ 968 2168 850
+#t 1999
+#c SIGMOD '99 Proceedings of the 1999 ACM SIGMOD international conference on Management of data
+#% 23321
+#% 67565
+#% 86950
+#% 115462
+#% 115466
+#% 152934
+#% 201876
+#% 217292
+#% 227939
+#% 248796
+#% 248797
+#% 427199
+#% 435141
+#% 462239
+#% 464195
+#% 480093
+#% 480274
+#% 481290
+#% 482109
+#% 527028
+
+#index 280447
+#* Horting hatches an egg: a new graph-theoretic approach to collaborative filtering
+#@ 968 2168 2451 850
+#t 1999
+#c KDD '99 Proceedings of the fifth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 1921
+#% 70370
+#% 202011
+#% 220706
+#% 220711
+#% 273891
+#% 564279
+#% 565631
+
+#index 280492
+#* On the merits of building categorization systems by supervised clustering
+#@ 968 2483 850
+#t 1999
+#c KDD '99 Proceedings of the fifth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 118771
+#% 232655
+#% 262050
+#% 300131
+#% 465747
+#% 571073
+
+#index 300131
+#* Finding generalized projected clusters in high dimensional spaces
+#@ 968 850
+#t 2000
+#c SIGMOD '00 Proceedings of the 2000 ACM SIGMOD international conference on Management of data
+#% 36672
+#% 201893
+#% 210173
+#% 232764
+#% 248790
+#% 248792
+#% 248798
+#% 249321
+#% 273891
+#% 280417
+#% 462243
+#% 479962
+#% 479973
+#% 481281
+
+#index 310507
+#* Depth first generation of long patterns
+#@ 67 968 3547
+#t 2000
+#c Proceedings of the sixth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 152934
+#% 172386
+#% 210160
+#% 210162
+#% 213977
+#% 227917
+#% 227919
+#% 248012
+#% 248791
+#% 273898
+#% 273899
+#% 280436
+#% 280454
+#% 300120
+#% 329598
+#% 459020
+#% 462234
+#% 462238
+#% 464714
+#% 481290
+#% 481754
+#% 481758
+#% 631986
+
+#index 310509
+#* The IGrid index: reversing the dimensionality curse for similarity indexing in high dimensional space
+#@ 968 850
+#t 2000
+#c Proceedings of the sixth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 68091
+#% 86950
+#% 201876
+#% 217292
+#% 227939
+#% 248796
+#% 273891
+#% 273920
+#% 280419
+#% 280452
+#% 300131
+#% 406493
+#% 427199
+#% 435141
+#% 464195
+#% 479649
+#% 479973
+#% 480093
+#% 480132
+#% 481455
+#% 481956
+#% 632043
+
+#index 332094
+#* Re-designing distance functions and distance-based applications for high dimensional data
+#@ 968
+#t 2001
+#c ACM SIGMOD Record
+
+#index 333876
+#* On the design and quantification of privacy preserving data mining algorithms
+#@ 3840 968
+#t 2001
+#c PODS '01 Proceedings of the twentieth ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems
+#% 1868
+#% 264246
+#% 264267
+#% 285061
+#% 300184
+#% 365897
+#% 840577
+
+#index 333929
+#* Outlier detection for high dimensional data
+#@ 968 850
+#t 2001
+#c SIGMOD '01 Proceedings of the 2001 ACM SIGMOD international conference on Management of data
+#% 114994
+#% 152934
+#% 210173
+#% 248790
+#% 248792
+#% 273891
+#% 300131
+#% 300136
+#% 300183
+#% 332094
+#% 369236
+#% 459025
+#% 479791
+#% 479986
+#% 480132
+#% 480307
+#% 481281
+#% 686757
+
+#index 340309
+#* On the effects of dimensionality reduction on high dimensional similarity search
+#@ 968
+#t 2001
+#c PODS '01 Proceedings of the twentieth ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems
+#% 68091
+#% 201876
+#% 201893
+#% 248027
+#% 248798
+#% 273699
+#% 280822
+#% 300131
+#% 310509
+#% 427199
+#% 435141
+#% 479649
+#% 480093
+#% 480132
+#% 480307
+#% 481956
+
+#index 342613
+#* A human-computer cooperative system for effective high dimensional clustering
+#@ 968
+#t 2001
+#c Proceedings of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 210160
+#% 248792
+#% 273891
+#% 300131
+#% 332094
+#% 436509
+
+#index 342614
+#* Mining massively incomplete data sets by conceptual reconstruction
+#@ 968 4208
+#t 2001
+#c Proceedings of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 17144
+#% 136350
+#% 248027
+#% 248798
+#% 300184
+#% 668895
+
+#index 345858
+#* Towards effective and interpretable data mining by visual interaction
+#@ 968
+#t 2002
+#c ACM SIGKDD Explorations Newsletter
+#% 36672
+#% 169940
+#% 210160
+#% 227939
+#% 248792
+#% 273891
+#% 300131
+#% 310509
+#% 310517
+#% 310525
+#% 342613
+#% 435141
+#% 436509
+#% 438134
+#% 462238
+#% 463742
+#% 465017
+#% 479649
+#% 480132
+#% 480302
+#% 480303
+#% 480307
+#% 481956
+#% 482109
+#% 840583
+
+#index 345872
+#* Towards long pattern generation in dense databases
+#@ 968
+#t 2001
+#c ACM SIGKDD Explorations Newsletter
+#% 152934
+#% 227917
+#% 248791
+#% 300120
+#% 300124
+#% 310494
+#% 310507
+#% 310559
+#% 329598
+#% 443350
+#% 459020
+#% 464714
+#% 464989
+#% 465003
+#% 481290
+#% 481754
+#% 481779
+#% 631970
+#% 631986
+
+#index 397387
+#* Hierarchical subspace sampling: a unified framework for high dimensional data reduction, selectivity estimation and nearest neighbor search
+#@ 968
+#t 2002
+#c Proceedings of the 2002 ACM SIGMOD international conference on Management of data
+#% 86950
+#% 201876
+#% 201893
+#% 248822
+#% 300131
+#% 300193
+#% 333881
+#% 333946
+#% 333954
+#% 342828
+#% 479648
+#% 480124
+#% 480307
+#% 481290
+#% 482092
+
+#index 462238
+#* Online Generation of Association Rules
+#@ 968 850
+#t 1998
+#c ICDE '98 Proceedings of the Fourteenth International Conference on Data Engineering
+
+#index 466638
+#* On Effective Conceptual Indexing and Similarity Search in Text Data
+#@ 968 850
+#t 2001
+#c ICDM '01 Proceedings of the 2001 IEEE International Conference on Data Mining
+
+#index 480132
+#* What Is the Nearest Neighbor in High Dimensional Spaces?
+#@ 2203 968 449
+#t 2000
+#c VLDB '00 Proceedings of the 26th International Conference on Very Large Data Bases
+#% 67565
+#% 131061
+#% 169940
+#% 238764
+#% 252304
+#% 273891
+#% 300131
+#% 427199
+#% 443248
+#% 479649
+#% 481947
+#% 481956
+#% 482109
+
+#index 501506
+#* Data Mining Techniques for Associations, Clustering and Classification
+#@ 968 850
+#t 1999
+#c PAKDD '99 Proceedings of the Third Pacific-Asia Conference on Methodologies for Knowledge Discovery and Data Mining
+#% 36672
+#% 90661
+#% 152934
+#% 210160
+#% 210173
+#% 227919
+#% 237187
+#% 248012
+#% 248791
+#% 443164
+#% 449588
+#% 462238
+#% 481281
+#% 481290
+#% 481754
+#% 481758
+#% 481945
+#% 527022
+#% 566123
+
+#index 576115
+#* On nearest neighbor indexing of nonlinear trajectories
+#@ 968 3840
+#t 2003
+#c Proceedings of the twenty-second ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems
+#% 2115
+#% 86950
+#% 227939
+#% 273706
+#% 287466
+#% 299979
+#% 300174
+#% 353133
+#% 427199
+#% 480093
+#% 481956
+#% 503869
+#% 527195
+
+#index 577227
+#* On effective classification of strings with wavelets
+#@ 968
+#t 2002
+#c Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 4868
+#% 136350
+#% 235941
+#% 273900
+#% 280408
+#% 280482
+#% 300181
+#% 333941
+#% 463903
+#% 466668
+#% 479787
+#% 481290
+#% 481609
+#% 566132
+#% 631926
+#% 632089
+
+#index 577255
+#* Collaborative crawling: mining user experiences for topical resource discovery
+#@ 968
+#t 2002
+#c Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 281251
+#% 330599
+#% 577255
+
+#index 654489
+#* A framework for diagnosing changes in evolving data streams
+#@ 968
+#t 2003
+#c Proceedings of the 2003 ACM SIGMOD international conference on Management of data
+#% 227859
+#% 273693
+#% 297183
+#% 308435
+#% 310488
+#% 310500
+#% 345857
+#% 464204
+#% 481290
+#% 481931
+#% 527177
+#% 630974
+#% 632056
+#% 632090
+
+#index 662748
+#* Proceedings of the 8th ACM SIGMOD workshop on Research issues in data mining and knowledge discovery
+#@ 2478 968
+#t 2003
+#c 8th ACM SIGMOD Workshop on Research Issues in Data Mining and Knowledge Discovery ( held in conjunction with MOD/PODS 2003 conference / co-located with FCRC 2003 Conference )
+
+#index 729910
+#* Towards systematic design of distance functions for data mining applications
+#@ 968
+#t 2003
+#c Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 4868
+#% 218982
+#% 310509
+#% 332094
+#% 334059
+#% 406493
+#% 436509
+#% 465017
+#% 477968
+#% 480132
+#% 480302
+#% 481609
+#% 482109
+
+#index 729941
+#* XRules: an effective structural classifier for XML data
+#@ 2478 968
+#t 2003
+#c Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 4868
+#% 136350
+#% 262071
+#% 273900
+#% 280437
+#% 311027
+#% 466483
+#% 479640
+#% 481290
+#% 552188
+#% 577218
+#% 577227
+#% 629656
+
+#index 769927
+#* On demand classification of data streams
+#@ 968 961 4625 850
+#t 2004
+#c Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 210173
+#% 310500
+#% 342600
+#% 378388
+#% 654489
+#% 729437
+#% 1015261
+
+#index 823378
+#* Towards exploratory test instance specific algorithms for high dimensional classification
+#@ 968
+#t 2005
+#c Proceedings of the eleventh ACM SIGKDD international conference on Knowledge discovery in data mining
+#% 310517
+#% 481290
+
+#index 824726
+#* On k-anonymity and the curse of dimensionality
+#@ 968
+#t 2005
+#c VLDB '05 Proceedings of the 31st international conference on Very large data bases
+#% 264246
+#% 300184
+#% 333876
+#% 342614
+#% 481290
+#% 577233
+#% 577289
+#% 800515
+#% 801690
+
+#index 864498
+#* On the Inverse Classification Problem and its Applications
+#@ 968 15196 961
+#t 2006
+#c ICDE '06 Proceedings of the 22nd International Conference on Data Engineering
+
+#index 881507
+#* On privacy preservation against adversarial data mining
+#@ 968 3214 7430
+#t 2006
+#c Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 1868
+#% 300184
+#% 333876
+#% 342614
+#% 577233
+#% 577289
+#% 740764
+#% 769885
+#% 800515
+#% 993988
+
+#index 893138
+#* On biased reservoir sampling in the presence of stream evolution
+#@ 968
+#t 2006
+#c VLDB '06 Proceedings of the 32nd international conference on Very large data bases
+#% 1331
+#% 227883
+#% 248812
+#% 248822
+#% 273907
+#% 333983
+#% 379444
+#% 379445
+#% 397385
+#% 428155
+#% 480805
+#% 576112
+#% 578390
+#% 824686
+#% 993960
+#% 1016200
+
+#index 989574
+#* On string classification in data streams
+#@ 968 850
+#t 2007
+#c Proceedings of the 13th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 235941
+#% 310500
+#% 333943
+#% 342600
+#% 481290
+#% 577227
+#% 682435
+#% 682712
+#% 769927
+
+#index 989575
+#* Xproj: a framework for projected structural clustering of xml documents
+#@ 968 18595 4625 17624 3661
+#t 2007
+#c Proceedings of the 13th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 36672
+#% 210173
+#% 262071
+#% 273891
+#% 413582
+#% 464996
+#% 466483
+#% 480126
+#% 481281
+#% 577218
+#% 629656
+#% 631985
+#% 729627
+#% 729941
+#% 740767
+#% 745515
+#% 1712591
+
+#index 989675
+#* A framework for classification and segmentation of massive audio data streams
+#@ 968
+#t 2007
+#c Proceedings of the 13th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 210173
+#% 1015261
+
+#index 994022
+#* An automated system for web portal personalization
+#@ 968 850
+#t 2002
+#c VLDB '02 Proceedings of the 28th international conference on Very Large Data Bases
+#% 202011
+#% 220706
+#% 220709
+#% 220711
+#% 241033
+#% 280447
+#% 280500
+#% 280513
+#% 300131
+#% 406493
+#% 463734
+#% 464839
+#% 466638
+#% 482113
+#% 505719
+#% 564279
+#% 565631
+
+#index 1015261
+#* A framework for clustering evolving data streams
+#@ 968 961 4625 850
+#t 2003
+#c VLDB '03 Proceedings of the 29th international conference on Very large data bases - Volume 29
+#% 36672
+#% 210173
+#% 248790
+#% 273890
+#% 310488
+#% 310500
+#% 320942
+#% 378388
+#% 481281
+#% 594012
+#% 654489
+#% 659972
+
+#index 1016200
+#* A framework for projected clustering of high dimensional data streams
+#@ 968 961 4625 850
+#t 2004
+#c VLDB '04 Proceedings of the Thirtieth international conference on Very large data bases - Volume 30
+#% 36672
+#% 210173
+#% 248790
+#% 248792
+#% 273890
+#% 273891
+#% 302724
+#% 310488
+#% 310500
+#% 320942
+#% 378388
+#% 481281
+#% 594012
+#% 654489
+#% 659943
+#% 659972
+#% 740767
+#% 1015261
+
+#index 1022302
+#* Challenges and experience in prototyping a multi-modal stream analytic and monitoring application on System S
+#@ 2451 19210 2485 850 968 19211 19143 17691 19182 4545 4558
+#t 2007
+#c VLDB '07 Proceedings of the 33rd international conference on Very large data bases
+#% 397353
+#% 654507
+#% 769927
+#% 838409
+#% 844301
+#% 844373
+#% 850523
+#% 875006
+#% 881469
+#% 938461
+#% 960275
+#% 1016200
+#% 1180866
+
+#index 1206640
+#* A Framework for Clustering Uncertain Data Streams
+#@ 968 850
+#t 2008
+#c ICDE '08 Proceedings of the 2008 IEEE 24th International Conference on Data Engineering
+
+#index 1206689
+#* On High Dimensional Indexing of Uncertain Data
+#@ 968 850
+#t 2008
+#c ICDE '08 Proceedings of the 2008 IEEE 24th International Conference on Data Engineering
+
+#index 1206714
+#* On Unifying Privacy and Uncertain Data Models
+#@ 968
+#t 2008
+#c ICDE '08 Proceedings of the 2008 IEEE 24th International Conference on Data Engineering
+
+#index 1206729
+#* LOCUST: An Online Analytical Processing Framework for High Dimensional Classification of Data Streams
+#@ 968 850
+#t 2008
+#c ICDE '08 Proceedings of the 2008 IEEE 24th International Conference on Data Engineering
+
+#index 1206897
+#* On High Dimensional Projected Clustering of Uncertain Data Streams
+#@ 968
+#t 2009
+#c ICDE '09 Proceedings of the 2009 IEEE International Conference on Data Engineering
+
+#index 1207014
+#* On Efficient Query Processing of Stream Counts on the Cell Processor
+#@ 23408 12392 968 850
+#t 2009
+#c ICDE '09 Proceedings of the 2009 IEEE International Conference on Data Engineering
+
+#index 1214624
+#* Frequent pattern mining with uncertain data
+#@ 968 13500 4625 17546
+#t 2009
+#c Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 248791
+#% 300120
+#% 329598
+#% 466490
+#% 481290
+#% 832571
+#% 866990
+#% 1063531
+#% 1179162
+
+#index 1523882
+#* On dense pattern mining in graph streams
+#@ 968 32947 850 10198
+#t 2010
+#c Proceedings of the VLDB Endowment
+#% 443393
+#% 498852
+#% 729938
+#% 785339
+#% 823347
+#% 824711
+#% 844308
+#% 956459
+#% 1016146
+#% 1063501
+#% 1117010
+#% 1207028
+#% 1372657
+
+#index 1594621
+#* On dimensionality reduction of massive graphs for indexing and retrieval
+#@ 968 4558
+#t 2011
+#c ICDE '11 Proceedings of the 2011 IEEE 27th International Conference on Data Engineering
+
+#index 1594652
+#* Outlier detection in graph streams
+#@ 968 31931 850
+#t 2011
+#c ICDE '11 Proceedings of the 2011 IEEE 27th International Conference on Data Engineering
+
+#index 1606039
+#* Discovering highly reliable subgraphs in uncertain graphs
+#@ 10198 23991 968
+#t 2011
+#c Proceedings of the 17th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 165487
+#% 237380
+#% 277018
+#% 322536
+#% 370988
+#% 729923
+#% 754098
+#% 818916
+#% 823357
+#% 985041
+#% 1080074
+#% 1083509
+#% 1100170
+#% 1117041
+#% 1117057
+#% 1179162
+#% 1217126
+#% 1451203
+#% 1464049
+#% 1506189
+#% 1523884
+#% 1592313
+#% 1697228
+#% 1710570
+
+#index 1606065
+#* On dynamic data-driven selection of sensor streams
+#@ 968 29053 850
+#t 2011
+#c Proceedings of the 17th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 36672
+#% 481281
+#% 632090
+#% 654488
+#% 765445
+#% 801695
+#% 810058
+#% 918001
+#% 938511
+#% 990806
+#% 993961
+#% 1016178
+#% 1269936
+#% 1414128
+#% 1491381
+
+#index 1654051
+#* gSketch: on query estimation in graph streams
+#@ 18038 968 1064
+#t 2011
+#c Proceedings of the VLDB Endowment
+#% 1331
+#% 36698
+#% 214073
+#% 283833
+#% 293720
+#% 379443
+#% 397354
+#% 754117
+#% 798044
+#% 809258
+#% 816392
+#% 866773
+#% 874902
+#% 894646
+#% 918001
+#% 935763
+#% 993960
+#% 1063716
+#% 1127369
+#% 1127608
+#% 1214643
+#% 1372657
+#% 1428692
+#% 1523882
+#% 1567510
+#% 1734153
+
+#index 1663613
+#* On temporal evolution in data streams
+#@ 968
+#t 2006
+#c PKDD'06 Proceedings of the 10th European conference on Principle and Practice of Knowledge Discovery in Databases
+
+#index 1665121
+#* On temporal evolution in data streams
+#@ 968
+#t 2006
+#c ECML'06 Proceedings of the 17th European conference on Machine Learning
+
+#index 1688249
+#* On futuristic query processing in data streams
+#@ 968
+#t 2006
+#c EDBT'06 Proceedings of the 10th international conference on Advances in Database Technology
+#% 273902
+#% 300193
+#% 310488
+#% 310500
+#% 320942
+#% 378388
+#% 397354
+#% 480628
+#% 654489
+#% 659972
+#% 993958
+#% 993960
+#% 993969
+#% 1015261
+
+#index 1688471
+#* On the Hardness of Graph Anonymization
+#@ 968 32947 850
+#t 2011
+#c ICDM '11 Proceedings of the 2011 IEEE 11th International Conference on Data Mining
+
+#index 1707456
+#* Relation strength-aware clustering of heterogeneous information networks with incomplete attributes
+#@ 19945 968 961
+#t 2012
+#c Proceedings of the VLDB Endowment
+#% 36672
+#% 722902
+#% 769881
+#% 881460
+#% 881514
+#% 989586
+#% 989618
+#% 989636
+#% 995140
+#% 1055681
+#% 1055741
+#% 1117695
+#% 1186295
+#% 1214655
+#% 1214701
+#% 1214714
+#% 1289267
+#% 1318691
+#% 1328161
+#% 1328169
+#% 1650298
+
+#index 1728735
+#* On clustering techniques for change diagnosis in data streams
+#@ 968 850
+#t 2005
+#c WebKDD'05 Proceedings of the 7th international conference on Knowledge Discovery on the Web: advances in Web Mining and Web Usage Analysis
+#% 122671
+#% 210173
+#% 227859
+#% 249110
+#% 273693
+#% 280419
+#% 281214
+#% 310500
+#% 342600
+#% 378388
+#% 549441
+#% 577360
+#% 587723
+#% 632036
+#% 654489
+#% 659943
+#% 679842
+#% 727930
+#% 729923
+#% 769927
+#% 823344
+#% 1015261
+
+#index 1846760
+#* Community Detection with Edge Content in Social Media Networks
+#@ 16711 968 27092
+#t 2012
+#c ICDE '12 Proceedings of the 2012 IEEE 28th International Conference on Data Engineering
+
+#index 1846813
+#* On Text Clustering with Side Information
+#@ 968 31931 850
+#t 2012
+#c ICDE '12 Proceedings of the 2012 IEEE 28th International Conference on Data Engineering
+

@@ -1,0 +1,780 @@
+#index 629708
+#* gSpan: Graph-Based Substructure Pattern Mining
+#@ 9413 961
+#t 2002
+#c ICDM '02 Proceedings of the 2002 IEEE International Conference on Data Mining
+
+#index 727913
+#* TSP: Mining Top-K Closed Sequential Patterns
+#@ 9352 9413 961
+#t 2003
+#c ICDM '03 Proceedings of the Third IEEE International Conference on Data Mining
+#% 329537
+#% 459006
+#% 463903
+#% 464996
+#% 577256
+#% 629644
+#% 631985
+#% 729938
+
+#index 729938
+#* CloseGraph: mining closed frequent graph patterns
+#@ 9413 961
+#t 2003
+#c Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 300120
+#% 410276
+#% 465003
+#% 466644
+#% 481290
+#% 577218
+#% 629603
+#% 629630
+#% 629646
+#% 629708
+
+#index 765429
+#* Graph indexing: a frequent structure-based approach
+#@ 9413 850 961
+#t 2004
+#c SIGMOD '04 Proceedings of the 2004 ACM SIGMOD international conference on Management of data
+#% 344549
+#% 378391
+#% 397359
+#% 435373
+#% 443133
+#% 466644
+#% 479465
+#% 480656
+#% 629603
+#% 629646
+#% 629708
+#% 654452
+#% 660000
+#% 729938
+#% 729942
+#% 731608
+#% 1015336
+
+#index 769931
+#* IncSpan: incremental mining of sequential patterns in large database
+#@ 9360 9413 961
+#t 2004
+#c Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 287242
+#% 425006
+#% 459006
+#% 463903
+#% 464204
+#% 464996
+#% 479971
+#% 481754
+#% 502121
+#% 577256
+#% 646296
+#% 729938
+#% 745515
+
+#index 800533
+#* Mining Closed Relational Graphs with Connectivity Constraints
+#@ 9413 12120 961
+#t 2005
+#c ICDE '05 Proceedings of the 21st International Conference on Data Engineering
+#% 313959
+#% 443723
+#% 729938
+#% 731608
+
+#index 810072
+#* Substructure similarity search in graph databases
+#@ 9413 850 961
+#t 2005
+#c Proceedings of the 2005 ACM SIGMOD international conference on Management of data
+#% 25470
+#% 121278
+#% 217812
+#% 251403
+#% 256685
+#% 260974
+#% 333679
+#% 344549
+#% 378391
+#% 408396
+#% 442886
+#% 443133
+#% 466644
+#% 765429
+#% 1015336
+
+#index 810094
+#* GraphMiner: a structural pattern-mining system for large disk-based graph databases and its applications
+#@ 1204 11027 11028 11029 3214 9413 961
+#t 2005
+#c Proceedings of the 2005 ACM SIGMOD international conference on Management of data
+#% 466644
+#% 629603
+#% 629646
+#% 629708
+#% 729938
+#% 769907
+
+#index 823356
+#* Summarizing itemset patterns: a profile-based approach
+#@ 9413 9360 961 12167
+#t 2005
+#c Proceedings of the eleventh ACM SIGKDD international conference on Knowledge discovery in data mining
+#% 152934
+#% 231941
+#% 237200
+#% 248791
+#% 262059
+#% 287285
+#% 338609
+#% 342610
+#% 452846
+#% 463903
+#% 478770
+#% 577214
+#% 629606
+#% 629644
+#% 722934
+#% 727667
+#% 727896
+#% 742493
+#% 765429
+#% 769876
+#% 769905
+
+#index 823357
+#* Mining closed relational graphs with connectivity constraints
+#@ 9413 12120 961
+#t 2005
+#c Proceedings of the eleventh ACM SIGKDD international conference on Knowledge discovery in data mining
+#% 237380
+#% 282226
+#% 310514
+#% 313959
+#% 443723
+#% 465003
+#% 466644
+#% 629603
+#% 629646
+#% 629708
+#% 729933
+#% 729938
+#% 729942
+#% 729984
+#% 731608
+#% 742493
+#% 765429
+
+#index 824710
+#* Mining compressed frequent-pattern sets
+#@ 12167 961 9413 9360
+#t 2005
+#c VLDB '05 Proceedings of the 31st international conference on Very large data bases
+#% 152934
+#% 227919
+#% 248791
+#% 280409
+#% 300120
+#% 410276
+#% 420063
+#% 461909
+#% 463903
+#% 466664
+#% 479484
+#% 481290
+#% 729933
+#% 769876
+
+#index 850729
+#* Graph indexing based on discriminative frequent structure analysis
+#@ 9413 850 961
+#t 2005
+#c ACM Transactions on Database Systems (TODS) - Special Issue: SIGMOD/PODS 2004
+#% 344549
+#% 378391
+#% 397359
+#% 435374
+#% 443133
+#% 466644
+#% 479465
+#% 480656
+#% 481290
+#% 481754
+#% 481779
+#% 601159
+#% 629603
+#% 629646
+#% 629708
+#% 654452
+#% 729938
+#% 729942
+#% 731608
+#% 1015336
+
+#index 864475
+#* Searching Substructures with Superimposed Distance
+#@ 9413 15170 961 850
+#t 2006
+#c ICDE '06 Proceedings of the 22nd International Conference on Data Engineering
+
+#index 864493
+#* Mining, Indexing, and Similarity Search in Graphs and Complex Structures
+#@ 961 9413 850
+#t 2006
+#c ICDE '06 Proceedings of the 22nd International Conference on Data Engineering
+
+#index 881500
+#* Extracting redundancy-aware top-k patterns
+#@ 12167 9360 9413 961
+#t 2006
+#c Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 36672
+#% 71901
+#% 158687
+#% 262112
+#% 281656
+#% 443092
+#% 478770
+#% 479816
+#% 577214
+#% 629644
+#% 769876
+#% 769893
+#% 818209
+#% 823344
+#% 823356
+#% 824710
+#% 835872
+#% 1845364
+
+#index 960356
+#* Supporting entity search: a large-scale prototype search engine
+#@ 17986 9413 4553
+#t 2007
+#c Proceedings of the 2007 ACM SIGMOD international conference on Management of data
+
+#index 1022234
+#* EntityRank: searching entities directly and holistically
+#@ 17986 9413 4553
+#t 2007
+#c VLDB '07 Proceedings of the 33rd international conference on Very large data bases
+#% 268079
+#% 330616
+#% 577318
+#% 730022
+#% 740900
+#% 742102
+#% 754068
+#% 799737
+#% 805883
+#% 854668
+#% 869535
+#% 875001
+#% 875061
+#% 875064
+#% 956501
+#% 960235
+#% 960356
+
+#index 1022279
+#* Towards graph containment search and indexing
+#@ 15196 9413 850 961 11559 19182
+#t 2007
+#c VLDB '07 Proceedings of the 33rd international conference on Very large data bases
+#% 10419
+#% 217812
+#% 223567
+#% 280409
+#% 321327
+#% 350323
+#% 378391
+#% 466644
+#% 479465
+#% 654452
+#% 729938
+#% 765429
+#% 769951
+#% 779470
+#% 780860
+#% 805893
+#% 810072
+#% 864425
+#% 905193
+#% 937108
+#% 993958
+#% 1717545
+
+#index 1061897
+#* Report on the First International Workshop on Mining Graphs and Complex Structures (MGCS'07)
+#@ 3108 9413
+#t 2008
+#c ACM SIGMOD Record
+
+#index 1063502
+#* Mining significant graph patterns by leap search
+#@ 9413 9360 961 850
+#t 2008
+#c Proceedings of the 2008 ACM SIGMOD international conference on Management of data
+#% 152934
+#% 280409
+#% 299985
+#% 342604
+#% 420126
+#% 466644
+#% 577214
+#% 629708
+#% 722920
+#% 729938
+#% 765429
+#% 813990
+#% 840863
+#% 915228
+#% 915350
+#% 960305
+#% 976826
+#% 1117006
+#% 1272179
+#% 1558464
+#% 1673557
+
+#index 1083649
+#* Direct mining of discriminative and essential frequent patterns via model-based search tree
+#@ 2485 14886 9360 17596 9413 961 15637 17636
+#t 2008
+#c Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 300120
+#% 342604
+#% 463903
+#% 464996
+#% 466483
+#% 466644
+#% 481290
+#% 729938
+#% 769891
+#% 810064
+#% 813990
+#% 823384
+#% 824699
+#% 840863
+#% 915350
+#% 937794
+#% 1063502
+#% 1206650
+
+#index 1083691
+#* Efficient ticket routing by resolution sequence mining
+#@ 17510 10689 20766 9413 20767
+#t 2008
+#c Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 258498
+#% 259602
+#% 329537
+#% 420063
+#% 459021
+#% 463903
+#% 464996
+#% 577256
+#% 630984
+#% 631914
+#% 768666
+#% 772836
+#% 864813
+#% 1678914
+#% 1709206
+#% 1808839
+
+#index 1116998
+#* Efficient Discovery of Frequent Approximate Sequential Patterns
+#@ 15170 9413 961 850
+#t 2007
+#c ICDM '07 Proceedings of the 2007 Seventh IEEE International Conference on Data Mining
+
+#index 1117041
+#* gApprox: Mining Frequent Approximate Patterns from a Massive Network
+#@ 15196 9413 15170 961
+#t 2007
+#c ICDM '07 Proceedings of the 2007 Seventh IEEE International Conference on Data Mining
+
+#index 1127581
+#* EasyTicket: a ticket routing recommendation engine for enterprise problem resolution
+#@ 17510 10689 20766 9413 20767
+#t 2008
+#c Proceedings of the VLDB Endowment
+#% 730082
+#% 1083691
+
+#index 1176876
+#* Graph OLAP: Towards Online Analytical Processing on Graphs
+#@ 15196 9413 15170 961 850
+#t 2008
+#c ICDM '08 Proceedings of the 2008 Eighth IEEE International Conference on Data Mining
+
+#index 1206650
+#* Direct Discriminative Pattern Mining for Effective Classification
+#@ 9360 9413 961 850
+#t 2008
+#c ICDE '08 Proceedings of the 2008 IEEE 24th International Conference on Data Engineering
+
+#index 1206841
+#* SmallBlue: Social Network Analysis for Expertise Search and Collective Intelligence
+#@ 11546 17531 23256 4202 10508 9413
+#t 2009
+#c ICDE '09 Proceedings of the 2009 IEEE International Conference on Data Engineering
+
+#index 1210516
+#* Graph Mining and Graph Kernels
+#@ 23711 9413
+#t 2008
+#c Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining
+
+#index 1328171
+#* Mining graph patterns efficiently via randomized summaries
+#@ 15196 29008 29048 29049 9413 961
+#t 2009
+#c Proceedings of the VLDB Endowment
+#% 300120
+#% 342604
+#% 431105
+#% 466644
+#% 480810
+#% 481290
+#% 481779
+#% 629708
+#% 745477
+#% 765429
+#% 769940
+#% 813990
+#% 823342
+#% 823347
+#% 841960
+#% 867050
+#% 869492
+#% 881466
+#% 894441
+#% 994157
+#% 1063501
+#% 1063502
+#% 1063512
+#% 1117006
+#% 1117010
+#% 1127358
+#% 1176876
+
+#index 1393168
+#* gPrune: a constraint pushing framework for graph pattern mining
+#@ 15170 9413 961 850
+#t 2007
+#c PAKDD'07 Proceedings of the 11th Pacific-Asia conference on Advances in knowledge discovery and data mining
+#% 248785
+#% 300120
+#% 310494
+#% 466644
+#% 481290
+#% 580588
+#% 629603
+#% 629623
+#% 629646
+#% 629708
+#% 674497
+#% 727845
+#% 727896
+#% 729938
+#% 765429
+#% 766666
+#% 769889
+#% 769940
+#% 769951
+#% 813034
+#% 813990
+#% 823357
+#% 1656291
+#% 1707794
+
+#index 1426574
+#* Towards proximity pattern mining in large graphs
+#@ 31015 9413 2451
+#t 2010
+#c Proceedings of the 2010 ACM SIGMOD International Conference on Management of data
+#% 152934
+#% 300120
+#% 443350
+#% 452821
+#% 466644
+#% 481290
+#% 502147
+#% 629603
+#% 629646
+#% 629708
+#% 742493
+#% 765429
+#% 769940
+#% 769951
+#% 813990
+#% 881466
+#% 937794
+#% 960305
+#% 1022280
+#% 1063502
+#% 1117010
+#% 1214624
+#% 1214633
+#% 1411112
+
+#index 1426635
+#* Mining knowledge from databases: an information network analysis approach
+#@ 961 19945 9413 850
+#t 2010
+#c Proceedings of the 2010 ACM SIGMOD International Conference on Management of data
+#% 268079
+#% 577273
+#% 865734
+#% 989654
+#% 1002279
+#% 1081580
+#% 1181261
+#% 1214701
+#% 1214717
+#% 1394202
+
+#index 1451213
+#* Generative models for ticket resolution in expert networks
+#@ 31459 31460 9413 20766 10689 20767
+#t 2010
+#c Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 280817
+#% 458379
+#% 465754
+#% 730061
+#% 868135
+#% 879570
+#% 940104
+#% 1083691
+#% 1130922
+#% 1176887
+#% 1381853
+#% 1392465
+#% 1704240
+#% 1815596
+
+#index 1581921
+#* Neighborhood based fast graph search in large networks
+#@ 31015 28496 9413 20221 35356 20766
+#t 2011
+#c Proceedings of the 2011 ACM SIGMOD International Conference on Management of data
+#% 288780
+#% 333854
+#% 378391
+#% 397359
+#% 480918
+#% 601159
+#% 654452
+#% 654467
+#% 754117
+#% 765429
+#% 769891
+#% 810072
+#% 844291
+#% 864425
+#% 906561
+#% 937108
+#% 960305
+#% 989645
+#% 1022280
+#% 1044450
+#% 1127380
+#% 1206703
+#% 1318714
+#% 1426574
+#% 1506217
+#% 1523818
+#% 1523898
+#% 1523900
+
+#index 1581924
+#* Assessing and ranking structural correlations in graphs
+#@ 20221 35359 8123 213 9413
+#t 2011
+#c Proceedings of the 2011 ACM SIGMOD International Conference on Management of data
+#% 152934
+#% 220708
+#% 252401
+#% 310514
+#% 577329
+#% 729923
+#% 729968
+#% 730089
+#% 823347
+#% 824711
+#% 881472
+#% 881553
+#% 995140
+#% 1073984
+#% 1083624
+#% 1130854
+#% 1217126
+#% 1328169
+#% 1399940
+#% 1399993
+#% 1446960
+#% 1451243
+#% 1835483
+
+#index 1673591
+#* Community mining from multi-relational networks
+#@ 8278 15094 10859 9413 961
+#t 2005
+#c PKDD'05 Proceedings of the 9th European conference on Principles and Practice of Knowledge Discovery in Databases
+#% 146494
+#% 342596
+#% 1499466
+
+#index 1770362
+#* Towards effective partition management for large graphs
+#@ 28774 9413 40559 31015
+#t 2012
+#c SIGMOD '12 Proceedings of the 2012 ACM SIGMOD International Conference on Management of Data
+#% 124743
+#% 202286
+#% 243166
+#% 253560
+#% 273374
+#% 274612
+#% 322846
+#% 330305
+#% 340175
+#% 345693
+#% 467185
+#% 479973
+#% 519567
+#% 577329
+#% 754117
+#% 871315
+#% 893106
+#% 1022236
+#% 1206875
+#% 1215445
+#% 1318636
+#% 1426479
+#% 1426513
+#% 1464649
+#% 1506217
+#% 1523799
+#% 1581837
+#% 1581871
+#% 1586117
+
+#index 1846724
+#* Mining Knowledge from Data: An Information Network Analysis Approach
+#@ 961 19945 9413 850
+#t 2012
+#c ICDE '12 Proceedings of the 2012 IEEE 28th International Conference on Data Engineering
+
+#index 1846725
+#* Emerging Graph Queries in Linked Data
+#@ 31015 21403 9413
+#t 2012
+#c ICDE '12 Proceedings of the 2012 IEEE 28th International Conference on Data Engineering
+
+#index 1872391
+#* Integrating meta-path selection with user-guided object clustering in heterogeneous information networks
+#@ 19945 41828 961 9413 850 28701
+#t 2012
+#c Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 280819
+#% 313959
+#% 464631
+#% 466574
+#% 722902
+#% 722929
+#% 722934
+#% 769881
+#% 770782
+#% 829025
+#% 840892
+#% 876018
+#% 916785
+#% 989618
+#% 989654
+#% 995140
+#% 1002279
+#% 1063503
+#% 1117695
+#% 1125382
+#% 1181261
+#% 1214701
+#% 1474171
+#% 1565432
+
+#index 1872402
+#* Latent association analysis of document pairs
+#@ 31459 20221 31460 9413 20766 20767 10508
+#t 2012
+#c Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 280819
+#% 340899
+#% 722904
+#% 769906
+#% 983644
+#% 987287
+#% 1055681
+#% 1055743
+#% 1074110
+#% 1083684
+#% 1211794
+#% 1338620
+#% 1417061
+#% 1432248
+#% 1482402
+#% 1598401
+#% 1697450
+
+#index 1880456
+#* Measuring two-event structural correlations on graphs
+#@ 20221 9413 42234
+#t 2012
+#c Proceedings of the VLDB Endowment
+#% 86786
+#% 220708
+#% 268079
+#% 466644
+#% 629708
+#% 765430
+#% 818916
+#% 1328169
+#% 1399940
+#% 1426574
+#% 1446960
+#% 1475163
+#% 1562244
+#% 1581924
+
+#index 1895106
+#* Mining knowledge from interconnected data: a heterogeneous information network analysis approach
+#@ 19945 961 9413 850
+#t 2012
+#c Proceedings of the VLDB Endowment
+#% 1063512
+#% 1081580
+#% 1176876
+#% 1181261
+#% 1214701
+#% 1451159
+#% 1495579
+#% 1581917
+#% 1606073
+#% 1635098
+#% 1693927
+#% 1707456
+#% 1730734
+#% 1872391
+
+#index 1978779
+#* Inferring the Underlying Structure of Information Cascades
+#@ 40559 21403 3884 9413
+#t 2012
+#c ICDM '12 Proceedings of the 2012 IEEE 12th International Conference on Data Mining
+

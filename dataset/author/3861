@@ -1,0 +1,1093 @@
+#index 333941
+#* Locally adaptive dimensionality reduction for indexing large time series databases
+#@ 3861 2164 3151 912
+#t 2001
+#c SIGMOD '01 Proceedings of the 2001 ACM SIGMOD international conference on Management of data
+#% 172949
+#% 201876
+#% 214595
+#% 227924
+#% 237204
+#% 248797
+#% 248798
+#% 251654
+#% 257637
+#% 260014
+#% 260016
+#% 264633
+#% 273704
+#% 280452
+#% 280846
+#% 285711
+#% 286881
+#% 316559
+#% 316560
+#% 427199
+#% 460862
+#% 461885
+#% 462231
+#% 464851
+#% 477482
+#% 477825
+#% 480146
+#% 480307
+#% 481609
+#% 481611
+#% 501194
+#% 527026
+#% 571081
+#% 586837
+#% 616530
+#% 617886
+#% 631920
+#% 631923
+#% 632089
+
+#index 342602
+#* Ensemble-index: a new approach to indexing large databases
+#@ 3861 4191 3151
+#t 2001
+#c Proceedings of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 144076
+#% 172949
+#% 214595
+#% 227924
+#% 237204
+#% 248798
+#% 273704
+#% 316526
+#% 316559
+#% 316560
+#% 333941
+#% 427199
+#% 460862
+#% 464851
+#% 480146
+#% 480307
+#% 592279
+#% 617886
+#% 631920
+#% 631923
+
+#index 577221
+#* On the need for time series data mining benchmarks: a survey and empirical demonstration
+#@ 3861 8178
+#t 2002
+#c Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 172949
+#% 227924
+#% 232122
+#% 240182
+#% 260014
+#% 260016
+#% 264633
+#% 273704
+#% 280408
+#% 285711
+#% 310502
+#% 310580
+#% 310583
+#% 316538
+#% 316559
+#% 316560
+#% 330932
+#% 333941
+#% 342690
+#% 460862
+#% 461885
+#% 462231
+#% 464851
+#% 465014
+#% 466507
+#% 477479
+#% 477482
+#% 477825
+#% 480146
+#% 480156
+#% 480302
+#% 481609
+#% 481611
+#% 534183
+#% 586837
+#% 616530
+#% 617886
+#% 617888
+#% 631920
+#% 631923
+#% 632042
+#% 632088
+#% 659936
+#% 659944
+
+#index 577275
+#* Finding surprising patterns in a time series database in linear time and space
+#@ 3861 8237 8238
+#t 2002
+#c Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 172949
+#% 235941
+#% 280413
+#% 285711
+#% 289010
+#% 310502
+#% 333941
+#% 397629
+#% 479785
+#% 515979
+#% 566132
+#% 593764
+#% 617888
+#% 632088
+#% 641125
+#% 715230
+
+#index 629607
+#* Mining Motifs in Massive Time Series Databases
+#@ 9305 3861 9306 8237
+#t 2002
+#c ICDM '02 Proceedings of the 2002 IEEE International Conference on Data Mining
+
+#index 662750
+#* A symbolic representation of time series, with implications for streaming algorithms
+#@ 9306 3861 8237 9816
+#t 2003
+#c DMKD '03 Proceedings of the 8th ACM SIGMOD workshop on Research issues in data mining and knowledge discovery
+#% 172949
+#% 237204
+#% 285711
+#% 310488
+#% 328321
+#% 333941
+#% 378388
+#% 397629
+#% 451127
+#% 466507
+#% 477482
+#% 480146
+#% 481611
+#% 548654
+#% 577221
+#% 577275
+#% 594012
+#% 617888
+#% 629648
+#% 631923
+#% 659971
+#% 715230
+
+#index 662757
+#* Clustering of streaming time series is meaningless
+#@ 9306 3861 9824
+#t 2003
+#c DMKD '03 Proceedings of the 8th ACM SIGMOD workshop on Research issues in data mining and knowledge discovery
+#% 152934
+#% 260016
+#% 280482
+#% 310580
+#% 397631
+#% 430746
+#% 430767
+#% 443515
+#% 463948
+#% 466083
+#% 494958
+#% 498625
+#% 501995
+#% 528055
+#% 546415
+#% 577221
+#% 594012
+#% 630989
+#% 858452
+#% 993965
+
+#index 727900
+#* Clustering of Time Series Subsequences is Meaningless: Implications for Previous and Future Research
+#@ 3861 9306 9824
+#t 2003
+#c ICDM '03 Proceedings of the Third IEEE International Conference on Data Mining
+#% 152934
+#% 260016
+#% 280482
+#% 310580
+#% 397631
+#% 430746
+#% 430767
+#% 443515
+#% 463948
+#% 464888
+#% 465031
+#% 466083
+#% 492333
+#% 494958
+#% 498625
+#% 501995
+#% 528055
+#% 546415
+#% 577221
+#% 594012
+#% 630989
+#% 993965
+
+#index 729931
+#* Indexing multi-dimensional time-series with support for multiple distance measures
+#@ 8258 5201 794 3861
+#t 2003
+#c Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 318129
+#% 397631
+#% 398427
+#% 458857
+#% 462231
+#% 477479
+#% 504158
+#% 564263
+#% 577221
+#% 632042
+#% 632088
+#% 659971
+#% 993965
+
+#index 729960
+#* Probabilistic discovery of time series motifs
+#@ 9816 3861 8237
+#t 2003
+#c Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 196811
+#% 232767
+#% 310502
+#% 310583
+#% 328321
+#% 397629
+#% 462231
+#% 469571
+#% 479973
+#% 480146
+#% 480156
+#% 481609
+#% 529189
+#% 577221
+#% 631923
+#% 631926
+#% 659971
+
+#index 745513
+#* Online Amnesic Approximation of Streaming Time Series
+#@ 3767 8258 3861 794 9824
+#t 2004
+#c ICDE '04 Proceedings of the 20th International Conference on Data Engineering
+#% 69316
+#% 172949
+#% 309473
+#% 326303
+#% 399763
+#% 466506
+#% 477482
+#% 480146
+#% 480628
+#% 485777
+#% 549273
+#% 576112
+#% 577221
+#% 631920
+#% 631923
+#% 646215
+#% 659936
+#% 660003
+#% 709882
+#% 993958
+#% 993961
+#% 1378172
+
+#index 769896
+#* Towards parameter-free data mining
+#@ 3861 8237 11012
+#t 2004
+#c Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 61792
+#% 201893
+#% 234979
+#% 281638
+#% 297487
+#% 310502
+#% 310580
+#% 342647
+#% 420065
+#% 453575
+#% 465927
+#% 466507
+#% 577221
+#% 617886
+#% 617888
+#% 650285
+#% 662750
+#% 727900
+#% 729931
+#% 729980
+
+#index 769922
+#* Visually mining and monitoring massive time series
+#@ 9306 3861 8237 11040 11041
+#t 2004
+#c Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 28144
+#% 172949
+#% 280482
+#% 285711
+#% 310583
+#% 333941
+#% 345858
+#% 397629
+#% 434613
+#% 443517
+#% 494958
+#% 529189
+#% 546531
+#% 577221
+#% 577275
+#% 617888
+#% 619859
+#% 632088
+#% 641125
+#% 641175
+#% 662750
+#% 729960
+#% 729980
+#% 814194
+#% 1389010
+
+#index 824705
+#* Scaling and time warping in time series querying
+#@ 1241 3861 14000 11012
+#t 2005
+#c VLDB '05 Proceedings of the 31st international conference on Very large data bases
+#% 86950
+#% 172949
+#% 398429
+#% 427199
+#% 462231
+#% 464994
+#% 481956
+#% 611616
+#% 625052
+#% 631923
+#% 654456
+#% 717294
+#% 765481
+#% 993965
+#% 1016194
+#% 1391300
+
+#index 844310
+#* HOT SAX: Efficiently Finding the Most Unusual Time Series Subsequence
+#@ 3861 9306 950
+#t 2005
+#c ICDM '05 Proceedings of the Fifth IEEE International Conference on Data Mining
+#% 70370
+#% 282232
+#% 497916
+#% 570886
+#% 577221
+#% 662750
+#% 720645
+#% 729960
+#% 769896
+#% 769922
+
+#index 844343
+#* Atomic Wedgie: Efficient Query Filtering for Streaming Times Series
+#@ 14790 3861 14791 14792
+#t 2005
+#c ICDM '05 Proceedings of the Fifth IEEE International Conference on Data Mining
+#% 397380
+#% 577221
+#% 731408
+#% 765262
+#% 1113090
+
+#index 876074
+#* Fast time series classification using numerosity reduction
+#@ 15853 3861 15854 14790 11012
+#t 2006
+#c ICML '06 Proceedings of the 23rd international conference on Machine learning
+#% 218435
+#% 316709
+#% 465760
+#% 572113
+#% 737331
+#% 779029
+#% 783521
+#% 799396
+#% 800574
+#% 824705
+#% 844343
+#% 853064
+#% 940369
+#% 993965
+#% 1702634
+#% 1705293
+
+#index 878302
+#* Indexing Multidimensional Time-Series
+#@ 8258 5201 794 3861
+#t 2006
+#c The VLDB Journal — The International Journal on Very Large Data Bases
+#% 172949
+#% 191581
+#% 201876
+#% 201893
+#% 236692
+#% 240182
+#% 260014
+#% 273704
+#% 280416
+#% 310502
+#% 318129
+#% 333941
+#% 397631
+#% 398427
+#% 427199
+#% 443263
+#% 443369
+#% 458857
+#% 460862
+#% 462231
+#% 464851
+#% 477479
+#% 480146
+#% 480459
+#% 481609
+#% 504158
+#% 527176
+#% 534183
+#% 564263
+#% 577221
+#% 616530
+#% 632042
+#% 632088
+#% 632089
+#% 654456
+#% 659971
+#% 729917
+#% 993965
+
+#index 881459
+#* Global distance-based segmentation of trajectories
+#@ 12386 8258 5201 3861 850
+#t 2006
+#c Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 179858
+#% 228353
+#% 333941
+#% 397376
+#% 458857
+#% 460862
+#% 627564
+#% 729931
+#% 810067
+#% 824729
+#% 844293
+
+#index 881545
+#* Semi-supervised time series classification
+#@ 14790 3861
+#t 2006
+#c Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 252011
+#% 311027
+#% 458379
+#% 572113
+#% 577221
+#% 784540
+#% 844310
+#% 844343
+#% 853064
+#% 1702634
+
+#index 893161
+#* LB_Keogh supports exact indexing of shapes under rotation invariance with arbitrary representations and distance measures
+#@ 3861 14790 15853 17287 8258
+#t 2006
+#c VLDB '06 Proceedings of the 32nd international conference on Very large data bases
+#% 49238
+#% 401848
+#% 443600
+#% 522710
+#% 577221
+#% 729931
+#% 741404
+#% 775619
+#% 812562
+#% 838404
+#% 844343
+#% 993965
+#% 1016194
+#% 1046749
+#% 1113090
+#% 1378406
+#% 1685143
+#% 1854406
+#% 1858193
+
+#index 893220
+#* A decade of progress in indexing and mining large time series databases
+#@ 3861
+#t 2006
+#c VLDB '06 Proceedings of the 32nd international conference on Very large data bases
+#% 172949
+
+#index 915238
+#* Intelligent Icons: Integrating Lite-Weight Data Mining and Visualization into GUI Operating Systems
+#@ 3861 14790 15853 8237 17567 17568
+#t 2006
+#c ICDM '06 Proceedings of the Sixth International Conference on Data Mining
+
+#index 915325
+#* Manifold Clustering of Shapes
+#@ 17664 3861
+#t 2006
+#c ICDM '06 Proceedings of the Sixth International Conference on Data Mining
+
+#index 915345
+#* Anytime Classification Using the Nearest Neighbor Algorithm with Applications to Stream Mining
+#@ 17686 15853 3861 17687
+#t 2006
+#c ICDM '06 Proceedings of the Sixth International Conference on Data Mining
+
+#index 915353
+#* SAXually Explicit Images: Finding Unusual Shapes
+#@ 14790 3861 15853
+#t 2006
+#c ICDM '06 Proceedings of the Sixth International Conference on Data Mining
+
+#index 972337
+#* Clustering Workflow Requirements Using Compression Dissimilarity Measure
+#@ 14790 18157 1663 17752 3861
+#t 2006
+#c ICDMW '06 Proceedings of the Sixth IEEE International Conference on Data Mining - Workshops
+
+#index 989656
+#* Detecting time series motifs under uniform scaling
+#@ 17664 3861 18679 9816 18680
+#t 2007
+#c Proceedings of the 13th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 232767
+#% 322309
+#% 328321
+#% 469571
+#% 729437
+#% 729960
+#% 748556
+#% 799397
+#% 893161
+#% 1016194
+
+#index 993965
+#* Exact indexing of dynamic time warping
+#@ 3861
+#t 2002
+#c VLDB '02 Proceedings of the 28th international conference on Very Large Data Bases
+#% 137711
+#% 172949
+#% 201876
+#% 201893
+#% 227924
+#% 237204
+#% 248797
+#% 330932
+#% 333941
+#% 427199
+#% 462231
+#% 466260
+#% 480146
+#% 481609
+#% 564263
+#% 578400
+#% 586837
+#% 632088
+#% 659971
+
+#index 1016194
+#* Indexing large human-motion databases
+#@ 3861 3767 18992 794 18993
+#t 2004
+#c VLDB '04 Proceedings of the Thirtieth international conference on Very large data bases - Volume 30
+#% 86950
+#% 172949
+#% 213538
+#% 333941
+#% 379307
+#% 397376
+#% 398425
+#% 398426
+#% 398427
+#% 398428
+#% 427199
+#% 443515
+#% 464851
+#% 477479
+#% 479649
+#% 480146
+#% 577221
+#% 631923
+#% 632088
+#% 632089
+#% 659971
+#% 662807
+#% 727870
+#% 729931
+#% 993965
+#% 1113090
+
+#index 1016248
+#* VizTree: a tool for visually mining and monitoring massive time series databases
+#@ 9306 3861 8237 11040 19036
+#t 2004
+#c VLDB '04 Proceedings of the Thirtieth international conference on Very large data bases - Volume 30
+#% 662750
+
+#index 1023803
+#* First International Workshop and Challenge on Time Series Classification
+#@ 3861 15854 16115
+#t 2007
+#c Proceedings of the 13th ACM SIGKDD international conference on Knowledge discovery and data mining
+
+#index 1023811
+#* Mining shape and time series databases with symbolic representations
+#@ 3861
+#t 2007
+#c Proceedings of the 13th ACM SIGKDD international conference on Knowledge discovery and data mining
+
+#index 1035808
+#* Why the lack of reproducibility is crippling research in data mining and what you can do about it
+#@ 3861
+#t 2007
+#c Proceedings of the 8th international workshop on Multimedia data mining: (associated with the ACM SIGKDD 2007)
+
+#index 1066734
+#* Scaling and time warping in time series querying
+#@ 1241 3861 20073 11012 10073
+#t 2008
+#c The VLDB Journal — The International Journal on Very Large Data Bases
+#% 86950
+#% 172949
+#% 201876
+#% 248797
+#% 261733
+#% 287466
+#% 398429
+#% 427199
+#% 462231
+#% 464994
+#% 480146
+#% 481609
+#% 481956
+#% 571043
+#% 611616
+#% 625052
+#% 631923
+#% 654456
+#% 659971
+#% 717294
+#% 765481
+#% 795273
+#% 824705
+#% 993965
+#% 1016194
+#% 1391300
+
+#index 1083693
+#* iSAX: indexing and mining terabyte sized time series
+#@ 17567 3861
+#t 2008
+#c Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 172949
+#% 285711
+#% 477482
+#% 729954
+#% 765451
+#% 800574
+#% 876074
+#% 992857
+#% 1044456
+
+#index 1100187
+#* Visual Exploration of Genomic Data
+#@ 8258 21046 3861 850
+#t 2007
+#c PKDD 2007 Proceedings of the 11th European conference on Principles and Practice of Knowledge Discovery in Databases
+#% 607875
+#% 729931
+#% 753026
+#% 1010961
+#% 1740869
+
+#index 1117032
+#* Disk Aware Discord Discovery: Finding Unusual Time Series in Terabyte Sized Datasets
+#@ 17664 3861 20948
+#t 2007
+#c ICDM '07 Proceedings of the 2007 Seventh IEEE International Conference on Data Mining
+
+#index 1117086
+#* Locally Constrained Support Vector Clustering
+#@ 17664 3861 21220
+#t 2007
+#c ICDM '07 Proceedings of the 2007 Seventh IEEE International Conference on Data Mining
+
+#index 1127609
+#* Querying and mining of time series data: experimental comparison of representations and distance measures
+#@ 15671 5189 860 21535 3861
+#t 2008
+#c Proceedings of the VLDB Endowment
+#% 172949
+#% 227924
+#% 316560
+#% 333941
+#% 420065
+#% 462231
+#% 480146
+#% 564263
+#% 618611
+#% 643518
+#% 654456
+#% 659971
+#% 729954
+#% 765451
+#% 795273
+#% 810049
+#% 818916
+#% 835018
+#% 853064
+#% 876074
+#% 878302
+#% 893220
+#% 960281
+#% 992857
+#% 993965
+#% 1016195
+#% 1022238
+#% 1046749
+#% 1290045
+
+#index 1211645
+#* Supporting exact indexing of arbitrarily rotated shapes and periodic time series under Euclidean and warping distance measures
+#@ 3861 14790 15853 8258 17287 23716
+#t 2009
+#c The VLDB Journal — The International Journal on Very Large Data Bases
+#% 49238
+#% 401848
+#% 411758
+#% 443600
+#% 522710
+#% 577221
+#% 729931
+#% 741404
+#% 775619
+#% 784537
+#% 810296
+#% 812562
+#% 836731
+#% 838404
+#% 844343
+#% 993965
+#% 1016194
+#% 1046749
+#% 1113090
+#% 1378406
+#% 1667413
+#% 1854406
+#% 1858193
+
+#index 1214716
+#* Time series shapelets: a new primitive for data mining
+#@ 24031 3861
+#t 2009
+#c Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 420065
+#% 577221
+#% 729960
+#% 737331
+#% 876074
+#% 893161
+
+#index 1214727
+#* Augmenting the generalized hough transform to enable the mining of petroglyphs
+#@ 10680 21535 3861 17287
+#t 2009
+#c Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 321652
+#% 435374
+#% 664387
+#% 881536
+#% 885438
+#% 893161
+#% 957326
+#% 1010569
+#% 1068995
+#% 1095843
+
+#index 1318667
+#* Finding Time Series Motifs in Disk-Resident Data
+#@ 28660 3861 28661
+#t 2009
+#c ICDM '09 Proceedings of the 2009 Ninth IEEE International Conference on Data Mining
+
+#index 1451249
+#* Online discovery and maintenance of time series motifs
+#@ 28660 3861
+#t 2010
+#c Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 198554
+#% 314119
+#% 414993
+#% 460862
+#% 466506
+#% 479649
+#% 480812
+#% 629607
+#% 729960
+#% 745513
+#% 878305
+#% 989656
+#% 1015280
+#% 1064180
+#% 1127609
+#% 1214752
+#% 1220016
+#% 1280911
+#% 1305491
+#% 1387564
+#% 1665165
+
+#index 1490606
+#* A brief survey on sequence classification
+#@ 18273 3214 3861
+#t 2010
+#c ACM SIGKDD Explorations Newsletter
+#% 235377
+#% 266284
+#% 280488
+#% 289519
+#% 310545
+#% 311027
+#% 344447
+#% 420132
+#% 451055
+#% 458369
+#% 464434
+#% 466501
+#% 501994
+#% 577221
+#% 577227
+#% 722803
+#% 729953
+#% 788670
+#% 793247
+#% 799394
+#% 818236
+#% 832727
+#% 840941
+#% 844035
+#% 844344
+#% 864131
+#% 875991
+#% 876074
+#% 881545
+#% 881823
+#% 902457
+#% 908995
+#% 951838
+#% 992857
+#% 998747
+#% 1044404
+#% 1103307
+#% 1126334
+#% 1127609
+#% 1173693
+#% 1214716
+#% 1305497
+#% 1440242
+#% 1661589
+#% 1717571
+
+#index 1535351
+#* How to Do Good Data Mining Research and Get it Published in Top Venues
+#@ 3861
+#t 2010
+#c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+
+#index 1535352
+#* Mother Fugger: Mining Historical Manuscripts with Local Color Patches
+#@ 10680 3861
+#t 2010
+#c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+
+#index 1535372
+#* iSAX 2.0: Indexing and Mining One Billion Time Series
+#@ 34682 17502 17567 3861
+#t 2010
+#c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+
+#index 1535427
+#* Data Editing Techniques to Allow the Application of Distance-Based Outlier Detection to Streams
+#@ 23009 3861 11012
+#t 2010
+#c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+
+#index 1535445
+#* Accelerating Dynamic Time Warping Subsequence Search with GPUs and FPGAs
+#@ 34754 28660 34755 3861 23009
+#t 2010
+#c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+
+#index 1535463
+#* Polishing the Right Apple: Anytime Classification Also Benefits Data Streams with Constant Arrival Times
+#@ 17567 3861
+#t 2010
+#c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+
+#index 1554493
+#* Classification of Live Moths Combining Texture, Color and Shape Primitives
+#@ 10823 34968 3861
+#t 2010
+#c ICMLA '10 Proceedings of the 2010 Ninth International Conference on Machine Learning and Applications
+
+#index 1606057
+#* Logical-shapelets: an expressive primitive for time series classification
+#@ 28660 3861 36189
+#t 2011
+#c Proceedings of the 17th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 643518
+#% 810058
+#% 993965
+#% 1127609
+#% 1214716
+#% 1273832
+#% 1307196
+#% 1426516
+#% 1538184
+
+#index 1663640
+#* Group SAX: extending the notion of contrast sets to time series and multimedia data
+#@ 9306 3861
+#t 2006
+#c PKDD'06 Proceedings of the 10th European conference on Principle and Practice of Knowledge Discovery in Databases
+#% 152934
+#% 248791
+#% 280477
+#% 282232
+#% 310551
+#% 577221
+#% 662750
+#% 727624
+#% 729935
+#% 789009
+
+#index 1665170
+#* Ensembles of nearest neighbor forecasts
+#@ 17664 3597 3861
+#t 2006
+#c ECML'06 Proceedings of the 17th European conference on Machine Learning
+#% 132583
+#% 146676
+#% 229931
+#% 534183
+#% 642773
+
+#index 1673551
+#* Recent advances in mining time series data
+#@ 3861
+#t 2005
+#c PKDD'05 Proceedings of the 9th European conference on Principles and Practice of Knowledge Discovery in Databases
+#% 577221
+#% 727900
+#% 769896
+#% 993965
+
+#index 1688500
+#* Discovering the Intrinsic Cardinality and Dimensionality of Time Series Using MDL
+#@ 38013 30503 38014 38015 8237 3861
+#t 2011
+#c ICDM '11 Proceedings of the 2011 IEEE 11th International Conference on Data Mining
+
+#index 1699573
+#* Recent advances in mining time series data
+#@ 3861
+#t 2005
+#c ECML'05 Proceedings of the 16th European conference on Machine Learning
+#% 577221
+#% 727900
+#% 769896
+#% 993965
+
+#index 1707819
+#* A MPAA-Based iterative clustering algorithm augmented by nearest neighbors search for time-series data streams
+#@ 9306 38904 3861 794 38905 38906 22359
+#t 2005
+#c PAKDD'05 Proceedings of the 9th Pacific-Asia conference on Advances in Knowledge Discovery and Data Mining
+#% 310500
+#% 477825
+#% 480146
+#% 494573
+#% 993949
+
+#index 1707869
+#* A novel bit level time series representation with implication of similarity search and clustering
+#@ 38943 3861 38944 8237
+#t 2005
+#c PAKDD'05 Proceedings of the 9th Pacific-Asia conference on Advances in Knowledge Discovery and Data Mining
+#% 480146
+#% 577221
+#% 761281
+#% 769880
+#% 769896
+
+#index 1770146
+#* Getting your acceptance rate to 80%: a checklist for publishing
+#@ 3861
+#t 2012
+#c PhD '12 Proceedings of the on SIGMOD/PODS 2012 PhD Symposium
+
+#index 1872261
+#* Searching and mining trillions of time series subsequences under dynamic time warping
+#@ 30503 34968 28660 41695 41696 10680 41697 3861
+#t 2012
+#c Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 91091
+#% 462231
+#% 564263
+#% 643518
+#% 740761
+#% 809264
+#% 998465
+#% 998813
+#% 1044456
+#% 1066734
+#% 1083693
+#% 1127609
+#% 1132575
+#% 1173744
+#% 1206865
+#% 1211645
+#% 1214716
+#% 1246209
+#% 1246943
+#% 1362520
+#% 1451249
+#% 1538191
+#% 1590537
+#% 1702249
+#% 1754971
+
+#index 1882581
+#* Towards Automatic Classification on Flying Insects Using Inexpensive Sensors
+#@ 10823 38014 3861 14792
+#t 2011
+#c ICMLA '11 Proceedings of the 2011 10th International Conference on Machine Learning and Applications and Workshops - Volume 01
+
+#index 1978793
+#* Clustering Time Series Using Unsupervised-Shapelets
+#@ 41697 28660 3861
+#t 2012
+#c ICDM '12 Proceedings of the 2012 IEEE 12th International Conference on Data Mining
+

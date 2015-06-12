@@ -1,0 +1,371 @@
+#index 1063528
+#* Sampling cube: a framework for statistical olap over sampling data
+#@ 11879 961 19944 12241 19945
+#t 2008
+#c Proceedings of the 2008 ACM SIGMOD international conference on Management of data
+#% 210182
+#% 273916
+#% 333929
+#% 376266
+#% 464215
+#% 480499
+#% 641976
+#% 654446
+#% 654467
+#% 722929
+#% 765518
+#% 824733
+#% 824734
+#% 893167
+#% 926881
+#% 987193
+#% 993996
+#% 1015294
+#% 1016173
+#% 1016174
+#% 1022205
+
+#index 1063592
+#* BibNetMiner: mining bibliographic information networks
+#@ 19945 19229 19944 9360 961 10548 18038
+#t 2008
+#c Proceedings of the 2008 ACM SIGMOD international conference on Management of data
+#% 823342
+#% 893124
+#% 893127
+#% 989682
+#% 1022314
+
+#index 1214655
+#* Heterogeneous source consensus learning via decision propagation and negotiation
+#@ 17596 2485 19945 961
+#t 2009
+#c Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 252011
+#% 420495
+#% 424997
+#% 722902
+#% 728025
+#% 770836
+#% 837616
+#% 844317
+#% 866325
+#% 937551
+#% 961268
+#% 961278
+#% 987253
+#% 1047784
+#% 1074074
+#% 1083655
+#% 1130817
+#% 1133031
+
+#index 1214701
+#* Ranking-based clustering of heterogeneous information networks with star network schema
+#@ 19945 24022 961
+#t 2009
+#c Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 268079
+#% 283833
+#% 290830
+#% 466675
+#% 577273
+#% 592143
+#% 750863
+#% 769906
+#% 769967
+#% 805896
+#% 840840
+#% 876018
+#% 989654
+#% 1063503
+#% 1063512
+#% 1074127
+#% 1181261
+#% 1650298
+
+#index 1318691
+#* iTopicModel: Information Network-Integrated Topic Modeling
+#@ 19945 961 17596 24022
+#t 2009
+#c ICDM '09 Proceedings of the 2009 Ninth IEEE International Conference on Data Mining
+
+#index 1328094
+#* iNextCube: information network-enhanced text cube
+#@ 24022 29008 19945 15196 961 29009 19229 3494 20185 22156
+#t 2009
+#c Proceedings of the VLDB Endowment
+#% 210182
+#% 280819
+#% 340146
+#% 893143
+#% 1019106
+#% 1176884
+#% 1181261
+#% 1214701
+#% 1314743
+#% 1715634
+
+#index 1426635
+#* Mining knowledge from databases: an information network analysis approach
+#@ 961 19945 9413 850
+#t 2010
+#c Proceedings of the 2010 ACM SIGMOD International Conference on Management of data
+#% 268079
+#% 577273
+#% 865734
+#% 989654
+#% 1002279
+#% 1081580
+#% 1181261
+#% 1214701
+#% 1214717
+#% 1394202
+
+#index 1451221
+#* On community outliers and their efficient detection in information networks
+#@ 17596 13929 2485 24023 19945 961
+#t 2010
+#c Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 191603
+#% 274612
+#% 290830
+#% 300136
+#% 313959
+#% 342638
+#% 466745
+#% 570886
+#% 577273
+#% 729983
+#% 731721
+#% 769881
+#% 785358
+#% 812382
+#% 844334
+#% 916785
+#% 975040
+#% 989618
+#% 989654
+#% 995140
+#% 1000502
+#% 1063629
+#% 1130929
+#% 1214714
+#% 1318671
+
+#index 1482200
+#* SHRINK: a structural clustering algorithm for detecting hierarchical communities in networks
+#@ 31941 31942 961 22160 19945 31943
+#t 2010
+#c CIKM '10 Proceedings of the 19th ACM international conference on Information and knowledge management
+#% 273890
+#% 282905
+#% 313959
+#% 342596
+#% 989654
+#% 991977
+#% 1914479
+
+#index 1495579
+#* Graph regularized transductive classification on heterogeneous information networks
+#@ 28410 19945 32500 961 17596
+#t 2010
+#c ECML PKDD'10 Proceedings of the 2010 European conference on Machine learning and knowledge discovery in databases: Part I
+#% 248810
+#% 727834
+#% 729982
+#% 840840
+#% 876018
+#% 881557
+#% 961218
+#% 961268
+#% 961278
+#% 1214701
+#% 1214717
+#% 1273915
+#% 1289267
+#% 1650403
+
+#index 1581965
+#* WINACS: construction and analysis of web-based computer science information networks
+#@ 31177 32500 21685 35416 961 35417 35418 31176 35419 35420 19945 35421 24023 28701
+#t 2011
+#c Proceedings of the 2011 ACM SIGMOD International Conference on Management of data
+#% 1176884
+#% 1214701
+#% 1328118
+#% 1426635
+#% 1451159
+#% 1482398
+#% 1560218
+#% 1561591
+#% 1610177
+
+#index 1707456
+#* Relation strength-aware clustering of heterogeneous information networks with incomplete attributes
+#@ 19945 968 961
+#t 2012
+#c Proceedings of the VLDB Endowment
+#% 36672
+#% 722902
+#% 769881
+#% 881460
+#% 881514
+#% 989586
+#% 989618
+#% 989636
+#% 995140
+#% 1055681
+#% 1055741
+#% 1117695
+#% 1186295
+#% 1214655
+#% 1214701
+#% 1214714
+#% 1289267
+#% 1318691
+#% 1328161
+#% 1328169
+#% 1650298
+
+#index 1846724
+#* Mining Knowledge from Data: An Information Network Analysis Approach
+#@ 961 19945 9413 850
+#t 2012
+#c ICDE '12 Proceedings of the 2012 IEEE 28th International Conference on Data Engineering
+
+#index 1846833
+#* Multidimensional Analysis of Atypical Events in Cyber-Physical Data
+#@ 21437 28701 31175 961 7839 19945 15163 41575
+#t 2012
+#c ICDE '12 Proceedings of the 2012 IEEE 28th International Conference on Data Engineering
+
+#index 1872334
+#* Integrating community matching and outlier detection for mining evolutionary community outliers
+#@ 23141 17596 19945 961
+#t 2012
+#c Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 300136
+#% 300183
+#% 333929
+#% 443853
+#% 466745
+#% 479791
+#% 494396
+#% 570886
+#% 577263
+#% 781774
+#% 785389
+#% 844317
+#% 1041180
+#% 1202160
+#% 1206639
+#% 1232040
+#% 1292669
+#% 1318691
+#% 1451221
+#% 1482422
+#% 1562549
+#% 1594652
+
+#index 1872391
+#* Integrating meta-path selection with user-guided object clustering in heterogeneous information networks
+#@ 19945 41828 961 9413 850 28701
+#t 2012
+#c Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 280819
+#% 313959
+#% 464631
+#% 466574
+#% 722902
+#% 722929
+#% 722934
+#% 769881
+#% 770782
+#% 829025
+#% 840892
+#% 876018
+#% 916785
+#% 989618
+#% 989654
+#% 995140
+#% 1002279
+#% 1063503
+#% 1117695
+#% 1125382
+#% 1181261
+#% 1214701
+#% 1474171
+#% 1565432
+
+#index 1872412
+#* Query-driven discovery of semantically similar substructures in heterogeneous networks
+#@ 28701 19945 18038 961
+#t 2012
+#c Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 288990
+#% 1022280
+#% 1214701
+#% 1451228
+#% 1523825
+#% 1581921
+#% 1606073
+#% 1635098
+#% 1635140
+
+#index 1895106
+#* Mining knowledge from interconnected data: a heterogeneous information network analysis approach
+#@ 19945 961 9413 850
+#t 2012
+#c Proceedings of the VLDB Endowment
+#% 1063512
+#% 1081580
+#% 1176876
+#% 1181261
+#% 1214701
+#% 1451159
+#% 1495579
+#% 1581917
+#% 1606073
+#% 1635098
+#% 1693927
+#% 1707456
+#% 1730734
+#% 1872391
+
+#index 1925642
+#* Community trend outlier detection using soft temporal pattern mining
+#@ 23141 17596 19945 961
+#t 2012
+#c ECML PKDD'12 Proceedings of the 2012 European conference on Machine Learning and Knowledge Discovery in Databases - Volume Part II
+#% 333929
+#% 466425
+#% 481290
+#% 781774
+#% 784297
+#% 785389
+#% 1019143
+#% 1202160
+#% 1206639
+#% 1214633
+#% 1446962
+#% 1451221
+#% 1482422
+#% 1523860
+#% 1562549
+#% 1594652
+#% 1607952
+#% 1872334
+
+#index 1978715
+#* ETM: Entity Topic Models for Mining Documents Associated with Entities
+#@ 31176 19945 44282 961
+#t 2012
+#c ICDM '12 Proceedings of the 2012 IEEE 12th International Conference on Data Mining
+
+#index 1978788
+#* Predicting Links in Multi-relational and Heterogeneous Networks
+#@ 33702 30469 19945 44344
+#t 2012
+#c ICDM '12 Proceedings of the 2012 IEEE 12th International Conference on Data Mining
+
