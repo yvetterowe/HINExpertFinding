@@ -16,6 +16,7 @@
 #% 481281
 #% 527022
 #% 670380
+#! Ad hoc querying is difficult on very large datasets, since it is usually not possible to have the entire dataset on disk. While compression can be used to decrease the size of the dataset, compressed data is notoriously difficult to index or access.In this paper we consider a very large dataset comprising multiple distinct time sequences. Each point in the sequence is a numerical value. We show how to compress such a dataset into a format that supports ad hoc querying, provided that a small error can be tolerated when the data is uncompressed. Experiments on large, real world datasets (AT&T customer calling patterns) show that the proposed method achieves an average of less than 5% error in any data value after compressing to a mere 2.5% of the original space (i.e., a 40:1 compression ratio), with these numbers not very sensitive to dataset size. Experiments on aggregate queries achieved a 0.5% reconstruction error with a space requirement under 2%.
 
 #index 300123
 #* Data mining on an OLTP system (nearly) for free
@@ -34,6 +35,7 @@
 #% 479482
 #% 479802
 #% 481127
+#! This paper proposes a scheme for scheduling disk requests that takes advantage of the ability of high-level functions to operate directly at individual disk drives. We show that such a scheme makes it possible to support a Data Mining workload on an OLTP system almost for free: there is only a small impact on the throughput and response time of the existing workload. Specifically, we show that an OLTP system has the disk resources to consistently provide one third of its sequential bandwidth to a background Data Mining task with close to zero impact on OLTP throughput and response time at high transaction loads. At low transaction loads, we show much lower impact than observed in previous work. This means that a production OLTP system can be used for Data Mining tasks without the expense of a second dedicated system. Our scheme takes advantage of close interaction with the on-disk scheduler by reading blocks for the Data Mining workload as the disk head “passes over” them while satisfying demand blocks from the OLTP request stream. We show that this scheme provides a consistent level of throughput for the background workload even at very high foreground loads. Such a scheme is of most benefit in combination with an Active Disk environment that allows the background Data Mining application to also take advantage of the processing power and memory available directly on the disk drives.
 
 #index 300132
 #* Density biased sampling: an improved method for data mining and clustering
@@ -54,6 +56,7 @@
 #% 480948
 #% 481749
 #% 481782
+#! Data mining in large data sets often requires a sampling or summarization step to form an in-core representation of the data that can be processed more efficiently. Uniform random sampling is frequently used in practice and also frequently criticized because it will miss small clusters. Many natural phenomena are known to follow Zipf's distribution and the inability of uniform sampling to find small clusters is of practical concern. Density Biased Sampling is proposed to probabilistically under-sample dense regions and over-sample light regions. A weighted sample is used to preserve the densities of the original data. Density biased sampling naturally includes uniform sampling as a special case. A memory efficient algorithm is proposed that approximates density biased sampling using only a single scan of the data. We empirically evaluate density biased sampling using synthetic data sets that exhibit varying cluster size distributions finding up to a factor of six improvement over uniform sampling.
 
 #index 300160
 #* Spatial join selectivity using power laws
@@ -89,6 +92,7 @@
 #% 481620
 #% 481920
 #% 631937
+#! We discovered a surprising law governing the spatial join selectivity across two sets of points. An example of such a spatial join is “find the libraries that are within 10 miles of schools”. Our law dictates that the number of such qualifying pairs follows a power law, whose exponent we call “pair-count exponent” (PC). We show that this law also holds for self-spatial-joins (“find schools within 5 miles of other schools”) in addition to the general case that the two point-sets are distinct. Our law holds for many real datasets, including diverse environments (geographic datasets, feature vectors from biology data, galaxy data from astronomy).In addition, we introduce the concept of the Box-Occupancy-Product-Sum (BOPS) plot, and we show that it can compute the pair-count exponent in a timely manner, reducing the run time by orders of magnitude, from quadratic to linear. Due to the pair-count exponent and our analysis (Law 1), we can achieve accurate selectivity estimates in constant time (O(1)) without the need for sampling or other expensive operations. The relative error in selectivity is about 30% with our fast BOPS method, and even better (about 10%), if we use the slower, quadratic method.
 
 #index 342592
 #* The "DGX" distribution for mining massive, skewed data
@@ -99,6 +103,7 @@
 #% 340296
 #% 480948
 #% 642534
+#! Skewed distributions appear very often in practice. Unfortunately, the traditional Zipf distribution often fails to model them well. In this paper, we propose a new probability distribution, the Discrete Gaussian Exponential (DGX), to achieve excellent fits in a wide variety of settings; our new distribution includes the Zipf distribution as a special case. We present a statistically sound method for estimating the DGX parameters based on maximum likelihood estimation (MLE). We applied DGX to a wide variety of real world data sets, such as sales data from a large retailer chain, us-age data from AT&T, and Internet clickstream data; in all cases, DGX fits these distributions very well, with almost a 99% correlation coefficient in quantile-quantile plots. Our algorithm also scales very well because it requires only a single pass over the data. Finally, we illustrate the power of DGX as a new tool for data mining tasks, such as outlier detection.
 
 #index 342609
 #* Tri-plots: scalable tools for multidimensional data mining
@@ -121,6 +126,7 @@
 #% 527160
 #% 631970
 #% 632043
+#! We focus on the problem of finding patterns across two large, multidimensional datasets. For example, given feature vectors of healthy and of non-healthy patients, we want to answer the following questions: Are the two clouds of points separable? What is the smallest/largest pair-wise distance across the two datasets? Which of the two clouds does a new point (feature vector) come from?We propose a new tool, the tri-plot, and its generalization, the pq-plot, which help us answer the above questions. We provide a set of rules on how to interpret a tri-plot, and we apply these rules on synthetic and real datasets. We also show how to use our tool for classification, when traditional methods (nearest neighbor, classification trees) may fail.
 
 #index 458552
 #* Declustering Spatial Databases on a Multi-Computer Architecture
@@ -146,6 +152,7 @@
 #% 480093
 #% 481460
 #% 546130
+#! In this paper we present the Slim-tree, a dynamic tree for organizing metric datasets in pages of fixed size. The Slim-tree uses the "fat-factor" which provides a simple way to quantify the degree of overlap between the nodes in a metric tree. It is well-known that the degree of overlap directly affects the query performance of index structures. There are many suggestions to reduce overlap in multidimensional index structures, but the Slim-tree is the first metric structure explicitly designed to reduce the degree of overlap. Moreover, we present new algorithms for inserting objects and splitting nodes. The new insertion algorithm leads to a tree with high storage utilization and improved query performance, whereas the new split algorithm runs considerably faster than previous ones, generally without sacrificing search performance. Results obtained from experiments with real-world data sets show that the new algorithms of the Slim-tree consistently lead to performance improvements. After performing the Slim-down algorithm, we observed improvements up to a factor of 35% for range queries.
 
 #index 462231
 #* Efficient Retrieval of Similar Time Sequences Under Time Warping
@@ -397,18 +404,21 @@
 #% 359751
 #% 427199
 #% 480093
+#! With the extension of spatial database applications, during the last years continuous field databases emerge as an important research issue in order to deal with continuous natural phenomena during the last years. A field can be represented by a set of cells containing some explicit measured sample points and by arbitrary interpolation methods used to derive implicit values on nonsampled positions. The form of cells depends on the specific data model in an application. In this paper, we present an efficient indexing method on the value domain in a large field database for field value queries (e.g. finding regions where the temperature is between 20 degrees and 30 degrees). The main idea is to divide a field into subfields [15] in order that all of explicit and implicit values inside a subfield are similar each other on the value domain. Then the intervals of the value domain of subfields can be indexed using traditional spatial access methods, like R*-tree [1]. We propose an efficient and effective algorithm for constructing subfields. This is done by using the field property that values close spatially in a field are likely to be closer together. In more details, we linearize cells in order of the Hilbert value of the center position of cells. Then we form subfields by grouping sequentially cells by means of the cost function proposed in this paper, which tries to minimize the probability that subfields will be accessed by a value query. We implemented our method and carried out experiments on real and synthetic data. The results of experiments show that our method dramatically improves query processing time of field value queries compared to linear scanning.
 
 #index 570887
 #* Quantifiable data mining using ratio rules
 #@ 577 3257 529 578
 #t 2000
 #c The VLDB Journal — The International Journal on Very Large Data Bases
+#! Association Rule Mining algorithms operate on a data matrix (e.g., customers $\times$ products) to derive association rules [AIS93b, SA96]. We propose a new paradigm, namely, Ratio Rules, which are quantifiable in that we can measure the “goodness” of a set of discovered rules. We also propose the “guessing error” as a measure of the “goodness”, that is, the root-mean-square error of the reconstructed values of the cells of the given matrix, when we pretend that they are unknown. Another contribution is a novel method to guess missing/hidden values from the Ratio Rules that our method derives. For example, if somebody bought $10 of milk and $3 of bread, our rules can “guess” the amount spent on butter. Thus, unlike association rules, Ratio Rules can perform a variety of important tasks such as forecasting, answering “what-if” scenarios, detecting outliers, and visualizing the data. Moreover, we show that we can compute Ratio Rules in a single pass over the data set with small memory requirements (a few small matrices), in contrast to association rule mining methods which require multiple passes and/or large memory. Experiments on several real data sets (e.g., basketball and baseball statistics, biological data) demonstrate that the proposed method: (a) leads to rules that make sense; (b) can find large itemsets in binary matrices, even in the presence of noise; and (c) consistently achieves a “guessing error” of up to 5 times less than using straightforward column averages.
 
 #index 575987
 #* KDD-2002 workshop report fractals and self-similarity in data mining: issue and approaches
 #@ 882 578
 #t 2002
 #c ACM SIGKDD Explorations Newsletter
+#! In this report we provide a summary of the first workshop on application of self-similarity and fractals in data mining: issues and approaches held in conjunction with ACM SIGKDD 2002, July 23 at Edmonton, Alberta, Canada.
 
 #index 577219
 #* ANF: a fast and scalable tool for data mining in massive graphs
@@ -426,6 +436,7 @@
 #% 342596
 #% 406493
 #% 445369
+#! Graphs are an increasingly important data source, with such important graphs as the Internet and the Web. Other familiar graphs include CAD circuits, phone records, gene sequences, city streets, social networks and academic citations. Any kind of relationship, such as actors appearing in movies, can be represented as a graph. This work presents a data mining tool, called ANF, that can quickly answer a number of interesting questions on graph-represented data, such as the following. How robust is the Internet to failures? What are the most influential database papers? Are there gender differences in movie appearance patterns? At its core, ANF is based on a fast and memory-efficient approach for approximating the complete "neighbourhood function" for a graph. For the Internet graph (268K nodes), ANF's highly-accurate approximation is more than 700 times faster than the exact computation. This reduces the running time from nearly a day to a matter of a minute or two, allowing users to perform ad hoc drill-down tasks and to repeatedly answer questions about changing data sources. To enable this drill-down, ANF employs new techniques for approximating neighbourhood-type functions for graphs with distinguished nodes and/or edges. When compared to the best existing approximation, ANF's approach is both faster and more accurate, given the same resources. Additionally, unlike previous approaches, ANF scales gracefully to handle disk resident graphs. Finally, we present some of our results from mining large graphs using ANF.
 
 #index 577293
 #* Making every bit count: fast nonlinear axis scaling
@@ -440,12 +451,14 @@
 #% 476569
 #% 480307
 #% 481620
+#! Existing axis scaling and dimensionality methods focus on preserving structure, usually determined via the Euclidean distance. In other words, they inherently assume that the Euclidean distance is already correct. We instead propose a novel nonlinear approach driven by an information-theoretic viewpoint, which we show is also strongly linked to intrinsic dimensionality, or degrees of freedom; and uniformity. Nonlinear transformations based on common probability distributions, combined with information-driven selection, simultaneously reduce the number of dimensions required and increase the value of those we retain. Experiments on real data confirm that this approach reveals correlations, finds novel attributes, and scales well.
 
 #index 729906
 #* Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining
 #@ 3892 10113 2441 578
 #t 2003
 #c The Ninth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining
+#! KDD-2003, the Ninth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, was held in Washington, DC, U.S.A., on August 24-27, 2003. KDD is the leading international forum for the exchange of research results and practical experience in field of knowledge discovery and data mining. As the mountains of data available to organizations and individuals continue to grow without limit, and the need to extract useful knowledge from them becomes ever more intense, scientists, government workers and business people turn to the KDD community for solutions. The volume you have in your hands (or on your screen) contains a snapshot of a year of developments in this field; we hope you find it useful and rewarding.The KDD-2003 technical program featured two parallel research tracks and an industrial/government track. The latter was the result of expanding the scope of KDD's industrial track to reflect the increased importance of knowledge discovery and data mining in government and vice-versa. The program also featured three keynote speakers, nine workshops, seven tutorials and two panels. The 2003 KDD Cup competition focused on mining citation networks and data cleaning in large bibliographic repositories. Dozens of exhibits from vendors and other organizations added to the ferment, and underscored the conference's dual role as an industry and academic event.Continuing its tradition of collocation with related conferences, this year KDD was collocated with ICML-2003, the Twentieth International Conference on Machine Learning. The two conferences held a joint session on the first day of KDD (last of ICML), which featured a selection of papers from the two conferences and a joint keynote speaker. COLT-2003, the Sixteenth Annual Conference on Computational Learning Theory, was also collocated with KDD and ICML.We received a large number of submissions, and the selection process was extremely competitive. Each paper was independently reviewed by three members of the program committee for originality, significance, technical quality, and clarity of presentation. This was followed by discussion among the reviewers and final decisions. Of the 258 research track submissions received, 34 were accepted as full papers for oral presentation, and 36 were accepted for poster presentation (13% and 14% of submissions, respectively). The industrial/government track received 40 submissions, of which 12 were accepted for oral presentation and 10 were accepted for poster presentation (30% and 25%). Additionally, ne research submission was reassigned to the industrial/government track, and accepted for oral presentation there.The resulting program was notable for its diversity and vitality. Alongside traditional KDD topics like classification, clustering, frequent sets, scalability, and temporal data, we also saw papers in rapidly growing areas like graph and relational mining, data streams, semi-structured data, and privacy. Application areas included the Web, bioinformatics, health care, marketing, crime-fighting, and many others.
 
 #index 730018
 #* The power-method: a comprehensive estimation technique for multi-dimensional queries
@@ -479,6 +492,7 @@
 #% 527194
 #% 654486
 #% 1015322
+#! Existing estimation approaches for multi-dimensional databases often rely on the assumption that data distribution in a small region is uniform, which seldom holds in practice. Moreover, their applicability is limited to specific estimation tasks under certain distance metric. This paper develops the Power-method, a comprehensive technique applicable to a wide range of query optimization problems under various metrics. The Power-method eliminates the local uniformity assumption and is accurate even in scenarios where existing approaches completely fail. Furthermore, it performs estimation by evaluating only one simple formula with minimal computational overhead. Extensive experiments confirm that the Power-method outperforms previous techniques in terms of accuracy and applicability to various optimization scenarios.
 
 #index 745485
 #* Approximate Temporal Aggregation
@@ -504,6 +518,7 @@
 #% 527189
 #% 527328
 #% 571296
+#! Temporal aggregate queries retrieve summarizedinformation about records with time-evolving attributes.Existing approaches have at least one of the followingshortcomings: (i) they incur large space requirements, (ii)they have high processing cost and (iii) they are based oncomplex structures, which are not available in commercialsystems. In this paper we solve these problems byapproximation techniques with bounded error. Wepropose two methods: the first one is based on multi-versionB-trees and has logarithmic worst-case query cost,while the second technique uses off-the-shelf B- and R-trees,and achieves the same performance in the expectedcase. We experimentally demonstrate that the proposedmethods consume an order of magnitude less space thantheir competitors and are significantly faster, even forcases that the permissible error bound is very small.
 
 #index 765452
 #* Prediction and indexing of moving objects with unknown motion patterns
@@ -519,6 +534,7 @@
 #% 397386
 #% 576115
 #% 1015297
+#! Existing methods for peediction spatio-temporal databases assume that objects move according to linear functions. This severely limits their applicability, since in practice movement is more complex, and individual objects may follow drastically diffferent motion patterns. In order to overcome these problems, we first introduce a general framework for monitoring and indexing moving objects, where (i) each boject computes individually the function that accurately captures its movement and (ii) a server indexes the object locations at a coarse level and processes queries using a filter-refinement mechanism. Our second contribution is a novel recursive motion function that supports a broad class of non-linear motion patterns. The function does not presume any a-priori movement but can postulate the particular motion of each object by examining its locations at recent timestamps. Finally. we propse an efficient indexing scheme that faciliates the processing of predicitive queries without false misses.
 
 #index 765517
 #* Indexing and mining streams
@@ -542,6 +558,7 @@
 #% 580971
 #% 646231
 #% 1227446
+#! Hidden variables, evolving over time, appear in multiple settings, where it is valuable to recover them, typically from observed sums. Our driving application is 'network tomography', where we need to estimate the origin-destination (OD) traffic flows to determine, e.g., who is communicating with whom in a local area network. This information allows network engineers and managers to solve problems in design, routing, configuration debugging, monitoring and pricing. Unfortunately the direct measurement of the OD traffic is usually difficult, or even impossible; instead, we can easily measure the loads on every link, that is, sums of desirable OD flows.In this paper we propose i-FILTER, a method to solve this problem, which improves the state-of-the-art by (a) introducing explicit time dependence, and by (b) using realistic, non-Gaussian marginals in the statistical models for the traffic flows, as never attempted before. We give experiments on real data, where i-FILTER scales linearly with new observations and out-performs the best existing solutions, in a wide variety of settings. Specifically, on real network traffic measured at CMU, and at AT&T, i-FILTER reduced the estimation errors between 15% and 46% in all cases.
 
 #index 769883
 #* Fully automatic cross-associations
@@ -568,6 +585,7 @@
 #% 729418
 #% 729918
 #% 730064
+#! Large, sparse binary matrices arise in numerous data mining applications, such as the analysis of market baskets, web graphs, social networks, co-citations, as well as information retrieval, collaborative filtering, sparse matrix reordering, etc. Virtually all popular methods for the analysis of such matrices---e.g., k-means clustering, METIS graph partitioning, SVD/PCA and frequent itemset mining---require the user to specify various parameters, such as the number of clusters, number of principal components, number of partitions, and "support." Choosing suitable values for such parameters is a challenging problem.Cross-association is a joint decomposition of a binary matrix into disjoint row and column groups such that the rectangular intersections of groups are homogeneous. Starting from first principles, we furnish a clear, information-theoretic criterion to choose a good cross-association as well as its parameters, namely, the number of row and column groups. We provide scalable algorithms to approach the optimal. Our algorithm is parameter-free, and requires no user intervention. In practice it scales linearly with the problem size, and is thus applicable to very large matrices. Finally, we present experiments on multiple synthetic and real-life datasets, where our method gives high-quality, intuitive results.
 
 #index 769887
 #* Fast discovery of connection subgraphs
@@ -588,6 +606,7 @@
 #% 729923
 #% 730089
 #% 770307
+#! We define a connection subgraph as a small subgraph of a large graph that best captures the relationship between two nodes. The primary motivation for this work is to provide a paradigm for exploration and knowledge discovery in large social networks graphs. We present a formal definition of this problem, and an ideal solution based on electricity analogues. We then show how to accelerate the computations, to produce approximate, but high-quality connection subgraphs in real time on very large (disk resident) graphs.We describe our operational prototype, and we demonstrate results on a social network graph derived from the World Wide Web. Our graph contains 15 million nodes and 96 million edges, and our system still produces quality responses within seconds.
 
 #index 769952
 #* Automatic multimedia cross-modal correlation discovery
@@ -613,6 +632,7 @@
 #% 741122
 #% 741169
 #% 1390190
+#! Given an image (or video clip, or audio song), how do we automatically assign keywords to it? The general problem is to find correlations across the media in a collection of multimedia objects like video clips, with colors, and/or motion, and/or audio, and/or text scripts. We propose a novel, graph-based approach, "MMG", to discover such cross-modal correlations.Our "MMG" method requires no tuning, no clustering, no user-determined constants; it can be applied to any multimedia collection, as long as we have a similarity function for each medium; and it scales linearly with the database size. We report auto-captioning experiments on the "standard" Corel image database of 680 MB, where it outperforms domain specific, fine-tuned methods by up to 10 percentage points in captioning accuracy (50% relative improvement).
 
 #index 777933
 #* Adaptive, unsupervised stream mining
@@ -646,18 +666,21 @@
 #% 993949
 #% 993958
 #% 993961
+#! Sensor devices and embedded processors are becoming widespread, especially in measurement/monitoring applications. Their limited resources (CPU, memory and/or communication bandwidth, and power) pose some interesting challenges. We need concise, expressive models to represent the important features of the data and that lend themselves to efficient estimation. In particular, under these severe constraints, we want models and estimation methods that (a) require little memory and a single pass over the data, (b) can adapt and handle arbitrary periodic components, and (c) can deal with various types of noise. We propose ${\mathrm{AWSOM}}$ (Arbitrary Window Stream mOdeling Method), which allows sensors in remote or hostile environments to efficiently and effectively discover interesting patterns and trends. This can be done automatically, i.e., with no prior inspection of the data or any user intervention and expert tuning before or during data gathering. Our algorithms require limited resources and can thus be incorporated into sensors - possibly alongside a distributed query processing engine [10,6,27]. Updates are performed in constant time with respect to stream size using logarithmic space. Existing forecasting methods (SARIMA, GARCH, etc.) and “traditional” Fourier and wavelet analysis fall short on one or more of these requirements. To the best of our knowledge, ${\mathrm{AWSOM}}$ is the first framework that combines all of the above characteristics. Experiments on real and synthetic datasets demonstrate that ${\mathrm{AWSOM}}$ discovers meaningful patterns over long time periods. Thus, the patterns can also be used to make long-range forecasts, which are notoriously difficult to perform. In fact, ${\mathrm{AWSOM}}$ outperforms manually set up autoregressive models, both in terms of long-term pattern detection and modeling and by at least 10 x in resource consumption.
 
 #index 784963
 #* GCap: Graph-based Automatic Image Captioning
 #@ 11069 11070 578 11071
 #t 2004
 #c CVPRW '04 Proceedings of the 2004 Conference on Computer Vision and Pattern Recognition Workshop (CVPRW'04) Volume 9 - Volume 09
+#! Learning the semantics of image retrieval using both text and visual information is a challenging research issue in content-based image retrieval systems. In this paper, we present a statistical natural language processing model for image retrieval, ...
 
 #index 785415
 #* MMSS: Multi-Modal Story-Oriented Video Summarization
 #@ 11069 11855 578
 #t 2004
 #c ICDM '04 Proceedings of the Fourth IEEE International Conference on Data Mining
+#! We propose multi-modal story-oriented video summarization (MMSS) which, unlike previous works that use fine-tuned, domain-specific heuristics, provides a domain-independent, graph-based framework. MMSS uncovers correlation between information of different modalities which gives meaningful story-oriented news video summaries. MMSS can also be applied for video retrieval, giving performance that matches the best traditional retrieval techniques (OKAPI and LSI), with no fine-tuned heuristics such as tf/idf.
 
 #index 800507
 #* AutoLag: Automatic Discovery of Lag Correlations in Stream Data
@@ -696,12 +719,14 @@
 #% 745425
 #% 765445
 #% 783492
+#! Efficiently and accurately searching for similarities among time series and discovering interesting patterns is an important and non-trivial problem. In this paper, we introduce a new representation of time series, the Multiresolution Vector Quantized (MVQ) approximation, along with a new distance function. The novelty of MVQ is that it keeps both local and global information about the original time series in a hierarchical mechanism, processing the original time series at multiple resolutions. Moreover, the proposed representation is symbolic employing key subsequences and potentially allows the application of text-based retrieval techniques into the similarity analysis of time series. The proposed method is fast and scales linearly with the size of database and the dimensionality. Contrary to the vast majority in the literature that uses the Euclidean distance, MVQ uses a multi-resolution/hierarchical distance function. We performed experiments with real and synthetic data. The proposed distance function consistently outperforms all the major competitors (Euclidean, Dynamic Time Warping, Piecewise Aggregate Approximation) achieving up to 20% better precision/recall and clustering accuracy on the tested datasets.
 
 #index 800623
 #* Online Latent Variable Detection in Sensor Networks
 #@ 10508 4202 578
 #t 2005
 #c ICDE '05 Proceedings of the 21st International Conference on Data Engineering
+#! Sensor networks attract increasing interest, for a broad range of applications. Given a sensor network, one key issue becomes how to utilize it efficiently and effectively. In particular, how can we detect the underlying correlations (latent variables) among many co-evolving sensor measurements? Can we do it incrementally? We present a system that can (1) collect the measurements from the real wireless sensors; (2) process them in real-time; and (3) determine the correlations (latent variables) among the sensor streams on the fly.
 
 #index 809264
 #* FTW: fast similarity search under the time warping distance
@@ -730,6 +755,7 @@
 #% 616530
 #% 654456
 #% 993965
+#! Time-series data naturally arise in countless domains, such as meteorology, astrophysics, geology, multimedia, and economics. Similarity search is very popular, and DTW (Dynamic Time Warping) is one of the two prevailing distance measures. Although DTW incurs a heavy computation cost, it provides scaling along the time axis. In this paper, we propose FTW (Fast search method for dynamic Time Warping), which guarantees no false dismissals in similarity query processing. FTW efficiently prunes a significant number of the search cost. Experiments on real and synthetic sequence data sets reveals that FTW is significantly faster than the best existing method, up to 222 times.
 
 #index 810058
 #* BRAID: stream mining through group lag correlations
@@ -764,12 +790,14 @@
 #% 1016153
 #% 1016158
 #% 1016196
+#! The goal is to monitor multiple numerical streams, and determine which pairs are correlated with lags, as well as the value of each such lag. Lag correlations (and anti-correlations) are frequent, and very interesting in practice: For example, a decrease in interest rates typically precedes an increase in house sales by a few months; higher amounts of fluoride in the drinking water may lead to fewer dental cavities, some years later. Additional settings include network analysis, sensor monitoring, financial data analysis, and moving object tracking. Such data streams are often correlated (or anti-correlated), but with an unknown lag.We propose BRAID, a method to detect lag correlations between data streams. BRAID can handle data streams of semi-infinite length, incrementally, quickly, and with small resource consumption. We also provide a theoretical analysis, which, based on Nyquist's sampling theorem, shows that BRAID can estimate lag correlations with little, and often with no error at all. Our experiments on real and realistic data show that BRAID detects the correct lag perfectly most of the time (the largest relative error was about 1%); while it is up to 40,000 times faster than the naive implementation.
 
 #index 810122
 #* Research issues in protein location image databases
 #@ 10184 578
 #t 2005
 #c Proceedings of the 2005 ACM SIGMOD international conference on Management of data
+#! Which proteins have similar locations within cells? How many distinct location patters do cells display? How do we answer these questions quickly, from a large collection of microscope images such as in on-line journals?
 
 #index 823342
 #* Graphs over time: densification laws, shrinking diameters and possible explanations
@@ -788,6 +816,7 @@
 #% 754058
 #% 763566
 #% 1394202
+#! How do real graphs evolve over time? What are "normal" growth patterns in social, technological, and information networks? Many studies have discovered patterns in static graphs, identifying properties in a single snapshot of a large network, or in a very small number of snapshots; these include heavy tails for in- and out-degree distributions, communities, small-world phenomena, and others. However, given the lack of information about network evolution over long periods, it has been hard to convert these findings into statements about trends over time.Here we study a wide range of real graphs, and we observe some surprising phenomena. First, most of these graphs densify over time, with the number of edges growing super-linearly in the number of nodes. Second, the average distance between nodes often shrinks over time, in contrast to the conventional wisdom that such distance parameters should increase slowly as a function of the number of nodes (like O(log n) or O(log(log n)).Existing graph generation models do not exhibit these types of behavior, even at a qualitative level. We provide a new graph generator, based on a "forest fire" spreading process, that has a simple, intuitive justification, requires very few parameters (like the "flammability" of nodes), and produces graphs exhibiting the full range of properties observed both in prior work and in the present study.
 
 #index 824709
 #* Streaming pattern discovery in multiple time-series
@@ -829,6 +858,7 @@
 #% 1015324
 #% 1016153
 #% 1756509
+#! In this paper, we introduce SPIRIT (Streaming Pattern dIscoveRy in multIple Time-series). Given n numerical data streams, all of whose values we observe at each time tick t, SPIRIT can incrementally find correlations and hidden variables, which summarise the key trends in the entire stream collection. It can do this quickly, with no buffering of stream values and without comparing pairs of streams. Moreover, it is any-time, single pass, and it dynamically detects changes. The discovered trends can also be used to immediately spot potential anomalies, to do efficient forecasting and, more generally, to dramatically simplify further data processing. Our experimental evaluation and case studies show that SPIRIT can incrementally capture correlations and discover trends, efficiently and effectively.
 
 #index 844288
 #* ViVo: Visual Vocabulary Construction for Mining Biomedical Images
@@ -845,6 +875,7 @@
 #% 768039
 #% 1022958
 #% 1854913
+#! Given a large collection of medical images of several conditions and treatments, how can we succinctly describe the characteristics of each setting? For example, given a large collection of retinal images from several different experimental conditions (normal, detached, reattached, etc.), how can data mining help biologists focus on important regions in the images or on the differences between different experimental conditions? If the images were text documents, we could find the main terms and concepts for each condition by existing IR methods (e.g., tf/idf and LSI). We propose something analogous, but for the much more challenging case of an image collection: We propose to automatically develop a visual vocabulary by breaking images into n 脳 n tiles and deriving key tiles ("ViVos") for each image and condition. We experiment with numerous domain-independent ways of extracting features from tiles (color histograms, textures, etc.), and several ways of choosing characteristic tiles (PCA, ICA). We perform experiments on two disparate biomedical datasets. The quantitative measure of success is classification accuracy: Our "ViVos" achieve high classification accuracy (up to 83% for a nine-class problem on feline retinal images). More importantly, qualitatively, our "ViVos" do an excellent job as "visual vocabulary terms": they have biological meaning, as corroborated by domain experts; they help spot characteristic regions of images, exactly like text vocabulary terms do for documents; and they highlight the differences between pairs of images.
 
 #index 844325
 #* Parameter-Free Spatial Data Mining Using MDL
@@ -873,6 +904,7 @@
 #% 785420
 #% 1307659
 #% 1502454
+#! Consider spatial data consisting of a set of binary features taking values over a collection of spatial extents (grid cells). We propose a method that simultaneously finds spatial correlation and feature co-occurrence patterns, without any parameters. In particular, we employ the Minimum Description Length (MDL) principle coupled with a natural way of compressing regions. This defines what "good" means: a feature co-occurrence pattern is good, if it helps us better compress the set of locations for these features. Conversely, a spatial correlation is good, if it helps us better compress the set of features in the corresponding region. Our approach is scalable for large datasets (both number of locations and of features). We evaluate our method on both real and synthetic datasets.
 
 #index 844334
 #* Neighborhood Formation and Anomaly Detection in Bipartite Graphs
@@ -892,6 +924,7 @@
 #% 769952
 #% 799747
 #% 1908546
+#! Many real applications can be modeled using bipartite graphs, such as users vs. files in a P2P system, traders vs. stocks in a financial trading system, conferences vs. authors in a scientific publication network, and so on. We introduce two operations on bipartite graphs: 1) identifying similar nodes (Neighborhood formation), and 2) finding abnormal nodes (Anomaly detection). And we propose algorithms to compute the neighborhood for each node using random walk with restarts and graph partitioning; we also propose algorithms to identify abnormal nodes, using neighborhood information. We evaluate the quality of neighborhoods based on semantics of the datasets, and we also measure the performance of the anomaly detection algorithm with manually injected anomalies. Both effectiveness and efficiency of the methods are confirmed by experiments on several real datasets.
 
 #index 844420
 #* Example-Based Robust Outlier Detection in High Dimensional Datasets
@@ -905,6 +938,7 @@
 #% 464888
 #% 479791
 #% 686757
+#! Detecting outliers is an important problem. Most of its applications typically possess high dimensional datasets. In high dimensional space, the data becomes sparse which implies that every object can be regarded as an outlier from the point of view of similarity. Furthermore, a fundamental issue is that the notion of which objects are outliers typically varies between users, problem domains or, even, datasets. In this paper, we present a novel robust solution which detects high dimensional outliers based on user examples and tolerates incorrect inputs. It studies the behavior of projections of such a few examples, to discover further objects that are outstanding in the projection where many examples are outlying. Our experiments on both real and synthetic datasets demonstrate the ability of the proposed method to detect outliers corresponding to the user examples.
 
 #index 853537
 #* Relevance search and anomaly detection in bipartite graphs
@@ -926,6 +960,7 @@
 #% 799747
 #% 1650569
 #% 1908546
+#! Many real applications can be modeled using bipartite graphs, such as users vs. files in a P2P system, traders vs. stocks in a financial trading system, conferences vs. authors in a scientific publication network, and so on. We introduce two operations on bipartite graphs: 1) identifying similar nodes (relevance search), and 2) finding nodes connecting irrelevant nodes (anomaly detection). And we propose algorithms to compute the relevance score for each node using random walk with restarts and graph partitioning; we also propose algorithms to identify anomalies, using relevance scores. We evaluate the quality of relevance search based on semantics of the datasets, and we also measure the performance of the anomaly detection algorithm with manually injected anomalies. Both effectiveness and efficiency of the methods are confirmed by experiments on several real datasets.
 
 #index 881462
 #* Robust information-theoretic clustering
@@ -946,6 +981,7 @@
 #% 769883
 #% 810047
 #% 844288
+#! How do we find a natural clustering of a real world point set, which contains an unknown number of clusters with different shapes, and which may be contaminated by noise? Most clustering algorithms were designed with certain assumptions (Gaussianity), they often require the user to give input parameters, and they are sensitive to noise. In this paper, we propose a robust framework for determining a natural clustering of a given data set, based on the minimum description length (MDL) principle. The proposed framework, Robust Information-theoretic Clustering (RIC), is orthogonal to any known clustering algorithm: given a preliminary clustering, RIC purifies these clusters from noise, and adjusts the clusterings such that it simultaneously determines the most natural amount and shape (subspace) of the clusters. Our RIC method can be combined with any clustering technique ranging from K-means and K-medoids to advanced methods such as spectral clustering. In fact, RIC is even able to purify and improve an initial coarse clustering, even if we start with very simple methods such as grid-based space partitioning. Moreover, RIC scales well with the data set size. Extensive experiments on synthetic and real world data sets validate the proposed RIC framework.
 
 #index 881493
 #* Beyond streams and graphs: dynamic tensor analysis
@@ -971,6 +1007,7 @@
 #% 844312
 #% 846431
 #% 894646
+#! How do we find patterns in author-keyword associations, evolving over time? Or in Data Cubes, with product-branch-customer sales information? Matrix decompositions, like principal component analysis (PCA) and variants, are invaluable tools for mining, dimensionality reduction, feature selection, rule identification in numerous settings like streaming data, text, graphs, social networks and many more. However, they have only two orders, like author and keyword, in the above example.We propose to envision such higher order data as tensors,and tap the vast literature on the topic. However, these methods do not necessarily scale up, let alone operate on semi-infinite streams. Thus, we introduce the dynamic tensor analysis (DTA) method, and its variants. DTA provides a compact summary for high-order and high-dimensional data, and it also reveals the hidden correlations. Algorithmically, we designed DTA very carefully so that it is (a) scalable, (b) space efficient (it does not need to store the past) and (c) fully automatic with no need for user defined parameters. Moreover, we propose STA, a streaming tensor analysis method, which provides a fast, streaming approximation to DTA.We implemented all our methods, and applied them in two real settings, namely, anomaly detection and multi-way latent semantic indexing. We used two real, large datasets, one on network flow data (100GB over 1 month) and one from DBLP (200MB over 25 years). Our experiments show that our methods are fast, accurate and that they find interesting patterns and outliers on the real datasets.
 
 #index 881496
 #* Center-piece subgraphs: problem definition and fast solutions
@@ -995,6 +1032,7 @@
 #% 994033
 #% 1016175
 #% 1016176
+#! Given Q nodes in a social network (say, authorship network), how can we find the node/author that is the center-piece, and has direct or indirect connections to all, or most of them? For example, this node could be the common advisor, or someone who started the research area that the Q nodes belong to. Isomorphic scenarios appear in law enforcement (find the master-mind criminal, connected to all current suspects), gene regulatory networks (find the protein that participates in pathways with all or most of the given Q proteins), viral marketing and many more.Connection subgraphs is an important first step, handling the case of Q=2 query nodes. Then, the connection subgraph algorithm finds the b intermediate nodes, that provide a good connection between the two original query nodes.Here we generalize the challenge in multiple dimensions: First, we allow more than two query nodes. Second, we allow a whole family of queries, ranging from 'OR' to 'AND', with 'softAND' in-between. Finally, we design and compare a fast approximation, and study the quality/speed trade-off.We also present experiments on the DBLP dataset. The experiments confirm that our proposed method naturally deals with multi-source queries and that the resulting subgraphs agree with our intuition. Wall-clock timing results on the DBLP dataset show that our proposed approximation achieve good accuracy for about 6:1 speedup.
 
 #index 881526
 #* Sampling from large graphs
@@ -1008,6 +1046,7 @@
 #% 823342
 #% 853533
 #% 1717175
+#! Given a huge real graph, how can we derive a representative sample? There are many known algorithms to compute interesting measures (shortest paths, centrality, betweenness, etc.), but several of them become impractical for large graphs. Thus graph sampling is essential.The natural questions to ask are (a) which sampling method to use, (b) how small can the sample size be, and (c) how to scale up the measurements of the sample (e.g., the diameter), to get estimates for the large graph. The deeper, underlying question is subtle: how do we measure success?.We answer the above questions, and test our answers by thorough experiments on several, diverse datasets, spanning thousands nodes and edges. We consider several sampling methods, propose novel methods to check the goodness of sampling, and develop a set of scaling laws that describe relations between the properties of the original and the sample.In addition to the theoretical contributions, the practical conclusions from our work are: Sampling strategies based on edge selection do not perform well; simple uniform random node selection performs surprisingly well. Overall, best performing methods are the ones based on random-walks and "forest fire"; they match very accurately both static as well as evolutionary graph patterns, with sample sizes down to about 15% of the original graph.
 
 #index 881536
 #* Automatic mining of fruit fly embryo images
@@ -1018,6 +1057,7 @@
 #% 420077
 #% 742474
 #% 1854550
+#! We present FEMine, an automatic system for image-based gene expression analysis. We perform experiments on the largest publicly available collection of Drosophila ISH (in situ hybridization) images, showing that our FEMine system achieves excellent performance in classification, clustering, and content-based image retrieval. The major innovation of FEMine is the use of automatically discovered latent spatial "themes" of gene expressions, LGEs, in the whole-embryo context, as opposed to patterns in nearly disjoint portions of an embryo proposed in previous methods.
 
 #index 893200
 #* GMine: a system for scalable, interactive graph visualization and mining
@@ -1027,6 +1067,7 @@
 #% 281214
 #% 769887
 #% 1669913
+#! Several graph visualization tools exist. However, they are not able to handle large graphs, and/or they do not allow interaction. We are interested on large graphs, with hundreds of thousands of nodes. Such graphs bring two challenges: the first one is that any straightforward interactive manipulation will be prohibitively slow. The second one is sensory overload: even if we could plot and replot the graph quickly, the user would be overwhelmed with the vast volume of information because the screen would be too cluttered as nodes and edges overlap each other.Our GMine system addresses both these issues, by using summarization and multi-resolution. GMine offers multi-resolution graph exploration by partitioning a given graph into a hierarchy of communities-within-communities and storing it into a novel R-treelike structure which we name G-Tree. GMine offers summarization by implementing an innovative subgraph extraction algorithm and then visualizing its output.
 
 #index 893211
 #* InteMon: intelligent system monitoring on large clusters
@@ -1038,6 +1079,7 @@
 #% 591147
 #% 824709
 #% 1142424
+#! InteMon is a prototype monitoring and mining system for large clusters. Currently, it monitors over 100 hosts of a prototype data center at CMU. It uses the SNMP protocol and it stores the monitoring data in an mySQL database. Then, it allows for visualization of the time-series data using a JSP web-based frontend interface for users.What sets it apart from other cluster monitoring systems is its ability to automatically analyze the monitoring data in real time and alert the users for potential anomalies. It uses state of the art stream mining methods, it has a sophisticated definition of anomalies (broken correlations among input streams), and it can also pinpoint the reason of the anomaly. InteMon has a user-friendly GUI, it allows the users to perform interactive mining tasks, and it is fully operational.
 
 #index 907485
 #* Efficient processing of complex similarity queries in RDBMS through query rewriting
@@ -1065,12 +1107,14 @@
 #% 654471
 #% 765150
 #% 772438
+#! Multimedia and complex data are usually queried by similarity predicates. Whereas there are many works dealing with algorithms to answer basic similarity predicates, there are not generic algorithms able to efficiently handle similarity complex queries combining several basic similarity predicates. In this work we propose a simple and effective set of algorithms that can be combined to answer complex similarity queries, and a set of algebraic rules useful to rewrite similarity query expressions into an adequate format for those algorithms. Those rules and algorithms allow relational database management systems to turn complex queries into efficient query execution plans. We present experiments that highlight interesting scenarios. They show that the proposed algorithms are orders of magnitude faster than the traditional similarity algorithms. Moreover, they are linearly scalable considering the database size.
 
 #index 915344
 #* Fast Random Walk with Restart and Its Applications
 #@ 13387 578 11069
 #t 2006
 #c ICDM '06 Proceedings of the Sixth International Conference on Data Mining
+#! How closely related are two nodes in a graph? How to compute this score quickly, on huge, disk-resident, real graphs? Random walk with restart (RWR) provides a good relevance score between two nodes in a weighted graph, and it has been successfully used in numerous settings, like automatic captioning of images, generalizations to the "connection subgraphs", personalized PageRank, and many more. However, the straightforward implementations of RWR do not scale for large graphs, requiring either quadratic space and cubic pre-computation time, or slow response time on queries. We propose fast solutions to this problem. The heart of our approach is to exploit two important properties shared by many real graphs: (a) linear correlations and (b) blockwise, community-like structure. We exploit the linearity by using low-rank matrix approximation, and the community structure by graph partitioning, followed by the Sherman- Morrison lemma for matrix inversion. Experimental results on the Corel image and the DBLP dabasets demonstrate that our proposed methods achieve significant savings over the straightforward implementations: they can save several orders of magnitude in pre-computation and storage cost, and they achieve up to 150x speed up with 90%+ quality preservation.
 
 #index 937549
 #* Graph evolution: Densification and shrinking diameters
@@ -1095,12 +1139,14 @@
 #% 933558
 #% 1394202
 #% 1673564
+#! How do real graphs evolve over time&quest; What are normal growth patterns in social, technological, and information networks&quest; Many studies have discovered patterns in static graphs, identifying properties in a single snapshot of a large network or in a very small number of snapshots; these include heavy tails for in- and out-degree distributions, communities, small-world phenomena, and others. However, given the lack of information about network evolution over long periods, it has been hard to convert these findings into statements about trends over time. Here we study a wide range of real graphs, and we observe some surprising phenomena. First, most of these graphs densify over time with the number of edges growing superlinearly in the number of nodes. Second, the average distance between nodes often shrinks over time in contrast to the conventional wisdom that such distance parameters should increase slowly as a function of the number of nodes (like O(log n) or O(log(log n)). Existing graph generation models do not exhibit these types of behavior even at a qualitative level. We provide a new graph generator, based on a forest fire spreading process that has a simple, intuitive justification, requires very few parameters (like the flammability of nodes), and produces graphs exhibiting the full range of properties observed both in prior work and in the present study. We also notice that the forest fire model exhibits a sharp transition between sparse graphs and graphs that are densifying. Graphs with decreasing distance between the nodes are generated around this transition point. Last, we analyze the connection between the temporal evolution of the degree distribution and densification of a graph. We find that the two are fundamentally related. We also observe that real networks exhibit this type of relation between densification and the degree distribution.
 
 #index 960366
 #* Mining large graphs and streams using matrix and tensor tools
 #@ 578 14753 10508
 #t 2007
 #c Proceedings of the 2007 ACM SIGMOD international conference on Management of data
+#! Coevolving streams of numerical measurements, as well astime evolving graphs, can well be represented as tensors. Here we review the fundamental matrix and tensors tools forthe analysis and mining of large scale streams and graphs.
 
 #index 989605
 #* Enhanced max margin learning on multimodal data mining in a multimedia database
@@ -1126,6 +1172,7 @@
 #% 905280
 #% 1502531
 #% 1858012
+#! The problem of multimodal data mining in a multimedia database can be addressed as a structured prediction problem where we learn the mapping from an input to the structured and interdependent output variables. In this paper, built upon the existing literature on the max margin based learning, we develop a new max margin learning approach called Enhanced Max Margin Learning (EMML) framework. In addition, we apply EMML framework to developing an effective and efficient solution to the multimodal data mining problem in a multimedia database. The main contributions include: (1) we have developed a new max margin learning approach - the enhanced max margin learning framework that is much more efficient in learning with a much faster convergence rate, which is verified in empirical evaluations; (2) we have applied this EMML approach to developing an effective and efficient solution to the multimodal data mining problem that is highly scalable in the sense that the query response time is independent of the database scale, allowing facilitating a multimodal data mining querying to a very large scale multimedia database,and excelling many existing multimodal data mining methods in the literature that do not scale up at all; this advantage is also supported through the complexity analysis as well as empirical evaluations against a state-of-the-art multimodal data mining method from the literature. While EMML is a general framework, for the evaluation purpose, we apply it to the Berkeley Drosophila embryo image database, and report the performance comparison with a state-of-the-art multimodal data mining method.
 
 #index 989613
 #* Cost-effective outbreak detection in networks
@@ -1142,6 +1189,7 @@
 #% 823367
 #% 868469
 #% 1845813
+#! Given a water distribution network, where should we place sensors toquickly detect contaminants? Or, which blogs should we read to avoid missing important stories?. These seemingly different problems share common structure: Outbreak detection can be modeled as selecting nodes (sensor locations, blogs) in a network, in order to detect the spreading of a virus or information asquickly as possible. We present a general methodology for near optimal sensor placement in these and related problems. We demonstrate that many realistic outbreak detection objectives (e.g., detection likelihood, population affected) exhibit the property of "submodularity". We exploit submodularity to develop an efficient algorithm that scales to large problems, achieving near optimal placements, while being 700 times faster than a simple greedy algorithm. We also derive online bounds on the quality of the placements obtained by any algorithm. Our algorithms and bounds also handle cases where nodes (sensor locations, blogs) have different costs. We evaluate our approach on several large real-world problems,including a model of a water distribution network from the EPA, andreal blog data. The obtained sensor placements are provably near optimal, providing a constant fraction of the optimal solution. We show that the approach scales, achieving speedups and savings in storage of several orders of magnitude. We also show how the approach leads to deeper insights in both applications, answering multicriteria trade-off, cost-sensitivity and generalization questions.
 
 #index 989640
 #* GraphScope: parameter-free mining of large time-evolving graphs
@@ -1163,6 +1211,7 @@
 #% 881493
 #% 1016130
 #% 1016172
+#! How can we find communities in dynamic networks of socialinteractions, such as who calls whom, who emails whom, or who sells to whom? How can we spot discontinuity time-points in such streams of graphs, in an on-line, any-time fashion? We propose GraphScope, that addresses both problems, using information theoretic principles. Contrary to the majority of earlier methods, it needs no user-defined parameters. Moreover, it is designed to operate on large graphs, in a streaming fashion. We demonstrate the efficiency and effectiveness of our GraphScope on real datasets from several diverse domains. In all cases it produces meaningful time-evolving patterns that agree with human intuition.
 
 #index 989645
 #* Fast best-effort pattern matching in large attributed graphs
@@ -1185,6 +1234,7 @@
 #% 893105
 #% 915344
 #% 1719486
+#! We focus on large graphs where nodes have attributes, such as a social network where the nodes are labelled with each person's job title. In such a setting, we want to find subgraphs that match a user query pattern. For example, a "star" query would be, "find a CEO who has strong interactions with a Manager, a Lawyer,and an Accountant, or another structure as close to that as possible". Similarly, a "loop" query could help spot a money laundering ring. Traditional SQL-based methods, as well as more recent graph indexing methods, will return no answer when an exact match does not exist. This is the first main feature of our method. It can find exact-, as well as near-matches, and it will present them to the user in our proposed "goodness" order. For example, our method tolerates indirect paths between, say, the "CEO" and the "Accountant" of the above sample query, when direct paths don't exist. Its second feature is scalability. In general, if the query has nq nodes and the data graph has n nodes, the problem needs polynomial time complexity O(n n q), which is prohibitive. Our G-Ray ("Graph X-Ray") method finds high-quality subgraphs in time linear on the size of the data graph. Experimental results on the DLBP author-publication graph (with 356K nodes and 1.9M edges) illustrate both the effectiveness and scalability of our approach. The results agree with our intuition, and the speed is excellent. It takes 4 seconds on average fora 4-node query on the DBLP graph.
 
 #index 989646
 #* Fast direction-aware proximity for graph mining
@@ -1205,6 +1255,7 @@
 #% 994033
 #% 1016175
 #% 1016176
+#! In this paper we study asymmetric proximity measures on directed graphs, which quantify the relationships between two nodes or two groups of nodes. The measures are useful in several graph mining tasks, including clustering, link prediction and connection subgraph discovery. Our proximity measure is based on the conceptof escape probability. This way, we strive to summarize the multiple facets of nodes-proximity, while avoiding some of the pitfalls to which alternative proximity measures are susceptible. A unique feature of the measures is accounting for the underlying directional information. We put a special emphasis on computational efficiency, and develop fast solutions that are applicable in several settings. Our experimental study shows the usefulness of our proposed direction-aware proximity method for several applications, and that our algorithms achieve a significant speedup (up to 50,000x) over straight forward implementations.
 
 #index 992826
 #* The Omni-family of all-purpose access methods: a simple and effective way to make similarity search more efficient
@@ -1249,6 +1300,7 @@
 #% 731409
 #% 745496
 #% 1272304
+#! Similarity search operations require executing expensive algorithms, and although broadly useful in many new applications, they rely on specific structures not yet supported by commercial DBMS. In this paper we discuss the new Omni-technique, which allows to build a variety of dynamic Metric Access Methods based on a number of selected objects from the dataset, used as global reference objects. We call them as the Omni-family of metric access methods. This technique enables building similarity search operations on top of existing structures, significantly improving their performance, regarding the number of disk access and distance calculations. Additionally, our methods scale up well, exhibiting sub-linear behavior with growing database size.
 
 #index 1001361
 #* RIC: Parameter-free noise-robust clustering
@@ -1270,6 +1322,7 @@
 #% 810047
 #% 844288
 #% 855557
+#! How do we find a natural clustering of a real-world point set which contains an unknown number of clusters with different shapes, and which may be contaminated by noise&quest; As most clustering algorithms were designed with certain assumptions (Gaussianity), they often require the user to give input parameters, and are sensitive to noise. In this article, we propose a robust framework for determining a natural clustering of a given dataset, based on the minimum description length (MDL) principle. The proposed framework, robust information-theoretic clustering (RIC), is orthogonal to any known clustering algorithm: Given a preliminary clustering, RIC purifies these clusters from noise, and adjusts the clusterings such that it simultaneously determines the most natural amount and shape (subspace) of the clusters. Our RIC method can be combined with any clustering technique ranging from K-means and K-medoids to advanced methods such as spectral clustering. In fact, RIC is even able to purify and improve an initial coarse clustering, even if we start with very simple methods. In an extension, we propose a fully automatic stand-alone clustering method and efficiency improvements. RIC scales well with the dataset size. Extensive experiments on synthetic and real-world datasets validate the proposed RIC framework.
 
 #index 1015301
 #* Adaptive, hands-off stream mining
@@ -1296,6 +1349,7 @@
 #% 660003
 #% 993949
 #% 993958
+#! Sensor devices and embedded processors are becoming ubiquitous. Their limited resources (CPU, memory and/or communication bandwidth and power) pose some interesting challenges. We need both powerful and concise "languages" to represent the important features of the data, which can (a) adapt and handle arbitrary periodic components, including bursts, and (b) require little memory and a single pass over the data. We propose AWSOM (Arbitrary Window Stream mOdeling Method), which allows sensors in remote or hostile environments to efficiently and effectively discover interesting patterns and trends. This can be done automatically, i.e., with no user intervention and expert tuning before or during data gathering. Our algorithms require limited resources and can thus be incorporated in sensors, possibly alongside a distributed query processing engine [9, 5, 22]. Updates are performed in constant time, using logarithmic space. Existing, state of the art forecasting methods (SARIMA, GARCH, etc) fall short on one or more of these requirements. To the best of our knowledge, AWSOM is the first method that has all the above characteristics. Experiments on real and synthetic datasets demonstrate that AWSOM discovers meaningful patterns over long time periods. Thus, the patterns can also be used to make long-range forecasts, which are notoriously difficult to perform. In fact, AWSOM outperforms manually set up auto-regressive models, both in terms of long-term pattern detection and modeling, as well as by at least 10× in resource consumption.
 
 #index 1015603
 #* Intelligent system monitoring on large clusters
@@ -1314,6 +1368,7 @@
 #% 824709
 #% 1015280
 #% 1015324
+#! Modern data centers have a large number of components that must be monitored, including servers, switches/routers, and environmental control systems. This paper describes InteMon, a prototype monitoring and mining system for data centers. It uses the SNMP protocol to monitor a new data center at Carnegie Mellon. It stores the monitoring data in a MySQL database, allowing visualization of the time-series data using a JSP web-based frontend interface for system administrators. What sets InteMon apart from other cluster monitoring systems is its ability to automatically analyze correlations in the monitoring data in real time and alert administrators of potential anomalies. It uses efficient, state of the art stream mining methods to report broken correlations among input streams. It also uses these methods to intelligently compress historical data and avoid the need for administrators to configure threshold-based monitoring bands.
 
 #index 1016172
 #* Auditing compliance with a Hippocratic database
@@ -1332,6 +1387,7 @@
 #% 644201
 #% 993943
 #% 1016138
+#! We introduce an auditing framework for determining whether a database system is adhering to its data disclosure policies. Users formulate audit expressions to specify the (sensitive) data subject to disclosure review. An audit component accepts audit expressions and returns all queries (deemed "suspicious") that accessed the specified data during their execution. The overhead of our approach on query processing is small, involving primarily the logging of each query string along with other minor annotations. Database triggers are used to capture updates in a backlog database. At the time of audit, a static analysis phase selects a subset of logged queries for further analysis. These queries are combined and transformed into an SQL audit query, which when run against the backlog database, identifies the suspicious queries efficiently and precisely. We describe the algorithms and data structures used in a DB2-based implementation of this framework. Experimental results reinforce our design choices and show the practicality of the approach.
 
 #index 1023805
 #* Mining large time-evolving data using matrix and tensor tools
@@ -1354,6 +1410,7 @@
 #% 770830
 #% 810047
 #% 881462
+#! How can we efficiently find a clustering, i.e. a concise description of the cluster structure, of a given data set which contains an unknown number of clusters of different shape and distribution and is contaminated by noise? Most existing clustering methods are restricted to the Gaussian cluster model and are very sensitive to noise. If the cluster content follows a non-Gaussian distribution and/or the data set contains a few outliers belonging to no cluster, then the computed data distribution does not match well the true data distribution, or an unnaturally high number of clusters is required to represent the true data distribution of the data set. In this paper we propose OCI (Outlier-robust Clustering using Independent Components), a clustering method which overcomes these problems by (1) applying the exponential power distribution (EPD) as cluster model which is a generalization of Gaussian, uniform, Laplacian and many other distribution functions, (2) applying the Independent Component Analysis (ICA) for both determining the main directions inside a cluster as well as finding split planes in a top-down clustering approach, and (3) defining an efficient and effective filter for outliers, based on EPD and ICA. Our method is parameter-free and as a top-down clustering approach very efficient. An extensive experimental evaluation shows both the accuracy of the obtained clustering result as well as the efficiency of our method.
 
 #index 1083652
 #* Using ghost edges for classification in sparsely labeled networks
@@ -1372,6 +1429,7 @@
 #% 1269763
 #% 1269764
 #% 1650403
+#! We address the problem of classification in partially labeled networks (a.k.a. within-network classification) where observed class labels are sparse. Techniques for statistical relational learning have been shown to perform well on network classification tasks by exploiting dependencies between class labels of neighboring nodes. However, relational classifiers can fail when unlabeled nodes have too few labeled neighbors to support learning (during training phase) and/or inference (during testing phase). This situation arises in real-world problems when observed labels are sparse. In this paper, we propose a novel approach to within-network classification that combines aspects of statistical relational learning and semi-supervised learning to improve classification performance in sparse networks. Our approach works by adding "ghost edges" to a network, which enable the flow of information from labeled to unlabeled nodes. Through experiments on real-world data sets, we demonstrate that our approach performs well across a range of conditions where existing approaches, such as collective classification and semi-supervised learning, fail. On all tasks, our approach improves area under the ROC curve (AUC) by up to 15 points over existing approaches. Furthermore, we demonstrate that our approach runs in time proportional to L • E, where L is the number of labeled nodes and E is the number of edges.
 
 #index 1083676
 #* Cut-and-stitch: efficient parallel learning of linear dynamical systems on smps
@@ -1384,6 +1442,7 @@
 #% 946709
 #% 963669
 #% 1017256
+#! Multi-core processors with ever increasing number of cores per chip are becoming prevalent in modern parallel computing. Our goal is to make use of the multi-core as well as multi-processor architectures to speed up data mining algorithms. Specifically, we present a parallel algorithm for approximate learning of Linear Dynamical Systems (LDS), also known as Kalman Filters (KF). LDSs are widely used in time series analysis such as motion capture modeling, visual tracking etc. We propose Cut-And-Stitch (CAS), a novel method to handle the data dependencies from the chain structure of hidden variables in LDS, so as to parallelize the EM-based parameter learning algorithm. We implement the algorithm using OpenMP on both a supercomputer and a quad-core commercial desktop. The experimental results show that parallel algorithms using Cut-And-Stitch achieve comparable accuracy and almost linear speedups over the serial version. In addition, Cut-And-Stitch can be generalized to other models with similar linear structures such as Hidden Markov Models (HMM) and Switching Kalman Filters (SKF).
 
 #index 1083682
 #* Weighted graphs and disconnected components: patterns and a generator
@@ -1402,6 +1461,7 @@
 #% 989580
 #% 989587
 #% 1673564
+#! The vast majority of earlier work has focused on graphs which are both connected (typically by ignoring all but the giant connected component), and unweighted. Here we study numerous, real, weighted graphs, and report surprising discoveries on the way in which new nodes join and form links in a social network. The motivating questions were the following: How do connected components in a graph form and change over time? What happens after new nodes join a network -- how common are repeated edges? We study numerous diverse, real graphs (citation networks, networks in social media, internet traffic, and others); and make the following contributions: (a) we observe that the non-giant connected components seem to stabilize in size, (b) we observe the weights on the edges follow several power laws with surprising exponents, and (c) we propose an intuitive, generative model for graph growth that obeys observed patterns.
 
 #index 1083690
 #* Mobile call graphs: beyond power-law and lognormal distributions
@@ -1417,6 +1477,7 @@
 #% 808658
 #% 907530
 #% 1300556
+#! We analyze a massive social network, gathered from the records of a large mobile phone operator, with more than a million users and tens of millions of calls. We examine the distributions of the number of phone calls per customer; the total talk minutes per customer; and the distinct number of calling partners per customer. We find that these distributions are skewed, and that they significantly deviate from what would be expected by power-law and lognormal distributions. To analyze our observed distributions (of number of calls, distinct call partners, and total talk time), we propose PowerTrack , a method which fits a lesser known but more suitable distribution, namely the Double Pareto LogNormal (DPLN) distribution, to our data and track its parameters over time. Using PowerTrack , we find that our graph changes over time in a way consistent with a generative process that naturally results in the DPLN distributions we observe. Furthermore, we show that this generative process lends itself to a natural and appealing social wealth interpretation in the context of social networks such as ours. We discuss the application of those results to our model and to forecasting.
 
 #index 1083700
 #* Colibri: fast mining of large static and dynamic graphs
@@ -1445,12 +1506,14 @@
 #% 989586
 #% 989640
 #% 1047785
+#! Low-rank approximations of the adjacency matrix of a graph are essential in finding patterns (such as communities) and detecting anomalies. Additionally, it is desirable to track the low-rank structure as the graph evolves over time, efficiently and within limited storage. Real graphs typically have thousands or millions of nodes, but are usually very sparse. However, standard decompositions such as SVD do not preserve sparsity. This has led to the development of methods such as CUR and CMD, which seek a non-orthogonal basis by sampling the columns and/or rows of the sparse matrix. However, these approaches will typically produce overcomplete bases, which wastes both space and time. In this paper we propose the family of Colibri methods to deal with these challenges. Our version for static graphs, Colibri-S, iteratively finds a non-redundant basis and we prove that it has no loss of accuracy compared to the best competitors (CUR and CMD), while achieving significant savings in space and time: on real data, Colibri-S requires much less space and is orders of magnitude faster (in proportion to the square of the number of non-redundant columns). Additionally, we propose an efficient update algorithm for dynamic, time-evolving graphs, Colibri-D. Our evaluation on a large, real network traffic dataset shows that Colibri-D is over 100 times faster than the best published competitor (CMD).
 
 #index 1083742
 #* Social networks: looking ahead
 #@ 2732 2494 578 2417 20741 10649 2145
 #t 2008
 #c Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining
+#! By now, online social networks have become an indispensable part of both online and offline lives of human beings. A large fraction of time spent online by a user is directly influence by the social networks to which he/she belongs. This calls for a deeper examination of social networks as large-scale dynamic objects that foster efficient person-person interaction. The goal of our panel is to discuss social networks from various research angles. In particular, we plan to focus on the following broad research-related topics: large scale data mining, algorithmic questions, sociological aspects, privacy, web search, etc. We will also discuss the business and societal impacts of social networks. Each of these topics has generated a lot of research in recent years and while taking stock of what has been done, we will also be discussing the directions in which these topics are headed, from both science and society points of view. Our panel will consist of eminent researchers, who have worked/been working on an eclectic and diverse mix of problems in social networks
 
 #index 1089780
 #* Incremental tensor analysis: Theory and applications
@@ -1492,6 +1555,7 @@
 #% 1015261
 #% 1015301
 #% 1300087
+#! How do we find patterns in author-keyword associations, evolving over time&quest; Or in data cubes (tensors), with product-branchcustomer sales information&quest; And more generally, how to summarize high-order data cubes (tensors)&quest; How to incrementally update these patterns over time&quest; Matrix decompositions, like principal component analysis (PCA) and variants, are invaluable tools for mining, dimensionality reduction, feature selection, rule identification in numerous settings like streaming data, text, graphs, social networks, and many more settings. However, they have only two orders (i.e., matrices, like author and keyword in the previous example). We propose to envision such higher-order data as tensors, and tap the vast literature on the topic. However, these methods do not necessarily scale up, let alone operate on semi-infinite streams. Thus, we introduce a general framework, incremental tensor analysis (ITA), which efficiently computes a compact summary for high-order and high-dimensional data, and also reveals the hidden correlations. Three variants of ITA are presented: (1) dynamic tensor analysis (DTA); (2) streaming tensor analysis (STA); and (3) window-based tensor analysis (WTA). In paricular, we explore several fundamental design trade-offs such as space efficiency, computational cost, approximation accuracy, time dependency, and model complexity. We implement all our methods and apply them in several real settings, such as network anomaly detection, multiway latent semantic indexing on citation networks, and correlation study on sensor measurements. Our empirical studies show that the proposed methods are fast and accurate and that they find interesting patterns and outliers on the real datasets.
 
 #index 1108835
 #* Two Heads Better Than One: Pattern Discovery in Time-Evolving Multi-aspect Data
@@ -1501,6 +1565,7 @@
 #% 881493
 #% 915297
 #% 1083505
+#! Data stream values are often associated with multiple aspects. For example, each value observed at a given time-stamp from environmental sensors may have an associated type (e.g., temperature, humidity, etc) as well as location. Time-stamp, type and location are the three aspects, which can be modeled using a tensor (high-order array). However, the time aspect is special, with a natural ordering, and with successive time-ticks having usually correlated values. Standard multiway analysis ignores this structure. To capture it, we propose 2 Heads Tensor Analysis(2-heads), which provides a qualitatively different treatment on time. Unlike most existing approaches that use a PCA-like summarization scheme for all aspects, 2-heads treats the time aspect carefully. 2-heads combines the power of classic multilinear analysis (PARAFAC [1], Tucker [5], DTA/STA [3], WTA [2]) with wavelets, leading to a powerful mining tool. Furthermore, 2-heads has several other advantages as well: (a) it can be computed incrementally in a streaming fashion, (b) it has a provable error guarantee and, (c) it achieves significant compression ratio against competitors. Finally, we show experiments on real datasets, and we illustrate how 2-heads reveals interesting trends in the data.This is an extended abstract of an article published in the Data Mining and Knowledge Discovery journal [4].
 
 #index 1108891
 #* Hierarchical, Parameter-Free Community Discovery
@@ -1531,6 +1596,7 @@
 #% 1016200
 #% 1307659
 #% 1672753
+#! Given a large bipartite graph (like document-term, or userproduct graph), how can we find meaningful communities, quickly, and automatically? We propose to look for community hierarchies, with communities- within-communities. Our proposed method, the Context-specific Cluster Tree (CCT)finds such communities at multiple levels, with no user intervention, based on information theoretic principles (MDL). More specifically, it partitions the graph into progressively more refined subgraphs, allowing users to quickly navigate from the global, coarse structure of a graph to more focused and local patterns. As a fringe benefit, and also as an additional indication of its quality, it also achieves better compression than typical, non-hierarchical methods. We demonstrate its scalability and effectiveness on real, large graphs.
 
 #index 1127599
 #* C-DEM: a multi-modal query system for Drosophila Embryo databases
@@ -1544,30 +1610,35 @@
 #% 915344
 #% 1016175
 #% 1016176
+#! The amount of biological data publicly available has experienced an exponential growth as the technology advances. Online databases are now playing an important role as information repositories as well as easily accessible platforms for researchers to communicate and contribute. Recent research projects in image bioinformatics produce a number of databases of images, which visualize the spatial expression pattern of a gene (eg. "fj"), and most of which also have one or several annotation keywords (eg., "embryonic hindgut"). C-DEM is an online system for Drosophila (= fruit-fly) Embryo images Mining. It supports queries from all three modalities to all three, namely, (a) genes, (b) images of gene expression, and (c) annotation keywords of the images. Thus, it can find images that are similar to a given image, and/or related to the desirable annotation keywords, and/or related to specific genes. Typical queries are what are most suitable keywords to assign to image insitu28465.jpg or find images that are related to gene "fj", and to the keyword "embryonic hindgut". C-DEM uses state-of-the-art feature extraction methods for images (wavelets and principal component analysis). It envisions the whole database as a tri-partite graph (one type for each modality), and it uses fast and flexible proximity measures, namely, random walk with restarts (RWR). In addition to flexible querying, C-DEM allows for navigation: the user can click on the results of an earlier query (image thumbnails and/or keywords and/or genes), and the system will report the most related images (and keywords, and genes). The demo is on a real Drosophila Embryo database, with 10,204 images, 2,969 distinct genes, and 113 annotation keywords. The query response time is below one second on a commodity desktop.
 
 #index 1159232
 #* GRAPHITE: A Visual Query System for Large Graphs
 #@ 21675 578 13387 21676 9975 6142
 #t 2008
 #c ICDMW '08 Proceedings of the 2008 IEEE International Conference on Data Mining Workshops
+#! We present Graphite, a system that allows the user to visually construct a query pattern, finds both its exact and approximate matching subgraphs in large attributed graphs, and visualizes the matches. For example, in a social network where a person's occupation is an attribute, the user can draw a 'star' query for "finding a CEO who has interacted with a Secretary, a Manager, and an Accountant, or a structure very similar to this". Graphite uses the G-Ray algorithm to run the query against a user-chosen data graph, gaining all of its benefits, namely its high speed, scalability, and its ability to find both exact and near matches. Therefore, for the example above, Graphite tolerates indirect paths between, say, the CEO and the Accountant, when no direct path exists. Graphite uses fast algorithms to estimate node proximities when finding matches, enabling it to scale well with the graph database size.We demonstrate Graphite’s usage and benefits using the DBLP author-publication graph, which consists of 356K nodes and 1.9M edges. A demo video of Graphite can be downloaded at http://www.cs.cmu.edu/~dchau/graphite/graphite.mov.
 
 #index 1176979
 #* RTM: Laws and a Recursive Generator for Weighted Time-Evolving Graphs
 #@ 20753 20752 578
 #t 2008
 #c ICDM '08 Proceedings of the 2008 Eighth IEEE International Conference on Data Mining
+#! How do real, weighted graphs change over time? What patterns, if any, do they obey? Earlier studies focus on unweighted graphs, and, with few exceptions, they focus on static snapshots. Here, we report patterns we discover on several real, weighted, time-evolving graphs. The reported patterns can help in detecting anomalies in natural graphs, in making link prediction and in providing more criteria for evaluation of synthetic graph generators. We further propose an intuitive and easy way to construct weighted, time-evolving graphs. In fact, we prove that our generator will produce graphs which obey many patterns and laws observed to date. We also provide empirical evidence to support our claims.
 
 #index 1206603
 #* Monitoring Network Evolution using MDL
 #@ 23079 578 10649 4001 3668
 #t 2008
 #c ICDE '08 Proceedings of the 2008 IEEE 24th International Conference on Data Engineering
+#! Given publication titles and authors, what can we say about the evolution of scientific topics and communities over time? Which communities shrunk, which emerged, and which split, over time? And, when in time were the turning points? We propose TimeFall, which can automatically answer these questions given a social network/graph that evolves over time. The main novelty of the proposed approach is that it needs no user-defined parameters, relying instead on the principle of Minimum Description Length (MDL), to extract the communities, and to find good cut-points in time when communities change abruptly: a cut-point is good, if it leads to shorter data description. We illustrate our algorithm on synthetic and large real datasets, and we show that the results of the TimeFall agree with human intuition.
 
 #index 1206697
 #* Compact Similarity Joins
 #@ 23131 23132 578
 #t 2008
 #c ICDE '08 Proceedings of the 2008 IEEE 24th International Conference on Data Engineering
+#! Similarity joins have attracted significant interest, with applications in Geographical Information Systems, astronomy, marketing analyzes, and anomaly detection. However, all the past algorithms, although highly fine-tuned, suffer an output explosion if the query range is even moderately large relative to the local data density. Under such circumstances, the response time and the search effort are both almost quadratic in the database size, which is often prohibitive. We solve this problem by providing two algorithms that find a compact representation of the similarity join result, while retaining all the information in the standard join. Our algorithms have the following characteristics: (a) they are at least as fast as the standard similarity join algorithm, and typically much faster, (b) they generate significantly smaller output, (c) they provably lose no information, (d) they scale well to large data sets, and (e) they can be applied to any of the standard tree data structures. Experiments on real and realistic point-sets show that our algorithms are up to several orders of magnitude faster.
 
 #index 1214648
 #* Large human communication networks: patterns and a utility-driven generator
@@ -1593,6 +1664,7 @@
 #% 1127498
 #% 1202160
 #% 1206639
+#! Given a real, and weighted person-to-person network which changes over time, what can we say about the cliques that it contains? Do the incidents of communication, or weights on the edges of a clique follow any pattern? Real, and in-person social networks have many more triangles than chance would dictate. As it turns out, there are many more cliques than one would expect, in surprising patterns. In this paper, we study massive real-world social networks formed by direct contacts among people through various personal communication services, such as Phone-Call, SMS, IM etc. The contributions are the following: (a) we discover surprising patterns with the cliques, (b) we report power-laws of the weights on the edges of cliques, (c) our real networks follow these patterns such that we can trust them to spot outliers and finally, (d) we propose the first utility-driven graph generator for weighted time-evolving networks, which match the observed patterns. Our study focused on three large datasets, each of which is a different type of communication service, with over one million records, and spans several months of activity.
 
 #index 1214672
 #* DynaMMo: mining and summarization of coevolving sequences with missing values
@@ -1616,6 +1688,7 @@
 #% 1083693
 #% 1147403
 #% 1206639
+#! Given multiple time sequences with missing values, we propose DynaMMo which summarizes, compresses, and finds latent variables. The idea is to discover hidden variables and learn their dynamics, making our algorithm able to function even when there are missing values. We performed experiments on both real and synthetic datasets spanning several megabytes, including motion capture sequences and chlorine levels in drinking water. We show that our proposed DynaMMo method (a) can successfully learn the latent variables and their evolution; (b) can provide high compression for little loss of reconstruction accuracy; (c) can extract compact but powerful features for segmentation, interpretation, and forecasting; (d) has complexity linear on the duration of sequences.
 
 #index 1214675
 #* BBM: bayesian browsing model from petabyte-scale data
@@ -1650,6 +1723,7 @@
 #% 1173704
 #% 1415766
 #% 1815596
+#! Given a quarter of petabyte click log data, how can we estimate the relevance of each URL for a given query? In this paper, we propose the Bayesian Browsing Model (BBM), a new modeling technique with following advantages: (a) it does exact inference; (b) it is single-pass and parallelizable; (c) it is effective. We present two sets of experiments to test model effectiveness and efficiency. On the first set of over 50 million search instances of 1.1 million distinct queries, BBM out-performs the state-of-the-art competitor by 29.2% in log-likelihood while being 57 times faster. On the second click-log set, spanning a quarter of petabyte data, we showcase the scalability of BBM: we implemented it on a commercial MapReduce cluster, and it took only 3 hours to compute the relevance for 1.15 billion distinct query-URL pairs.
 
 #index 1214687
 #* TANGENT: a novel, 'Surprise me', recommendation algorithm
@@ -1680,6 +1754,7 @@
 #% 1055741
 #% 1083628
 #% 1390190
+#! Most of recommender systems try to find items that are most relevant to the older choices of a given user. Here we focus on the "surprise me" query: A user may be bored with his/her usual genre of items (e.g., books, movies, hobbies), and may want a recommendation that is related, but off the beaten path, possibly leading to a new genre of books/movies/hobbies. How would we define, as well as automate, this seemingly selfcontradicting request? We introduce TANGENT, a novel recommendation algorithm to solve this problem. The main idea behind TANGENT is to envision the problem as node selection on a graph, giving high scores to nodes that are well connected to the older choices, and at the same time well connected to unrelated choices. The method is carefully designed to be (a) parameter-free (b) effective and (c) fast. We illustrate the benefits of TANGENT with experiments on both synthetic and real data sets. We show that TANGENT makes reasonable, yet surprising, horizon-broadening recommendations. Moreover, it is fast and scalable, since it can easily use existing fast algorithms on graph node proximity.
 
 #index 1214705
 #* DOULION: counting triangles in massive graphs with a coin
@@ -1701,6 +1776,7 @@
 #% 1176970
 #% 1254809
 #% 1682599
+#! Counting the number of triangles in a graph is a beautiful algorithmic problem which has gained importance over the last years due to its significant role in complex network analysis. Metrics frequently computed such as the clustering coefficient and the transitivity ratio involve the execution of a triangle counting algorithm. Furthermore, several interesting graph mining applications rely on computing the number of triangles in the graph of interest. In this paper, we focus on the problem of counting triangles in a graph. We propose a practical method, out of which all triangle counting algorithms can potentially benefit. Using a straightforward triangle counting algorithm as a black box, we performed 166 experiments on real-world networks and on synthetic datasets as well, where we show that our method works with high accuracy, typically more than 99% and gives significant speedups, resulting in even ≈ 130 times faster performance.
 
 #index 1214748
 #* SNARE: a link analytic system for graph labeling and risk detection
@@ -1720,6 +1796,7 @@
 #% 956513
 #% 989600
 #% 989666
+#! Classifying nodes in networks is a task with a wide range of applications. It can be particularly useful in anomaly and fraud detection. Many resources are invested in the task of fraud detection due to the high cost of fraud, and being able to automatically detect potential fraud quickly and precisely allows human investigators to work more efficiently. Many data analytic schemes have been put into use; however, schemes that bolster link analysis prove promising. This work builds upon the belief propagation algorithm for use in detecting collusion and other fraud schemes. We propose an algorithm called SNARE (Social Network Analysis for Risk Evaluation). By allowing one to use domain knowledge as well as link knowledge, the method was very successful for pinpointing misstated accounts in our sample of general ledger data, with a significant improvement over the default heuristic in true positive rates, and a lift factor of up to 6.5 (more than twice that of the default heuristic). We also apply SNARE to the task of graph labeling in general on publicly-available datasets. We show that with only some information about the nodes themselves in a network, we get surprisingly high accuracy of labels. Not only is SNARE applicable in a wide variety of domains, but it is also robust to the choice of parameters and highly scalable-linearly with the number of edges in a graph.
 
 #index 1214753
 #* BGP-lens: patterns and anomalies in internet routing updates
@@ -1742,6 +1819,7 @@
 #% 821916
 #% 840577
 #% 1015301
+#! The Border Gateway Protocol (BGP) is one of the fundamental computer communication protocols. Monitoring and mining BGP update messages can directly reveal the health and stability of Internet routing. Here we make two contributions: firstly we find patterns in BGP updates, like self-similarity, power-law and lognormal marginals; secondly using these patterns, we find anomalies. Specifically, we develop BGP-lens, an automated BGP updates analysis tool, that has three desirable properties: (a) It is effective, able to identify phenomena that would otherwise go unnoticed, such as a peculiar 'clothesline' behavior or prolonged 'spikes' that last as long as 8 hours; (b) It is scalable, using algorithms are all linear on the number of time-ticks; and (c) It is admin-friendly, giving useful leads for phenomenon of interest. We showcase the capabilities of BGP-lens by identifying surprising phenomena verified by syadmins, over a massive trace of BGP updates spanning 2 years, from the publicly available site datapository.net.
 
 #index 1268028
 #* RTG: A Recursive Realistic Graph Generator Using Random Typing
@@ -1767,18 +1845,21 @@
 #% 1404187
 #% 1673564
 #% 1815166
+#! We propose a new, recursive model to generate realistic graphs, evolving over time. Our model has the following properties: it is (a) flexible, capable of generating the cross product of weighted/ unweighted, directed/undirected, uni/bipartite graphs; (b) realistic, giving graphs that obey eleven static and dynamic laws that real graphs follow (we formally prove that for several of the (power) laws and we estimate their exponents as a function of the model parameters); (c) parsimonious, requiring only four parameters. (d) fast, being linear on the number of edges; (e) simple, intuitively leading to the generation of macroscopic patterns. We empirically show that our model mimics two real-world graphs very well: Blognet (unipartite, undirected, unweighted) with 27K nodes and 125K edges; and Committee-to-Candidate campaign donations (bipartite, directed, weighted) with 23K nodes and 880K edges. We also show how to handle time so that edge/weight additions are bursty and self-similar.
 
 #index 1318636
 #* PEGASUS: A Peta-Scale Graph Mining System Implementation and Observations
 #@ 24025 21166 578
 #t 2009
 #c ICDM '09 Proceedings of the 2009 Ninth IEEE International Conference on Data Mining
+#! In this paper, we describe PEGASUS, an open source Peta Graph Mining library which performs typical graph mining tasks such as computing the diameter of the graph, computing the radius of each node and finding the connected components. As the size of graphs reaches several Giga-, Tera- or Peta-bytes, the necessity for such a library grows too. To the best of our knowledge, PEGASUS is the first such library, implemented on the top of the Hadoop platform, the open source version of MapReduce. Many graph mining operations (PageRank, spectral clustering, diameter estimation, connected components etc.) are essentially a repeated matrix-vector multiplication. In this paper we describe a very important primitive for PEGASUS, called GIM-V (Generalized Iterated Matrix-Vector multiplication). GIM-V is highly optimized, achieving (a) good scale-up on the number of available machines (b) linear running time on the number of edges, and (c) more than 5 times faster performance over the non-optimized version of GIM-V. Our experiments ran on M45, one of the top 50 supercomputers in the world. We report our findings on several real graphs, including one of the largest publicly available Web Graphs, thanks to Yahoo!, with 6,7 billion edges.
 
 #index 1318732
 #* EigenSpokes: Surprising Patterns and Scalable Community Chipping in Large Graphs
 #@ 24090 20761 20763 20762 578
 #t 2009
 #c ICDMW '09 Proceedings of the 2009 IEEE International Conference on Data Mining Workshops
+#! We report a surprising, persistent pattern in an important class of large sparse social graphs, which we term EigenSpokes. We focus on large Mobile Call graphs, spanning hundreds of thousands of nodes and edges, and find that the singular vectors of these graphs exhibit a striking EigenSpokes pattern wherein, when plotted against each other, they have clear, separate lines that often neatly align along specific axes (hence the term "spokes"). We show this phenomenon to be persistent across both temporal and geographic samples of Mobile Call graphs. Through experiments on synthetic graphs, EigenSpokes are shown to be associated with the presence of community structure in these social networks. This is further verified by analysing the eigenvectors of the Mobile Call graph, which yield nodes that form tightly-knit communities. The presence of such patterns in the singular spectra has useful applications, and could potentially be used to design simple, efficient community extraction algorithms.
 
 #index 1390190
 #* Electricity based external similarity of categorical attributes
@@ -1790,6 +1871,7 @@
 #% 570885
 #% 577273
 #% 631985
+#! Similarity or distance measures are fundamental and critical properties for data mining tools. Categorical attributes abound in databases. The Car Make, Gender, Occupation, etc. fields in a automobile insurance database are very informative. Sadly, categorical data is not easily amenable to similarity computations. A domain expert might manually specify some or all of the similarity relationships, but this is error-prone and not feasible for attributes with large domains, nor is it useful for cross-attribute similarities, such as between Gender and Occupation. External similarity functions define a similarity between, say, Car Makes by looking at how they co-occur with the other categorical attributes. We exploit a rich duality between random walks on graphs and electrical circuits to develop REP, an external similarity function. REP is theoretically grounded while the only prior work was ad-hoc. The usefulness of REP is shown in two experiments. First, we cluster categorical attribute values showing improved inferred relationships. Second, we use REP effectively as a nearest neighbour classifier.
 
 #index 1411029
 #* Graph mining: laws, generators and tools
@@ -1829,6 +1911,7 @@
 #% 1214740
 #% 1214753
 #% 1710593
+#! Advances in data collection and storage capacity have made it increasingly possible to collect highly volatile graph data for analysis. Existing graph analysis techniques are not appropriate for such data, especially in cases where streaming or near-real-time results are required. An example that has drawn significant research interest is the cyber-security domain, where internet communication traces are collected and real-time discovery of events, behaviors, patterns, and anomalies is desired. We propose MetricForensics, a scalable framework for analysis of volatile graphs. MetricForensics combines a multi-level "drill down" approach, a collection of user-selected graph metrics, and a collection of analysis techniques. At each successive level, more sophisticated metrics are computed and the graph is viewed at finer temporal resolutions. In this way, MetricForensics scales to highly volatile graphs by only allocating resources for computationally expensive analysis when an interesting event is discovered at a coarser resolution first. We test MetricForensics on three real-world graphs: an enterprise IP trace, a trace of legitimate and malicious network traffic from a research institution, and the MIT Reality Mining proximity sensor data. Our largest graph has 3M vertices and 32M edges, spanning 4.5 days. The results demonstrate the scalability and capability of MetricForensics in analyzing volatile graphs; and highlight four novel phenomena in such graphs: elbows, broken correlations, prolonged spikes, and lightweight stars.
 
 #index 1470525
 #* Bayesian Browsing Model: Exact Inference of Document Relevance from Petabyte-Scale Data
@@ -1876,6 +1959,7 @@
 #% 1415766
 #% 1715593
 #% 1815596
+#! A fundamental challenge in utilizing Web search click data is to infer user-perceived relevance from the search log. Not only is the inference a difficult problem involving statistical reasonings but the bulky size, together with the ever-increasing nature, of the log data imposes extra requirements on scalability. In this paper, we propose the Bayesian Browsing Model (BBM), which performs exact inference of the document relevance, only requires a single pass of the data (i.e., the optimal scalability), and is shown effective. We present two sets of experiments to evaluate the model effectiveness and scalability. On the first set of over 50 million search instances of 1.1 million distinct queries, BBM outperforms the state-of-the-art competitor by 29.2&percnt; in log-likelihood while being 57 times faster. On the second click log set, spanning a quarter of petabyte, we showcase the scalability of BBM: we implemented it on a commercial MapReduce cluster, and it took only 3 hours to compute the relevance for 1.15 billion distinct query-URL pairs.
 
 #index 1477786
 #* Indexing and mining time sequences
@@ -1934,6 +2018,7 @@
 #% 1016158
 #% 1063718
 #% 1688248
+#! The study of data streams has received considerable attention in various communities (theory, databases, data mining, networking), due to several important applications, such as network analysis, sensor monitoring, financial data analysis, and moving object tracking. Our goal in this article is to monitor multiple numerical streams and determine which pairs are correlated with lags, as well as the value of each such lag. Lag correlations and anticorrelations are frequent and very interesting in practice. For example, a decrease in interest rates typically precedes an increase in house sales by a few months; higher amounts of fluoride in drinking water may lead to fewer dental cavities some years later. Other lag settings include network analysis, sensor monitoring, financial data analysis, and tracking of moving objects. Such data streams are often correlated or anticorrelated, but with unknown lag. We propose BRAID, a method of detecting lag correlations among data streams. BRAID can handle data streams of semi-infinite length incrementally, quickly, and with small resource consumption. However, BRAID requires space and time quadratic on a number of streams k. We also propose ThinBRAID, which is even faster than BRAID, requiring O(k) space and time per time tick. Our theoretical analysis shows that BRAID/ThinBRAID can estimate lag correlations with little or, often, with no error. Our experiments on real and realistic data show that BRAID and ThinBRAID detect the correct lag perfectly most of the time (the largest relative error was about 1&percnt;), while they are significantly faster (up to 40,000 times) than the naïve implementation.
 
 #index 1495538
 #* Mining billion-node graphs: patterns, generators and tools
@@ -1963,6 +2048,7 @@
 #% 1281832
 #% 1384246
 #% 1673564
+#! On-line social networking sites often involve multiple relations simultaneously. While people can build an explicit social network by adding each other as friends, they can also form several implicit social networks through their daily interactions like commenting on people's posts, or tagging people's photos. So given a real social networking system which changes over time, what can we say about people's social behaviors ? Do their daily interactions follow any pattern ? The majority of earlier work mainly mimics the patterns and properties of a single type of network. Here, we model the formation and co-evolution of multi-modal networks emerging from different social relations such as "who-adds-whom-as-friend" and "who-comments-on-whose-post" simultaneously. The contributions are the following : (a) we propose a new approach called EigenNetwork Analysis for analyzing time-evolving networks, and use it to discover temporal patterns with people's social interactions; (b) we report inherent correlation between friendship and co-occurrence in on-line settings; (c) we design the first multimodal graph generator xSocial 1 that is capable of producing multiple weighted time-evolving networks, which match most of the observed patterns so far. Our study was performed on two real datasets (Nokia FriendView and Flickr) with 100,000 and 50,000,000 records respectively, each of which corresponds to a different social service, and spans up to two years of activity.
 
 #index 1496777
 #* Virus propagation on time-varying networks: theory and immunization algorithms
@@ -1984,6 +2070,7 @@
 #% 823342
 #% 991977
 #% 1092783
+#! Given a contact network that changes over time (say, day vs night connectivity), and the SIS (susceptible/infected/susceptible, flu like) virus propagation model, what can we say about its epidemic threshold? That is, can we determine when a small infection will "take-off" and create an epidemic? Consequently then, which nodes should we immunize to prevent an epidemic? This is a very real problem, since, e.g. people have different connections during the day at work, and during the night at home. Static graphs have been studied for a long time, with numerous analytical results. Time-evolving networks are so hard to analyze, that most existing works are simulation studies [5]. Specifically, our contributions in this paper are: (a) we formulate the problem by approximating it by a Non-linear Dynamical system (NLDS), (b) we derive the first closed formula for the epidemic threshold of time-varying graphs under the SIS model, and finally (c) we show the usefulness of our threshold by presenting efficient heuristics and evaluate the effectiveness of our methods on synthetic and real data like the MIT reality mining graphs.
 
 #index 1496793
 #* Surprising patterns for the call duration distribution of mobile phone users
@@ -1997,6 +2084,7 @@
 #% 1214648
 #% 1233318
 #% 1300556
+#! How long are the phone calls of mobile users? What are the chances of a call to end, given its current duration? Here we answer these questions by studying the call duration distributions (CDDs) of individual users in large mobile networks. We analyzed a large, real network of 3.1 million users and more than one billion phone call records from a private mobile phone company of a large city, spanning 0.1TB. Our first contribution is the TLAC distribution to fit the CDD of each user; TLAC is the truncated version of so-called log-logistic distribution, a skewed, power-law-like distribution. We show that the TLAC is an excellent fit for the overwhelming majority of our users (more than 96% of them), much better than exponential or lognormal. Our second contribution is the MetaDist to model the collective behavior of the users given their CDDs. We show that the MetaDist distribution accurately and succinctly describes the calls duration behavior of users in large mobile networks. All of our methods are fast, and scale linearly with the number of customers.
 
 #index 1523829
 #* Parsimonious linear fingerprinting for time series
@@ -2028,6 +2116,7 @@
 #% 1022326
 #% 1214672
 #% 1328117
+#! We study the problem of mining and summarizing multiple time series effectively and efficiently. We propose PLiF, a novel method to discover essential characteristics ("fingerprints"), by exploiting the joint dynamics in numerical sequences. Our fingerprinting method has the following benefits: (a) it leads to interpretable features; (b) it is versatile: PLiF enables numerous mining tasks, including clustering, compression, visualization, forecasting, and segmentation, matching top competitors in each task; and (c) it is fast and scalable, with linear complexity on the length of the sequences. We did experiments on both synthetic and real datasets, including human motion capture data (17MB of human motions), sensor data (166 sensors), and network router traffic data (18 million raw updates over 2 years). Despite its generality, PLiF outperforms the top clustering methods on clustering; the top compression methods on compression (3 times better reconstruction error, for the same compression ratio); it gives meaningful visualization and at the same time, enjoys a linear scale-up.
 
 #index 1524264
 #* HADI: Mining Radii of Large Graphs
@@ -2068,18 +2157,21 @@
 #% 1318636
 #% 1566936
 #% 1673564
+#! Given large, multimillion-node graphs (e.g., Facebook, Web-crawls, etc.), how do they evolve over time? How are they connected? What are the central nodes and the outliers? In this article we define the Radius plot of a graph and show how it can answer these questions. However, computing the Radius plot is prohibitively expensive for graphs reaching the planetary scale. There are two major contributions in this article: (a) We propose HADI (HAdoop DIameter and radii estimator), a carefully designed and fine-tuned algorithm to compute the radii and the diameter of massive graphs, that runs on the top of the Hadoop/MapReduce system, with excellent scale-up on the number of available machines (b) We run HADI on several real world datasets including YahooWeb (6B edges, 1/8 of a Terabyte), one of the largest public graphs ever analyzed. Thanks to HADI, we report fascinating patterns on large networks, like the surprisingly small effective diameter, the multimodal/bimodal shape of the Radius plot, and its palindrome motion over time.
 
 #index 1535143
 #* EigenDiagnostics: Spotting Connection Patterns and Outliers in Large Graphs
 #@ 31400 578
 #t 2010
 #c ICDMW '10 Proceedings of the 2010 IEEE International Conference on Data Mining Workshops
+#! In a large weighted graph, how can we detect suspicious sub graphs, patterns, and outliers? A suspicious pattern could be a near-clique or a set of nodes bridging two or more near-cliques. This would improve intrusion detection in computer networks and network traffic monitoring. Are there other network patterns that need to be detected? We propose EigenDiagnostics, a fast algorithm that spots such patterns. The process creates scatter-plots of the node properties (such as eigenscores, degree, and weighted degree), then looks for linear-like patterns. Our tool automatically discovers such plots, using the Hough transform from machine vision. We apply EigenDiagnostics on a wide variety of synthetic and real data (LBNL computer traffic, movie-actor data from IMDB, Patent citations, and more). EigenDiagnostics finds surprising patterns. They appear to correspond to port-scanning (in computer networks), repetitive tasks with bot-net-like behavior, strange gbridgesh in movie-actor data (due to actors changing careers, for example), and more. The advantages are: (a) it is effective in discovering surprising patterns. (b) it is fast (linear on the number of edges) (c) it is parameter-free, and (d) it is general, and applicable to many, diverse graphs, spanning tens of GigaBytes.
 
 #index 1535286
 #* ValuePick: Towards a Value-Oriented Dual-Goal Recommender System
 #@ 20753 578
 #t 2010
 #c ICDMW '10 Proceedings of the 2010 IEEE International Conference on Data Mining Workshops
+#! Given a user in a social network, which new friends should we recommend, the dual goal being to achieve user satisfaction and good network connectivity? Similarly, which new products are better to recommend to satisfy customers’ taste/needs as well as increase vendor profit? Typical recommender systems use merely past purchases, product ratings, demographic meta-data, and network ‘proximity’ to make recommendations. This traditional approach, however, does not take into account the profitability of products to vendors in a customer-product network, or the efficacy of new links in a social network. We argue that it is more appropriate to view the problem of generating recommendations as an optimization problem. In this paper, (a) we propose Value Pick, a framework which incorporates the ‘value’ of recommendations into the system while still providing accurate recommendations that retain user trust; (b) our method is parsimonious (requires only a single parameter \tau), flexible (\tau is used to flexibly adjust the level of balance between ‘user satisfaction’ and ‘gain’), and general (can be used with any ‘value’ metric); and finally (c) we examine the problem in the social networks setting, simulate comprehensive experiments to compare our method to several basic heuristics, and show that Value Pick yields higher ‘gain’ while keeping user satisfaction high.
 
 #index 1535358
 #* Mining Billion-node Graphs: Patterns, Generators and Tools
@@ -2092,18 +2184,21 @@
 #@ 34684 20746 34685 34686 34687 34688 5143 9481 578
 #t 2010
 #c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+#! Given a large collection of images, very few of which have labels, how can we guess the labels of the remaining majority, and how can we spot those images that need brand new labels, different from the existing ones? Current automatic labeling techniques usually scale super linearly with the data size, and/or they fail when only a tiny amount of labeled data is provided. In this paper, we propose QMAS (Querying, Mining And Summarization of Multi-modal Databases), a fast solution to the following problems: (i) low-labor labeling (L3) – given a collection of images, very few of which are labeled with keywords, find the most suitable labels for the remaining ones, and (ii) mining and attention routing – in the same setting, find clusters, the top-NO outlier images, and the top-NR representative images. We report experiments on real satellite images, two large sets (1.5GB and 2.25GB) of proprietary images and a smaller set (17MB) of public images. We show that QMAS scales linearly with the data size, being up to 40 times faster than top competitors (GCap), obtaining better or equal accuracy. In contrast to other methods, QMAS does low-labor labeling (L3), that is, it works even with tiny initial label sets. It also solves both presented problems and spots tiles that potentially require new labels.
 
 #index 1535405
 #* Patterns on the Connected Components of Terabyte-Scale Graphs
 #@ 24025 20752 20753 578
 #t 2010
 #c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+#! How do connected components evolve? What are the regularities that govern the dynamic growth process and the static snapshot of the connected components? In this work, we study patterns in connected components of large, real-world graphs. First, we study one of the largest static Web graphs with billions of nodes and edges and analyze the regularities among the connected components using GFD(Graph Fractal Dimension) as our main tool. Second, we study several time evolving graphs and find dynamic patterns and rules that govern the dynamics of connected components. We analyze the growth rates of top connected components and study their relation over time. We also study the probability that a newcomer absorbs to disconnected components as a function of the current portion of the disconnected components and the degree of the newcomer. Finally, we propose a generative model that explains both the dynamic growth process and the static regularities of connected components.
 
 #index 1535470
 #* On the Vulnerability of Large Graphs
 #@ 13387 24090 34775 6142 578 21675
 #t 2010
 #c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+#! Given a large graph, like a computer network, which k nodes should we immunize (or monitor, or remove), to make it as robust as possible against a computer virus attack? We need (a) a measure of the ‘Vulnerability’ of a given network, b) a measure of the ‘Shield-value’ of a specific set of k nodes and (c) a fast algorithm to choose the best such k nodes. We answer all these three questions: we give the justification behind our choices, we show that they agree with intuition as well as recent results in immunology. Moreover, we propose Net Shield, a fast and scalable algorithm. Finally, we give experiments on large real graphs, where Net Shield achieves tremendous speed savings exceeding 7 orders of magnitude, against straightforward competitors.
 
 #index 1587742
 #* SBAD: sequence based attack detection via sequence comparison
@@ -2121,12 +2216,14 @@
 #% 844306
 #% 931200
 #% 1206864
+#! Given a stream of time-stamped events, like alerts in a network monitoring setting, how can we isolate a sequence of alerts that form a network attack? We propose a Sequence Based Attack Detection (SBAD) method, which makes the following contributions: (a) it automatically identifies groups of alerts that are frequent; (b) it summarizes them into a suspicious sequence of activity, representing them with graph structures; and (c) it suggests a novel graph-based dissimilarity measure. As a whole, SBAD is able to group suspicious alerts, visualize them, and spot anomalies at the sequence level. The evaluations from three datasets--two benchmark datasets (DARPA 1999, PKDD 2007) and a private dataset Acer 2007 gathered from a Security Operation Center in Taiwan--support our approach. The method performs well even without the help of the IP and payload information. No need for privacy information as the input makes the method easy to plug into existing system such as an intrusion detector. To talk about efficiency, the proposed method can deal with large-scale problems, such as processing 300K alerts within 20 mins on a regular PC.
 
 #index 1594624
 #* Mining large graphs: Algorithms, inference, and discoveries
 #@ 35595 21675 578
 #t 2011
 #c ICDE '11 Proceedings of the 2011 IEEE 27th International Conference on Data Engineering
+#! How do we find patterns and anomalies, on graphs with billions of nodes and edges, which do not fit in memory? How to use parallelism for such terabyte-scale graphs? In this work, we focus on inference, which often corresponds, intuitively, to "guilt by association" scenarios. For example, if a person is a drug-abuser, probably its friends are so, too; if a node in a social network is of male gender, his dates are probably females. We show how to do inference on such huge graphs through our proposed HAdoop Line graph Fixed Point (Ha-Lfp), an efficient parallel algorithm for sparse billion-scale graphs, using the Hadoop platform. Our contributions include (a) the design of Ha-Lfp, observing that it corresponds to a fixed point on a line graph induced from the original graph; (b) scalability analysis, showing that our algorithm scales up well with the number of edges, as well as with the number of machines; and (c) experimental results on two private, as well as two of the largest publicly available graphs--the Web Graphs from Yahoo! (6.6 billion edges and 0.24 Tera bytes), and the Twitter graph (3.7 billion edges and 0.13 Tera bytes). We evaluated our algorithm using M45, one of the top 50 fastest supercomputers in the world, and we report patterns and anomalies discovered by our algorithm, which would be invisible otherwise.
 
 #index 1598475
 #* BlogCast effect on information diffusion in a blogosphere
@@ -2134,6 +2231,7 @@
 #t 2011
 #c Proceedings of the 34th international ACM SIGIR conference on Research and development in Information Retrieval
 #% 1366208
+#! A blog service company provides a function named BlogCast that exposes quality posts on the blog main page to vitalize a blogosphere. This paper analyzes a new type of information diffusion via BlogCast. We show that there exists a strong halo effect in a blogosphere via thorough investigation on a huge volume of blog data.
 
 #index 1605987
 #* It's who you know: graph mining using recursive structural features
@@ -2161,6 +2259,7 @@
 #% 1535470
 #% 1536542
 #% 1710593
+#! Given a graph, how can we extract good features for the nodes? For example, given two large graphs from the same domain, how can we use information in one to do classification in the other (i.e., perform across-network classification or transfer learning on graphs)? Also, if one of the graphs is anonymized, how can we use information in one to de-anonymize the other? The key step in all such graph mining tasks is to find effective node features. We propose ReFeX (Recursive Feature eXtraction), a novel algorithm, that recursively combines local (node-based) features with neighborhood (egonet-based) features; and outputs regional features -- capturing "behavioral" information. We demonstrate how these powerful regional features can be used in within-network and across-network classification and de-anonymization tasks -- without relying on homophily, or the availability of class labels. The contributions of our work are as follows: (a) ReFeX is scalable and (b) it is effective, capturing regional ("behavioral") information in large graphs. We report experiments on real graphs from various domains with over 1M edges, where ReFeX outperforms its competitors on typical graph mining tasks like network classification and de-anonymization.
 
 #index 1605990
 #* Clustering very large multi-dimensional datasets with MapReduce
@@ -2182,6 +2281,7 @@
 #% 1127359
 #% 1165480
 #% 1318636
+#! Given a very large moderate-to-high dimensionality dataset, how could one cluster its points? For datasets that don't fit even on a single disk, parallelism is a first class option. In this paper we explore MapReduce for clustering this kind of data. The main questions are (a) how to minimize the I/O cost, taking into account the already existing data partition (e.g., on disks), and (b) how to minimize the network cost among processing nodes. Either of them may be a bottleneck. Thus, we propose the Best of both Worlds -- BoW method, that automatically spots the bottleneck and chooses a good strategy. Our main contributions are: (1) We propose BoW and carefully derive its cost functions, which dynamically choose the best strategy; (2) We show that BoW has numerous desirable features: it can work with most serial clustering methods as a plugged-in clustering subroutine, it balances the cost for disk accesses and network accesses, achieving a very good tradeoff between the two, it uses no user-defined parameters (thanks to our reasonable defaults), it matches the clustering quality of the serial algorithm, and it has near-linear scale-up; and finally, (3) We report experiments on real and synthetic data with billions of points, using up to 1,024 cores in parallel. To the best of our knowledge, our Yahoo! web is the largest real dataset ever reported in the database subspace clustering literature. Spanning 0.2 TB of multi-dimensional data, it took only 8 minutes to be clustered, using 128 cores.
 
 #index 1605996
 #* Apolo: interactive large graph sensemaking by combining machine learning and visualization
@@ -2198,6 +2298,7 @@
 #% 1214748
 #% 1286743
 #% 1573362
+#! We present APOLO, a system that uses a mixed-initiative approach to help people interactively explore and make sense of large network datasets. It combines visualization, rich user interaction and machine learning to engage the user in bottom-up sensemaking to gradually build up an understanding over time by starting small, rather than starting big and drilling down. APOLO helps users find relevant information by specifying exemplars, and then using a machine learning method called Belief Propagation to infer which other nodes may be of interest. We demonstrate APOLO's usage and benefits using a Google Scholar citation graph, consisting of 83,000 articles (nodes) and 150,000 citations relationships. A demo video of APOLO is available at http://www.cs.cmu.edu/~dchau/apolo/apolo.mp4.
 
 #index 1606050
 #* GBASE: a scalable and general graph management system
@@ -2238,6 +2339,7 @@
 #% 1451193
 #% 1673564
 #% 1710593
+#! Graphs appear in numerous applications including cyber-security, the Internet, social networks, protein networks, recommendation systems, and many more. Graphs with millions or even billions of nodes and edges are common-place. How to store such large graphs efficiently? What are the core operations/queries on those graph? How to answer the graph queries quickly? We propose GBASE, a scalable and general graph management and mining system. The key novelties lie in 1) our storage and compression scheme for a parallel setting and 2) the carefully chosen graph operations and their efficient implementation. We designed and implemented an instance of GBASE using MapReduce/Hadoop. GBASE provides a parallel indexing mechanism for graph mining operations that both saves storage space, as well as accelerates queries. We ran numerous experiments on real graphs, spanning billions of nodes and edges, and we show that our proposed GBASE is indeed fast, scalable and nimble, with significant savings in space and time.
 
 #index 1606081
 #* ThermoCast: a cyber-physical forecasting model for datacenters
@@ -2264,6 +2366,7 @@
 #% 1307193
 #% 1468407
 #% 1523829
+#! Efficient thermal management is important in modern data centers as cooling consumes up to 50% of the total energy. Unlike previous work, we consider proactive thermal management, whereby servers can predict potential overheating events due to dynamics in data center configuration and workload, giving operators enough time to react. However, such forecasting is very challenging due to data center scales and complexity. Moreover, such a physical system is influenced by cyber effects, including workload scheduling in servers. We propose ThermoCast, a novel thermal forecasting model to predict the temperatures surrounding the servers in a data center, based on continuous streams of temperature and airflow measurements. Our approach is (a) capable of capturing cyberphysical interactions and automatically learning them from data; (b) computationally and physically scalable to data center scales; (c) able to provide online prediction with real-time sensor measurements. The paper's main contributions are: (i) We provide a systematic approach to integrate physical laws and sensor observations in a data center; (ii) We provide an algorithm that uses sensor data to learn the parameters of a data center's cyber-physical system. In turn, this ability enables us to reduce model complexity compared to full-fledged fluid dynamics models, while maintaining forecast accuracy; (iii) Unlike previous simulation-based studies, we perform experiments in a production data center. Using real data traces, we show that ThermoCast forecasts temperature better than a machine learning approach solely driven by data, and can successfully predict thermal alarms 4.2 minutes ahead of time.
 
 #index 1607936
 #* Spectral analysis for billion-scale graphs: discoveries and implementation
@@ -2283,6 +2386,7 @@
 #% 1594624
 #% 1673564
 #% 1710595
+#! Given a graph with billions of nodes and edges, how can we find patterns and anomalies? Are there nodes that participate in too many or too few triangles? Are there close-knit near-cliques? These questions are expensive to answer unless we have the first several eigenvalues and eigenvectors of the graph adjacency matrix. However, eigensolvers suffer from subtle problems (e.g., convergence) for large sparse matrices, let alone for billion-scale ones. We address this problem with the proposed HEIGEN algorithm, which we carefully design to be accurate, efficient, and able to run on the highly scalable MAPREDUCE (HADOOP) environment. This enables HEIGEN to handle matrices more than 1000× larger than those which can be analyzed by existing algorithms. We implement HEIGEN and run it on the M45 cluster, one of the top 50 supercomputers in the world. We report important discoveries about near-cliques and triangles on several real-world graphs, including a snapshot of the Twitter social network (38Gb, 2 billion edges) and the "YahooWeb" dataset, one of the largest publicly available graphs (120Gb, 1.4 billion nodes, 6.6 billion edges).
 
 #index 1617313
 #* Unifying guilt-by-association approaches: theorems and fast algorithms
@@ -2307,6 +2411,7 @@
 #% 1673564
 #% 1810385
 #% 1815596
+#! If several friends of Smith have committed petty thefts, what would you say about Smith? Most people would not be surprised if Smith is a hardened criminal. Guilt-by-association methods combine weak signals to derive stronger ones, and have been extensively used for anomaly detection and classification in numerous settings (e.g., accounting fraud, cyber-security, calling-card fraud). The focus of this paper is to compare and contrast several very successful, guilt-by-association methods: Random Walk with Restarts, Semi-Supervised Learning, and Belief Propagation (BP). Our main contributions are two-fold: (a) theoretically, we prove that all the methods result in a similar matrix inversion problem; (b) for practical applications, we developed FaBP, a fast algorithm that yields 2× speedup, equal or higher accuracy than BP, and is guaranteed to converge. We demonstrate these benefits using synthetic and real datasets, including YahooWeb, one of the largest graphs ever studied with BP.
 
 #index 1663625
 #* Detecting fraudulent personalities in networks of online auctioneers
@@ -2320,6 +2425,7 @@
 #% 784344
 #% 823370
 #% 1016177
+#! Online auctions have gained immense popularity by creating an accessible environment for exchanging goods at reasonable prices. Not surprisingly, malevolent auction users try to abuse them by cheating others. In this paper we propose a novel method, 2-Level Fraud Spotting (2LFS), to model the techniques that fraudsters typically use to carry out fraudulent activities, and to detect fraudsters preemptively. Our key contributions are: (a) we mine user level features (e.g., number of transactions, average price of goods exchanged, etc.) to get an initial belief for spotting fraudsters, (b) we introduce network level features which capture the interactions between different users, and (c) we show how to combine both these features using a Belief Propagation algorithm over a Markov Random Field, and use it to detect suspicious patterns (e.g., unnaturally close-nit groups of people that trade mainly among themselves). Our algorithm scales linearly with the number of graph edges. Moreover, we illustrate the effectiveness of our algorithm on a real dataset collected from a large online auction site.
 
 #index 1669951
 #* Distributed pattern discovery in multiple streams
@@ -2329,6 +2435,7 @@
 #% 443085
 #% 654443
 #% 1707797
+#! Given m groups of streams which consist of n1,...,nm co-evolving streams in each group, we want to: (i) incrementally find local patterns within a single group, (ii) efficiently obtain global patterns across groups, and more importantly, (iii) efficiently do that in real time while limiting shared information across groups. In this paper, we present a distributed, hierarchical algorithm addressing these problems. Our experimental case study confirms that the proposed method can perform hierarchical correlation detection efficiently and effectively.
 
 #index 1673564
 #* Realistic, mathematically tractable graph generation and evolution, using kronecker multiplication
@@ -2344,24 +2451,28 @@
 #% 771380
 #% 823342
 #% 1394202
+#! How can we generate realistic graphs? In addition, how can we do so with a mathematically tractable model that makes it feasible to analyze their properties rigorously? Real graphs obey a long list of surprising properties: Heavy tails for the in- and out-degree distribution; heavy tails for the eigenvalues and eigenvectors; small diameters; and the recently discovered “Densification Power Law” (DPL). All published graph generators either fail to match several of the above properties, are very complicated to analyze mathematically, or both. Here we propose a graph generator that is mathematically tractable and matches this collection of properties. The main idea is to use a non-standard matrix operation, the Kronecker product, to generate graphs that we refer to as “Kronecker graphs”. We show that Kronecker graphs naturally obey all the above properties; in fact, we can rigorously prove that they do so. We also provide empirical evidence showing that they can mimic very well several real graphs.
 
 #index 1688472
 #* Beyond 'Caveman Communities': Hubs and Spokes for Graph Compression and Mining
 #@ 24025 578
 #t 2011
 #c ICDM '11 Proceedings of the 2011 IEEE 11th International Conference on Data Mining
+#! Given a real world graph, how should we lay-out its edges? How can we compress it? These questions are closely related, and the typical approach so far is to find clique-like communities, like the `cavemen graph', and compress them. We show that the block-diagonal mental image of the `cavemen graph' is the wrong paradigm, in full agreement with earlier results that real world graphs have no good cuts. Instead, we propose to envision graphs as a collection of hubs connecting spokes, with super-hubs connecting the hubs, and so on, recursively. Based on the idea, we propose the Slash Burn method (burn the hubs, and slash the remaining graph into smaller connected components). Our view point has several advantages: (a) it avoids the `no good cuts' problem, (b) it gives better compression, and (c) it leads to faster execution times for matrix-vector operations, which are the back-bone of most graph processing tools. Experimental results show that our Slash Burn method consistently outperforms other methods on all datasets, giving good compression and faster running time.
 
 #index 1688538
 #* Threshold Conditions for Arbitrary Cascade Models on Arbitrary Networks
 #@ 24090 5568 24093 24091 578
 #t 2011
 #c ICDM '11 Proceedings of the 2011 IEEE 11th International Conference on Data Mining
+#! Given a network of who-contacts-whom or who links-to-whom, will a contagious virus/product/meme spread and 'take-over' (cause an epidemic) or die-out quickly? What will change if nodes have partial, temporary or permanent immunity? The epidemic threshold is the minimum level of virulence to prevent a viral contagion from dying out quickly and determining it is a fundamental question in epidemiology and related areas. Most earlier work focuses either on special types of graphs or on specific epidemiological/cascade models. We are the first to show the G2-threshold (twice generalized) theorem, which nicely de-couples the effect of the topology and the virus model. Our result unifies and includes as special case older results and shows that the threshold depends on the first eigenvalue of the connectivity matrix, (a) for any graph and (b) for all propagation models in standard literature (more than 25, including H.I.V.) [20], [12]. Our discovery has broad implications for the vulnerability of real, complex networks, and numerous applications, including viral marketing, blog dynamics, influence propagation, easy answers to 'what-if' questions, and simplified design and evaluation of immunization policies. We also demonstrate our result using extensive simulations on one of the biggest available social contact graphs containing more than 31 million interactions among more than 1 million people representing the city of Portland, Oregon, USA.
 
 #index 1689524
 #* Mobile Phone Graph Evolution: Findings, Model and Interpretation
 #@ 31479 8355 578 11959
 #t 2011
 #c ICDMW '11 Proceedings of the 2011 IEEE 11th International Conference on Data Mining Workshops
+#! What are the features of mobile phone graph along the time? How to model these features? What are the interpretation for the evolutional graph generation process? To answer the above challenging problems, we analyze a massive who-call-whom networks as long as a year, gathered from records of two large mobile phone communication networks both with 2 million users and 2 billion of calls. We examine the calling behavior distribution at multiple time scales (e.g., day, week, month and quarter), and find that the distribution is not only skewed with a heavy tail, but also changing at different time scales. How to model the changing behavior, and whether there exists a distribution fitting the multi-scale data well? In this paper, first, we define a delta-stable distribution and a Multi-scale Distribution Fitting (MsDF) problem. Second, to analyze our observed distributions at different time scales, we propose a framework, Scale Power, which not only fits the multi-scale data distribution very well, but also works as a convolutional distribution mixture to explain the generation mechanism of the multi-scale distribution changing behavior. Third, Scale Power can conduct a fitting approximation from a small time scale data to a large time scale. Furthermore, we illustrate the interesting and appealing findings from our Scale Power model and large scale real life data sets.
 
 #index 1710593
 #* OddBall: spotting anomalies in weighted graphs
@@ -2388,6 +2499,7 @@
 #% 1083682
 #% 1176868
 #% 1663625
+#! Given a large, weighted graph, how can we find anomalies? Which rules should be violated, before we label a node as an anomaly? We propose the oddball algorithm, to find such nodes The contributions are the following: (a) we discover several new rules (power laws) in density, weights, ranks and eigenvalues that seem to govern the so-called “neighborhood sub-graphs” and we show how to use these rules for anomaly detection; (b) we carefully choose features, and design oddball, so that it is scalable and it can work un-supervised (no user-defined constants) and (c) we report experiments on many real graphs with up to 1.6 million nodes, where oddball indeed spots unusual nodes that agree with intuition.
 
 #index 1710595
 #* EigenSpokes: surprising patterns and scalable community chipping in large graphs
@@ -2410,6 +2522,7 @@
 #% 1073989
 #% 1083690
 #% 1214695
+#! We report a surprising, persistent pattern in large sparse social graphs, which we term EigenSpokes We focus on large Mobile Call graphs, spanning about 186K nodes and millions of calls, and find that the singular vectors of these graphs exhibit a striking EigenSpokes pattern wherein, when plotted against each other, they have clear, separate lines that often neatly align along specific axes (hence the term “spokes”) Furthermore, analysis of several other real-world datasets e.g. Patent Citations, Internet, etc. reveals similar phenomena indicating this to be a more fundamental attribute of large sparse graphs that is related to their community structure. This is the first contribution of this paper Additional ones include (a) study of the conditions that lead to such EigenSpokes, and (b) a fast algorithm for spotting and extracting tightly-knit communities, called SpokEn, that exploits our findings about the EigenSpokes pattern.
 
 #index 1710596
 #* BASSET: scalable gateway finder in large graphs
@@ -2428,6 +2541,7 @@
 #% 1016175
 #% 1016176
 #% 1047785
+#! Given a social network, who is the best person to introduce you to, say, Chris Ferguson, the poker champion? Or, given a network of people and skills, who is the best person to help you learn about, say, wavelets? The goal is to find a small group of ‘gateways': persons who is close enough to us, as well as close enough to the target (person, or skill) or, in other words, are crucial in connecting us to the target. The main contributions are the following: (a) we show how to formulate this problem precisely; (b) we show that it is sub-modular and thus it can be solved near-optimally; (c) we give fast, scalable algorithms to find such gateways Experiments on real data sets validate the effectiveness and efficiency of the proposed methods, achieving up to 6,000,000x speedup.
 
 #index 1737783
 #* TWave: high-order analysis of spatiotemporal data
@@ -2436,6 +2550,7 @@
 #c PAKDD'10 Proceedings of the 14th Pacific-Asia conference on Advances in Knowledge Discovery and Data Mining - Volume Part I
 #% 570889
 #% 1862054
+#! Recent advances in data acquisition and sharing have made available large quantities of complex data in which features may have complex interrelationships or may not be scalar. For such datasets, the traditional matrix model is no longer appropriate and may fail to capture relationships between features or fail to discover the underlying concepts that features represent. These datasets are better modeled using tensors, which are high-order generalizations of matrices. However, naive tensor algorithms suffer from poor efficiency and may fail to consider spatiotemporal neighborhood relationships in analysis. To surmount these difficulties, we propose TWave, a wavelet and tensor-based methodology for automatic summarization, classification, concept discovery, clustering, and compression of complex datasets. We also derive TWaveCluster, a novel high-order clustering approach based on WaveCluster, and compare our approach against WaveCluster and k-means. The efficiency of our method is competitive with WaveCluster and significantly outperforms k-means. TWave consistently outperformed competitors in both speed and accuracy on a 9.3 GB medical imaging dataset. Our results suggest that a combined wavelet and tensor approach such as TWave may be successfully employed in the analysis of complex high-order datasets.
 
 #index 1769264
 #* V-SMART-join: a scalable mapreduce framework for all-pair similarity joins of multisets and vectors
@@ -2472,6 +2587,7 @@
 #% 1535356
 #% 1605940
 #% 1693964
+#! This work proposes V-SMART-Join, a scalable MapReduce-based framework for discovering all pairs of similar entities. The V-SMART-Join framework is applicable to sets, multisets, and vectors. V-SMART-Join is motivated by the observed skew in the underlying distributions of Internet traffic, and is a family of 2-stage algorithms, where the first stage computes and joins the partial results, and the second stage computes the similarity exactly for all candidate pairs. The V-SMART-Join algorithms are very efficient and scalable in the number of entities, as well as their cardinalities. They were up to 30 times faster than the state of the art algorithm, VCL, when compared on a real dataset of a small size. We also established the scalability of the proposed algorithms by running them on a dataset of a realistic size, on which VCL never succeeded to finish. Experiments were run using real datasets of IPs and cookies, where each IP is represented as a multiset of cookies, and the goal is to discover similar IPs to identify Internet proxies.
 
 #index 1770370
 #* Managing and mining large graphs: patterns and algorithms
@@ -2494,6 +2610,7 @@
 #% 1663625
 #% 1688472
 #% 1710595
+#! Graphs are everywhere: social networks, the World Wide Web, biological networks, and many more. The sizes of graphs are growing at unprecedented rate, spanning millions and billions of nodes and edges. What are the patterns in large graphs, spanning Giga, Tera, and heading toward Peta bytes? What are the best tools, and how can they help us solve graph mining problems? How do we scale up algorithms for handling graphs with billions of nodes and edges? These are exactly the goals of this tutorial. We start with the patterns in real-world static, weighted, and dynamic graphs. Then we describe important tools for large graph mining, including singular value decomposition, and Hadoop. Finally, we conclude with the design and the implementation of scalable graph mining algorithms on Hadoop. This tutorial is complementary to the related tutorial "Managing and Mining Large Graphs: Systems and Implementations".
 
 #index 1770402
 #* OPAvion: mining and visualization in large graphs
@@ -2506,6 +2623,7 @@
 #% 1607936
 #% 1710593
 #% 1710595
+#! Given a large graph with millions or billions of nodes and edges, like a who-follows-whom Twitter graph, how do we scalably compute its statistics, summarize its patterns, spot anomalies, visualize and make sense of it? We present OPAvion, a graph mining system that provides a scalable, interactive workflow to accomplish these analysis tasks. OPAvion consists of three modules: (1) The Summarization module (Pegasus) operates off-line on massive, disk-resident graphs and computes graph statistics, like PageRank scores, connected components, degree distribution, triangles, etc.; (2) The Anomaly Detection module (OddBall) uses graph statistics to mine patterns and spot anomalies, such as nodes with many contacts but few interactions with them (possibly telemarketers); (3) The Interactive Visualization module (Apolo) lets users incrementally explore the graph, starting with their chosen nodes or the flagged anomalous nodes; then users can expand to the nodes' vicinities, label them into categories, and thus interactively navigate the interesting parts of the graph. In our demonstration, we invite our audience to interact with OPAvion and try out its core capabilities on the Stack Overflow Q&A graph that describes over 6 million questions and answers among 650K users.
 
 #index 1770428
 #* SigSpot: mining significant anomalous regions from time-evolving networks (abstract only)
@@ -2534,6 +2652,7 @@
 #% 1688444
 #% 1710593
 #% 1871394
+#! Anomaly detection in dynamic networks has a rich gamut of application domains, such as road networks, communication networks and water distribution networks. An anomalous event, such as a traffic accident, denial of service attack or a chemical spill, can cause a local shift from normal behavior in the network state that persists over an interval of time. Detecting such anomalous regions of network and time extent in large real-world networks is a challenging task. Existing anomaly detection techniques focus on either the time series associated with individual network edges or on global anomalies that affect the entire network. In order to detect anomalous regions, one needs to consider both the time and the affected network substructure jointly, which brings forth computational challenges due to the combinatorial nature of possible solutions. We propose the problem of mining all Significant Anomalous Regions (SAR) in time-evolving networks that asks for the discovery of connected temporal subgraphs comprised of edges that significantly deviate from normal in a persistent manner. We propose an optimal Baseline algorithm for the problem and an efficient approximation, called S IG S POT. Compared to Baseline, SIGSPOT is up to one order of magnitude faster in real data, while achieving less than 10% average relative error rate. In synthetic datasets it is more than 30 times faster than Baseline with 94% accuracy and solves efficiently large instances that are infeasible (more than 10 hours running time) for Baseline. We demonstrate the utility of SIGSPOT for inferring accidents on road networks and study its scalability when detecting anomalies in social, transportation and synthetic evolving networks, spanning up to 1GB.
 
 #index 1865344
 #* EigenBot: foiling spamming botnets with matrix algebra
@@ -2555,6 +2674,7 @@
 #% 1663625
 #% 1710593
 #% 1860500
+#! We present EigenBot, a spamming botnet clustering and tracking mechanism that identifies a botnet-based spamming email campaigns. EigenBot extracts the key concepts among the spam emails, despite the high dimensionality, and the noise in the input. We evaluated EigenBot using real spamming botnet data on the Internet: more than one million spam emails, collected during the period from May 2011 from Internet service providers (ISPs) in Taiwan. EigenBot successfully identified spamming botnet groups at a high true positive rate of 82%, thereby improving the detection rate of baseline approaches by 10 absolute percentage points. EigenBot is now employed by the Taiwanese government to support cyber spamming activity alleviation and has already reported 389 spamming sources to the National Communication Commission (the government regulatory agency in Taiwan) in 2011.
 
 #index 1872229
 #* Rise and fall patterns of information diffusion: model and implications
@@ -2590,6 +2710,7 @@
 #% 1688538
 #% 1746901
 #% 1865569
+#! The recent explosion in the adoption of search engines and new media such as blogs and Twitter have facilitated faster propagation of news and rumors. How quickly does a piece of news spread over these media? How does its popularity diminish over time? Does the rising and falling pattern follow a simple universal law? In this paper, we propose SpikeM, a concise yet flexible analytical model for the rise and fall patterns of influence propagation. Our model has the following advantages: (a) unification power: it generalizes and explains earlier theoretical models and empirical observations; (b) practicality: it matches the observed behavior of diverse sets of real data; (c) parsimony: it requires only a handful of parameters; and (d) usefulness: it enables further analytics tasks such as fore- casting, spotting anomalies, and interpretation by reverse- engineering the system parameters of interest (e.g. quality of news, count of interested bloggers, etc.). Using SpikeM, we analyzed 7.2GB of real data, most of which were collected from the public domain. We have shown that our SpikeM model accurately and succinctly describes all the patterns of the rise-and-fall spikes in these real datasets.
 
 #index 1872262
 #* Fast mining and forecasting of complex time-stamped events
@@ -2621,6 +2742,7 @@
 #% 1523829
 #% 1605967
 #% 1705530
+#! Given huge collections of time-evolving events such as web-click logs, which consist of multiple attributes (e.g., URL, userID, times- tamp), how do we find patterns and trends? How do we go about capturing daily patterns and forecasting future events? We need two properties: (a) effectiveness, that is, the patterns should help us understand the data, discover groups, and enable forecasting, and (b) scalability, that is, the method should be linear with the data size. We introduce TriMine, which performs three-way mining for all three attributes, namely, URLs, users, and time. Specifically TriMine discovers hidden topics, groups of URLs, and groups of users, simultaneously. Thanks to its concise but effective summarization, it makes it possible to accomplish the most challenging and important task, namely, to forecast future events. Extensive experiments on real datasets demonstrate that TriMine discovers meaningful topics and makes long-range forecasts, which are notoriously difficult to achieve. In fact, TriMine consistently outperforms the best state-of-the-art existing methods in terms of accuracy and execution speed (up to 74x faster).
 
 #index 1872267
 #* GigaTensor: scaling tensor analysis up by 100 times - algorithms and discoveries
@@ -2648,6 +2770,7 @@
 #% 1635120
 #% 1758232
 #% 1858962
+#! Many data are modeled as tensors, or multi dimensional arrays. Examples include the predicates (subject, verb, object) in knowledge bases, hyperlinks and anchor texts in the Web graphs, sensor streams (time, location, and type), social networks over time, and DBLP conference-author-keyword relations. Tensor decomposition is an important data mining tool with various applications including clustering, trend detection, and anomaly detection. However, current tensor decomposition algorithms are not scalable for large tensors with billions of sizes and hundreds millions of nonzeros: the largest tensor in the literature remains thousands of sizes and hundreds thousands of nonzeros. Consider a knowledge base tensor consisting of about 26 million noun-phrases. The intermediate data explosion problem, associated with naive implementations of tensor decomposition algorithms, would require the materialization and the storage of a matrix whose largest dimension would be ≈7 x 1014; this amounts to ~10 Petabytes, or equivalently a few data centers worth of storage, thereby rendering the tensor analysis of this knowledge base, in the naive way, practically impossible. In this paper, we propose GIGATENSOR, a scalable distributed algorithm for large scale tensor decomposition. GIGATENSOR exploits the sparseness of the real world tensors, and avoids the intermediate data explosion problem by carefully redesigning the tensor decomposition algorithm. Extensive experiments show that our proposed GIGATENSOR solves 100 times bigger problems than existing methods. Furthermore, we employ GIGATENSOR in order to analyze a very large real world, knowledge base tensor and present our astounding findings which include discovery of potential synonyms among millions of noun-phrases (e.g. the noun 'pollutant' and the noun-phrase 'greenhouse gases').
 
 #index 1872281
 #* Interacting viruses in networks: can both survive?
@@ -2674,6 +2797,7 @@
 #% 1688538
 #% 1746901
 #% 1865569
+#! Suppose we have two competing ideas/products/viruses, that propagate over a social or other network. Suppose that they are strong/virulent enough, so that each, if left alone, could lead to an epidemic. What will happen when both operate on the network? Earlier models assume that there is perfect competition: if a user buys product 'A' (or gets infected with virus 'X'), she will never buy product 'B' (or virus 'Y'). This is not always true: for example, a user could install and use both Firefox and Google Chrome as browsers. Similarly, one type of flu may give partial immunity against some other similar disease. In the case of full competition, it is known that 'winner takes all,' that is the weaker virus/product will become extinct. In the case of no competition, both viruses survive, ignoring each other. What happens in-between these two extremes? We show that there is a phase transition: if the competition is harsher than a critical level, then 'winner takes all;' otherwise, the weaker virus survives. These are the contributions of this paper (a) the problem definition, which is novel even in epidemiology literature (b) the phase-transition result and (c) experiments on real data, illustrating the suitability of our results.
 
 #index 1872369
 #* RainMon: an integrated approach to mining bursty timeseries monitoring data
@@ -2706,6 +2830,7 @@
 #% 1669951
 #% 1689735
 #% 1862798
+#! Metrics like disk activity and network traffic are widespread sources of diagnosis and monitoring information in datacenters and networks. However, as the scale of these systems increases, examining the raw data yields diminishing insight. We present RainMon, a novel end-to-end approach for mining timeseries monitoring data designed to handle its size and unique characteristics. Our system is able to (a) mine large, bursty, real-world monitoring data, (b) find significant trends and anomalies in the data, (c) compress the raw data effectively, and (d) estimate trends to make forecasts. Furthermore, RainMon integrates the full analysis process from data storage to the user interface to provide accessible long-term diagnosis. We apply RainMon to three real-world datasets from production systems and show its utility in discovering anomalous machines and time periods.
 
 #index 1872378
 #* RolX: structural role extraction & mining in large graphs
@@ -2731,6 +2856,7 @@
 #% 1710593
 #% 1787250
 #% 1813854
+#! Given a network, intuitively two nodes belong to the same role if they have similar structural behavior. Roles should be automatically determined from the data, and could be, for example, "clique-members," "periphery-nodes," etc. Roles enable numerous novel and useful network-mining tasks, such as sense-making, searching for similar nodes, and node classification. This paper addresses the question: Given a graph, how can we automatically discover roles for nodes? We propose RolX (Role eXtraction), a scalable (linear in the number of edges), unsupervised learning approach for automatically extracting structural roles from general network data. We demonstrate the effectiveness of RolX on several network-mining tasks: from exploratory data analysis to network transfer learning. Moreover, we compare network role discovery with network community discovery. We highlight fundamental differences between the two (e.g., roles generalize across disconnected networks, communities do not); and show that the two approaches are complimentary in nature.
 
 #index 1872416
 #* TourViz: interactive visualization of connection pathways in large graphs
@@ -2744,6 +2870,7 @@
 #% 893200
 #% 1159232
 #% 1573362
+#! We present TourViz, a system that helps its users to interactively visualize and make sense in large network datasets. In particular, it takes as input a set of nodes the user specifies as of interest and presents the user with a visualization of connection subgraphs around these input nodes. Each connection subgraph contains good pathways that highlight succinct connections among a "close-by" group of input nodes. TourViz combines visualization with rich user interaction to engage and help the user to further understand the relations among the nodes of interest,by exploring their neighborhood on demand as well as modifying the set of interest nodes. We demonstrate TourViz's usage and benefits using the DBLP graph, consisting of authors and their co-authorship relations, while our system is designed generally to work with any kind of graph data. We will invite the audience to experiment with our system and comment on its usability, usefulness, and how our system can help with their research and improve the understanding of data in other domains.
 
 #index 1874865
 #* Quantifying reciprocity in large weighted communication networks
@@ -2762,6 +2889,7 @@
 #% 1400031
 #% 1496793
 #% 1506252
+#! If a friend called you 50 times last month, how many times did you call him back? Does the answer change if we ask about SMS, or e-mails? We want to quantify reciprocity between individuals in weighted networks, and we want to discover whether it depends on their topological features (like degree, or number of common neighbors). Here we answer these questions, by studying the call- and SMS records of millions of mobile phone users from a large city, with more than 0.5 billion phone calls and 60 million SMSs, exchanged over a period of six months. Our main contributions are: (1) We propose a novel distribution, the Triple Power Law (3PL), that fits the reciprocity behavior of all 3 datasets we study, with a better fit than older competitors, (2) 3PL is parsimonious; it has only three parameters and thus avoids over-fitting, (3) 3PL can spot anomalies, and we report the most surprising ones, in our real networks, (4) We observe that the degree of reciprocity between users is correlated with their local topological features; reciprocity is higher among mutual users with larger local network overlap and greater degree similarity.
 
 #index 1890858
 #* Forecasting in the NBA and other team sports: Network effects in action
@@ -2774,6 +2902,7 @@
 #% 956513
 #% 1083701
 #% 1760998
+#! The multi-million sports-betting market is based on the fact that the task of predicting the outcome of a sports event is very hard. Even with the aid of an uncountable number of descriptive statistics and background information, only a few can correctly guess the outcome of a game or a league. In this work, our approach is to move away from the traditional way of predicting sports events, and instead to model sports leagues as networks of players and teams where the only information available is the work relationships among them. We propose two network-based models to predict the behavior of teams in sports leagues. These models are parameter-free, that is, they do not have a single parameter, and moreover are sport-agnostic: they can be applied directly to any team sports league. First, we view a sports league as a network in evolution, and we infer the implicit feedback behind network changes and properties over the years. Then, we use this knowledge to construct the network-based prediction models, which can, with a significantly high probability, indicate how well a team will perform over a season. We compare our proposed models with other prediction models in two of the most popular sports leagues: the National Basketball Association (NBA) and the Major League Baseball (MLB). Our model shows consistently good results in comparison with the other models and, relying upon the network properties of the teams, we achieved a &ap; 14&percnt; rank prediction accuracy improvement over our best competitor.
 
 #index 1895107
 #* Understanding and managing cascades on large graphs
@@ -2799,6 +2928,7 @@
 #% 1746901
 #% 1872229
 #% 1872281
+#! How do contagions spread in population networks? Which group should we market to, for maximizing product penetration? Will a given YouTube video go viral? Who are the best people to vaccinate? What happens when two products compete? The objective of this tutorial is to provide an intuitive and concise overview of most important theoretical results and algorithms to help us understand and manipulate such propagation-style processes on large networks. The tutorial contains three parts: (a) Theoretical results on the behavior of fundamental models; (b) Scalable Algorithms for changing the behavior of these processes e.g., for immunization, marketing etc.; and (c) Empirical Studies of diffusion on blogs and on-line websites like Twitter. The problems we focus on are central in surprisingly diverse areas: from computer science and engineering, epidemiology and public health, product marketing to information dissemination. Our emphasis is on intuition behind each topic, and guidelines for the practitioner.
 
 #index 1904111
 #* Panel on Mining the Big Data
@@ -2850,6 +2980,7 @@
 #% 1673564
 #% 1688472
 #% 1710593
+#! Graphs appear in numerous applications including cyber security, the Internet, social networks, protein networks, recommendation systems, citation networks, and many more. Graphs with millions or even billions of nodes and edges are common-place. How to store such large graphs efficiently? What are the core operations/queries on those graph? How to answer the graph queries quickly? We propose Gbase, an efficient analysis platform for large graphs. The key novelties lie in (1) our storage and compression scheme for a parallel, distributed settings and (2) the carefully chosen graph operations and their efficient implementations. We designed and implemented an instance of Gbase using Mapreduce/Hadoop. Gbase provides a parallel indexing mechanism for graph operations that both saves storage space, as well as accelerates query responses. We run numerous experiments on real and synthetic graphs, spanning billions of nodes and edges, and we show that our proposed Gbase is indeed fast, scalable, and nimble, with significant savings in space and time.
 
 #index 1925432
 #* ParCube: sparse parallelizable tensor decompositions
@@ -2869,16 +3000,19 @@
 #% 1300087
 #% 1635120
 #% 1758232
+#! How can we efficiently decompose a tensor into sparse factors, when the data does not fit in memory? Tensor decompositions have gained a steadily increasing popularity in data mining applications, however the current state-of-art decomposition algorithms operate on main memory and do not scale to truly large datasets. In this work, we propose ParCube, a new and highly parallelizable method for speeding up tensor decompositions that is well-suited to producing sparse approximations. Experiments with even moderately large data indicate over 90% sparser outputs and 14 times faster execution, with approximation error close to the current state of the art irrespective of computation and memory requirements. We provide theoretical guarantees for the algorithm's correctness and we experimentally validate our claims through extensive experiments, including four different real world datasets (Enron, Lbnl, Facebook and Nell), demonstrating its effectiveness for data mining practitioners. In particular, we are the first to analyze the very large Nell dataset using a sparse tensor decomposition, demonstrating that ParCube enables us to handle effectively and efficiently very large datasets.
 
 #index 1978799
 #* Spotting Culprits in Epidemics: How Many and Which Ones?
 #@ 24090 18669 578
 #t 2012
 #c ICDM '12 Proceedings of the 2012 IEEE 12th International Conference on Data Mining
+#! Given a snapshot of a large graph, in which an infection has been spreading for some time, can we identify those nodes from which the infection started to spread? In other words, can we reliably tell who the culprits are? In this paper we answer this question affirmatively, and give an efficient method called NETSLEUTH for the well-known Susceptible-Infected virus propagation model. Essentially, we are after that set of seed nodes that best explain the given snapshot. We propose to employ the Minimum Description Length principle to identify the best set of seed nodes and virus propagation ripple, as the one by which we can most succinctly describe the infected graph. We give an highly efficient algorithm to identify likely sets of seed nodes given a snapshot. Then, given these seed nodes, we show we can optimize the virus propagation ripple in a principled way by maximizing likelihood. With all three combined, NETSLEUTH can automatically identify the correct number of seed nodes, as well as which nodes are the culprits. Experimentation on our method shows high accuracy in the detection of seed nodes, in addition to the correct automatic identification of their number. Moreover, we show NETSLEUTH scales linearly in the number of nodes of the graph.
 
 #index 1979051
 #* EigenSP: A More Accurate Shortest Path Distance Estimation on Large-Scale Networks
 #@ 31400 44512 5962 578
 #t 2012
 #c ICDMW '12 Proceedings of the 2012 IEEE 12th International Conference on Data Mining Workshops
+#! Estimating the distances of the shortest path between given pairs of nodes in a graph is a basic operation in a wide variety of applications including social network analysis, web retrieval, etc. Such applications require a response on the order of a few milliseconds, but exact algorithms to compute the distance of the shortest path exactly do not work on real-world large-scale networks, because of their infeasible time complexities. The landmark-based methods approximate distances by using a few nodes as landmarks, and can accurately estimate shortest-path distances with feasible time complexities. However, they fail at estimating small distances, as it is difficult for a few selected landmarks to cover the shortest paths of many close node pairs. To tackle this problem, we present a novel method EigenSP, that estimates the shortest-path distance by using an adjacency matrix approximated by a few eigenvalues and eigenvectors. The average relative error rate of EigenSP is lower than that of the landmark-based methods on large graphs with many short distances. Empirical results suggest that EigenSP estimates small distances better than the landmark-based methods.
 

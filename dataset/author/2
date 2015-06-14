@@ -13,6 +13,7 @@
 #% 481588
 #% 481754
 #% 481758
+#! We introduce the problem of mining association rules in large relational tables containing both quantitative and categorical attributes. An example of such an association might be "10% of married people between age 50 and 60 have at least 2 cars". We deal with quantitative attributes by fine-partitioning the values of the attribute and then combining adjacent partitions as necessary. We introduce measures of partial completeness which quantify the information lost due to partitioning. A direct application of this technique can generate too many similar rules. We tackle this problem by using a "greater-than-expected-value" interest measure to identify the interesting rules in the output. We give an algorithm for mining such quantitative association rules. Finally, we describe the results of using this approach on a real-life dataset.
 
 #index 227866
 #* Range queries in OLAP data cubes
@@ -45,6 +46,7 @@
 #% 481945
 #% 481948
 #% 481951
+#! A range query applies an aggregation operation over all selected cells of an OLAP data cube where the selection is specified by providing ranges of values for numeric dimensions. We present fast algorithms for range queries for two types of aggregation operations: SUM and MAX. These two operations cover techniques required for most popular aggregation operations, such as those supported by SQL.For range-sum queries, the essential idea is to precompute some auxiliary information (prefix sums) that is used to answer ad hoc queries at run-time. By maintaining auxiliary information which is of the same size as the data cube, all range queries for a given cube can be answered in constant time, irrespective of the size of the sub-cube circumscribed by a query. Alternatively, one can keep auxiliary information which is 1/bd of the size of the d-dimensional data cube. Response to a range query may now require access to some cells of the data cube in addition to the access to the auxiliary information, but the overall time complexity is typically reduced significantly. We also discuss how the precomputed information is incrementally updated by batching updates to the data cube. Finally, we present algorithms for choosing the subset of the data cube dimensions for which the auxiliary information is computed and the blocking factor to use for each such subset.Our approach to answering range-max queries is based on precomputed max over balanced hierarchical tree structures. We use a branch-and-bound-like procedure to speed up the finding of max in a region. We also show that with a branch-and-bound procedure, the average-case complexity is much smaller than the worst-case complexity.
 
 #index 237202
 #* Partial-sum queries in OLAP data cubes using covering codes
@@ -95,6 +97,7 @@
 #% 481281
 #% 481779
 #% 481945
+#! Data mining applications place special requirements on clustering algorithms including: the ability to find clusters embedded in subspaces of high dimensional data, scalability, end-user comprehensibility of the results, non-presumption of any canonical data distribution, and insensitivity to the order of input records. We present CLIQUE, a clustering algorithm that satisfies each of these requirements. CLIQUE identifies dense clusters in subspaces of maximum dimensionality. It generates cluster descriptions in the form of DNF expressions that are minimized for ease of comprehension. It produces identical results irrespective of the order in which input records are presented and does not presume any specific mathematical form for data distribution. Through experiments, we show that CLIQUE efficiently finds accurate cluster in large high dimensional datasets.
 
 #index 248813
 #* Integrating association rule mining with relational database systems: alternatives and implications
@@ -116,12 +119,14 @@
 #% 481758
 #% 481779
 #% 481954
+#! Data mining on large data warehouses is becoming increasingly important. In support of this trend, we consider a spectrum of architectural alternatives for coupling mining with database systems. These alternatives include: loose-coupling through a SQL cursor interface; encapsulation of a mining algorithm in a stored procedure; caching the data to a file system on-the-fly and mining; tight-coupling using primarily user-defined functions; and SQL implementations for processing in the DBMS. We comprehensively study the option of expressing the mining algorithm in the form of SQL queries using Association rule mining as a case in point. We consider four options in SQL-92 and six options in SQL enhanced with object-relational extensions (SQL-OR). Our evaluation of the different architectural alternatives shows that from a performance perspective, the Cache-Mine option is superior, although the performance of the SQL-OR option is within a factor of two. Both the Cache-Mine and the SQL-OR approaches incur a higher storage penalty than the loose-coupling approach which performance-wise is a factor of 3 to 4 worse than Cache-Mine. The SQL-92 implementations were too slow to qualify as a competitive option. We also compare these alternatives on the basis of qualitative factors like automatic parallelization, development ease, portability and inter-operability.
 
 #index 280387
 #* Data mining (Invited talk. Abstract only): crossing the Chasm
 #@ 2
 #t 1999
 #c KDD '99 Proceedings of the fifth ACM SIGKDD international conference on Knowledge discovery and data mining
+#! Data mining has attracted tremendous interest in the research community as well as commercial market place. The last few years have witnessed a flurry of technical innovations and introduction of comercial products. The next major challenge facing data mining is to make a transition from a niche technology to a main stream technology. I will present key technical and environmental issues that must be addressed for a successful transition.
 
 #index 280436
 #* Mining the most interesting rules
@@ -152,6 +157,7 @@
 #% 406493
 #% 564279
 #% 656701
+#! The advent of the World Wide Web has created an explosion in the available on-line information. As the range of potential choices expand, the time and effort required to sort through them also expands. We propose a formal framework for expressing and combining user preferences to address this problem. Preferences can be used to focus search queries and to order the search results. A preference is expressed by the user for an entity which is described by a set of named fields; each field can take on values from a certain type. The * symbol may be used to match any element of that type. A set of preferences can be combined using a generic combine operator which is instantiated with a value function, thus providing a great deal of flexibility. Same preferences can be combined in more than one way and a combination of preferences yields another preference thus providing the closure property. We demonstrate the power of our framework by illustrating how a currently popular personalization system and a real-life application can be realized as special cases of our framework. We also discuss implementation of the framework in a relational setting.
 
 #index 300184
 #* Privacy-preserving data mining
@@ -187,6 +193,7 @@
 #% 482095
 #% 591487
 #% 601649
+#! A fruitful direction for future data mining research will be the development of techniques that incorporate privacy concerns. Specifically, we address the following question. Since the primary task in data mining is the development of models about aggregated data, can we develop accurate models without access to precise information in individual data records? We consider the concrete case of building a decision-tree classifier from training data in which the values of individual records have been perturbed. The resulting data records look very different from the original records and the distribution of data values is also very different from the original distribution. While it is not possible to accurately estimate original values in individual data records, we propose a novel reconstruction procedure to accurately estimate the distribution of original data values. By using these reconstructed distributions, we are able to build classifiers whose accuracy is comparable to the accuracy of classifiers built with the original data.
 
 #index 458758
 #* Athena: Mining-Based Interactive Management of Text Database
@@ -205,6 +212,7 @@
 #% 466078
 #% 481945
 #% 482113
+#! We describe Athena: a system for creating, exploiting, and maintaining a hierarchy of textual documents through interactive mining-based operations. Requirements of any such system include speed and minimal end-user effort. Athena satisfies these requirements through linear-time classification and clustering engines which are applied interactively to speed the development of accurate models. Naive Bayes classifiers are recognized to be among the best for classifying text. We show that our specialization of the Naive Bayes classifier is considerably more accurate (7 to 29% absolute increase in accuracy) than a standard implementation. Our enhancements include using Lid-stone's law of succession instead of Laplace's law, under-weighting long documents, and over-weighting author and subject. We also present a new interactive clustering algorithm, C-Evolve, for topic discovery. C-Evolve first finds highly accurate cluster digests (partial clusters), gets user feedback to merge and correct these digests, and then uses the classification algorithm to complete the partitioning of the data. By allowing this interactivity in the clustering process, C-Evolve achieves considerably higher clustering accuracy (10 to 20% absolute increase in our experiments) than the popular K-Means and agglomerative clustering methods.
 
 #index 459006
 #* Mining Sequential Patterns: Generalizations and Performance Improvements
@@ -241,12 +249,14 @@
 #@ 2 933 1049
 #t 1997
 #c ICDE '97 Proceedings of the Thirteenth International Conference on Data Engineering
+#! We propose a data model and a few algebraic operations that provide semantic foundation to multidimensional databases. The distinguishing feature of the proposed model is the symmetric treatment not only of all dimensions but also measures. The model provides support for multiple hierarchies along each dimension and support for adhoc aggregates. The proposed operators are composable, reorderable, and closed in application. These operators are also minimal in the sense that none can be expressed in terms of others nor can any one be dropped without sacrificing functionality. They make possible the declarative specification and optimization of multidimensional database queries that are currently specified operationally. The operators have been designed to be translated to SQL and can be implemented either on top of a relational database system or within a special purpose multidimensional database engine. In effect, they provide an algebraic application programming interface (API) that allows the separation of the frontend from the backend. Finally, the proposed model provides a framework in which to study multidimensional databases and opens several new research problems.
 
 #index 462070
 #* High-Dimensional Similarity Joins
 #@ 1026 1 2
 #t 1997
 #c ICDE '97 Proceedings of the Thirteenth International Conference on Data Engineering
+#! Many emerging data mining applications require a similarity join between points in a high-dimensional domain. We present a new algorithm that utilizes a new index structure, called the epsilon-kdB tree, for fast spatial similarity joins on high-dimensional points. This index structure reduces the number of neighboring leaf nodes that are considered for the join test, as well as the traversal cost of finding appropriate branches in the internal nodes. The storage cost for internal nodes is independent of the number of dimensions. Hence the proposed index structure scales to high-dimensional data. Empirical evaluation, using synthetic and real-life datasets, shows that similarity join using the epsilon-kdB tree is 2 to an order of magnitude faster than the R+ tree, with the performance gap increasing with the number of dimensions.
 
 #index 479475
 #* Parallel Algorithms for High-dimensional Similarity Joins for Data Mining Applications
@@ -371,6 +381,7 @@
 #% 465754
 #% 482113
 #% 979690
+#! We explore how to organize large text databases hierarchically by topic to aid better searching, browsing and filtering. Many corpora, such as internet directories, digital libraries, and patent databases are manually organized into topic hierarchies, also called taxonomies. Similar to indices for relational data, taxonomies make search and access more efficient. However, the exponential growth in the volume of on-line textual information makes it nearly impossible to maintain such taxonomic organization for large, fast-changing corpora by hand. We describe an automatic system that starts with a small sample of the corpus in which topics have been assigned by hand, and then updates the database with new documents as the corpus grows, assigning topics to these new documents with high speed and accuracy. To do this, we use techniques from statistical pattern recognition to efficiently separate the feature words, or discriminants, from thenoise words at each node of the taxonomy. Using these, we build a multilevel classifier. At each node, this classifier can ignore the large number of “noise” words in a document. Thus, the classifier has a small model size and is very fast. Owing to the use of context-sensitive features, the classifier is very accurate. As a by-product, we can compute for each document a set of terms that occur significantly more often in it than in the classes to which it belongs. We describe the design and implementation of our system, stressing how to exploit standard, efficient relational operations like sorts and joins. We report on experiences with the Reuters newswire benchmark, the US patent database, and web document samples from Yahoo!. We discuss applications where our system can improve searching and filtering capabilities.
 
 #index 576094
 #* Privacy in data systems
@@ -386,6 +397,7 @@
 #% 654448
 #% 993943
 #% 993944
+#! The explosive progress in networking, storage, and processor technologies is resulting in an unprecedented amount of digitization of information. In concert with this dramatic increase in digital data, concerns about the privacy of personal information have emerged globally. The concerns over massive collection of data are naturally extending to analytic tools applied to data. Data mining, with its promise to efficiently discover valuable, non-obvious information from large databases, is particularly vulnerable to misuse.The challenge for the database community is to design information systems that protect the privacy and ownership of individual data without impeding information flow. One way of preserving privacy of individual data values is to perturb them. Since the primary task in data mining is the development of models about aggregated data, we explore if we can develop accurate models without access to precise information in individual data records. We consider the concrete case of building a decision-tree classifier from perturbed data. While it is not possible to accurately estimate original values in individual data records, we describe a reconstruction procedure to accurately estimate the distribution of original data values. By using these reconstructed distributions, we are able to build classifiers whose accuracy is comparable to the accuracy of classifiers built with the original data. We also discuss how to discover association rules over privacy preserved data.Inspired by the privacy tenet of the Hippocratic Oath, we argue that future database systems must include responsibility for the privacy of data they manage as a founding tenet. We enunciate the key principles for such Hippocratic database systems, distilled from the principles behind current privacy legislations and guidelines. We identify the technical challenges and problems in designing Hippocratic databases, and also outline some solution approaches.
 
 #index 577233
 #* Privacy preserving mining of association rules
@@ -405,6 +417,7 @@
 #% 482049
 #% 577289
 #% 601649
+#! We present a framework for mining association rules from transactions consisting of categorical items where the data has been randomized to preserve privacy of individual transactions. While it is feasible to recover association rules and preserve privacy using a straightforward "uniform" randomization, the discovered rules can unfortunately be exploited to find privacy breaches. We analyze the nature of privacy breaches and propose a class of randomization operators that are much more effective than uniform randomization in limiting the breaches. We derive formulae for an unbiased support estimator and its variance, which allow us to recover itemset supports from randomized datasets, and show how to incorporate these formulae into mining algorithms. Finally, we present experimental results that validate the algorithm by applying it on real datasets.
 
 #index 577356
 #* Mining newsgroups using networks arising from social behavior
@@ -432,6 +445,7 @@
 #% 722757
 #% 815915
 #% 854646
+#! Recent advances in information retrieval over hyperlinked corpora have convincingly demonstrated that links carry less noisy information than text. We investigate the feasibility of applying link-based methods in new applications domains. The specific application we consider is to partition authors into opposite camps within a given topic in the context of newsgroups. A typical newsgroup posting consists of one or more quoted lines from another posting followed by the opinion of the author. This social behavior gives rise to a network in which the vertices are individuals and the links represent "responded-to" relationships. An interesting characteristic of many newsgroups is that people more frequently respond to a message when they disagree than when they agree. This behavior is in sharp contrast to the WWW link graph, where linkage is an indicator of agreement or common interest. By analyzing the graph structure of the responses, we are able to effectively classify people into opposite camps. In contrast, methods based on statistical analysis of text yield low accuracy on such datasets because the vocabulary used by the two sides tends to be largely identical, and many newsgroup postings consist of relatively few words of text.
 
 #index 577366
 #* An XPath-based preference language for P3P
@@ -445,6 +459,7 @@
 #% 781216
 #% 993943
 #% 993944
+#! The Platform for Privacy Preferences (P3P) is the most significant effort currently underway to enable web users to gain control over their private information. The designers of P3P simultaneously designed a preference language called APPEL to allow users to express their privacy preferences, thus enabling automatic matching of privacy preferences against P3P policies. Unfortunately subtle interactions between P3P and APPEL result in serious problems when using APPEL: Users can only directly specify what is unacceptable in a policy, not what is acceptable; simple preferences are hard to express; and writing APPEL preferences is error prone. We show that these problems follow from a fundamental design choice made by APPEL, and cannot be solved without completely redesigning the language. Therefore we explore alternatives to APPEL that can overcome these problems. In particular, we show that XPath serves quite nicely as a preference language and solves all the above problems. We identify the minimal subset of XPath that is needed, thus allowing matching programs to potentially use a smaller memory footprint. We also give an APPEL to XPath translator that shows that XPath is as expressive as APPEL.
 
 #index 654448
 #* Information sharing across private databases
@@ -481,6 +496,7 @@
 #% 993944
 #% 993964
 #% 1386192
+#! Literature on information integration across databases tacitly assumes that the data in each database can be revealed to the other databases. However, there is an increasing need for sharing information across autonomous entities in such a way that no information apart from the answer to the query is revealed. We formalize the notion of minimal information sharing across private databases, and develop protocols for intersection, equijoin, intersection size, and equijoin size. We also show how new applications can be built using the proposed protocols.
 
 #index 654516
 #* A system for watermarking relational databases
@@ -501,6 +517,7 @@
 #% 616923
 #% 632213
 #% 1848706
+#! Abstract.We enunciate the need for watermarking database relations to deter data piracy, identify the characteristics of relational data that pose unique challenges for watermarking, and delineate desirable properties of a watermarking system for relational data. We then present an effective watermarking technique geared for relational data. This technique ensures that some bit positions of some of the attributes of some of the tuples contain specific values. The specific bit locations and values are algorithmically determined under the control of a secret key known only to the owner of the data. This bit pattern constitutes the watermark. Only if one has access to the secret key can the watermark be detected with high probability. Detecting the watermark requires access neither to the original data nor the watermark, and the watermark can be easily and efficiently maintained in the presence of insertions, updates, and deletions. Our analysis shows that the proposed technique is robust against various forms of malicious attacks as well as benign updates to the data. Using an implementation running on DB2, we also show that the algorithms perform well enough to be used in real-world applications.
 
 #index 765448
 #* Order preserving encryption for numeric data
@@ -524,6 +541,7 @@
 #% 993943
 #% 994006
 #% 1015256
+#! Encryption is a well established technology for protecting sensitive data. However, once encrypted, data can no longer be easily queried aside from exact matches. We present an order-preserving encryption scheme for numeric data that allows any comparison operation to be directly applied on encrypted data. Query results produced are sound (no false hits) and complete (no false drops). Our scheme handles updates gracefully and new values can be added without requiring changes in the encryption of other values. It allows standard databse indexes to be built over encrypted tables and can easily be integrated with existing database systems. The proposed scheme has been designed to be deployed in application environments in which the intruder can get access to the encrypted database, but does not have prior domain information such as the distribution of values and annot encrypt or decrypt arbitrary values of his choice. The encryption is robust against estimation of the true value in such environments.
 
 #index 765478
 #* Enabling sovereign information sharing using Web Services
@@ -533,6 +551,7 @@
 #% 286916
 #% 318418
 #% 654448
+#! Sovereign information sharing allows autonomous entities to compute queries across their databases in such a way that nothing apart from the result is revealed. We describe an implementation of this model using web services infrastructure. Each site participating in sovereign sharing offers a data service that allows database operations to be applied on the tables they own. Of particular interest is the provision for binary operations such as relational joins. Applications are developed by combining these data services. We present performance measurements that show the promise of a new breed of practical applications based on the paradigm of sovereign information integration.
 
 #index 765508
 #* Managing healthcare data hippocratically
@@ -551,6 +570,7 @@
 #% 425010
 #% 529216
 #% 1788041
+#! Clustering algorithms typically operate on a feature vector representation of the data and find clusters that are compact with respect to an assumed (dis)similarity measure between the data points in feature space. This makes the type of clusters identified highly dependent on the assumed similarity measure. Building on recent work in this area, we formally define a class of spatially varying dissimilarity measures and propose algorithms to learn the dissimilarity measure automatically from the data. The idea is to identify clusters that are compact with respect to the unknown spatially varying dissimilarity measure. Our experiments show that the proposed algorithms are more stable and achieve better accuracy on various textual data sets when compared with similar algorithms proposed in the literature.
 
 #index 770074
 #* Learning spatially variant dissimilarity (SVaD) measures
@@ -561,12 +581,14 @@
 #% 425010
 #% 529216
 #% 1788041
+#! Clustering algorithms typically operate on a feature vector representation of the data and find clusters that are compact with respect to an assumed (dis)similarity measure between the data points in feature space. This makes the type of clusters identified highly dependent on the assumed similarity measure. Building on recent work in this area, we formally define a class of spatially varying dissimilarity measures and propose algorithms to learn the dissimilarity measure automatically from the data. The idea is to identify clusters that are compact with respect to the unknown spatially varying dissimilarity measure. Our experiments show that the proposed algorithms are more stable and achieve better accuracy on various textual data sets when compared with similar algorithms proposed in the literature.
 
 #index 799736
 #* Data privacy
 #@ 2
 #t 2004
 #c PKDD '04 Proceedings of the 8th European Conference on Principles and Practice of Knowledge Discovery in Databases
+#! There is increasing need to build information systems that protect the privacy and ownership of data without impeding the flow of information. We will present some of our current work to demonstrate the technical feasibility of building such systems.
 
 #index 800515
 #* Data Privacy through Optimal k-Anonymization
@@ -583,6 +605,7 @@
 #% 631970
 #% 801690
 #% 1272179
+#! Data de-identification reconciles the demand for release of data for research purposes and the demand for privacy from individuals. This paper proposes and evaluates an optimization algorithm for the powerful de-identification procedure known as k-anonymization. A k-anonymized dataset has the property that each record is indistinguishable from at least k - 1 others. Even simple restrictions of optimized k-anonymity are NP-hard, leading to significant computational challenges. We present a new approach to exploring the space of possible anonymizations that tames the combinatorics of the problem, and develop data-management strategies to reduce reliance on expensive operations such as sorting. Through experiments on real census data, we show the resulting algorithm can find optimalk-anonymizations under two representative cost measures and a wide range of k. We also show that the algorithm can produce good anonymizations in circumstances where the input data or input parameters preclude finding an optimal solution in reasonable time. Finally, we use the algorithm to explore the effects of different coding approaches and problem variations on anonymization quality and performance. To our knowledge, this is the first result demonstrating optimal k-anonymization of a nontrivial dataset under a general model of the problem.
 
 #index 800603
 #* Extending Relational Database Systems to Automatically Enforce Privacy Policies
@@ -593,6 +616,7 @@
 #% 606353
 #% 993943
 #% 1016138
+#! Databases are at the core of successful businesses. Due to the voluminous stores of personal data being held by companies today, preserving privacy has become a crucial requirement for operating a business. This paper proposes how current relational database management systems can be transformed into their privacy-preserving equivalents. Specifically, we present language constructs and implementation design for fine-grained access control to achieve this goal.
 
 #index 810028
 #* Privacy preserving OLAP
@@ -613,6 +637,7 @@
 #% 810252
 #% 993988
 #% 1707132
+#! We present techniques for privacy-preserving computation of multidimensional aggregates on data partitioned across multiple clients. Data from different clients is perturbed (randomized) in order to preserve privacy before it is integrated at the server. We develop formal notions of privacy obtained from data perturbation and show that our perturbation provides guarantees against privacy breaches. We develop and analyze algorithms for reconstructing counts of subcubes over perturbed data. We also evaluate the tradeoff between privacy guarantees and reconstruction accuracy and show the practicality of our approach.
 
 #index 844387
 #* On Learning Asymmetric Dissimilarity Measures
@@ -629,18 +654,21 @@
 #% 769945
 #% 770074
 #% 770782
+#! Many practical applications require that distance measures to be asymmetric and context-sensitive. We introduce Context-sensitive Learnable Asymmetric Dissimilarity (CLAD) measures, which are defined to be a weighted sum of a fixed number of dissimilarity measures where the associated weights depend on the point from which the dissimilarity is measured. The parameters used in defining the measure capture the global relationships among the features. We provide an algorithm to learn the dissimilarity measure automatically from a set of user specified comparisons in the form "x is closer to y than to z," and study its performance. The experimental results show that the proposed algorithm outperforms other approaches due to the context sensitive nature of the CLAD measures.
 
 #index 864413
 #* Sovereign Joins
 #@ 2 10754 8104 15108
 #t 2006
 #c ICDE '06 Proceedings of the 22nd International Conference on Data Engineering
+#! We present a secure network service for sovereign information sharing whose only trusted component is an off-theshelf secure coprocessor. The participating data providers send encrypted relations to the service that sends the encrypted results to the recipients. The technical challenge in implementing such a service arises from the limited capability of the secure coprocessors: they have small memory, no attached disk, and no facility for communicating directly with other machines in the network. The internal state of an ongoing computation within the secure coprocessor cannot be seen from outside, but its interactions with the server can be exploited by an adversary. We formulate the problem of computing join in this setting where the goal is to prevent information leakage through patterns in I/O while maximizing performance. We specify criteria for proving the security of a join algorithm and provide provably safe algorithms. These algorithms can be used to compute general joins involving arbitrary predicates and multiple sovereign databases. We thus enable a new class of applications requiring query processing across sovereign entities such that nothing apart from the result is revealed to the recipients.
 
 #index 864479
 #* Taming Compliance with Sarbanes-Oxley Internal Controls Using Database Technology
 #@ 2 15175 4688 5264
 #t 2006
 #c ICDE '06 Proceedings of the 22nd International Conference on Data Engineering
+#! The Sarbanes-Oxley Act instituted a series of corporate reforms to improve the accuracy and reliability of financial reporting. Sections 302 and 404 of the Act require SEC-reporting companies to implement internal controls over financial reporting, periodically assess the effectiveness of these internal controls, and certify the accuracy of their financial statements. We suggest that database technology can play an important role in assisting compliance with the internal control provisions of the Act. The core components of our solution include: (i) modeling of required workflows, (ii) active enforcement of control activities, (iii) auditing of actual workflows to verify compliance with internal controls, and (iv) discovery-driven OLAP to identify irregularities in financial data. We illustrate how the features of our solution fulfill Sarbanes-Oxley requirements using several real-life scenarios. In the process, we identify opportunities for new database research.
 
 #index 875002
 #* Context-sensitive ranking
@@ -673,12 +701,14 @@
 #% 1016176
 #% 1016203
 #% 1682593
+#! Contextual preferences take the form that item i1 is preferred to item i2 in the context of X. For example, a preference might state the choice for Nicole Kidman over Penelope Cruz in drama movies, whereas another preference might choose Penelope Cruz over Nicole Kidman in the context of Spanish dramas. Various sources provide preferences independently and thus preferences may contain cycles and contradictions. We reconcile democratically the preferences accumulated from various sources and use them to create a priori orderings of tuples in an off-line preprocessing step. Only a few representative orders are saved, each corre-sponding to a set of contexts. These orders and associated contexts are used at query time to expeditiously provide ranked answers. We formally define contextual preferences, provide algorithms for creating orders and processing queries, and present experimental results that show their efficacy and practical utility.
 
 #index 881455
 #* Next frontier
 #@ 2
 #t 2006
 #c Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining
+#! This talk is about the next frontier in knowledge discovery and data mining.
 
 #index 960240
 #* Auditing disclosure by relevance ranking
@@ -690,6 +720,7 @@
 #% 765449
 #% 803781
 #% 1016172
+#! Numerous widely publicized cases of theft and misuse of private information underscore the need for audit technology to identify the sources of unauthorized disclosure. We present an auditing methodology that ranks potential disclosure sources according to their proximity to the leaked records. Given a sensitive table that contains the disclosed data, our methodology prioritizes by relevance the past queries to the database that could have potentially been used to produce the sensitive table. We provide three conceptually different measures of proximity between the sensitive table and a query result. One measure is inspired by information retrieval in text processing, another is based on statistical record linkage, and the third computes the derivation probability of the sensitive table in a tree-based generative model. We also analyze the characteristics of the three measures and the corresponding ranking algorithms.
 
 #index 993943
 #* Hippocratic databases
@@ -732,6 +763,7 @@
 #% 664705
 #% 781216
 #% 1393825
+#! The Hippocratic Oath has guided the conduct of physicians for centuries. Inspired by its tenet of preserving privacy, we argue that future database systems must include responsibility for the privacy of data they manage as a founding tenet. We enunciate the key privacy principles for such Hippocratic database systems. We propose a strawman design for Hippocratic databases, identify the technical challenges and problems in designing such databases, and suggest some approaches that may lead to solutions. Our hope is that this paper will serve to catalyze a fruitful and exciting direction for future database research.
 
 #index 993944
 #* Watermarking relational databases
@@ -743,6 +775,7 @@
 #% 616923
 #% 632213
 #% 1848706
+#! We enunciate the need for watermarking database relations to deter their piracy, identify the unique characteristics of relational data which pose new challenges for watermarking, and provide desirable properties of a watermarking system for relational data. A watermark can be applied to any database relation having attributes which are such that changes in a few of their values do not affect the applications. We then present an effective watermarking technique geared for relational data. This technique ensures that some bit positions of some of the attributes of some of the tuples contain specific values. The tuples, attributes within a tuple, bit positions in an attribute, and specific bit values are all algorithmically determined under the control of a private key known only to the owner of the data. This bit pattern constitutes the watermark. Only if one has access to the private key can the watermark be detected with high probability. Detecting the watermark neither requires access to the original data nor the watermark. The watermark can be detected even in a small subset of a watermarked relation as long as the sample contains some of the marks. Our extensive analysis shows that the proposed technique is robust against various forms of malicious attacks and updates to the data. Using an implementation running on DB2, we also show that the performance of the algorithms allows for their use in real world applications.
 
 #index 994026
 #* Database technologies for electronic commerce
@@ -776,12 +809,14 @@
 #% 664654
 #% 664705
 #% 963875
+#! We address the problem of providing privacy-preserving search over distributed access-controlled content. Indexed documents can be easily reconstructed from conventional (inverted) indexes used in search. The need to avoid breaches of access-control through the index requires the index hosting site to be fully secured and trusted by by all participating content providers. This level of trust is impractical in the increasingly common case where multiple competing organizations or individuals wish to selectively share content. We propose a solution that eliminates the need of such a trusted authority. The solution builds a centralized privacy-preserving index in conjunction with a distributed access-control enforcing search protocol. The new index provides strong and quantifiable privacy guarantees that hold even if the entire index is made public. Experiments on a real-life dataset validate performance of the scheme. The appeal of our solution is two-fold: (a) Content providers maintain complete control in defining access groups and ensuring its compliance, and (b) System implementors retain tunable knobs to balance privacy and efficiency concerns for their particular domains.
 
 #index 1016129
 #* Whither data mining?
 #@ 2 1
 #t 2004
 #c VLDB '04 Proceedings of the Thirtieth international conference on Very large data bases - Volume 30
+#! The last decade has witnessed tremendous advances in data mining. We take a retrospective look at these developments, focusing on association rules discovery, and discuss the challenges and opportunities ahead.
 
 #index 1016138
 #* Limiting disclosure in hippocratic databases
@@ -798,6 +833,7 @@
 #% 346901
 #% 606353
 #% 993943
+#! We present a practical and efficient approach to incorporating privacy policy enforcement into an existing application and database environment, and we explore some of the semantic tradeoffs introduced by enforcing these privacy policy rules at cell-level granularity. Through a comprehensive set of performance experiments, we show that the cost of privacy enforcement is small, and scalable to large databases.
 
 #index 1016172
 #* Auditing compliance with a Hippocratic database
@@ -816,6 +852,7 @@
 #% 644201
 #% 993943
 #% 1016138
+#! We introduce an auditing framework for determining whether a database system is adhering to its data disclosure policies. Users formulate audit expressions to specify the (sensitive) data subject to disclosure review. An audit component accepts audit expressions and returns all queries (deemed "suspicious") that accessed the specified data during their execution. The overhead of our approach on query processing is small, involving primarily the logging of each query string along with other minor annotations. Database triggers are used to capture updates in a backlog database. At the time of audit, a static analysis phase selects a subset of logged queries for further analysis. These queries are combined and transformed into an SQL audit query, which when run against the backlog database, identifies the suspicious queries efficiently and precisely. We describe the algorithms and data structures used in a DB2-based implementation of this framework. Experimental results reinforce our design choices and show the practicality of the approach.
 
 #index 1134501
 #* The Claremont report on database research
@@ -828,6 +865,7 @@
 #% 339369
 #% 805821
 #% 1056069
+#! In late May, 2008, a group of database researchers, architects, users and pundits met at the Claremont Resort in Berkeley, California to discuss the state of the research field and its impacts on practice. This was the seventh meeting of this sort in twenty years, and was distinguished by a broad consensus that we are at a turning point in the history of the field, due both to an explosion of data and usage scenarios, and to major shifts in computing hardware and platforms. Given these forces, we are at a time of opportunity for research impact, with an unusually large potential for influential results across computing, the sciences and society. This report details that discussion, and highlights the group's consensus view of new focus areas, including new database engine architectures, declarative programming languages, the interplay of structured and unstructured data, cloud data services, and mobile and virtual worlds. We also report on discussions of the community's growth, including suggestions for changes in community processes to move the research agenda forward, and to enhance impact on a broader audience.
 
 #index 1214736
 #* Improving classification accuracy using automatically extracted training data
@@ -848,6 +886,7 @@
 #% 1074093
 #% 1166522
 #% 1682429
+#! Classification is a core task in knowledge discovery and data mining, and there has been substantial research effort in developing sophisticated classification models. In a parallel thread, recent work from the NLP community suggests that for tasks such as natural language disambiguation even a simple algorithm can outperform a sophisticated one, if it is provided with large quantities of high quality training data. In those applications, training data occurs naturally in text corpora, and high quality training data sets running into billions of words have been reportedly used. We explore how we can apply the lessons from the NLP community to KDD tasks. Specifically, we investigate how to identify data sources that can yield training data at low cost and study whether the quantity of the automatically extracted training data can compensate for its lower quality. We carry out this investigation for the specific task of inferring whether a search query has commercial intent. We mine toolbar and click logs to extract queries from sites that are predominantly commercial (e.g., Amazon) and non-commercial (e.g., Wikipedia). We compare the accuracy obtained using such training data against manually labeled training data. Our results show that we can have large accuracy gains using automatically extracted training data at much lower cost.
 
 #index 1217265
 #* Answering web queries using structured data sources
@@ -861,6 +900,7 @@
 #% 1022234
 #% 1022236
 #% 1022289
+#! In web search today, a user types a few keywords which are then matched against a large collection of unstructured web pages. This leaves a lot to be desired for when the best answer to a query is contained in structured data stores and/or when the user includes some structural semantics in the query. In our work, we include information from structured data sources into web results. Such sources can vary from fully relational DBs, to flat tables and XML files. In addition, we take advantage of information in such sources to automatically extract corresponding semantics from the query and use them appropriately in improving the overall relevance of results. For this demonstration, we show how we effectively capture, annotate and translate web user queries such as 'popular digital camera around $425' returning results from a shopping-like DB.
 
 #index 1263931
 #* Privacy-preserving indexing of documents on the network
@@ -889,6 +929,7 @@
 #% 635221
 #% 664654
 #% 664705
+#! With the ubiquitous collection of data and creation of large distributed repositories, enabling search over this data while respecting access control is critical. A related problem is that of ensuring privacy of the content owners while still maintaining an efficient index of distributed content. We address the problem of providing privacy-preserving search over distributed access-controlled content. Indexed documents can be easily reconstructed from conventional (inverted) indexes used in search. Currently, the need to avoid breaches of access-control through the index requires the index hosting site to be fully secured and trusted by all participating content providers. This level of trust is impractical in the increasingly common case where multiple competing organizations or individuals wish to selectively share content. We propose a solution that eliminates the need of such a trusted authority. The solution builds a centralized privacy-preserving index in conjunction with a distributed access-control enforcing search protocol. Two alternative methods to build the centralized index are proposed, allowing trade offs of efficiency and security. The new index provides strong and quantifiable privacy guarantees that hold even if the entire index is made public. Experiments on a real-life dataset validate performance of the scheme. The appeal of our solution is twofold: (a) content providers maintain complete control in defining access groups and ensuring its compliance, and (b) system implementors retain tunable knobs to balance privacy and efficiency concerns for their particular domains.
 
 #index 1581406
 #* Synthesizing products for online catalogs
@@ -909,6 +950,7 @@
 #% 993982
 #% 1083704
 #% 1108847
+#! A comprehensive product catalog is essential to the success of Product Search engines and shopping sites such as Yahoo! Shopping, Google Product Search, and Bing Shopping. Given the large number of products and the speed at which they are released to the market, keeping catalogs up-to-date becomes a challenging task, calling for the need of automated techniques. In this paper, we introduce the problem of product synthesis, a key component of catalog creation and maintenance. Given a set of offers advertised by merchants, the goal is to identify new products and add them to the catalog, together with their (structured) attributes. A fundamental challenge in product synthesis is the scale of the problem. A Product Search engine receives data from thousands of merchants about millions of products; the product taxonomy contains thousands of categories, where each category has a different schema; and merchants use representations for products that are different from the ones used in the catalog of the Product Search engine. We propose a system that provides an end-to-end solution to the product synthesis problem, and addresses issues involved in data extraction from offers, schema reconciliation, and data fusion. For the schema reconciliation component, we developed a novel and scalable technique for schema matching which leverages knowledge about previously-known instance-level associations between offers and products; and it is trained using automatically created training sets (no manually-labeled data is needed). We present an experimental evaluation using data from Bing Shopping for more than 800K offers, a thousand merchants, and 400 categories. The evaluation confirms that our approach is able to automatically generate a large number of accurate product specifications. Furthermore, the evaluation shows that our schema reconciliation component outperforms state-of-the-art schema matching techniques in terms of precision and recall.
 
 #index 1605952
 #* Ameliorating buyer's remorse
@@ -918,6 +960,7 @@
 #% 729921
 #% 891559
 #% 1273928
+#! Keeping in pace with the increasing importance of commerce conducted over the Web, several e-commerce websites now provide admirable facilities for helping consumers decide what product to buy and where to buy it. However, since the prices of durable and high-tech products generally fall over time, a buyer of such products is often faced with a dilemma: Should she buy the product now or wait for cheaper prices? We present the design and implementation of Prodcast, an experimental system whose goal is to help consumers decide when to buy a product. The system makes use of forecasts of future prices based on price histories of the products, incorporating features such as sales volume, seasonality, and competition in making its recommendation. We describe techniques that are well-suited for this task and present a comprehensive evaluation of their relative merits using retail sales data for electronic products. Our back-testing of the system indicates that the system is capable of helping consumers time their purchase, resulting in significant savings to them.
 
 #index 1605958
 #* Matching unstructured product offers to structured product specifications
@@ -943,6 +986,7 @@
 #% 1272213
 #% 1338592
 #% 1426566
+#! An e-commerce catalog typically comprises of specifications for millions of products. The search engine receives millions of sales offers from thousands of independent merchants that must be matched to the right products. We describe the challenges that a system for matching unstructured offers to structured product descriptions must address, drawing upon our experience from building such a system for Bing Shopping. The heart of our system is a data-driven component that learns the matching function off-line, which is then applied at run-time for matching offers to products. We provide the design of this and other critical components of the system as well as the details of the extensive experiments we performed to assess the readiness of the system. This system is currently deployed in an experimental Commerce Search Engine and is used to match all the offers received by Bing Shopping to the Bing product catalog.
 
 #index 1617247
 #* Enriching education through data mining
@@ -951,6 +995,7 @@
 #c ECML PKDD'11 Proceedings of the 2011 European conference on Machine learning and knowledge discovery in databases - Volume Part I
 #% 1528118
 #% 1560308
+#! Education is acknowledged to be the primary vehicle for improving the economic well-being of people [1,6]. Textbooks have a direct bearing on the quality of education imparted to the students as they are the primary conduits for delivering content knowledge [9]. They are also indispensable for fostering teacher learning and constitute a key component of the ongoing professional development of the teachers [5,8]. Many textbooks, particularly from emerging countries, lack clear and adequate coverage of important concepts [7]. In this talk, we present our early explorations into developing a data mining based approach for enhancing the quality of textbooks. We discuss techniques for algorithmically augmenting different sections of a book with links to selective content mined from the Web. For finding authoritative articles, we first identify the set of key concept phrases contained in a section. Using these phrases, we find web (Wikipedia) articles that represent the central concepts presented in the section and augment the section with links to them [4]. We also describe a framework for finding images that are most relevant to a section of the textbook, while respectingglobal relevancy to the entire chapter to which the section belongs. We pose this problem of matching images to sections in a textbook chapter as an optimization problem and present an efficient algorithm for solving it [2].
 
 #index 1688260
 #* On honesty in sovereign information sharing
@@ -968,6 +1013,7 @@
 #% 781216
 #% 824725
 #% 1650376
+#! We study the following problem in a sovereign information-sharing setting: How to ensure that the individual participants, driven solely by self-interest, will behave honestly, even though they can benefit from cheating. This benefit comes from learning more than necessary private information of others or from preventing others from learning the necessary information. We take a game-theoretic approach and design a game (strategies and payoffs) that models this kind of interactions. We show that if nobody is punished for cheating, rational participants will not behave honestly. Observing this, our game includes an auditing device that periodically checks the actions of the participants and penalizes inappropriate behavior. In this game we give conditions under which there exists a unique equilibrium (stable rational behavior) in which every participant provides truthful information. The auditing device preserves the privacy of the data of the individual participants. We also quantify the relationship between the frequency of auditing and the amount of punishment in terms of gains and losses from cheating.
 
 #index 1764752
 #* Data mining for improving textbooks
@@ -993,6 +1039,7 @@
 #% 1642133
 #% 1705142
 #% 1896512
+#! We present our early explorations into developing a data mining based approach for enhancing the quality of textbooks. We describe a diagnostic tool to algorithmically identify deficient sections in textbooks. We also discuss techniques for algorithmically augmenting textbook sections with links to selective content mined from the Web. Our evaluation, employing widely-used textbooks from India, indicates that developing technological approaches to help improve textbooks holds promise.
 
 #index 1872282
 #* Aggregating web offers to determine product prices
@@ -1015,6 +1062,7 @@
 #% 1605958
 #% 1641996
 #% 1650666
+#! Historical prices are important information that can help consumers decide whether the time is right to buy a product. They provide both a context to the users, and facilitate the use of prediction algorithms for forecasting future prices. To produce a representative price history, one needs to consider all offers for the product. However, matching offers to a product is a challenging problem, and mismatches could lead to glaring errors in price history. We propose a principled approach to filter out erroneous matches based on a probabilistic model of prices. We give an efficient algorithm for performing inference that takes advantage of the structure of the problem. We evaluate our results empirically using merchant offers collected from a search engine, and measure the proximity of the price history generated by our approach to the true price history. Our method outperforms alternatives based on robust statistics both in tracking the true price levels and the true price trends.
 
 #index 1872346
 #* Empowering authors to diagnose comprehension burden in textbooks
@@ -1032,4 +1080,5 @@
 #% 1528118
 #% 1560308
 #% 1723951
+#! Good textbooks are organized in a systematically progressive fashion so that students acquire new knowledge and learn new concepts based on known items of information. We provide a diagnostic tool for quantitatively assessing the comprehension burden that a textbook imposes on the reader due to non-sequential presentation of concepts. We present a formal definition of comprehension burden and propose an algorithmic approach for computing it. We apply the tool to a corpus of high school textbooks from India and empirically examine its effectiveness in helping authors identify sections of textbooks that can benefit from reorganizing the material presented.
 

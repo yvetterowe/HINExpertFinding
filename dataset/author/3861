@@ -42,6 +42,7 @@
 #% 631920
 #% 631923
 #% 632089
+#! Similarity search in large time series databases has attracted much research interest recently. It is a difficult problem because of the typically high dimensionality of the data.. The most promising solutions involve performing dimensionality reduction on the data, then indexing the reduced data with a multidimensional index structure. Many dimensionality reduction techniques have been proposed, including Singular Value Decomposition (SVD), the Discrete Fourier transform (DFT), and the Discrete Wavelet Transform (DWT). In this work we introduce a new dimensionality reduction technique which we call Adaptive Piecewise Constant Approximation (APCA). While previous techniques (e.g., SVD, DFT and DWT) choose a common representation for all the items in the database that minimizes the global reconstruction error, APCA approximates each time series by a set of constant value segments of varying lengths such that their individual reconstruction errors are minimal. We show how APCA can be indexed using a multidimensional index structure. We propose two distance measures in the indexed space that exploit the high fidelity of APCA for fast searching: a lower bounding Euclidean distance approximation, and a non-lower bounding, but very tight Euclidean distance approximation and show how they can support fast exact searching, and even faster approximate searching on the same index structure. We theoretically and empirically compare APCA to all the other techniques and demonstrate its superiority.
 
 #index 342602
 #* Ensemble-index: a new approach to indexing large databases
@@ -68,6 +69,7 @@
 #% 617886
 #% 631920
 #% 631923
+#! The problem of similarity search (query-by-content) has attracted much research interest. It is a difficult problem because of the inherently high dimensionality of the data. The most promising solutions involve performing dimensionality reduction on the data, then indexing the reduced data with a multidimensional index structure. Many dimensionality reduction techniques have been proposed, including Singular Value Decomposition (SVD), the Discrete Fourier Transform (DFT), the Discrete Wavelet Transform (DWT) and Piecewise Polynomial Approximation. In this work, we introduce a novel framework for using ensembles of two or more representations for more efficient indexing. The basic idea is that instead of committing to a single representation for an entire dataset, different representations are chosen for indexing different parts of the database. The representations are chosen based upon a local view of the database. For example, sections of the data that can achieve a high fidelity representation with wavelets are indexed as wavelets, but highly spectral sections of the data are indexed using the Fourier transform. At query time, it is necessary to search several small heterogeneous indices, rather than one large homogeneous index. As we will theoretically and empirically demonstrate this results in much faster query response times.
 
 #index 577221
 #* On the need for time series data mining benchmarks: a survey and empirical demonstration
@@ -118,6 +120,7 @@
 #% 632088
 #% 659936
 #% 659944
+#! In the last decade there has been an explosion of interest in mining time series data. Literally hundreds of papers have introduced new algorithms to index, classify, cluster and segment time series. In this work we make the following claim. Much of this work has very little utility because the contribution made (speed in the case of indexing, accuracy in the case of classification and clustering, model accuracy in the case of segmentation) offer an amount of "improvement" that would have been completely dwarfed by the variance that would have been observed by testing on many real world datasets, or the variance that would have been observed by changing minor (unstated) implementation details.To illustrate our point, we have undertaken the most exhaustive set of time series experiments ever attempted, re-implementing the contribution of more than two dozen papers, and testing them on 50 real world, highly diverse datasets. Our empirical results strongly support our assertion, and suggest the need for a set of time series benchmarks and more careful empirical evaluation in the data mining community.
 
 #index 577275
 #* Finding surprising patterns in a time series database in linear time and space
@@ -140,12 +143,14 @@
 #% 632088
 #% 641125
 #% 715230
+#! The problem of finding a specified pattern in a time series database (i.e. query by content) has received much attention and is now a relatively mature field. In contrast, the important problem of enumerating all surprising or interesting patterns has received far less attention. This problem requires a meaningful definition of "surprise", and an efficient search technique. All previous attempts at finding surprising patterns in time series use a very limited notion of surprise, and/or do not scale to massive datasets. To overcome these limitations we introduce a novel technique that defines a pattern surprising if the frequency of its occurrence differs substantially from that expected by chance, given some previously seen data.
 
 #index 629607
 #* Mining Motifs in Massive Time Series Databases
 #@ 9305 3861 9306 8237
 #t 2002
 #c ICDM '02 Proceedings of the 2002 IEEE International Conference on Data Mining
+#! The problem of efficiently locating previously knownpatterns in a time series database (i.e., query by content) hasreceived much attention and may now largely be regardedas a solved problem. However, from a knowledge discoveryviewpoint, a more interesting problem is the enumeration ofpreviously unknown, frequently occurring patterns. We callsuch patterns "motifs", because of their close analogy totheir discrete counterparts in computation biology. Anefficient motif discovery algorithm for time series would beuseful as a tool for summarizing and visualizing massivetime series databases. In addition it could be used as asubroutine in various other data mining tasks, including thediscovery of association rules, clustering and classification.In this work we carefully motivate, then introduce, a non-trivialdefinition of time series motifs. We propose anefficient algorithm to discover them, and we demonstrate theutility and efficiency of our approach on several real worlddatasets.
 
 #index 662750
 #* A symbolic representation of time series, with implications for streaming algorithms
@@ -174,6 +179,7 @@
 #% 631923
 #% 659971
 #% 715230
+#! The parallel explosions of interest in streaming data, and data mining of time series have had surprisingly little intersection. This is in spite of the fact that time series data are typically streaming data. The main reason for this apparent paradox is the fact that the vast majority of work on streaming data explicitly assumes that the data is discrete, whereas the vast majority of time series data is real valued.Many researchers have also considered transforming real valued time series into symbolic representations, nothing that such representations would potentially allow researchers to avail of the wealth of data structures and algorithms from the text processing and bioinformatics communities, in addition to allowing formerly "batch-only" problems to be tackled by the streaming community. While many symbolic representations of time series have been introduced over the past decades, they all suffer from three fatal flaws. Firstly, the dimensionality of the symbolic representation is the same as the original data, and virtually all data mining algorithms scale poorly with dimensionality. Secondly, although distance measures can be defined on the symbolic approaches, these distance measures have little correlation with distance measures defined on the original time series. Finally, most of these symbolic approaches require one to have access to all the data, before creating the symbolic representation. This last feature explicitly thwarts efforts to use the representations with streaming algorithms.In this work we introduce a new symbolic representation of time series. Our representation is unique in that it allows dimensionality/numerosity reduction, and it also allows distance measures to be defined on the symbolic approach that lower bound corresponding distance measures defined on the original series. As we shall demonstrate, this latter feature is particularly exciting because it allows one to run certain data mining algorithms on the efficiently manipulated symbolic representation, while producing identical results to the algorithms that operate on the original data. Finally, our representation allows the real valued data to be converted in a streaming fashion, with only an infinitesimal time and space overhead.We will demonstrate the utility of our representation on the classic data mining tasks of clustering, classification, query by content and anomaly detection.
 
 #index 662757
 #* Clustering of streaming time series is meaningless
@@ -200,6 +206,7 @@
 #% 630989
 #% 858452
 #% 993965
+#! Time series data is perhaps the most frequently encountered type of data examined by the data mining community. Clustering is perhaps the most frequently used data mining algorithm, being useful in it's own right as an exploratory technique, and also as a subroutine in more complex data mining algorithms such as rule discovery, indexing, summarization, anomaly detection, and classification. Given these two facts, it is hardly surprising that time series clustering has attracted much attention. The data to be clustered can be in one of two formats: many individual time series, or a single time series, from which individual time series are extracted with a sliding window. Given the recent explosion of interest in streaming data and online algorithms, the latter case has received much attention.In this work we make a surprising claim. Clustering of streaming time series is completely meaningless. More concretely, clusters extracted from streaming time series are forced to obey a certain constraint that is pathologically unlikely to be satisfied by any dataset, and because of this, the clusters extracted by any clustering algorithm are essentially random. While this constraint can be intuitively demonstrated with a simple illustration and is simple to prove, it has never appeared in the literature.We can justify calling our claim surprising, since it invalidates the contribution of dozens of previously published papers. We will justify our claim with a theorem, illustrative examples, and a comprehensive set of experiments on reimplementations of previous work. Although the primary contribution of our work is to draw attention to the fact that an apparent solution to an important problem is incorrect and should no longer be used, we also introduce a novel method which, based on the concept of time series motifs, is able to meaningfully cluster some streaming time series datasets.
 
 #index 727900
 #* Clustering of Time Series Subsequences is Meaningless: Implications for Previous and Future Research
@@ -228,6 +235,7 @@
 #% 594012
 #% 630989
 #% 993965
+#! Time series data is perhaps the most frequently encountered typeof data examined by the data mining community. Clustering isperhaps the most frequently used data mining algorithm, beinguseful in it's own right as an exploratory technique, and also as asubroutine in more complex data mining algorithms such as rulediscovery, indexing, summarization, anomaly detection, andclassification. Given these two facts, it is hardly surprising thattime series clustering has attracted much attention. The data to beclustered can be in one of two formats: many individual timeseries, or a single time series, from which individual time seriesare extracted with a sliding window. Given the recent explosion ofinterest in streaming data and online algorithms, the latter casehas received much attention.In this work we make an amazing claim. Clustering of streamingtime series is completely meaningless. More concretely, clustersextracted from streaming time series are forced to obey a certainconstraint that is pathologically unlikely to be satisfied by anydataset, and because of this, the clusters extracted by anyclustering algorithm are essentially random. While this constraintcan be intuitively demonstrated with a simple illustration and issimple to prove, it has never appeared in the literature.We can justify calling our claim surprising, since it invalidatesthe contribution of dozens of previously published papers. We willjustify our claim with a theorem, illustrative examples, and acomprehensive set of experiments on reimplementations ofprevious work.
 
 #index 729931
 #* Indexing multi-dimensional time-series with support for multiple distance measures
@@ -247,6 +255,7 @@
 #% 632088
 #% 659971
 #% 993965
+#! Although most time-series data mining research has concentrated on providing solutions for a single distance function, in this work we motivate the need for a single index structure that can support multiple distance measures. Our specific area of interest is the efficient retrieval and analysis of trajectory similarities. Trajectory datasets are very common in environmental applications, mobility experiments, video surveillance and are especially important for the discovery of certain biological patterns. Our primary similarity measure is based on the Longest Common Subsequence (LCSS) model, that offers enhanced robustness, particularly for noisy data, which are encountered very often in real world applications. However, our index is able to accommodate other distance measures as well, including the ubiquitous Euclidean distance, and the increasingly popular Dynamic Time Warping (DTW). While other researchers have advocated one or other of these similarity measures, a major contribution of our work is the ability to support all these measures without the need to restructure the index. Our framework guarantees no false dismissals and can also be tailored to provide much faster response time at the expense of slightly reduced precision/recall. The experimental results demonstrate that our index can help speed-up the computation of expensive similarity measures such as the LCSS and the DTW.
 
 #index 729960
 #* Probabilistic discovery of time series motifs
@@ -270,6 +279,7 @@
 #% 631923
 #% 631926
 #% 659971
+#! Several important time series data mining problems reduce to the core task of finding approximately repeated subsequences in a longer time series. In an earlier work, we formalized the idea of approximately repeated subsequences by introducing the notion of time series motifs. Two limitations of this work were the poor scalability of the motif discovery algorithm, and the inability to discover motifs in the presence of noise.Here we address these limitations by introducing a novel algorithm inspired by recent advances in the problem of pattern discovery in biosequences. Our algorithm is probabilistic in nature, but as we show empirically and theoretically, it can find time series motifs with very high probability even in the presence of noise or "don't care" symbols. Not only is the algorithm fast, but it is an anytime algorithm, producing likely candidate motifs almost immediately, and gradually improving the quality of results over time.
 
 #index 745513
 #* Online Amnesic Approximation of Streaming Time Series
@@ -298,6 +308,7 @@
 #% 993958
 #% 993961
 #% 1378172
+#! The past decade has seen a wealth of research on time series representations, because the manipulation, storage, andindexing of large volumes of raw time series data is impractical. The vast majority of research has concentrated on representations that are calculated in batch mode and representeach value with approximately equal fidelity. However, the increasing deployment of mobile devices and real time sensorshas brought home the need for representations that can beincrementally updated, and can approximate the data with fidelity proportional to its age. The latter property allows us toanswer queries about the recent past with greater precision,since in many domains recent information is more useful thanolder information. We call such representations amnesic.While there has been previous work on amnesic representations, the class of amnesic functions possible was dictatedby the representation itself. In this work, we introduce anovel representation of time series that can represent arbitrary, user-specified amnesic functions. For example, a meteorologist may decide that data that is twice as old can toleratetwice as much error, and thus, specify a linear amnesic function. In contrast, an econometrist might opt for an exponentialamnesic function. We propose online algorithms for our representation, and discuss their properties. Finally, we performan extensive empirical evaluation on 40 datasets, and showthat our approach can efficiently maintain a high quality amnesicapproximation.
 
 #index 769896
 #* Towards parameter-free data mining
@@ -324,6 +335,7 @@
 #% 727900
 #% 729931
 #% 729980
+#! Most data mining algorithms require the setting of many input parameters. Two main dangers of working with parameter-laden algorithms are the following. First, incorrect settings may cause an algorithm to fail in finding the true patterns. Second, a perhaps more insidious problem is that the algorithm may report spurious patterns that do not really exist, or greatly overestimate the significance of the reported patterns. This is especially likely when the user fails to understand the role of parameters in the data mining process.Data mining algorithms should have as few parameters as possible, ideally none. A parameter-free algorithm would limit our ability to impose our prejudices, expectations, and presumptions on the problem at hand, and would let the data itself speak to us. In this work, we show that recent results in bioinformatics and computational theory hold great promise for a parameter-free data-mining paradigm. The results are motivated by observations in Kolmogorov complexity theory. However, as a practical matter, they can be implemented using any off-the-shelf compression algorithm with the addition of just a dozen or so lines of code. We will show that this approach is competitive or superior to the state-of-the-art approaches in anomaly/interestingness detection, classification, and clustering with empirical tests on time series/DNA/text/video datasets.
 
 #index 769922
 #* Visually mining and monitoring massive time series
@@ -355,6 +367,7 @@
 #% 729980
 #% 814194
 #% 1389010
+#! Moments before the launch of every space vehicle, engineering discipline specialists must make a critical go/no-go decision. The cost of a false positive, allowing a launch in spite of a fault, or a false negative, stopping a potentially successful launch, can be measured in the tens of millions of dollars, not including the cost in morale and other more intangible detriments. The Aerospace Corporation is responsible for providing engineering assessments critical to the go/no-go decision for every Department of Defense space vehicle. These assessments are made by constantly monitoring streaming telemetry data in the hours before launch. We will introduce VizTree, a novel time-series visualization tool to aid the Aerospace analysts who must make these engineering assessments. VizTree was developed at the University of California, Riverside and is unique in that the same tool is used for mining archival data and monitoring incoming live telemetry. The use of a single tool for both aspects of the task allows a natural and intuitive transfer of mined knowledge to the monitoring task. Our visualization approach works by transforming the time series into a symbolic representation, and encoding the data in a modified suffix tree in which the frequency and other properties of patterns are mapped onto colors and other visual properties. We demonstrate the utility of our system by comparing it with state-of-the-art batch algorithms on several real and synthetic datasets.
 
 #index 824705
 #* Scaling and time warping in time series querying
@@ -377,6 +390,7 @@
 #% 993965
 #% 1016194
 #% 1391300
+#! The last few years have seen an increasing understanding that Dynamic Time Warping (DTW), a technique that allows local flexibility in aligning time series, is superior to the ubiquitous Euclidean Distance for time series classification, clustering, and indexing. More recently, it has been shown that for some problems, Uniform Scaling (US), a technique that allows global scaling of time series, may just be as important for some problems. In this work, we note that for many real world problems, it is necessary to combine both DTW and US to achieve meaningful results. This is particularly true in domains where we must account for the natural variability of human action, including biometrics, query by humming, motion-capture/animation, and handwriting recognition. We introduce the first technique which can handle both DTW and US simultaneously, and demonstrate its utility and effectiveness on a wide range of problems in industry, medicine, and entertainment.
 
 #index 844310
 #* HOT SAX: Efficiently Finding the Most Unusual Time Series Subsequence
@@ -393,6 +407,7 @@
 #% 729960
 #% 769896
 #% 769922
+#! In this work, we introduce the new problem of finding time series discords. Time series discords are subsequences of a longer time series that are maximally different to all the rest of the time series subsequences. They thus capture the sense of the most unusual subsequence within a time series. Time series discords have many uses for data mining, including improving the quality of clustering, data cleaning, summarization, and anomaly detection. As we will show, discords are particularly attractive as anomaly detectors because they only require one intuitive parameter (the length of the subsequence) unlike most anomaly detection algorithms that typically require many parameters. We evaluate our work with a comprehensive set of experiments. In particular, we demonstrate the utility of discords with objective experiments on domains as diverse as Space Shuttle telemetry monitoring, medicine, surveillance, and industry, and we demonstrate the effectiveness of our discord discovery algorithm with more than one million experiments, on 82 different datasets from diverse domains.
 
 #index 844343
 #* Atomic Wedgie: Efficient Query Filtering for Streaming Times Series
@@ -404,6 +419,7 @@
 #% 731408
 #% 765262
 #% 1113090
+#! In many applications it is desirable to monitor a streaming time series for predefined patterns. In domains as diverse as the monitoring of space telemetry, patient intensive care data, and insect populations, where data streams at a high rate and the number of predefined patterns is large, it may be impossible for the comparison algorithm to keep up. We propose a novel technique that exploits the commonality among the predefined patterns to allow monitoring at higher bandwidths, while maintaining a guarantee of no false dismissals. Our approach is based on the widely used envelope-based lower bounding technique. Extensive experiments demonstrate that our approach achieves tremendous improvements in performance in the offline case, and significant improvements in the fastest possible arrival rate of the data stream that can be processed with guaranteed no false dismissal.
 
 #index 876074
 #* Fast time series classification using numerosity reduction
@@ -426,6 +442,7 @@
 #% 993965
 #% 1702634
 #% 1705293
+#! Many algorithms have been proposed for the problem of time series classification. However, it is clear that one-nearest-neighbor with Dynamic Time Warping (DTW) distance is exceptionally difficult to beat. This approach has one weakness, however; it is computationally too demanding for many realtime applications. One way to mitigate this problem is to speed up the DTW calculations. Nonetheless, there is a limit to how much this can help. In this work, we propose an additional technique, numerosity reduction, to speed up one-nearest-neighbor DTW. While the idea of numerosity reduction for nearest-neighbor classifiers has a long history, we show here that we can leverage off an original observation about the relationship between dataset size and DTW constraints to produce an extremely compact dataset with little or no loss in accuracy. We test our ideas with a comprehensive set of experiments, and show that it can efficiently produce extremely fast accurate classifiers.
 
 #index 878302
 #* Indexing Multidimensional Time-Series
@@ -470,6 +487,7 @@
 #% 659971
 #% 729917
 #% 993965
+#! While most time series data mining research has concentrated on providing solutions for a single distance function, in this work we motivate the need for an index structure that can support multiple distance measures. Our specific area of interest is the efficient retrieval and analysis of similar trajectories. Trajectory datasets are very common in environmental applications, mobility experiments, and video surveillance and are especially important for the discovery of certain biological patterns. Our primary similarity measure is based on the longest common subsequence (LCSS) model that offers enhanced robustness, particularly for noisy data, which are encountered very often in real-world applications. However, our index is able to accommodate other distance measures as well, including the ubiquitous Euclidean distance and the increasingly popular dynamic time warping (DTW). While other researchers have advocated one or other of these similarity measures, a major contribution of our work is the ability to support all these measures without the need to restructure the index. Our framework guarantees no false dismissals and can also be tailored to provide much faster response time at the expense of slightly reduced precision/recall. The experimental results demonstrate that our index can help speed up the computation of expensive similarity measures such as the LCSS and the DTW.
 
 #index 881459
 #* Global distance-based segmentation of trajectories
@@ -487,6 +505,7 @@
 #% 810067
 #% 824729
 #% 844293
+#! This work introduces distance-based criteria for segmentation of object trajectories. Segmentation leads to simplification of the original objects into smaller, less complex primitives that are better suited for storage and retrieval purposes. Previous work on trajectory segmentation attacked the problem locally, segmenting separately each trajectory of the database. Therefore, they did not directly optimize the inter-object separability, which is necessary for mining operations such as searching, clustering, and classification on large databases. In this paper we analyze the trajectory segmentation problem from a global perspective, utilizing data aware distance-based optimization techniques, which optimize pairwise distance estimates hence leading to more efficient object pruning. We first derive exact solutions of the distance-based formulation. Due to the intractable complexity of the exact solution, we present anapproximate, greedy solution that exploits forward searching of locally optimal solutions. Since the greedy solution also imposes a prohibitive computational cost, we also put forward more light weight variance-based segmentation techniques, which intelligently "relax" the pairwise distance only in the areas that affect the least the mining operation.
 
 #index 881545
 #* Semi-supervised time series classification
@@ -503,6 +522,7 @@
 #% 844343
 #% 853064
 #% 1702634
+#! The problem of time series classification has attracted great interest in the last decade. However current research assumes the existence of large amounts of labeled training data. In reality, such data may be very difficult or expensive to obtain. For example, it may require the time and expertise of cardiologists, space launch technicians, or other domain specialists. As in many other domains, there are often copious amounts of unlabeled data available. For example, the PhysioBank archive contains gigabytes of ECG data. In this work we propose a semi-supervised technique for building time series classifiers. While such algorithms are well known in text domains, we will show that special considerations must be made to make them both efficient and effective for the time series domain. We evaluate our work with a comprehensive set of experiments on diverse data sources including electrocardiograms, handwritten documents, and video datasets. The experimental results demonstrate that our approach requires only a handful of labeled examples to construct accurate classifiers.
 
 #index 893161
 #* LB_Keogh supports exact indexing of shapes under rotation invariance with arbitrary representations and distance measures
@@ -528,6 +548,7 @@
 #% 1685143
 #% 1854406
 #% 1858193
+#! The matching of two-dimensional shapes is an important problem with applications in domains as diverse as biometrics, industry, medicine and anthropology. The distance measure used must be invariant to many distortions, including scale, offset, noise, partial occlusion, etc. Most of these distortions are relatively easy to handle, either in the representation of the data or in the similarity measure used. However rotation invariance seems to be uniquely difficult. Current approaches typically try to achieve rotation invariance in the representation of the data, at the expense of discrimination ability, or in the distance measure, at the expense of efficiency. In this work we show that we can take the slow but accurate approaches and dramatically speed them up. On real world problems our technique can take current approaches and make them four orders of magnitude faster, without false dismissals. Moreover, our technique can be used with any of the dozens of existing shape representations and with all the most popular distance measures including Euclidean distance, Dynamic Time Warping and Longest Common Subsequence.
 
 #index 893220
 #* A decade of progress in indexing and mining large time series databases
@@ -535,36 +556,42 @@
 #t 2006
 #c VLDB '06 Proceedings of the 32nd international conference on Very large data bases
 #% 172949
+#! Time series data is ubiquitous; large volumes of time series data are routinely created in scientific, industrial, entertainment, medical and biological domains. Examples include gene expression data, electrocardiograms, electroencephalograms, gait analysis, stock market quotes, space telemetry etc. Although statisticians have worked with time series for more than a century, many of their techniques hold little utility for researchers working with massive time series databases.A decade ago, a seminal paper by Faloutsos, Ranganathan, Manolopoulos appeared in SIGMOD. The paper, Fast Subsequence Matching in Time-Series Databases, has spawned at least a thousand references and extensions in the database/ data mining and information retrieval communities. This tutorial will summarize the decade of progress since this influential paper appeared.
 
 #index 915238
 #* Intelligent Icons: Integrating Lite-Weight Data Mining and Visualization into GUI Operating Systems
 #@ 3861 14790 15853 8237 17567 17568
 #t 2006
 #c ICDM '06 Proceedings of the Sixth International Conference on Data Mining
+#! The vast majority of visualization tools introduced so far are specialized pieces of software that run explicitly on a particular dataset at a particular time for a particular purpose. In this work we introduce a novel framework for allowing visualization to take place in the background of normal day-to-day operation of any GUI based operation system. Our system works by replacing the standard file icons with automatically created icons that reflect the contents of the files in a principled way. We call such icons INTELLIGENT ICONS. The utility of Intelligent Icons is further enhanced by arranging them in a way that reflects their similarity/differences. We demonstrate the utility of our approach on diverse applications.
 
 #index 915325
 #* Manifold Clustering of Shapes
 #@ 17664 3861
 #t 2006
 #c ICDM '06 Proceedings of the Sixth International Conference on Data Mining
+#! Shape clustering can significantly facilitate the automatic labeling of objects present in image collections. For example, it could outline the existing groups of pathological cells in a bank of cyto-images; the groups of species on photographs collected from certain aerials; or the groups of objects observed on surveillance scenes from an office building. Here we demonstrate that a nonlinear projection algorithm such as Isomap can attract together shapes of similar objects, suggesting the existence of isometry between the shape space and a low dimensional nonlinear embedding. Whenever there is a relatively small amount of noise in the data, the projection forms compact, convex clusters that can easily be learned by a subsequent partitioning scheme. We further propose a modification of the Isomap projection based on the concept of degree-bounded minimum spanning trees. The proposed approach is demonstrated to move apart bridged clusters and to alleviate the effect of noise in the data.
 
 #index 915345
 #* Anytime Classification Using the Nearest Neighbor Algorithm with Applications to Stream Mining
 #@ 17686 15853 3861 17687
 #t 2006
 #c ICDM '06 Proceedings of the Sixth International Conference on Data Mining
+#! For many real world problems we must perform classification under widely varying amounts of computational resources. For example, if asked to classify an instance taken from a bursty stream, we may have from milliseconds to minutes to return a class prediction. For such problems an anytime algorithm may be especially useful. In this work we show how we can convert the ubiquitous nearest neighbor classifier into an anytime algorithm that can produce an instant classification, or if given the luxury of additional time, can utilize the extra time to increase classification accuracy. We demonstrate the utility of our approach with a comprehensive set of experiments on data from diverse domains.
 
 #index 915353
 #* SAXually Explicit Images: Finding Unusual Shapes
 #@ 14790 3861 15853
 #t 2006
 #c ICDM '06 Proceedings of the Sixth International Conference on Data Mining
+#! Over the past three decades, there has been a great deal of research on shape analysis, focusing mostly on shape indexing, clustering, and classification. In this work, we introduce the new problem of finding shape discords, the most unusual shapes in a collection. We motivate the problem by considering the utility of shape discords in diverse domains including zoology, anthropology, and medicine. While the brute force search algorithm has quadratic time complexity, we avoid this by using locality-sensitive hashing to estimate similarity between shapes which enables us to reorder the search more efficiently. An extensive experimental evaluation demonstrates that our approach can speed up computation by three to four orders of magnitude.
 
 #index 972337
 #* Clustering Workflow Requirements Using Compression Dissimilarity Measure
 #@ 14790 18157 1663 17752 3861
 #t 2006
 #c ICDMW '06 Proceedings of the Sixth IEEE International Conference on Data Mining - Workshops
+#! Xerox offers a bewildering array of printers and software configurations to satisfy the needs of production print shops. A configuration tool in the hands of sales analysts elicits requirements from customers and recommends a list of product configurations. This tool generates special question and answer case logs that provide useful historical data. Given the unusual semi-structured question and answer format, this data is not amenable to any standard document clustering method. We discovered that a hierarchical agglomerative approach using a compression-based dissimilarity measure (CDM) provided readily interpretable clusters. We compare this method empirically to two reasonable alternatives, latent semantic analysis and probabilistic latent semantic analysis, and conclude that CDM offers an accurate and easily implemented approach to validate and augment our configuration tool.
 
 #index 989656
 #* Detecting time series motifs under uniform scaling
@@ -581,6 +608,7 @@
 #% 799397
 #% 893161
 #% 1016194
+#! Time series motifs are approximately repeated patterns foundwithin the data. Such motifs have utility for many data mining algorithms, including rule-discovery,novelty-detection, summarization and clustering. Since the formalization of the problem and the introduction of efficient linear time algorithms, motif discovery has been successfully applied tomany domains, including medicine, motion capture, robotics and meteorology. In this work we show that most previous applications of time series motifs have been severely limited by the definition's brittleness to even slight changes of uniform scaling, the speed at which the patterns develop. We introduce a new algorithm that allows discovery of time series motifs with invariance to uniform scaling, and show that it produces objectively superior results in several important domains. Apart from being more general than all other motifdiscovery algorithms, a further contribution of our work isthat it is simpler than previous approaches, in particular we have drastically reduced the number of parameters that need to be specified.
 
 #index 993965
 #* Exact indexing of dynamic time warping
@@ -606,6 +634,7 @@
 #% 586837
 #% 632088
 #% 659971
+#! The problem of indexing time series has attracted much research interest in the database community. Most algorithms used to index time series utilize the Euclidean distance or some variation thereof. However is has been forcefully shown that the Euclidean distance is a very brittle distance measure. Dynamic Time Warping (DTW) is a much more robust distance measure for time series, allowing similar shapes to match even if they are out of phase in the time axis. Because of this flexibility, DTW is widely used in science, medicine, industry and finance. Unfortunately however, DTW does not obey the triangular inequality, and thus has resisted attempts at exact indexing. Instead, many researchers have introduced approximate indexing techniques, or abandoned the idea of indexing and concentrated on speeding up sequential search. In this work we introduce a novel technique for the exact indexing of DTW. We prove that our method guarantees no false dismissals and we demonstrate its vast superiority over all competing approaches in the largest and most comprehensive set of time series indexing experiments ever undertaken.
 
 #index 1016194
 #* Indexing large human-motion databases
@@ -638,6 +667,7 @@
 #% 729931
 #% 993965
 #% 1113090
+#! Data-driven animation has become the industry standard for computer games and many animated movies and special effects. In particular, motion capture data recorded from live actors, is the most promising approach offered thus far for animating realistic human characters. However, the manipulation of such data for general use and re-use is not yet a solved problem. Many of the existing techniques dealing with editing motion rely on indexing for annotation, segmentation, and re-ordering of the data. Euclidean distance is inappropriate for solving these indexing problems because of the inherent variability found in human motion. The limitations of Euclidean distance stems from the fact that it is very sensitive to distortions in the time axis. A partial solution to this problem, Dynamic Time Warping (DTW), aligns the time axis before calculating the Euclidean distance. However, DTW can only address the problem of local scaling. As we demonstrate in this paper, global or uniform scaling is just as important in the indexing of human motion. We propose a novel technique to speed up similarity search under uniform scaling, based on bounding envelopes. Our technique is intuitive and simple to implement. We describe algorithms that make use of this technique, we perform an experimental analysis with real datasets, and we evaluate it in the context of a motion capture processing system. The results demonstrate the utility of our approach, and show that we can achieve orders of magnitude of speedup over the brute force approach, the only alternative solution currently available.
 
 #index 1016248
 #* VizTree: a tool for visually mining and monitoring massive time series databases
@@ -645,6 +675,7 @@
 #t 2004
 #c VLDB '04 Proceedings of the Thirtieth international conference on Very large data bases - Volume 30
 #% 662750
+#! Moments before the launch of every space vehicle, engineering discipline specialists must make a critical go/no-go decision. The cost of a false positive, allowing a launch in spite of a fault, or a false negative, stopping a potentially successful launch, can be measured in the tens of millions of dollars, not including the cost in morale and other more intangible detriments. The Aerospace Corporation is responsible for providing engineering assessments critical to the go/no-go decision for every Department of Defense (DoD) launch vehicle. These assessments are made by constantly monitoring streaming telemetry data in the hours before launch. For this demonstration, we will introduce VizTree, a novel time-series visualization tool to aid the Aerospace analysts who must make these engineering assessments. VizTree was developed at the University of California, Riverside and is unique in that the same tool is used for mining archival data and monitoring incoming live telemetry. Unlike other time series visualization tools, VizTree can scale to very large databases, giving it the potential to be a generally useful data mining and database tool.
 
 #index 1023803
 #* First International Workshop and Challenge on Time Series Classification
@@ -663,6 +694,7 @@
 #@ 3861
 #t 2007
 #c Proceedings of the 8th international workshop on Multimedia data mining: (associated with the ACM SIGKDD 2007)
+#! In this talk I will make a strong and potentially controversial claim. The majority of papers published in the best data mining conferences make no contribution. The reason for this is that in most cases, no one, including the original authors can reproduce the findings in the papers. As I shall argue, non-reproducible results are the same as no results at all. The irreproducibility of results may be explicit, the refusal to share data or to give parameter settings, or implicit, the effort to reproduce may be so great that the authors ensure that no one will ever try. I will argue that this lack of reproducibility is crippling research progress, and allowing a large number of false research findings go unchallenged and enter the popular consciousness as true. I will demonstrate my claims with the deconstruction of several influential papers and (reproducible!) experiments.
 
 #index 1066734
 #* Scaling and time warping in time series querying
@@ -695,6 +727,7 @@
 #% 993965
 #% 1016194
 #% 1391300
+#! The last few years have seen an increasing understanding that dynamic time warping (DTW), a technique that allows local flexibility in aligning time series, is superior to the ubiquitous Euclidean distance for time series classification, clustering, and indexing. More recently, it has been shown that for some problems, uniform scaling (US), a technique that allows global scaling of time series, may just be as important for some problems. In this work, we note that for many real world problems, it is necessary to combine both DTW and US to achieve meaningful results. This is particularly true in domains where we must account for the natural variability of human actions, including biometrics, query by humming, motion-capture/animation, and handwriting recognition. We introduce the first technique which can handle both DTW and US simultaneously, our techniques involve search pruning by means of a lower bounding technique and multi-dimensional indexing to speed up the search. We demonstrate the utility and effectiveness of our method on a wide range of problems in industry, medicine, and entertainment.
 
 #index 1083693
 #* iSAX: indexing and mining terabyte sized time series
@@ -710,6 +743,7 @@
 #% 876074
 #% 992857
 #% 1044456
+#! Current research in indexing and mining time series data has produced many interesting algorithms and representations. However, the algorithms and the size of data considered have generally not been representative of the increasingly massive datasets encountered in science, engineering, and business domains. In this work, we show how a novel multi-resolution symbolic representation can be used to index datasets which are several orders of magnitude larger than anything else considered in the literature. Our approach allows both fast exact search and ultra fast approximate search. We show how to exploit the combination of both types of search as sub-routines in data mining algorithms, allowing for the exact mining of truly massive real world datasets, containing millions of time series.
 
 #index 1100187
 #* Visual Exploration of Genomic Data
@@ -721,18 +755,21 @@
 #% 753026
 #% 1010961
 #% 1740869
+#! In this study, we present methods for comparative visualization of DNA sequences in two dimensions. First, we illustrate a transformation of gene sequences into numerical trajectories. The trajectory visually captures the nucleotide content of each sequence, allowing for fast and easy visualization of long DNA sequences. Then, we project the relative placement of the trajectories on the 2D plane using a spanning-tree arrangement method, which allows the efficient comparison of multiple sequences. We demonstrate with various examples the applicability of our technique in evolutionary biology and specifically in capturing and visualizing the molecular phylogeny between species.
 
 #index 1117032
 #* Disk Aware Discord Discovery: Finding Unusual Time Series in Terabyte Sized Datasets
 #@ 17664 3861 20948
 #t 2007
 #c ICDM '07 Proceedings of the 2007 Seventh IEEE International Conference on Data Mining
+#! The problem of finding unusual time series has recently attracted much attention, and several promising methods are now in the literature. However, virtually all proposed methods assume that the data reside in main memory. For many real-world problems this is not be the case. For example, in astronomy, multi-terabyte time series datasets are the norm. Most current algorithms faced with data which cannot fit in main memory resort to multiple scans of the disk/tape and are thus intractable. In this work we show how one particular definition of unusual time series, the time series discord, can be discovered with a disk aware algorithm. The proposed algorithm is exact and requires only two linear scans of the disk with a tiny buffer of main memory. Furthermore, it is very simple to implement. We use the algorithm to provide further evidence of the effectiveness of the discord definition in areas as diverse as astronomy, web query mining, video surveillance, etc., and show the efficiency of our method on datasets which are many orders of magnitude larger than anything else attempted in the literature.
 
 #index 1117086
 #* Locally Constrained Support Vector Clustering
 #@ 17664 3861 21220
 #t 2007
 #c ICDM '07 Proceedings of the 2007 Seventh IEEE International Conference on Data Mining
+#! Support vector clustering transforms the data into a high dimensional feature space, where a decision function is computed. In the original space, the function outlines the boundaries of higher density regions, naturally splitting the data into individual clusters. The method, however, though theoretically sound, has certain drawbacks which make it not so appealing to the practitioner. Namely, it is unstable in the presence of outliers and it is hard to control the number of clusters that it identifies. Parametrizing the algorithm incorrectly in noisy settings, can either disguise some objectively present clusters in the data, or can identify a large number of small and nonintuitive clusters. Here, we explore the properties of the data in small regions building a mixture of factor analyzers. The obtained information is used to regularize the complexity of the outlined cluster boundaries, by assigning suitable weighting to each example. The approach is demonstrated to be less susceptible to noise and to outline better interpretable clusters than support vector clustering alone.
 
 #index 1127609
 #* Querying and mining of time series data: experimental comparison of representations and distance measures
@@ -768,6 +805,7 @@
 #% 1022238
 #% 1046749
 #% 1290045
+#! The last decade has witnessed a tremendous growths of interests in applications that deal with querying and mining of time series data. Numerous representation methods for dimensionality reduction and similarity measures geared towards time series have been introduced. Each individual work introducing a particular method has made specific claims and, aside from the occasional theoretical justifications, provided quantitative experimental observations. However, for the most part, the comparative aspects of these experiments were too narrowly focused on demonstrating the benefits of the proposed methods over some of the previously introduced ones. In order to provide a comprehensive validation, we conducted an extensive set of time series experiments re-implementing 8 different representation methods and 9 similarity measures and their variants, and testing their effectiveness on 38 time series data sets from a wide variety of application domains. In this paper, we give an overview of these different techniques and present our comparative experimental findings regarding their effectiveness. Our experiments have provided both a unified validation of some of the existing achievements, and in some cases, suggested that certain claims in the literature may be unduly optimistic.
 
 #index 1211645
 #* Supporting exact indexing of arbitrarily rotated shapes and periodic time series under Euclidean and warping distance measures
@@ -797,6 +835,7 @@
 #% 1667413
 #% 1854406
 #% 1858193
+#! Shape matching and indexing is important topic in its own right, and is a fundamental subroutine in most shape data mining algorithms. Given the ubiquity of shape, shape matching is an important problem with applications in domains as diverse as biometrics, industry, medicine, zoology and anthropology. The distance/similarity measure for used for shape matching must be invariant to many distortions, including scale, offset, noise, articulation, partial occlusion, etc. Most of these distortions are relatively easy to handle, either in the representation of the data or in the similarity measure used. However, rotation invariance is noted in the literature as being an especially difficult challenge. Current approaches typically try to achieve rotation invariance in the representation of the data, at the expense of discrimination ability, or in the distance measure, at the expense of efficiency. In this work, we show that we can take the slow but accurate approaches and dramatically speed them up. On real world problems our technique can take current approaches and make them four orders of magnitude faster without false dismissals. Moreover, our technique can be used with any of the dozens of existing shape representations and with all the most popular distance measures including Euclidean distance, dynamic time warping and Longest Common Subsequence. We further show that our indexing technique can be used to index star light curves, an important type of astronomical data, without modification.
 
 #index 1214716
 #* Time series shapelets: a new primitive for data mining
@@ -809,6 +848,7 @@
 #% 737331
 #% 876074
 #% 893161
+#! Classification of time series has been attracting great interest over the past decade. Recent empirical evidence has strongly suggested that the simple nearest neighbor algorithm is very difficult to beat for most time series problems. While this may be considered good news, given the simplicity of implementing the nearest neighbor algorithm, there are some negative consequences of this. First, the nearest neighbor algorithm requires storing and searching the entire dataset, resulting in a time and space complexity that limits its applicability, especially on resource-limited sensors. Second, beyond mere classification accuracy, we often wish to gain some insight into the data. In this work we introduce a new time series primitive, time series shapelets, which addresses these limitations. Informally, shapelets are time series subsequences which are in some sense maximally representative of a class. As we shall show with extensive empirical evaluations in diverse domains, algorithms based on the time series shapelet primitives can be interpretable, more accurate and significantly faster than state-of-the-art classifiers.
 
 #index 1214727
 #* Augmenting the generalized hough transform to enable the mining of petroglyphs
@@ -825,12 +865,14 @@
 #% 1010569
 #% 1068995
 #% 1095843
+#! Rock art is an archaeological term for human-made markings on stone. It is believed that there are millions of petroglyphs in North America alone, and the study of this valued cultural resource has implications even beyond anthropology and history. Surprisingly, although image processing, information retrieval and data mining have had large impacts on many human endeavors, they have had essentially zero impact on the study of rock art. In this work we identify the reasons for this, and introduce a novel distance measure and algorithms which allow efficient and effective data mining of large collections of rock art.
 
 #index 1318667
 #* Finding Time Series Motifs in Disk-Resident Data
 #@ 28660 3861 28661
 #t 2009
 #c ICDM '09 Proceedings of the 2009 Ninth IEEE International Conference on Data Mining
+#! Time series motifs are sets of very similar subsequences of a long time series. They are of interest in their own right, and are also used as inputs in several higher-level data mining algorithms including classification, clustering, rule-discovery and summarization. In spite of extensive research in recent years, finding exact time series motifs in massive databases is an open problem. Previous efforts either found approximate motifs or considered relatively small datasets residing in main memory. In this work, we describe for the first time a disk-aware algorithm to find exact time series motifs in multi-gigabyte databases which contain on the order of tens of millions of time series. We have evaluated our algorithm on datasets from diverse areas including medicine, anthropology, computer networking and image processing and show that we can find interesting and meaningful motifs in datasets that are many orders of magnitude larger than anything considered before.
 
 #index 1451249
 #* Online discovery and maintenance of time series motifs
@@ -858,6 +900,7 @@
 #% 1305491
 #% 1387564
 #% 1665165
+#! The detection of repeated subsequences, time series motifs, is a problem which has been shown to have great utility for several higher-level data mining algorithms, including classification, clustering, segmentation, forecasting, and rule discovery. In recent years there has been significant research effort spent on efficiently discovering these motifs in static offline databases. However, for many domains, the inherent streaming nature of time series demands online discovery and maintenance of time series motifs. In this paper, we develop the first online motif discovery algorithm which monitors and maintains motifs exactly in real time over the most recent history of a stream. Our algorithm has a worst-case update time which is linear to the window size and is extendible to maintain more complex pattern structures. In contrast, the current offline algorithms either need significant update time or require very costly pre-processing steps which online algorithms simply cannot afford. Our core ideas allow useful extensions of our algorithm to deal with arbitrary data rates and discovering multidimensional motifs. We demonstrate the utility of our algorithms with a variety of case studies in the domains of robotics, acoustic monitoring and online compression.
 
 #index 1490606
 #* A brief survey on sequence classification
@@ -909,48 +952,56 @@
 #% 1440242
 #% 1661589
 #% 1717571
+#! Sequence classification has a broad range of applications such as genomic analysis, information retrieval, health informatics, finance, and abnormal detection. Different from the classification task on feature vectors, sequences do not have explicit features. Even with sophisticated feature selection techniques, the dimensionality of potential features may still be very high and the sequential nature of features is difficult to capture. This makes sequence classification a more challenging task than classification on feature vectors. In this paper, we present a brief review of the existing work on sequence classification. We summarize the sequence classification in terms of methodologies and application domains. We also provide a review on several extensions of the sequence classification problem, such as early classification on sequences and semi-supervised learning on sequences.
 
 #index 1535351
 #* How to Do Good Data Mining Research and Get it Published in Top Venues
 #@ 3861
 #t 2010
 #c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+#! While ICDM has traditionally enjoyed an unusually high quality of reviewing, there is no doubt that publishing in ICDM is very challenging. In this tutorial Dr. Keogh will demonstrate some simple ideas to enhance the probability of success in getting your paper published in a top data mining conference, and after the work is published, getting it highly cited.
 
 #index 1535352
 #* Mother Fugger: Mining Historical Manuscripts with Local Color Patches
 #@ 10680 3861
 #t 2010
 #c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+#! Initiatives such as the Google Print Library Project and the Million Book Project have already archived more than ten million books in digital format, and within the next decade the majority of world’s books will be online. Although most of the data will naturally be text, there will also be tens of millions of pages of images, many in color. While there is an active research community pursuing data mining of text from historical manuscripts, there has been very little work that exploits the rich color information which is often present. In this work we introduce a simple color measure which both addresses and exploits typical features of historical manuscripts. To enable the efficient mining of massive archives, we propose a tight lower bound to the measure. Beyond the fast similarity search, we show how this lower bound allows us to build several higher-level data mining tools, including motif discovery and link analyses. We demonstrate our ideas in several data mining tasks on manuscripts dating back to the fifteenth century.
 
 #index 1535372
 #* iSAX 2.0: Indexing and Mining One Billion Time Series
 #@ 34682 17502 17567 3861
 #t 2010
 #c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+#! There is an increasingly pressing need, by several applications in diverse domains, for developing techniques able to index and mine very large collections of time series. Examples of such applications come from astronomy, biology, the web, and other domains. It is not unusual for these applications to involve numbers of time series in the order of hundreds of millions to billions. However, all relevant techniques that have been proposed in the literature so far have not considered any data collections much larger than one-million time series. In this paper, we describe iSAX 2.0, a data structure designed for indexing and mining truly massive collections of time series. We show that the main bottleneck in mining such massive datasets is the time taken to build the index, and we thus introduce a novel bulk loading mechanism, the first of this kind specifically tailored to a time series index. We show how our method allows mining on datasets that would otherwise be completely untenable, including the first published experiments to index one billion time series, and experiments in mining massive data from domains as diverse as entomology, DNA and web-scale image collections.
 
 #index 1535427
 #* Data Editing Techniques to Allow the Application of Distance-Based Outlier Detection to Streams
 #@ 23009 3861 11012
 #t 2010
 #c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+#! The problem of finding outliers in data has broad applications in areas as diverse as data cleaning, fraud detection, network monitoring, invasive species monitoring, etc. While there are dozens of techniques that have been proposed to solve this problem for static data collections, very simple distance-based outlier detection methods are known to be competitive or superior to more complex methods. However, distance-based methods have time and space complexities that make them impractical for streaming data and/or resource limited sensors. In this work, we show that simple data-editing techniques can make distance-based outlier detection practical for very fast streams and resource limited sensors. Our technique generalizes to produce two algorithms, which, relative to the original algorithm, can guarantee to produce no false positives, or guarantee to produce no false negatives. Our methods are independent of both data type and distance measure, and are thus broadly applicable.
 
 #index 1535445
 #* Accelerating Dynamic Time Warping Subsequence Search with GPUs and FPGAs
 #@ 34754 28660 34755 3861 23009
 #t 2010
 #c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+#! Many time series data mining problems require subsequence similarity search as a subroutine. Dozens of similarity/distance measures have been proposed in the last decade and there is increasing evidence that Dynamic Time Warping (DTW) is the best measure across a wide range of domains. Given DTW’s usefulness and ubiquity, there has been a large community-wide effort to mitigate its relative lethargy. Proposed speedup techniques include early abandoning strategies, lower-bound based pruning, indexing and embedding. In this work we argue that we are now close to exhausting all possible speedup from software, and that we must turn to hardware-based solutions. With this motivation, we investigate both GPU (Graphics Processing Unit) and FPGA (Field Programmable Gate Array) based acceleration of subsequence similarity search under the DTW measure. As we shall show, our novel algorithms allow GPUs to achieve two orders of magnitude speedup and FPGAs to produce four orders of magnitude speedup. We conduct detailed case studies on the classification of astronomical observations and demonstrate that our ideas allow us to tackle problems that would be untenable otherwise.
 
 #index 1535463
 #* Polishing the Right Apple: Anytime Classification Also Benefits Data Streams with Constant Arrival Times
 #@ 17567 3861
 #t 2010
 #c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+#! Classification of items taken from data streams requires algorithms that operate in time sensitive and computationally constrained environments. Often, the available time for classification is not known a priori and may change as a consequence of external circumstances. Many traditional algorithms are unable to provide satisfactory performance while supporting the highly variable response times that exemplify such applications. In such contexts, anytime algorithms, which are amenable to trading time for accuracy, have been found to be exceptionally useful and constitute an area of increasing research activity. Previous techniques for improving anytime classification have generally been concerned with optimizing the probability of correctly classifying individual objects. However, as we shall see, serially optimizing the probability of correctly classifying individual objects K times, generally gives inferior results to batch optimizing the probability of correctly classifying K objects. In this work, we show that this simple observation can be exploited to improve overall classification performance by using an anytime framework to allocate resources among a set of objects buffered from a fast arriving stream. Our ideas are independent of object arrival behavior, and, perhaps unintuitively, even in data streams with constant arrival rates our technique exhibits a marked improvement in performance. The utility of our approach is demonstrated with extensive experimental evaluations conducted on a wide range of diverse datasets.
 
 #index 1554493
 #* Classification of Live Moths Combining Texture, Color and Shape Primitives
 #@ 10823 34968 3861
 #t 2010
 #c ICMLA '10 Proceedings of the 2010 Ninth International Conference on Machine Learning and Applications
+#! Each year, insect-borne diseases kill more than one million people, and harmful insects destroy tens of billions of dollars worth of crops and livestock. At the same time, beneficial insects pollinate three-quarters of all food consumed by humans. Given the extraordinary impact of insects on human life, it is somewhat surprising that machine learning has made very little impact on understanding (and hence, controlling) insects. In this work we discuss why this is the case, and argue that a confluence of facts make the time ripe for machine learning research to reach out to the entomological community and help them solve some important problems. As a concrete example, we show how we can solve an important classification problem in commercial entomology by leveraging off recent progress in shape, color and texture measures.
 
 #index 1606057
 #* Logical-shapelets: an expressive primitive for time series classification
@@ -966,6 +1017,7 @@
 #% 1307196
 #% 1426516
 #% 1538184
+#! Time series shapelets are small, local patterns in a time series that are highly predictive of a class and are thus very useful features for building classifiers and for certain visualization and summarization tasks. While shapelets were introduced only recently, they have already seen significant adoption and extension in the community. Despite their immense potential as a data mining primitive, there are two important limitations of shapelets. First, their expressiveness is limited to simple binary presence/absence questions. Second, even though shapelets are computed offline, the time taken to compute them is significant. In this work, we address the latter problem by introducing a novel algorithm that finds shapelets in less time than current methods by an order of magnitude. Our algorithm is based on intelligent caching and reuse of computations, and the admissible pruning of the search space. Because our algorithm is so fast, it creates an opportunity to consider more expressive shapelet queries. In particular, we show for the first time an augmented shapelet representation that distinguishes the data based on conjunctions or disjunctions of shapelets. We call our novel representation Logical-Shapelets. We demonstrate the efficiency of our approach on the classic benchmark datasets used for these problems, and show several case studies where logical shapelets significantly outperform the original shapelet representation and other time series classification techniques. We demonstrate the utility of our ideas in domains as diverse as gesture recognition, robotics, and biometrics.
 
 #index 1663640
 #* Group SAX: extending the notion of contrast sets to time series and multimedia data
@@ -982,6 +1034,7 @@
 #% 727624
 #% 729935
 #% 789009
+#! In this work, we take the traditional notation of contrast sets and extend them to other data types, in particular time series and by extension, images. In the traditional sense, contrast-set mining identifies attributes, values and instances that differ significantly across groups, and helps user understand the differences between groups of data. We reformulate the notion of contrast-sets for time series data, and define it to be the key pattern(s) that are maximally different from the other set of data. We propose a fast and exact algorithm to find the contrast sets, and demonstrate its utility in several diverse domains, ranging from industrial to anthropology. We show that our algorithm achieves 3 orders of magnitude speedup from the brute-force algorithm, while producing exact solutions.
 
 #index 1665170
 #* Ensembles of nearest neighbor forecasts
@@ -993,6 +1046,7 @@
 #% 229931
 #% 534183
 #% 642773
+#! Nearest neighbor forecasting models are attractive with their simplicity and the ability to predict complex nonlinear behavior. They rely on the assumption that observations similar to the target one are also likely to have similar outcomes. A common practice in nearest neighbor model selection is to compute the globally optimal number of neighbors on a validation set, which is later applied for all incoming queries. For certain queries, however, this number may be suboptimal and forecasts that deviate a lot from the true realization could be produced. To address the problem we propose an alternative approach of training ensembles of nearest neighbor predictors that determine the best number of neighbors for individual queries. We demonstrate that the forecasts of the ensembles improve significantly on the globally optimal single predictors.
 
 #index 1673551
 #* Recent advances in mining time series data
@@ -1003,12 +1057,14 @@
 #% 727900
 #% 769896
 #% 993965
+#! Much of the world’s supply of data is in the form of time series. Furthermore, as we shall see, many types of data can be meaningfully converted into ”time series”, including text, DNA, video, images etc. The last decade has seen an explosion of interest in mining time series data from the academic community. There has been significant work on algorithms to classify, cluster, segment, index, discover rules, visualize, and detect anomalies/novelties in time series. In this talk I will summarize the latest advances in mining time series data, including: – New representations of time series data. – New algorithms/definitions. – The migration from static problems to online problems. – New areas and applications of time series data mining. I will end the talk with a discussion of “what’s left to do” in time series data mining.
 
 #index 1688500
 #* Discovering the Intrinsic Cardinality and Dimensionality of Time Series Using MDL
 #@ 38013 30503 38014 38015 8237 3861
 #t 2011
 #c ICDM '11 Proceedings of the 2011 IEEE 11th International Conference on Data Mining
+#! Most algorithms for mining or indexing time series data do not operate directly on the original data, but instead they consider alternative representations that include transforms, quantization, approximation, and multi-resolution abstractions. Choosing the best representation and abstraction level for a given task/dataset is arguably the most critical step in time series data mining. In this paper, we investigate techniques to discover the natural intrinsic representation model, dimensionality and alphabet cardinality of a time series. The ability to discover these intrinsic features has implications beyond selecting the best parameters for particular algorithms, as characterizing data in such a manner is useful in its own right and an important sub-routine in algorithms for classification, clustering and outlier discovery. We will frame the discovery of these intrinsic features in the Minimal Description Length (MDL) framework. Extensive empirical tests show that our method is simpler, more general and significantly more accurate than previous methods, and has the important advantage of being essentially parameter-free.
 
 #index 1699573
 #* Recent advances in mining time series data
@@ -1019,6 +1075,7 @@
 #% 727900
 #% 769896
 #% 993965
+#! Much of the world's supply of data is in the form of time series. Furthermore, as we shall see, many types of data can be meaningfully converted into ”time series”, including text, DNA, video, images etc. The last decade has seen an explosion of interest in mining time series data from the academic community. There has been significant work on algorithms to classify, cluster, segment, index, discover rules, visualize, and detect anomalies/novelties in time series. In this talk I will summarize the latest advances in mining time series data, including: – New representations of time series data. – New algorithms/definitions. – The migration from static problems to online problems. – New areas and applications of time series data mining. I will end the talk with a discussion of “what's left to do” in time series data mining.
 
 #index 1707819
 #* A MPAA-Based iterative clustering algorithm augmented by nearest neighbors search for time-series data streams
@@ -1030,6 +1087,7 @@
 #% 480146
 #% 494573
 #% 993949
+#! In streaming time series the Clustering problem is more complex, since the dynamic nature of streaming data makes previous clustering methods inappropriate. In this paper, we propose firstly a new method to evaluate Clustering in streaming time series databases. First, we introduce a novel multi-resolution PAA (MPAA) transform to achieve our iterative clustering algorithm. The method is based on the use of a multi-resolution piecewise aggregate approximation representation, which is used to extract features of time series. Then, we propose our iterative clustering approach for streaming time series. We take advantage of the multiresolution property of MPPA and equip a stopping criteria based on Hoeffding bound in order to achieve fast response time. Our streaming time-series clustering algorithm also works by leveraging off the nearest neighbors of the incoming streaming time series datasets and fulfill incremental clustering approach. The comprehensive experiments based on several publicly available real data sets shows that significant performance improvement is achieved and produce high-quality clusters in comparison to the previous methods.
 
 #index 1707869
 #* A novel bit level time series representation with implication of similarity search and clustering
@@ -1041,12 +1099,14 @@
 #% 761281
 #% 769880
 #% 769896
+#! Because time series are a ubiquitous and increasingly prevalent type of data, there has been much research effort devoted to time series data mining recently. As with all data mining problems, the key to effective and scalable algorithms is choosing the right representation of the data. Many high level representations of time series have been proposed for data mining. In this work, we introduce a new technique based on a bit level approximation of the data. The representation has several important advantages over existing techniques. One unique advantage is that it allows raw data to be directly compared to the reduced representation, while still guaranteeing lower bounds to Euclidean distance. This fact can be exploited to produce faster exact algorithms for similarly search. In addition, we demonstrate that our new representation allows time series clustering to scale to much larger datasets.
 
 #index 1770146
 #* Getting your acceptance rate to 80%: a checklist for publishing
 #@ 3861
 #t 2012
 #c PhD '12 Proceedings of the on SIGMOD/PODS 2012 PhD Symposium
+#! SIGMOD acceptance rates have generally been in the narrow range of between 14 to 18 percent during the past decade. However, for given individuals the range is much wider. Some people have a zero percent acceptance rate, after five or six frustratingly unsuccessful attempts they set their sights lower (or, more pessimistically, they fail to get tenure and stop trying). Many people have acceptance rates that reflect the SIGMOD average of about 20%. Are there people that have perfect acceptance rates? In this talk I argue that while a perfect acceptance rate is essentially impossible to achieve year after year, an 80% acceptance rate is possible for top conferences. I will show how ten simple "tricks" allow you to significantly increase your odds of acceptance. As proof of utility I note that in the last ten years these ideas have allowed me to achieve 80%+ acceptance rates for many competitive conferences, including ICDM (22 papers), SIGKDD (19 papers), SDM (16 papers), VLDB (6) papers etc.
 
 #index 1872261
 #* Searching and mining trillions of time series subsequences under dynamic time warping
@@ -1078,16 +1138,19 @@
 #% 1590537
 #% 1702249
 #% 1754971
+#! Most time series data mining algorithms use similarity search as a core subroutine, and thus the time taken for similarity search is the bottleneck for virtually all time series data mining algorithms. The difficulty of scaling search to large datasets largely explains why most academic work on time series data mining has plateaued at considering a few millions of time series objects, while much of industry and science sits on billions of time series objects waiting to be explored. In this work we show that by using a combination of four novel ideas we can search and mine truly massive time series for the first time. We demonstrate the following extremely unintuitive fact; in large datasets we can exactly search under DTW much more quickly than the current state-of-the-art Euclidean distance search algorithms. We demonstrate our work on the largest set of time series experiments ever attempted. In particular, the largest dataset we consider is larger than the combined size of all of the time series datasets considered in all data mining papers ever published. We show that our ideas allow us to solve higher-level time series data mining problem such as motif discovery and clustering at scales that would otherwise be untenable. In addition to mining massive datasets, we will show that our ideas also have implications for real-time monitoring of data streams, allowing us to handle much faster arrival rates and/or use cheaper and lower powered devices than are currently possible.
 
 #index 1882581
 #* Towards Automatic Classification on Flying Insects Using Inexpensive Sensors
 #@ 10823 38014 3861 14792
 #t 2011
 #c ICMLA '11 Proceedings of the 2011 10th International Conference on Machine Learning and Applications and Workshops - Volume 01
+#! Insects are intimately connected to human life and well being, in both positive and negative senses. While it is estimated that insects pollinate at least two-thirds of the all food consumed by humans, malaria, a disease transmitted by the female mosquito of the Anopheles genus, kills approximately one million people per year. Due to the importance of insects to humans, researchers have developed an arsenal of mechanical, chemical, biological and educational tools to help mitigate insects' harmful effects, and to enhance their beneficial effects. However, the efficiency of such tools depends on knowing the time and location of migrations/infestations/population as early as possible. Insect detection and counting is typically performed by means of traps, usually "sticky traps", which are regularly collected and manually analyzed. The main problem is that this procedure is expensive in terms of materials and human time, and creates a lag between the time the trap is placed and inspected. This lag may only be a week, but in the case of say, mosquitoes or sand flies, this can be more than half their adult life span. We are developing an inexpensive optical sensor that uses a laser beam to detect, count and ultimately classify flying insects from distance. Our objective is to use classification techniques to provide accurate real-time counts of disease vectors down to the species/sex level. This information can be used by public health workers, government and non-government organizations to plan the optimal intervention strategies in the face of limited resources. In this work, we present some preliminary results of our research, conducted with three insect species. We show that using our simple sensor we can accurately classify these species using their wing-beat frequency as feature. We further discuss how we can augment the sensor with other sources of information in order to scale our ideas to classify a larger number of species.
 
 #index 1978793
 #* Clustering Time Series Using Unsupervised-Shapelets
 #@ 41697 28660 3861
 #t 2012
 #c ICDM '12 Proceedings of the 2012 IEEE 12th International Conference on Data Mining
+#! Time series clustering has become an increasingly important research topic over the past decade. Most existing methods for time series clustering rely on distances calculated from the entire raw data using the Euclidean distance or Dynamic Time Warping distance as the distance measure. However, the presence of significant noise, dropouts, or extraneous data can greatly limit the accuracy of clustering in this domain. Moreover, for most real world problems, we cannot expect objects from the same class to be equal in length. As a consequence, most work on time series clustering only considers the clustering of individual time series "behaviors," e.g., individual heart beats or individual gait cycles, and contrives the time series in some way to make them all equal in length. However, contriving the data in such a way is often a harder problem than the clustering itself. In this work, we show that by using only some local patterns and deliberately ignoring the rest of the data, we can mitigate the above problems and cluster time series of different lengths, i.e., cluster one heartbeat with multiple heartbeats. To achieve this we exploit and extend a recently introduced concept in time series data mining called shapelets. Unlike existing work, our work demonstrates for the first time the unintuitive fact that shapelets can be learned from unlabeled time series. We show, with extensive empirical evaluation in diverse domains, that our method is more accurate than existing methods. Moreover, in addition to accurate clustering results, we show that our work also has the potential to give insights into the domains to which it is applied.
 
