@@ -9,66 +9,66 @@ import numpy as np
 from doc_meta import DocMeta
 
 class ExpertFinder(object):
-	def __init__(self, K, docs_meta, P, A, V, 
-		alpha, beta, gamma, omega=None, 
-		dist_phrase=None, smartinit=False):
-		self.K = K
-		self.alpha = alpha  # hyperparameter for topics prior
-		self.beta = beta  # hyperparameter for authors prior
-		self.gamma = gamma  # hyperparameter for venues prior
-		self.docs_meta = docs_meta
-		self.P = P
-		self.A = A
-		self.V = V
+    def __init__(self, K, docs_meta, P, A, V, 
+        alpha, beta, gamma, omega=None, 
+    dist_phrase=None, smartinit=False):
+	self.K = K
+	self.alpha = alpha  # hyperparameter for topics prior
+	self.beta = beta  # hyperparameter for authors prior
+	self.gamma = gamma  # hyperparameter for venues prior
+	self.docs_meta = docs_meta
+	self.P = P
+	self.A = A
+	self.V = V
 
-		self.n_z = np.zeros(K) + alpha  # paper count for each topic
-		self.n_z_a = np.zeros((K, A)) + beta  # paper count for each topic and author
-		self.n_z_v = np.zeros((K, V)) + gamma  # paper count for each topic and venue
-		self.z_d = np.empty(len(docs_meta))  # topic for each paper
+	self.n_z = np.zeros(K) + alpha  # paper count for each topic
+	self.n_z_a = np.zeros((K, A)) + beta  # paper count for each topic and author
+	self.n_z_v = np.zeros((K, V)) + gamma  # paper count for each topic and venue
+	self.z_d = np.empty(len(docs_meta))  # topic for each paper
 
-		self.dist_z_a = np.array([np.random.dirichlet(beta) for z in xrange(K)])
-		self.dist_z_v = np.array([np.random.dirichlet(gamma) for z in xrange(K)])
+	self.dist_z_a = np.array([np.random.dirichlet(beta) for z in xrange(K)])
+	self.dist_z_v = np.array([np.random.dirichlet(gamma) for z in xrange(K)])
 
-		self.dist_z_p = dist_phrase
-		self.infer_dist_phrase = False
-		if dist_phrase == None:
-			assert omega != None
-			self.infer_dist_phrase = True
-			self.n_z_p = np.zeros((K, P)) + omega
-			self.dist_z_p = np.array([np.random.dirichlet(omega) for z in xrange(K)])
+	self.dist_z_p = dist_phrase
+	self.infer_dist_phrase = False
+	if dist_phrase == None:
+        assert omega != None
+	    self.infer_dist_phrase = True
+	    self.n_z_p = np.zeros((K, P)) + omega
+        self.dist_z_p = np.array([np.random.dirichlet(omega) for z in xrange(K)])
 
-		for doc_meta in docs_meta:
-			# assign initial topic label for each paper
-			if smartinit:
-				pass
-			else:
-				#z = np.random.randint(0, K)
-				z = 0
-				self.z_d[doc_meta.doc_id] = z
+	for doc_meta in docs_meta:
+        # assign initial topic label for each paper
+	    if smartinit:
+            pass
+	    else:
+            #z = np.random.randint(0, K)
+		    z = 0
+		    self.z_d[doc_meta.doc_id] = z
 			
-			# set initial counters
-			self.n_z[z] += 1
-			for a in doc_meta.authors:
-				self.n_z_a[z][a] += 1
-			self.n_z_v[z][doc_meta.venue] += 1
-			if self.infer_dist_phrase:
-				for p, cnt in doc_meta.phrases.items():
-					self.n_z_p[z][p] += cnt
-
-	def infer(self):
-		"""learning once interation"""
-		# sample topic label for each paper
-		for doc_meta in self.docs_meta:
-			# discount the current topic label
-			z = self.z_d[doc_meta.doc_id]
-			self.n_z[z] -= 1
-			for a in doc_meta.authors:
-				self.n_z_a[z][a] -= 1
-			self.n_z_v[z][doc_meta.venue] -= 1
+	    # set initial counters
+	    self.n_z[z] += 1
+	    for a in doc_meta.authors:
+            self.n_z_a[z][a] += 1
+	    self.n_z_v[z][doc_meta.venue] += 1
+	    if self.infer_dist_phrase:
+            for p, cnt in doc_meta.phrases.items():
+		        self.n_z_p[z][p] += cnt
+    
+    def infer(self):
+        """learning once interation"""
+	    # sample topic label for each paper
+	    for doc_meta in self.docs_meta:
+	        # discount the current topic label
+	        z = self.z_d[doc_meta.doc_id]
+	        self.n_z[z] -= 1
+	        for a in doc_meta.authors:
+	            self.n_z_a[z][a] -= 1
+	        self.n_z_v[z][doc_meta.venue] -= 1
 			
-			if self.infer_dist_phrase:
-				for p, cnt in doc_meta.phrases.items():
-					self.n_z_p[z][p] -= cnt
+	        if self.infer_dist_phrase:
+	            for p, cnt in doc_meta.phrases.items():
+                    self.n_z_p[z][p] -= cnt
 
 			# sample a new topic label
 			p_z = np.empty(self.K)
@@ -119,3 +119,4 @@ if __name__ == "__main__":
 	test1 = ExpertFinder(2, [doc1, doc2], 5, 3, 2, alpha, beta, gamma, None, dist_phrase)
 	test2 = ExpertFinder(2, [doc1, doc2], 5, 3, 2, alpha, beta, gamma, omega)
 	expert_finding_learning(test1, 10)
+	print "hello!"
