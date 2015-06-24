@@ -19,6 +19,7 @@ class ExpertFinder(object):
         self.alpha = alpha  # hyperparameter for topics prior
         self.beta = beta  # hyperparameter for authors prior
         self.gamma = gamma  # hyperparameter for venues prior
+        self.omega = omega
         self.docs_meta = docs_meta
         self.P = P
         self.A = A
@@ -31,7 +32,7 @@ class ExpertFinder(object):
 
         self.dist_z_a = np.array([np.random.dirichlet(beta) for z in
                                  xrange(K)])
-        self.dist_z_v = np.array([np.random.dirichlet(gamma) for z in
+        self.dist_z_v = np.array([np.random.dirichlet(gamma[z]) for z in
                                  xrange(K)])
 
         self.dist_z_p = dist_phrase
@@ -40,7 +41,7 @@ class ExpertFinder(object):
             assert omega != None
             self.infer_dist_phrase = True
             self.n_z_p = np.zeros((K, P)) + omega
-            self.dist_z_p = np.array([np.random.dirichlet(omega)
+            self.dist_z_p = np.array([np.random.dirichlet(omega[z])
                     for z in xrange(K)])
 
         for doc_meta in docs_meta:
@@ -48,8 +49,8 @@ class ExpertFinder(object):
             if smartinit:
                 pass
             else:
-                # z = np.random.randint(0, K)
-                z = 0
+                z = np.random.randint(0, K)
+                #z = 0
                 self.z_d[doc_meta.doc_id] = z
 
             # set initial counters
@@ -109,23 +110,32 @@ class ExpertFinder(object):
                 np.array([np.random.dirichlet(self.n_z_p[z]) for z in
                          xrange(self.K)])
 
-
 def expert_finding_learning(expert_finder, iteration):
     for i in xrange(iteration):
         expert_finder.infer()
         print 'iter: ', i
-        print 'topics: ', expert_finder.z_d
-        print 'author: ', expert_finder.dist_z_a
-        print 'venues: ', expert_finder.dist_z_v
-        print '\n'
+        #print 'topics: ', expert_finder.z_d
+        #print 'author: ', expert_finder.dist_z_a
+        #print 'venues: ', expert_finder.dist_z_v[0]
+        #print '\n'
+    print "final docs: "
+    print expert_finder.z_d
+    print "final venues: "
+    log_final_result(expert_finder.K, expert_finder.dist_z_v)
+    print "final authors: "
+    log_final_result(expert_finder.K, expert_finder.dist_z_a)
 
+def log_final_result(num_topic, result_to_log):
+    for i in xrange(num_topic):
+        print 'topic {i} : {result_i}\n'.format(i=i, result_i=result_to_log[i])
+    print '\n'
 
 if __name__ == '__main__':
     alpha = np.ones(2)
     beta = np.ones(3)
     gamma = np.ones(2)
     omega = np.ones(5)
-    doc1 = DocMeta(0, {0: 2, 1: 2, 4: 1}, [0, 1], 0)
+    '''doc1 = DocMeta(0, {0: 2, 1: 2, 4: 1}, [0, 1], 0)
     doc2 = DocMeta(1, {
         3: 2,
         4: 1,
@@ -157,4 +167,5 @@ if __name__ == '__main__':
         gamma,
         omega,
         )
-    expert_finding_learning(test1, 10)
+    expert_finding_learning(test1, 10)'''
+    print "hello world"

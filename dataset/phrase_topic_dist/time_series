@@ -1,0 +1,33 @@
+series	341	0.22977
+prediction	83	0.217294
+multivariate time series	5766	0.201847
+subsequence matching	8791	0.189968
+stock price	3797	0.185256
+temporal	218	0.185256
+subsequences	2038	0.179976
+multi dimensional	1292	0.179976
+moving average	8992	0.173909
+multi variate	17384	0.173909
+patterns	30	0.173909
+seasonal	5734	0.166667
+autoregressive	3868	0.166667
+observations	213	0.166667
+past	531	0.166667
+box jenkins	30677	0.157426
+streaming time series	17493	0.157426
+similar subsequences	37806	0.157426
+rules	60	0.157426
+data	1	0.157426
+chaotic time series	14654	0.143797
+change point detection	16468	0.143797
+timeseries	25953	0.143797
+arma models	33443	0.143797
+dynamic time warping	3689	0.143797
+plot	1966	0.143797
+abstraction	617	0.143797
+segment	266	0.143797
+extension	146	0.143797
+operations	92	0.143797
+complex	59	0.143797
+sequence	57	0.143797
+space	54	0.143797
