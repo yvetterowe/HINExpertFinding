@@ -2,6 +2,8 @@ import os
 
 import numpy as np
 
+from authority_propagate import HITS, propagate_with_hits
+from build_hin import HIN
 from doc_meta import DocMeta
 import expert_finder
 
@@ -15,23 +17,20 @@ def generate_doc_meta_from_file(input_file):
 		papers = fin.read().split('\n\n')
 		for paper in papers:
 			attr = paper.split('\n')
-			doc_id = int(attr[0]) - 1
-			authors = [int(a) for a in attr[1].split()]
-			#reference = attr[2]
+			doc_id = int(attr[0])
+			authors = set([int(a) for a in attr[1].split()])
+			citations = set([int(d) for d in attr[2].split()])
 			phrases = dict()
 			for phrase_id in [int(p) for p in attr[3].strip().split()]:
-				if not phrase_id in phrases:
-					phrases[phrase_id] = 1
-				else:
-					phrases[phrase_id] += 1
+				phrases.setdefault(phrase_id, 1)
 				phrase_set.add(phrase_id)
-			#print attr[4]
 			venue = int(attr[4])
 			doc_meta_lst.append(DocMeta(
 				doc_id=doc_id,
 				phrases=phrases,
 				authors=authors,
-				venue=venue))
+				venue=venue,
+				citations=citations))
 			#print "aha!"
 	return doc_meta_lst, phrase_set
 
@@ -71,8 +70,6 @@ def check_phrase_dist(expert_finder, phrase_set):
 		phrase_dist = [expert_finder.dist_z_p[i][phrase] for i in xrange(expert_finder.K)]
 		max_dist = max(phrase_dist)
 		print phrase, phrase_dist.index(max_dist)
-
-
 
 
 """ 
@@ -120,21 +117,14 @@ fpm_topic_dist = generate_phrase_topic_dist(PHRASE_DIST_PATH + 'frequent_pattern
 ds_topic_dist = generate_phrase_topic_dist(PHRASE_DIST_PATH + 'data_stream', 27451, 0.4)
 phrase_dist = [background_topic_dist, fpm_topic_dist, ds_topic_dist]
 
-
-# experiment 3
-'''k = 2 #0 and background topic!#
-p = 27451 #1-27451#
-a = 6 #1-5#
-v = 6 #1-5#
-alpha = np.ones(k)
-beta = np.ones(a)
-gamma = np.array([1, 100, 30, 10, 1, 1])
-back_phrase_prob = 1.0 / p
-background_topic_dist = [back_phrase_prob] * p
-phrase_dist = [background_topic_dist, generate_phrase_topic_dist(PHRASE_DIST_PATH + 'frequent_pattern_mining', 27451, 0.4)]
-#print "aha", phrase_dist[0][0:10], phrase_dist[0][4357], phrase_dist[0][27450]'''
-
+# structure data from raw text
 docs, phrase_set = generate_doc_meta_from_file('toy_corpus')
+toy_hin = HIN(from_file=False, docs_meta=docs)
+
+# learn expert finder
+# after this process, the topic ranking distribution are
+# stored in the ExpertFinder instance
+# these are the rough ranking score (first step score...)
 toy_expert_finder = expert_finder.ExpertFinder(
 	K=k,
 	docs_meta=docs,
@@ -147,8 +137,15 @@ toy_expert_finder = expert_finder.ExpertFinder(
 	#omega=omega,
 	dist_phrase=phrase_dist,
 	)
+expert_finder.expert_finding_learning(toy_expert_finder, 3000)
+#print "check final phrases"
+#check_phrase_dist(toy_expert_finder, phrase_set)
 
-expert_finder.expert_finding_learning(toy_expert_finder, 5000)
-
-print "check final phrases"
-check_phrase_dist(toy_expert_finder, phrase_set)
+# propagate authority score within each sub-topic (filter out false positive)
+# after this process, the final score for each topic
+# are store in HITS instantces (one instance per subtopic)
+toy_hits_1 = HITS(toy_expert_finder, 1, toy_hin)
+toy_hits_2 = HITS(toy_expert_finder, 2, toy_hin)
+propagate_with_hits(toy_hits_1, 300)
+propagate_with_hits(toy_hits_2, 300)
+print toy_hits_1.auth_authors
