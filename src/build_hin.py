@@ -15,7 +15,7 @@ def parse_number(line):
 #TODO: map conference to conference id = =
 #TODO: add #！abtract to all papers
 class HIN(object):
-	def __init__(self, from_file=True, input_file=None, docs_meta=None):
+	def __init__(self, from_file=False, input_file=None, docs_meta=None, citation_dampen=0.2):
 		# initialize csr_matrix constructor arguments
 		indptr_d_d, indptr_d_a, indptr_d_v = [0], [0], [0]
 		data_d_d, data_d_a, data_d_v = [], [], []
@@ -27,7 +27,10 @@ class HIN(object):
 				# citations
 				for citation in doc_meta.citations:
 					indices_d_d.append(citation)
-					data_d_d.append(1)
+					if (doc_meta.authors & docs_meta[citation].authors):
+						data_d_d.append(citation_dampen)
+					else:
+						data_d_d.append(1)
 				# authors
 				for author in doc_meta.authors:
 					indices_d_a.append(author)
@@ -42,9 +45,9 @@ class HIN(object):
 
 			# construct sparse adjacency matrices for 
 			# paper-citation, paper-author, paper-venue relationships
-			self.mat_d_a = csr_matrix((data_d_a, indices_d_a, indptr_d_a), dtype=int)
-			self.mat_d_d = csr_matrix((data_d_d, indices_d_d, indptr_d_d), dtype=int)
-			self.mat_d_v = csr_matrix((data_d_v, indices_d_v, indptr_d_v), dtype=int)
+			self.mat_d_a = csr_matrix((data_d_a, indices_d_a, indptr_d_a), dtype=float)
+			self.mat_d_d = csr_matrix((data_d_d, indices_d_d, indptr_d_d), dtype=float)
+			self.mat_d_v = csr_matrix((data_d_v, indices_d_v, indptr_d_v), dtype=float)
 
 			self.mat_a_d = self.mat_d_a.transpose(copy=True)
 			self.mat_d_d_t = self.mat_d_d.transpose(copy=True)

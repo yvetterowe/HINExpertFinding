@@ -119,7 +119,7 @@ phrase_dist = [background_topic_dist, fpm_topic_dist, ds_topic_dist]
 
 # structure data from raw text
 docs, phrase_set = generate_doc_meta_from_file('toy_corpus')
-toy_hin = HIN(from_file=False, docs_meta=docs)
+toy_hin = HIN(docs_meta=docs)
 
 # learn expert finder
 # after this process, the topic ranking distribution are
@@ -145,7 +145,16 @@ expert_finder.expert_finding_learning(toy_expert_finder, 3000)
 # after this process, the final score for each topic
 # are store in HITS instantces (one instance per subtopic)
 toy_hits_1 = HITS(toy_expert_finder, 1, toy_hin)
-toy_hits_2 = HITS(toy_expert_finder, 2, toy_hin)
+#toy_hits_2 = HITS(toy_expert_finder, 2, toy_hin)
 propagate_with_hits(toy_hits_1, 300)
-propagate_with_hits(toy_hits_2, 300)
+#propagate_with_hits(toy_hits_2, 300)
+#print "auth authors"
+#print toy_hits_1.auth_authors
+print "auth papers"
+print toy_hits_1.auth_papers
+print "hub papers"
+print toy_hits_1.hub_papers
+print "auth authors"
 print toy_hits_1.auth_authors
+print "auth venues"
+print toy_hits_1.auth_venues
