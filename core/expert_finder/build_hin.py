@@ -4,7 +4,8 @@
 # build heterogenous information network
 # Author: Hao Luo
 
-from scipy.sparse import csr_matrix
+from scipy.sparse import csr_matrix, csc_matrix
+from sklearn.preprocessing import normalize
 
 from doc_meta import DocMeta
 
@@ -14,28 +15,54 @@ def parse_number(line):
 
 #TODO: map conference to conference id = =
 #TODO: add #！abtract to all papers
+"""
+Parameters:
+	citation_dampen: the score authors receive for citing their own papers
+	dense: True - adjacency matrices are dense. False - sparse.
+	d_a_norm_opt: 0 - only boolean value
+				  1 - uniform normalized weights (eg. )
+				  2 - (TODO: for noamlized weights according to co-author order)
+	a_d_norm_opt: 0 for boolean value
+				  1 for uniform normalized weights (eg. all authors receives 1/n)
+				  2 for weighted normalize eights (eg. first author receives 2/3
+				  	and second author receives 1/3 of the paper authority score)
+"""
 class HIN(object):
-	def __init__(self, from_file=False, input_file=None, docs_meta=None, citation_dampen=0.2):
+	def __init__(self, from_file=False, input_file=None, docs_meta=None, 
+				 citation_dampen=0.2,
+				 d_a_norm_opt=1,
+				 a_d_norm_opt=1,
+				 ):
 		# initialize csr_matrix constructor arguments
 		indptr_d_d, indptr_d_a, indptr_d_v = [0], [0], [0]
 		data_d_d, data_d_a, data_d_v = [], [], []
 		indices_d_d, indices_d_a, indices_d_v = [], [], []
+		row_a_d, col_a_d, data_a_d = [], [], []
 	
 		# construct HIN cached DocMeta instances
 		if not from_file:
 			for doc_meta in docs_meta:
-				# citations
+				# citations - m_d_d
 				for citation in doc_meta.citations:
 					indices_d_d.append(citation)
-					if (doc_meta.authors & docs_meta[citation].authors):
+					if set(doc_meta.authors) & set(docs_meta[citation].authors):
 						data_d_d.append(citation_dampen)
 					else:
 						data_d_d.append(1)
-				# authors
-				for author in doc_meta.authors:
+				# authors m_d_a & m_a_d
+				num_authors = len(doc_meta.authors)
+				for idx, author in enumerate(doc_meta.authors):
+					# m_d_a
 					indices_d_a.append(author)
 					data_d_a.append(1)
-				# venue
+					# m_a_d
+					col_a_d.append(doc_meta.doc_id)
+					row_a_d.append(author)
+					if a_d_norm_opt in [0,1]:
+						data_a_d.append(1)
+					else:
+						data_a_d.append(num_authors - idx)					
+				# venue m_d_v
 				indices_d_v.append(doc_meta.venue)
 				data_d_v.append(1)
 
@@ -44,15 +71,17 @@ class HIN(object):
 				indptr_d_v.append(len(indices_d_v))
 
 			# construct sparse adjacency matrices for 
-			# paper-citation, paper-author, paper-venue relationships
-			self.mat_d_a = csr_matrix((data_d_a, indices_d_a, indptr_d_a), dtype=float)
-			self.mat_d_d = csr_matrix((data_d_d, indices_d_d, indptr_d_d), dtype=float)
-			self.mat_d_v = csr_matrix((data_d_v, indices_d_v, indptr_d_v), dtype=float)
+			# paper-author, paper-citation, paper-venue relationships
+			self.m_d_a = csr_matrix((data_d_a, indices_d_a, indptr_d_a), dtype=float)
+			self.m_d_d = csr_matrix((data_d_d, indices_d_d, indptr_d_d), dtype=float)
+			self.m_d_v = csr_matrix((data_d_v, indices_d_v, indptr_d_v), dtype=float)
+			self.m_a_d = csc_matrix((data_a_d, (row_a_d, col_a_d)), dtype=float)
+			self.m_v_d = self.m_d_v.transpose(copy=True)
 
-			self.mat_a_d = self.mat_d_a.transpose(copy=True)
-			self.mat_d_d_t = self.mat_d_d.transpose(copy=True)
-			self.mat_v_d = self.mat_d_v.transpose(copy=True)
-			
+			if d_a_norm_opt == 1:
+				self.m_d_a = normalize(self.m_d_a, norm='l1', axis=0)
+			if a_d_norm_opt != 0:
+				self.m_a_d = normalize(self.m_a_d, norm='l1', axis=0)		
 			return
 
 		# TODO: construct HIN directly from file

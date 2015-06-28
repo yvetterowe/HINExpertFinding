@@ -1,3 +1,4 @@
+
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
@@ -15,6 +16,6 @@ class DocMeta(object):
         ):
         self.doc_id = doc_id
         self.phrases = phrases  # {phrase:count} dict
-        self.authors = authors  # author id set
+        self.authors = authors  # author id list - index is order
         self.venue = venue  # venue id
         self.citations  = citations # citation id set
