@@ -148,7 +148,14 @@ def test_expert_finder_hits():
     print "auth venues"
     print toy_hits_1.auth_venues
 
+# experiment 2.2
+# test if BibRank works
+# If it works, all intuitions should be proved...
+def test_expert_finder_bibrank():
+    pass
+
 if __name__ == '__main__':
     #test_expert_finder_topic_modeling()
     #test_expert_finder_hierarchy_rocks()
-    test_expert_finder_hits()
+    #test_expert_finder_hits()
+    test_expert_finder_bibrank()
