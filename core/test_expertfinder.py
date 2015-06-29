@@ -10,7 +10,7 @@ import expert_finder.expert_finder as ef
 import expert_finder.hits as hits
 import expert_finder.build_hin as build_hin
 
-DATA_PATH = os.path.dirname(__file__) + 'dataset/'
+DATA_PATH = os.path.dirname(__file__) + '/dataset/'
 PHRASE_DIST_PATH = DATA_PATH + 'phrase_topic_dist/'
 k = 3  # topic 0 plays as background topic
 p = 27451  # 1-27451#
@@ -25,7 +25,7 @@ def generate_doc_meta_from_file(input_file):
         for paper in papers:
             attr = paper.split('\n')
             doc_id = int(attr[0])
-            authors = set([int(a) for a in attr[1].split()])
+            authors = [int(a) for a in attr[1].split()] # order does matter
             citations = set([int(d) for d in attr[2].split()])
             phrases = dict()
             for phrase_id in [int(p) for p in attr[3].strip().split()]:
@@ -148,11 +148,6 @@ def test_expert_finder_hits():
     print "auth venues"
     print toy_hits_1.auth_venues
 
-# experiment 2.2
-# test if BibRank works
-# If it works, all intuitions should be proved...
-def test_expert_finder_bibrank():
-    pass
 
 if __name__ == '__main__':
     #test_expert_finder_topic_modeling()

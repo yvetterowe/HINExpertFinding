@@ -5,7 +5,7 @@ import os
 
 import expert_finder.build_hin as build_hin
 import expert_finder.doc_meta as dm
-from toy_experiment import generate_doc_meta_from_file
+from test_expertfinder import generate_doc_meta_from_file
 
 DATA_PATH = os.path.dirname(__file__) + 'dataset/'
 

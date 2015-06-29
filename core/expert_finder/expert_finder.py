@@ -111,13 +111,16 @@ class ExpertFinder(object):
                          xrange(self.K)])
 
 def expert_finding_learning(expert_finder, iteration):
+    fout = open('author_log', 'w')
     for i in xrange(iteration):
         expert_finder.infer()
         print 'iter: ', i
         #print 'topics: ', expert_finder.z_d
         #print 'author: ', expert_finder.dist_z_a
+        fout.write("iter {i}: {dist}\n".format(i=i, dist=expert_finder.dist_z_a[1]))
         #print 'venues: ', expert_finder.dist_z_v[0]
         #print '\n'
+    fout.close()
     print "final docs: "
     print expert_finder.z_d
     print "final venues: "
@@ -127,5 +130,5 @@ def expert_finding_learning(expert_finder, iteration):
 
 def log_final_result(num_topic, result_to_log):
     for i in xrange(num_topic):
-        print 'topic {i} : {result_i}\n'.format(i=i, result_i=result_to_log[i])
+        print 'topic {i} : {result_i}'.format(i=i, result_i=result_to_log[i])
     print '\n'

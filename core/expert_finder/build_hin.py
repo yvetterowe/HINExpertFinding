@@ -4,6 +4,8 @@
 # build heterogenous information network
 # Author: Hao Luo
 
+import numpy as np
+
 from scipy.sparse import csr_matrix, csc_matrix
 from sklearn.preprocessing import normalize
 
@@ -28,7 +30,8 @@ Parameters:
 				  	and second author receives 1/3 of the paper authority score)
 """
 class HIN(object):
-	def __init__(self, from_file=False, input_file=None, docs_meta=None, 
+	def __init__(self, p, a, v,
+				 from_file=False, input_file=None, docs_meta=None,  
 				 citation_dampen=0.2,
 				 d_a_norm_opt=1,
 				 a_d_norm_opt=1,
@@ -72,11 +75,14 @@ class HIN(object):
 
 			# construct sparse adjacency matrices for 
 			# paper-author, paper-citation, paper-venue relationships
-			self.m_d_a = csr_matrix((data_d_a, indices_d_a, indptr_d_a), dtype=float)
-			self.m_d_d = csr_matrix((data_d_d, indices_d_d, indptr_d_d), dtype=float)
-			self.m_d_v = csr_matrix((data_d_v, indices_d_v, indptr_d_v), dtype=float)
-			self.m_a_d = csc_matrix((data_a_d, (row_a_d, col_a_d)), dtype=float)
+			d = len(docs_meta)
+			self.m_d_a = csr_matrix((data_d_a, indices_d_a, indptr_d_a), shape=(d,a), dtype=float)
+			self.m_d_d = csr_matrix((data_d_d, indices_d_d, indptr_d_d), shape=(d,d), dtype=float)
+			self.m_d_v = csr_matrix((data_d_v, indices_d_v, indptr_d_v), shape=(d,v), dtype=float)
+			self.m_a_d = csc_matrix((data_a_d, (row_a_d, col_a_d)), shape=(a,d), dtype=float)
 			self.m_v_d = self.m_d_v.transpose(copy=True)
+			#TODO
+			self.m_a_a = np.ones((a,a))
 
 			if d_a_norm_opt == 1:
 				self.m_d_a = normalize(self.m_d_a, norm='l1', axis=0)
