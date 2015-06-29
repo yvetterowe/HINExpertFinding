@@ -41,13 +41,16 @@ class HIN(object):
 		data_d_d, data_d_a, data_d_v = [], [], []
 		indices_d_d, indices_d_a, indices_d_v = [], [], []
 		row_a_d, col_a_d, data_a_d = [], [], []
+		row_d_d, col_d_d, data_d_d = [], [], []
 	
 		# construct HIN cached DocMeta instances
 		if not from_file:
 			for doc_meta in docs_meta:
 				# citations - m_d_d
 				for citation in doc_meta.citations:
-					indices_d_d.append(citation)
+					#indices_d_d.append(citation)
+					col_d_d.append(doc_meta.doc_id)
+					row_d_d.append(citation)
 					if set(doc_meta.authors) & set(docs_meta[citation].authors):
 						data_d_d.append(citation_dampen)
 					else:
@@ -70,15 +73,16 @@ class HIN(object):
 				data_d_v.append(1)
 
 				indptr_d_a.append(len(indices_d_a))
-				indptr_d_d.append(len(indices_d_d))
+				#indptr_d_d.append(len(indices_d_d))
 				indptr_d_v.append(len(indices_d_v))
 
 			# construct sparse adjacency matrices for 
 			# paper-author, paper-citation, paper-venue relationships
 			d = len(docs_meta)
 			self.m_d_a = csr_matrix((data_d_a, indices_d_a, indptr_d_a), shape=(d,a), dtype=float)
-			self.m_d_d = csr_matrix((data_d_d, indices_d_d, indptr_d_d), shape=(d,d), dtype=float)
 			self.m_d_v = csr_matrix((data_d_v, indices_d_v, indptr_d_v), shape=(d,v), dtype=float)
+			#self.m_d_d = csr_matrix((data_d_d, indices_d_d, indptr_d_d), shape=(d,d), dtype=float)
+			self.m_d_d = csc_matrix((data_d_d, (row_d_d, col_d_d)), shape=(d,d), dtype=float)
 			self.m_a_d = csc_matrix((data_a_d, (row_a_d, col_a_d)), shape=(a,d), dtype=float)
 			self.m_v_d = self.m_d_v.transpose(copy=True)
 			#TODO
