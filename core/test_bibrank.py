@@ -67,7 +67,7 @@ def test_bibrank_junk_venue_sucks():
 	bibrank.propagte_with_bibrank(toy_bibrank, 250)
 	print_result(toy_bibrank)
 
-# experiment 2.3
+# experiment 2.3 - 2.6
 def test_bibrank_cite_own_paper_sucks():
 	toy_bibrank = bibrank.BibRank(
 		toy_expert_finder, 1, toy_hin,

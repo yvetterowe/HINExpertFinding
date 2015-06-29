@@ -34,7 +34,7 @@ class HIN(object):
 				 from_file=False, input_file=None, docs_meta=None,  
 				 citation_dampen=0.2,
 				 d_a_norm_opt=1,
-				 a_d_norm_opt=1,
+				 a_d_norm_opt=2,
 				 ):
 		# initialize csr_matrix constructor arguments
 		indptr_d_d, indptr_d_a, indptr_d_v = [0], [0], [0]
