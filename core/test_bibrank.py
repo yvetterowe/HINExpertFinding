@@ -61,7 +61,7 @@ def print_result(bibrank):
 # experiment 2.2
 def test_bibrank_junk_venue_sucks():
 	toy_bibrank = bibrank.BibRank(toy_expert_finder, 1, toy_hin,
-								  gamma_da=0.6,gamma_dv=0.4, gamma_dd=0.0,
+								  gamma_da=0.5,gamma_dv=0.5, gamma_dd=0.0,
     							  gamma_ad=1.0, gamma_aa=0.0)
 
 	bibrank.propagte_with_bibrank(toy_bibrank, 250)
@@ -78,5 +78,5 @@ def test_bibrank_cite_own_paper_sucks():
 
 
 if __name__ == "__main__":
-    #test_bibrank_junk_venue_sucks()	
-    test_bibrank_cite_own_paper_sucks()
+    test_bibrank_junk_venue_sucks()	
+    #test_bibrank_cite_own_paper_sucks()

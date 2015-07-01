@@ -22,26 +22,28 @@ def test_hin_weight_adj():
 		doc_id=0,
         phrases=dict(),
         authors=[1,2],
-        venue=0,
+        venue=1,
         citations=set([1,2]),
         )
 	doc2= dm.DocMeta(
 		doc_id=1,
         phrases=dict(),
         authors=[0,1],
-        venue=0,
+        venue=1,
         citations=set([2]),
         )
 	doc3= dm.DocMeta(
 		doc_id=2,
         phrases=dict(),
-        authors=[2],
-        venue=0,
+        authors=[0,2,1],
+        venue=2,
         citations=set([1,0]),
         )
-	toy_hin = build_hin.HIN(docs_meta=[doc1, doc2, doc3], a_d_norm_opt=2)
-	print toy_hin.m_d_a.toarray()
-	print toy_hin.m_a_d.toarray()
+	toy_hin = build_hin.HIN(1,3, 3,docs_meta=[doc1, doc2, doc3])
+	#print toy_hin.m_d_a.toarray()
+	#print toy_hin.m_a_d.toarray()
+	print toy_hin.m_d_v.toarray()
+	print toy_hin.m_v_d.toarray()
 
 
 if __name__ == "__main__":

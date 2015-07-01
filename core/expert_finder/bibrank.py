@@ -5,12 +5,14 @@
 # Author: Hao Luo
 
 import numpy as np
+from sklearn.preprocessing import normalize
 
 class BibRank(object):
 	def __init__(self, expert_finder, topic_label, hin,
-				 eps_d=0.8, eps_a=0.6, eps_v=0.8,
+				 eps_d=0.15, eps_a=0.15, eps_v=0.15,
 				 gamma_da=1.0/3, gamma_dv=1.0/3, gamma_dd=1.0/3,
 				 gamma_ad=1.0/2, gamma_aa=1.0/2,
+				 average_prop=False
 				 ):
 		# propagation factor should sum up to 1
 		assert gamma_da + gamma_dv + gamma_dd == 1.0
@@ -26,13 +28,16 @@ class BibRank(object):
 		# two strategies: 
 		#    1) either 1 or 0 
         #    2) topical ranking distributino inferred from ExpertFinder
-		#self.init_rank_papers = np.array([1 if z == topic_label else 0 
-		#							      for z in expert_finder.z_d])
-		#self.init_rank_authors = expert_finder.dist_z_a[topic_label]
-		#self.init_rank_venues = expert_finder.dist_z_v[topic_label]
-		self.init_rank_papers = np.array([1] * len(expert_finder.z_d))
-		self.init_rank_authors = np.array([0.166] * 5 + [0.166])
-		self.init_rank_venues = np.array([0.75, 0.25, 0.1])
+		#self.init_rank_papers = normalize(np.array([1.0 if z == topic_label else 0.0 
+		#							      			for z in expert_finder.z_d]),
+		#								  norm='l1').transpose()
+		#self.init_rank_authors = normalize(expert_finder.dist_z_a[topic_label], norm='l1').transpose()
+		#self.init_rank_venues = normalize(expert_finder.dist_z_v[topic_label], norm='l2').transpose()
+
+		# test
+		self.init_rank_papers = normalize(np.ones(len(expert_finder.z_d)), norm='l1').transpose()
+		self.init_rank_authors = normalize(np.ones(6), norm='l1').transpose()
+		self.init_rank_venues = normalize(np.array([1000.0, 20.0, 1.0]), norm='l1').transpose()
 		print "initial authors: ", self.init_rank_authors
 		print "initial venues: ", self.init_rank_venues
 

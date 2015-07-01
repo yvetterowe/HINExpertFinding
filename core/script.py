@@ -13,6 +13,7 @@ def play_random_lst(lst):
 	sample_num = random.randint(0,len(lst)-1)
 	return ' '.join([str(x) for x in random.sample(lst, sample_num)])
 
+#print normalize(np.ones(6), norm='l1').transpose()
 
-ll = [i for i in xrange(40,49)]
-print play_random_lst(ll)
+tt = np.ones((3,4))
+print sum(tt)
