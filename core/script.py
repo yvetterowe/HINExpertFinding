@@ -1,19 +1,32 @@
+#import numpy as np
+#from scipy.sparse import csr_matrix
+#from sklearn.preprocessing import normalize
+#import random
 import numpy as np
-from scipy.sparse import csr_matrix
-from sklearn.preprocessing import normalize
-import random
 
-def print_list(lst, num_col):
-	num_row = len(lst) / num_col
-	return '\n'.join([(' '.join([str(x) for x in lst[i*num_col:(i+1)*num_col]])) for i in xrange(num_row)])
-#print print_list([1,2,3,4,5,6], 3)
+from sklearn.feature_extraction.text import TfidfTransformer, TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.datasets import fetch_20newsgroups
+from textblob import TextBlob
 
+count_vect = CountVectorizer()
+twenty_train = ["aaa bbb ccc aaa", "aaa ccc ddd ddd ddd"]
+X_train_counts = count_vect.fit_transform(twenty_train)
 
-def play_random_lst(lst):
-	sample_num = random.randint(0,len(lst)-1)
-	return ' '.join([str(x) for x in random.sample(lst, sample_num)])
+print X_train_counts.toarray() 
+print "word count:"
+print count_vect.vocabulary_
+print count_vect.vocabulary_[u'aaa']
 
-#print normalize(np.ones(6), norm='l1').transpose()
+tfidf_vect = TfidfVectorizer()
+idf = tfidf_vect.fit_transform(twenty_train)
+print "idf"
+print tfidf_vect.idf_
+print "sorted_index"
+y = np.argsort(tfidf_vect.idf_)[::-1]
 
-tt = np.ones((3,4))
-print sum(tt)
+print "vocab"
+print tfidf_vect.vocabulary_
+print tfidf_vect.get_feature_names()
+for word in y:
+	print tfidf_vect.get_feature_names()[word]
