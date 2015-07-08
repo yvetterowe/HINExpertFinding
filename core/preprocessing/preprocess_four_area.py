@@ -206,6 +206,38 @@ venue_name_id = {
 	'ECMLPKDD' : 22,
 }
 
+def reindex_paper(input_file, output_file):
+	pass
+
+def delete_invalid_citations(input_file, output_file):
+	with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
+		papers = fin.read().split('\n\n')
+		paper_ids = set()
+		for paper in papers:
+			meta = paper.split('\n')
+			paper_id = int(meta[0].split()[1])
+			paper_ids.add(paper_id)
+
+		absent_cnt = 0
+		total_cnt = 0
+		for paper in papers:
+			meta = paper.split('\n')
+			fout.write("{before_citation}\n".format(before_citation='\n'.join(meta[0:5])))
+			for line in meta[5:-1]:
+				cite = int(line.split()[1])
+				total_cnt += 1
+				if not cite in paper_ids:
+					absent_cnt += 1	
+					print cite
+				else:
+					fout.write("{cite}\n".format(cite=line))
+			last_line_prefix = meta[-1].split()[0]
+			if last_line_prefix == '#!':
+				fout.write("{abstract}\n".format(abstract=meta[-1]))
+			fout.write("\n")
+		print "ahahaha finally ", absent_cnt, total_cnt
+
+
 if __name__ == "__main__":
 	#valid_format(DATA_PATH + 'AP_after_1996_four_area_index_new',
 	#	DATA_PATH + 'AP_after_1996_four_area_index_new_valid_abstract')
@@ -222,7 +254,7 @@ if __name__ == "__main__":
 
 	#filter_by_venue(DATA_PATH + 'AMiner-Paper.txt', DATA_PATH + 'v_sigkdd', ['ACM SIGKDD'])
 
-	extract_papers_by_venues(DATA_PATH + 'AMiner-Paper-after1996.txt', venue_feature_dict, venue_name_id)
+	'''extract_papers_by_venues(DATA_PATH + 'AMiner-Paper-after1996.txt', venue_feature_dict, venue_name_id)
 	
 	extract_papers_by_venues_special_cases(DATA_PATH + 'AMiner-Paper-after1996.txt',
 		'ICDE',
@@ -259,4 +291,5 @@ if __name__ == "__main__":
 		venue_name_id,
 		['ECML PKDD', 'ECML/PKDD'],
 		[],
-		)
+		)'''
+	delete_invalid_citations(DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid.txt', DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites.txt')
