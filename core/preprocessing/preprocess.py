@@ -1,57 +1,29 @@
 import operator
 import os.path
-from nlp_preprocessing import *
-from nlp_preprocessing import NPChuncker
+#from nlp_preprocessing import *
+#from nlp_preprocessing import NPChuncker
 
 DATA_PATH = os.path.dirname(__file__) + '/../dataset/'
-
-CONFERENCE_LIST = ['IJCAI', \
-				   'AAAI', \
-				   'ICDE', \
-				   'VLDB', \
-				   'SIGMOD', \
-				   'SIGIR', \
-				   'ICML', \
-				   'CVPR', \
-				   'CIKM', \
-				   'KDD', \
-				   'WWW', \
-				   'PAKDD', \
-				   'PODS', \
-				   'ICDM', \
-				   'ECML', \
-				   'PKDD', \
-				   'EDBT', \
-				   'SDM', \
-				   'ECIR', \
-				   'WSDM', \
-				   ]
 
 def filter_by_attr(input_file, output_file, attr_key, attr_value):
 	with open(input_file, 'r') as INPUT:
 		with open(output_file, 'w') as OUTPUT:
 			paper_list = INPUT.read().split('\n\n')
+			cnt = 0
 			for paper in paper_list:
 				attr_list = paper.split('\n')
+				#print "aha"
+				#print attr_list[0:4]
 				valid = False
 				if attr_key == 'year':
-					paper_year = attr_list[3].split(' ')[1]
+					paper_year = attr_list[4].split(' ')[1]
 					#print paper_year
 					valid = paper_year and int(paper_year) >= attr_value
-				elif attr_key == 'conference':
-					paper_conf = attr_list[4].split(' ')
-					find = False
-					for segment in paper_conf:
-						for conf in attr_value:
-							if segment.find(conf) != -1:
-								find = True
-								break
-						if find:
-							valid = True
-							print paper_conf
-							break
 				if valid:
-					OUTPUT.write('{paper}\n\n'.format(paper=paper))
+					print cnt
+					extract_paper = '\n'.join(attr_list[0:3]) + '\n' + '\n'.join(attr_list[4:])
+					OUTPUT.write('{paper}\n\n'.format(paper=extract_paper))
+					cnt += 1
 
 def extract_titles_by_author(input_file, output_file, target_author):
 	with open(input_file, 'r') as INPUT:
@@ -83,7 +55,10 @@ def indexify(input_file, output_index_file, output_author_file, black_list):
 		author_num = 0
 
 		OUTPUT = open(output_index_file, 'w')
+		cnt = 0
 		for paper in paper_list:
+			print cnt
+			cnt += 1
 			attr_list = paper.split('\n')
 			for attr in attr_list:
 				if attr[1] in black_list:
@@ -203,9 +178,11 @@ def main():
 	#norm_file(DATA_PATH + 'topic_ir', DATA_PATH + 'topic_ir_norm', False, True)
 
 	'''extract papers for candidate authors'''
-	extract_paper_by_author(
-		[961, 9413, 2438, 2, 578, 968, 1849, 3214, 19945, 12695, 3861],
-		DATA_PATH + 'AP_after_1996_four_area_index')
+	#extract_paper_by_author(
+	#	[961, 9413, 2438, 2, 578, 968, 1849, 3214, 19945, 12695, 3861],
+	#	DATA_PATH + 'AP_after_1996_four_area_index')
+	#filter_by_attr(DATA_PATH + 'AMiner-Paper.txt', DATA_PATH + 'AMiner-Paper-after1996.txt', 'year', 1996)
+	indexify(DATA_PATH + 'AMiner-Paper-after1996-23venues.txt', DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid.txt', DATA_PATH+'author_id', [])
 
 if __name__ == '__main__':
 	main()
