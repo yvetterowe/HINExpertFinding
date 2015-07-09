@@ -1,0 +1,823 @@
+#index 629708
+#* gSpan: Graph-Based Substructure Pattern Mining
+#@ 9413 961
+#t 2002
+#c ICDM '02 Proceedings of the 2002 IEEE International Conference on Data Mining
+#! We investigate new approaches for frequent graph-basedpattern mining in graph datasets and propose a novel algorithmcalled gSpan (graph-based Substructure pattern mining),which discovers frequent substructures without candidategeneration. gSpan builds a new lexicographic orderamong graphs, and maps each graph to a unique minimumDFS code as its canonical label. Based on this lexico-graphicorder, gSpan adopts the depth-first search strategyto mine frequent connected subgraphs efficiently. Our performancestudy shows that gSpan substantially outperformsprevious algorithms, sometimes by an order of magnitude.
+
+#index 727913
+#* TSP: Mining Top-K Closed Sequential Patterns
+#@ 9352 9413 961
+#t 2003
+#c ICDM '03 Proceedings of the Third IEEE International Conference on Data Mining
+#% 329537
+#% 459006
+#% 463903
+#% 464996
+#% 577256
+#% 629644
+#% 631985
+#% 729938
+#! Sequential pattern mining has been studied extensivelyin data mining community.Most previous studies requirethe specification of a minimum support threshold to performthe mining.However, it is difficult for users to providean appropriate threshold in practice.To overcomethis difficulty, we propose an alternative task: mining top-kfrequent closed sequential patterns of length no less thanmin_l, where k is the desired number of closed sequentialpatterns to be mined, and min_l is the minimum length ofeach pattern.We mine closed patterns since they are compactrepresentations of frequent patterns.We developed an efficient algorithm, called TSP, whichmakes use of the length constraint and the properties of top-kclosed sequential patterns to perform dynamic support-raisingand projected database-pruning.Our extensive performancestudy shows that TSP outperforms the closed sequentialpattern mining algorithm even when the latter isrunning with the best tuned minimum support threshold.
+
+#index 729938
+#* CloseGraph: mining closed frequent graph patterns
+#@ 9413 961
+#t 2003
+#c Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 300120
+#% 410276
+#% 465003
+#% 466644
+#% 481290
+#% 577218
+#% 629603
+#% 629630
+#% 629646
+#% 629708
+#! Recent research on pattern discovery has progressed form mining frequent itemsets and sequences to mining structured patterns including trees, lattices, and graphs. As a general data structure, graph can model complicated relations among data with wide applications in bioinformatics, Web exploration, and etc. However, mining large graph patterns in challenging due to the presence of an exponential number of frequent subgraphs. Instead of mining all the subgraphs, we propose to mine closed frequent graph patterns. A graph g is closed in a database if there exists no proper supergraph of g that has the same support as g. A closed graph pattern mining algorithm, CloseGraph, is developed by exploring several interesting pruning methods. Our performance study shows that CloseGraph not only dramatically reduces unnecessary subgraphs to be generated but also substantially increases the efficiency of mining, especially in the presence of large graph patterns.
+
+#index 765429
+#* Graph indexing: a frequent structure-based approach
+#@ 9413 850 961
+#t 2004
+#c SIGMOD '04 Proceedings of the 2004 ACM SIGMOD international conference on Management of data
+#% 344549
+#% 378391
+#% 397359
+#% 435373
+#% 443133
+#% 466644
+#% 479465
+#% 480656
+#% 629603
+#% 629646
+#% 629708
+#% 654452
+#% 660000
+#% 729938
+#% 729942
+#% 731608
+#% 1015336
+#! Graph has become increasingly important in modelling complicated structures and schemaless data such as proteins, chemical compounds, and XML documents. Given a graph query, it is desirable to retrieve graphs quickly from a large database via graph-based indices. In this paper, we investigate the issues of indexing graphs and propose a novel solution by applying a graph mining technique. Different from the existing path-based methods, our approach, called gIndex, makes use of frequent substructure as the basic indexing feature. Frequent substructures are ideal candidates since they explore the intrinsic characteristics of the data and are relatively stable to database updates. To reduce the size of index structure, two techniques, size-increasing support constraint and discriminative fragments, are introduced. Our performance study shows that gIndex has 10 times smaller index size, but achieves 3--10 times better performance in comparison with a typical path-based method, GraphGrep. The gIndex approach not only provides and elegant solution to the graph indexing problem, but also demonstrates how database indexing and query processing can benefit form data mining, especially frequent pattern mining. Furthermore, the concepts developed here can be applied to indexing sequences, trees, and other complicated structures as well.
+
+#index 769931
+#* IncSpan: incremental mining of sequential patterns in large database
+#@ 9360 9413 961
+#t 2004
+#c Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 287242
+#% 425006
+#% 459006
+#% 463903
+#% 464204
+#% 464996
+#% 479971
+#% 481754
+#% 502121
+#% 577256
+#% 646296
+#% 729938
+#% 745515
+#! Many real life sequence databases grow incrementally. It is undesirable to mine sequential patterns from scratch each time when a small set of sequences grow, or when some new sequences are added into the database. Incremental algorithm should be developed for sequential pattern mining so that mining can be adapted to incremental database updates. However, it is nontrivial to mine sequential patterns incrementally, especially when the existing sequences grow incrementally because such growth may lead to the generation of many new patterns due to the interactions of the growing subsequences with the original ones. In this study, we develop an efficient algorithm, IncSpan, for incremental mining of sequential patterns, by exploring some interesting properties. Our performance study shows that IncSpan outperforms some previously proposed incremental algorithms as well as a non-incremental one with a wide margin.
+
+#index 800533
+#* Mining Closed Relational Graphs with Connectivity Constraints
+#@ 9413 12120 961
+#t 2005
+#c ICDE '05 Proceedings of the 21st International Conference on Data Engineering
+#% 313959
+#% 443723
+#% 729938
+#% 731608
+
+#index 810072
+#* Substructure similarity search in graph databases
+#@ 9413 850 961
+#t 2005
+#c Proceedings of the 2005 ACM SIGMOD international conference on Management of data
+#% 25470
+#% 121278
+#% 217812
+#% 251403
+#% 256685
+#% 260974
+#% 333679
+#% 344549
+#% 378391
+#% 408396
+#% 442886
+#% 443133
+#% 466644
+#% 765429
+#% 1015336
+#! Advanced database systems face a great challenge raised by the emergence of massive, complex structural data in bioinformatics, chem-informatics, and many other applications. The most fundamental support needed in these applications is the efficient search of complex structured data. Since exact matching is often too restrictive, similarity search of complex structures becomes a vital operation that must be supported efficiently.In this paper, we investigate the issues of substructure similarity search using indexed features in graph databases. By transforming the edge relaxation ratio of a query graph into the maximum allowed missing features, our structural filtering algorithm, called Grafil, can filter many graphs without performing pairwise similarity computations. It is further shown that using either too few or too many features can result in poor filtering performance. Thus the challenge is to design an effective feature set selection strategy for filtering. By examining the effect of different feature selection mechanisms, we develop a multi-filter composition strategy, where each filter uses a distinct and complementary subset of the features. We identify the criteria to form effective feature sets for filtering, and demonstrate that combining features with similar size and selectivity can improve the filtering and search performance significantly. Moreover, the concept presented in Grafil can be applied to searching approximate non-consecutive sequences, trees, and other complicated structures as well.
+
+#index 810094
+#* GraphMiner: a structural pattern-mining system for large disk-based graph databases and its applications
+#@ 1204 11027 11028 11029 3214 9413 961
+#t 2005
+#c Proceedings of the 2005 ACM SIGMOD international conference on Management of data
+#% 466644
+#% 629603
+#% 629646
+#% 629708
+#% 729938
+#% 769907
+#! Mining frequent structural patterns from graph databases is an important research problem with broad applications. Recently, we developed an effective index structure, ADI, and efficient algorithms for mining frequent patterns from large, disk-based graph databases [5], as well as constraint-based mining techniques. The techniques have been integrated into a research prototype system--- GraphMiner. In this paper, we describe a demo of GraphMiner which showcases the technical details of the index structure and the mining algorithms including their efficient implementation, the mining performance and the comparison with some state-of-the-art methods, the constraint-based graph-pattern mining techniques and the procedure of constrained graph mining, as well as mining real data sets in novel applications.
+
+#index 823356
+#* Summarizing itemset patterns: a profile-based approach
+#@ 9413 9360 961 12167
+#t 2005
+#c Proceedings of the eleventh ACM SIGKDD international conference on Knowledge discovery in data mining
+#% 152934
+#% 231941
+#% 237200
+#% 248791
+#% 262059
+#% 287285
+#% 338609
+#% 342610
+#% 452846
+#% 463903
+#% 478770
+#% 577214
+#% 629606
+#% 629644
+#% 722934
+#% 727667
+#% 727896
+#% 742493
+#% 765429
+#% 769876
+#% 769905
+#! Frequent-pattern mining has been studied extensively on scalable methods for mining various kinds of patterns including itemsets, sequences, and graphs. However, the bottleneck of frequent-pattern mining is not at the efficiency but at the interpretability, due to the huge number of patterns generated by the mining process.In this paper, we examine how to summarize a collection of itemset patterns using only K representatives, a small number of patterns that a user can handle easily. The K representatives should not only cover most of the frequent patterns but also approximate their supports. A generative model is built to extract and profile these representatives, under which the supports of the patterns can be easily recovered without consulting the original dataset. Based on the restoration error, we propose a quality measure function to determine the optimal value of parameter K. Polynomial time algorithms are developed together with several optimization heuristics for efficiency improvement. Empirical studies indicate that we can obtain compact summarization in real datasets.
+
+#index 823357
+#* Mining closed relational graphs with connectivity constraints
+#@ 9413 12120 961
+#t 2005
+#c Proceedings of the eleventh ACM SIGKDD international conference on Knowledge discovery in data mining
+#% 237380
+#% 282226
+#% 310514
+#% 313959
+#% 443723
+#% 465003
+#% 466644
+#% 629603
+#% 629646
+#% 629708
+#% 729933
+#% 729938
+#% 729942
+#% 729984
+#% 731608
+#% 742493
+#% 765429
+#! Relational graphs are widely used in modeling large scale networks such as biological networks and social networks. In this kind of graph, connectivity becomes critical in identifying highly associated groups and clusters. In this paper, we investigate the issues of mining closed frequent graphs with connectivity constraints in massive relational graphs where each graph has around 10K nodes and 1M edges. We adopt the concept of edge connectivity and apply the results from graph theory, to speed up the mining process. Two approaches are developed to handle different mining requests: CloseCut, a pattern-growth approach, and splat, a pattern-reduction approach. We have applied these methods in biological datasets and found the discovered patterns interesting.
+
+#index 824710
+#* Mining compressed frequent-pattern sets
+#@ 12167 961 9413 9360
+#t 2005
+#c VLDB '05 Proceedings of the 31st international conference on Very large data bases
+#% 152934
+#% 227919
+#% 248791
+#% 280409
+#% 300120
+#% 410276
+#% 420063
+#% 461909
+#% 463903
+#% 466664
+#% 479484
+#% 481290
+#% 729933
+#% 769876
+#! A major challenge in frequent-pattern mining is the sheer size of its mining results. In many cases, a high min_sup threshold may discover only commonsense patterns but a low one may generate an explosive number of output patterns, which severely restricts its usage.In this paper, we study the problem of compressing frequent-pattern sets. Typically, frequent patterns can be clustered with a tightness measure δ (called δ-cluster), and a representative pattern can be selected for each cluster. Unfortunately, finding a minimum set of representative patterns is NP-Hard. We develop two greedy methods, RPglobal and RPlocal. The former has the guaranteed compression bound but higher computational complexity. The latter sacrifices the theoretical bounds but is far more efficient. Our performance study shows that the compression quality using RPlocal is very close to RPglobal, and both can reduce the number of closed frequent patterns by almost two orders of magnitude. Furthermore, RPlocal mines even faster than FPClose[11], a very fast closed frequent-pattern mining method. We also show that RPglobal and RPlocal can be combined together to balance the quality and efficiency.
+
+#index 850729
+#* Graph indexing based on discriminative frequent structure analysis
+#@ 9413 850 961
+#t 2005
+#c ACM Transactions on Database Systems (TODS) - Special Issue: SIGMOD/PODS 2004
+#% 344549
+#% 378391
+#% 397359
+#% 435374
+#% 443133
+#% 466644
+#% 479465
+#% 480656
+#% 481290
+#% 481754
+#% 481779
+#% 601159
+#% 629603
+#% 629646
+#% 629708
+#% 654452
+#% 729938
+#% 729942
+#% 731608
+#% 1015336
+#! Graphs have become increasingly important in modelling complicated structures and schemaless data such as chemical compounds, proteins, and XML documents. Given a graph query, it is desirable to retrieve graphs quickly from a large database via indices. In this article, we investigate the issues of indexing graphs and propose a novel indexing model based on discriminative frequent structures that are identified through a graph mining process. We show that the compact index built under this model can achieve better performance in processing graph queries. Since discriminative frequent structures capture the intrinsic characteristics of the data, they are relatively stable to database updates, thus facilitating sampling-based feature extraction and incremental index maintenance. Our approach not only provides an elegant solution to the graph indexing problem, but also demonstrates how database indexing and query processing can benefit from data mining, especially frequent pattern mining. Furthermore, the concepts developed here can be generalized and applied to indexing sequences, trees, and other complicated structures as well.
+
+#index 864475
+#* Searching Substructures with Superimposed Distance
+#@ 9413 15170 961 850
+#t 2006
+#c ICDE '06 Proceedings of the 22nd International Conference on Data Engineering
+#! Efficient indexing techniques have been developed for the exact and approximate substructure search in large scale graph databases. Unfortunately, the retrieval problem of structures with categorical or geometric distance constraints is not solved yet. In this paper, we develop a method called PIS (Partition-based Graph Index and Search) to support similarity search on substructures with superimposed distance constraints. PIS selects discriminative fragments in a query graph and uses an index to prune the graphs that violate the distance constraints. We identify a criterion to distinguish the selectivity of fragments in multiple graphs and develop a partition method to obtain a set of highly selective fragments, which is able to improve the pruning performance. Experimental results show that PIS is effective in processing real graph queries.
+
+#index 864493
+#* Mining, Indexing, and Similarity Search in Graphs and Complex Structures
+#@ 961 9413 850
+#t 2006
+#c ICDE '06 Proceedings of the 22nd International Conference on Data Engineering
+#! Scalable methods for mining, indexing, and similarity search in graphs and other complex structures, such as trees, lattices, and networks, have become increasingly important in data mining and database management. This is because a large set of emerging applications need to handle new kinds of objects with complex structures, such as trees (e.g., XML data), graphs (e.g., Web, chemical structures and biological graphs) and networks (e.g., social and biological networks). Such complicated data structures pose many new challenging research problems related to data mining, data management, and similarity search that do not exist in the traditional database and data mining studies.
+
+#index 881500
+#* Extracting redundancy-aware top-k patterns
+#@ 12167 9360 9413 961
+#t 2006
+#c Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 36672
+#% 71901
+#% 158687
+#% 262112
+#% 281656
+#% 443092
+#% 478770
+#% 479816
+#% 577214
+#% 629644
+#% 769876
+#% 769893
+#% 818209
+#% 823344
+#% 823356
+#% 824710
+#% 835872
+#% 1845364
+#! Observed in many applications, there is a potential need of extracting a small set of frequent patterns having not only high significance but also low redundancy. The significance is usually defined by the context of applications. Previous studies have been concentrating on how to compute top-k significant patterns or how to remove redundancy among patterns separately. There is limited work on finding those top-k patterns which demonstrate high-significance and low-redundancy simultaneously.In this paper, we study the problem of extracting redundancy-aware top-k patterns from a large collection of frequent patterns. We first examine the evaluation functions for measuring the combined significance of a pattern set and propose the MMS (Maximal Marginal Significance) as the problem formulation. The problem is known as NP-hard. We further present a greedy algorithm which approximates the optimal solution with performance bound O(log k) (with conditions on redundancy), where k is the number of reported patterns. The direct usage of redundancy-aware top-k patterns is illustrated through two real applications: disk block prefetch and document theme extraction. Our method can also be applied to processing redundancy-aware top-k queries in traditional database.
+
+#index 960356
+#* Supporting entity search: a large-scale prototype search engine
+#@ 17986 9413 4553
+#t 2007
+#c Proceedings of the 2007 ACM SIGMOD international conference on Management of data
+#! As the Web has evolved into a data-rich repository, with the standard page view," current search engines are increasingly inadequate. While we often search for various data "entities" (e.g. phone number, paper PDF, date), today's engines only take us indirectly to pages. Therefore, we propose the concept of entity search, a significant departure from traditional document retrieval. Towards our goal of supporting entity search, in the WISDM project at UIUC we build and evaluate our prototype search engine over a 2TB Web corpus. Our demonstration shows the feasibility and promise of a large-scale system architecture to support entity search.
+
+#index 1022234
+#* EntityRank: searching entities directly and holistically
+#@ 17986 9413 4553
+#t 2007
+#c VLDB '07 Proceedings of the 33rd international conference on Very large data bases
+#% 268079
+#% 330616
+#% 577318
+#% 730022
+#% 740900
+#% 742102
+#% 754068
+#% 799737
+#% 805883
+#% 854668
+#% 869535
+#% 875001
+#% 875061
+#% 875064
+#% 956501
+#% 960235
+#% 960356
+#! As the Web has evolved into a data-rich repository, with the standard "page view," current search engines are becoming increasingly inadequate for a wide range of query tasks. While we often search for various data "entities" (e.g., phone number, paper PDF, date), today's engines only take us indirectly to pages. While entities appear in many pages, current engines only find each page individually. Toward searching directly and holistically for finding information of finer granularity, we study the problem of entity search, a significant departure from traditional document retrieval. We focus on the core challenge of ranking entities, by distilling its underlying conceptual model Impression Model and developing a probabilistic ranking framework, EntityRank, that is able to seamlessly integrate both local and global information in ranking. We evaluate our online prototype over a 2TB Web corpus, and show that EntityRank performs effectively.
+
+#index 1022279
+#* Towards graph containment search and indexing
+#@ 15196 9413 850 961 11559 19182
+#t 2007
+#c VLDB '07 Proceedings of the 33rd international conference on Very large data bases
+#% 10419
+#% 217812
+#% 223567
+#% 280409
+#% 321327
+#% 350323
+#% 378391
+#% 466644
+#% 479465
+#% 654452
+#% 729938
+#% 765429
+#% 769951
+#% 779470
+#% 780860
+#% 805893
+#% 810072
+#% 864425
+#% 905193
+#% 937108
+#% 993958
+#% 1717545
+#! Given a set of model graphs D and a query graph q, containment search aims to find all model graphs g ε D such that q contains g (q ⊇ g). Due to the wide adoption of graph models, fast containment search of graph data finds many applications in various domains. In comparison to traditional graph search that retrieves all the graphs containing q (q ⊆ g), containment search has its own indexing characteristics that have not yet been examined. In this paper, we perform a systematic study on these characteristics and propose a contrast subgraph-based indexing model, called cIndex. Contrast subgraphs capture the structure differences between model graphs and query graphs, and are thus perfect for indexing due to their high selectivity. Using a redundancy-aware feature selection process, cIndex can sort out a set of significant and distinctive contrast subgraphs and maximize its indexing capability. We show that it is NP-complete to choose the best set of indexing features, and our greedy algorithm can approximate the one-level optimal index within a ratio of 1-- 1/e. Taking this solution as a base indexing model, we further extend it to accommodate hierarchical indexing methodologies and apply data space clustering and sampling techniques to reduce the index construction time. The proposed methodology provides a general solution to containment search and indexing, not only for graphs, but also for any data with transitive relations as well. Experimental results on real test data show that cIndex achieves near-optimal pruning power on various containment search workloads, and confirms its obvious advantage over indices built for traditional graph search in this new scenario.
+
+#index 1061897
+#* Report on the First International Workshop on Mining Graphs and Complex Structures (MGCS'07)
+#@ 3108 9413
+#t 2008
+#c ACM SIGMOD Record
+#! The fast accumulation of graph data is witnessed in a wide range of scientific and commercial domains. Typical graph data include chemical compounds, circuits, biological networks, computer networks, 2D/3D models, XML, RDF and workflows. Graph is regarded as a critical data type for knowledge discovery in bioinformatics, chemical informatics, computer vision, informational retrieval, computer security, semantic web, social science, etc., just to name a few. Unfortunately, due to the lack of graph management and mining tools, it is hard, if not impossible, for users to search and analyze any reasonably large collection of graphs. There is an imminent need for scalable methods for mining and search in graphs and other complex structures.
+
+#index 1063502
+#* Mining significant graph patterns by leap search
+#@ 9413 9360 961 850
+#t 2008
+#c Proceedings of the 2008 ACM SIGMOD international conference on Management of data
+#% 152934
+#% 280409
+#% 299985
+#% 342604
+#% 420126
+#% 466644
+#% 577214
+#% 629708
+#% 722920
+#% 729938
+#% 765429
+#% 813990
+#% 840863
+#% 915228
+#% 915350
+#% 960305
+#% 976826
+#% 1117006
+#% 1272179
+#% 1558464
+#% 1673557
+#! With ever-increasing amounts of graph data from disparate sources, there has been a strong need for exploiting significant graph patterns with user-specified objective functions. Most objective functions are not antimonotonic, which could fail all of frequency-centric graph mining algorithms. In this paper, we give the first comprehensive study on general mining method aiming to find most significant patterns directly. Our new mining framework, called LEAP (Descending Leap Mine), is developed to exploit the correlation between structural similarity and significance similarity in a way that the most significant pattern could be identified quickly by searching dissimilar graph patterns. Two novel concepts, structural leap search and frequency descending mining, are proposed to support leap search in graph pattern space. Our new mining method revealed that the widely adopted branch-and-bound search in data mining literature is indeed not the best, thus sketching a new picture on scalable graph pattern discovery. Empirical results show that LEAP achieves orders of magnitude speedup in comparison with the state-of-the-art method. Furthermore, graph classifiers built on mined patterns outperform the up-to-date graph kernel method in terms of efficiency and accuracy, demonstrating the high promise of such patterns.
+
+#index 1083649
+#* Direct mining of discriminative and essential frequent patterns via model-based search tree
+#@ 2485 14886 9360 17596 9413 961 15637 17636
+#t 2008
+#c Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 300120
+#% 342604
+#% 463903
+#% 464996
+#% 466483
+#% 466644
+#% 481290
+#% 729938
+#% 769891
+#% 810064
+#% 813990
+#% 823384
+#% 824699
+#% 840863
+#% 915350
+#% 937794
+#% 1063502
+#% 1206650
+#! Frequent patterns provide solutions to datasets that do not have well-structured feature vectors. However, frequent pattern mining is non-trivial since the number of unique patterns is exponential but many are non-discriminative and correlated. Currently, frequent pattern mining is performed in two sequential steps: enumerating a set of frequent patterns, followed by feature selection. Although many methods have been proposed in the past few years on how to perform each separate step efficiently, there is still limited success in eventually finding highly compact and discriminative patterns. The culprit is due to the inherent nature of this widely adopted two-step approach. This paper discusses these problems and proposes a new and different method. It builds a decision tree that partitions the data onto different nodes. Then at each node, it directly discovers a discriminative pattern to further divide its examples into purer subsets. Since the number of examples towards leaf level is relatively small, the new approach is able to examine patterns with extremely low global support that could not be enumerated on the whole dataset by the two-step method. The discovered feature vectors are more accurate on some of the most difficult graph as well as frequent itemset problems than most recently proposed algorithms but the total size is typically 50% or more smaller. Importantly, the minimum support of some discriminative patterns can be extremely low (e.g. 0.03%). In order to enumerate these low support patterns, state-of-the-art frequent pattern algorithm either cannot finish due to huge memory consumption or have to enumerate 101 to 103 times more patterns before they can even be found. Software and datasets are available by contacting the author.
+
+#index 1083691
+#* Efficient ticket routing by resolution sequence mining
+#@ 17510 10689 20766 9413 20767
+#t 2008
+#c Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 258498
+#% 259602
+#% 329537
+#% 420063
+#% 459021
+#% 463903
+#% 464996
+#% 577256
+#% 630984
+#% 631914
+#% 768666
+#% 772836
+#% 864813
+#% 1678914
+#% 1709206
+#% 1808839
+#! IT problem management calls for quick identification of resolvers to reported problems. The efficiency of this process highly depends on ticket routing---transferring problem ticket among various expert groups in search of the right resolver to the ticket. To achieve efficient ticket routing, wise decision needs to be made at each step of ticket transfer to determine which expert group is likely to be, or to lead to the resolver. In this paper, we address the possibility of improving ticket routing efficiency by mining ticket resolution sequences alone, without accessing ticket content. To demonstrate this possibility, a Markov model is developed to statistically capture the right decisions that have been made toward problem resolution, where the order of the Markov model is carefully chosen according to the conditional entropy obtained from ticket data. We also design a search algorithm, called Variable-order Multiple active State search(VMS), that generates ticket transfer recommendations based on our model. The proposed framework is evaluated on a large set of real-world problem tickets. The results demonstrate that VMS significantly improves human decisions: Problem resolvers can often be identified with fewer ticket transfers.
+
+#index 1116998
+#* Efficient Discovery of Frequent Approximate Sequential Patterns
+#@ 15170 9413 961 850
+#t 2007
+#c ICDM '07 Proceedings of the 2007 Seventh IEEE International Conference on Data Mining
+#! We propose an efficient algorithm for mining frequent approximate sequential patterns under the Hamming distance model. Our algorithm gains its efficiency by adopting a "break-down-and-build-up" methodology. The "breakdown" is based on the observation that all occurrences of a frequent pattern can be classified into groups, which we call strands. We developed efficient algorithms to quickly mine out all strands by iterative growth. In the "build-up" stage, these strands are grouped up to form the support sets from which all approximate patterns would be identified. A salient feature of our algorithm is its ability to grow the frequent patterns by iteratively assembling building blocks of significant sizes in a local search fashion. By avoiding incremental growth and global search, we achieve greater efficiency without losing the completeness of the mining result. Our experimental studies demonstrate that our algorithm is efficient in mining globally repeating approximate sequential patterns that would have been missed by existing methods.
+
+#index 1117041
+#* gApprox: Mining Frequent Approximate Patterns from a Massive Network
+#@ 15196 9413 15170 961
+#t 2007
+#c ICDM '07 Proceedings of the 2007 Seventh IEEE International Conference on Data Mining
+#! Recently, there arise a large number of graphs with massive sizes and complex structures in many new applications, such as biological networks, social networks, and the Web, demanding powerful data mining methods. Due to inherent noise or data diversity, it is crucial to address the issue of approximation, if one wants to mine patterns that are potentially interesting with tolerable variations. In this paper, we investigate the problem of mining frequent approximate patterns from a massive network and propose a method called gApprox. gApprox not only finds approximate network patterns, which is the key for many knowledge discovery applications on structural data, but also enriches the library of graph mining methodologies by introducing several novel techniques such as: (1) a complete and redundancy-free strategy to explore the new pattern space faced by gApprox; and (2) transform "frequent in an approximate sense" into an anti-monotonic constraint so that it can be pushed deep into the mining process. Systematic empirical studies on both real and synthetic data sets show that frequent approximate patterns mined from the worm protein-protein interaction network are biologically interesting and gApprox is both effective and efficient.
+
+#index 1127581
+#* EasyTicket: a ticket routing recommendation engine for enterprise problem resolution
+#@ 17510 10689 20766 9413 20767
+#t 2008
+#c Proceedings of the VLDB Endowment
+#% 730082
+#% 1083691
+#! Managing problem tickets is a key issue in IT service industry. A large service provider may handle thousands of problem tickets from its customers on a daily basis. The efficiency of processing these tickets highly depends on ticket routing---transferring problem tickets among expert groups in search of the right resolver to the ticket. Despite that many ticket management systems are available, ticket routing in these systems is still manually operated by support personnel. In this demo, we introduce EasyTicket, a ticket routing recommendation engine that helps automate this process. By mining ticket history data, we model an enterprise social network that represents the functional relationships among various expert groups in ticket routing. Based on this network, our system then provides routing recommendations to new tickets. Our experimental studies on 1.4 million real-world problem tickets show that on average, EasyTicket can improve the efficiency of ticket routing by 35%.
+
+#index 1176876
+#* Graph OLAP: Towards Online Analytical Processing on Graphs
+#@ 15196 9413 15170 961 850
+#t 2008
+#c ICDM '08 Proceedings of the 2008 Eighth IEEE International Conference on Data Mining
+#! OLAP (On-Line Analytical Processing) is an important notion in data analysis. Recently, more and more graph or networked data sources come into being. There exists a similar need to deploy graph analysis from different perspectives and with multiple granularities. However, traditional OLAP technology cannot handle such demands because it does not consider the links among individual data tuples. In this paper, we develop a novel graph OLAP framework, which presents a multi-dimensional and multi-level view over graphs. The contributions of this work are two-fold. First, starting from basic definitions, i.e., what are dimensions and measures in the graph OLAP scenario, we develop a conceptual framework for data cubes on graphs. We also look into different semantics of OLAP operations, and classify the framework into two major subcases: informational OLAP and topological OLAP. Then, with more emphasis on informational OLAP (topological OLAP will be covered in a future study due to the lack of space), we show how a graph cube can be materialized by calculating a special kind of measure called aggregated graph and how to implement it efficiently. This includes both full materialization and partial materialization where constraints are enforced to obtain an iceberg cube. We can see that the aggregated graphs, which depend on the graph properties of underlying networks, are much harder to compute than their traditional OLAP counterparts, due to the increased structural complexity of data. Empirical studies show insightful results on real datasets and demonstrate the efficiency of our proposed optimizations.
+
+#index 1206650
+#* Direct Discriminative Pattern Mining for Effective Classification
+#@ 9360 9413 961 850
+#t 2008
+#c ICDE '08 Proceedings of the 2008 IEEE 24th International Conference on Data Engineering
+#! The application of frequent patterns in classification has demonstrated its power in recent studies. It often adopts a two-step approach: frequent pattern (or classification rule) mining followed by feature selection (or rule ranking). However, this two-step process could be computationally expensive, especially when the problem scale is large or the minimum support is low. It was observed that frequent pattern mining usually produces a huge number of "patterns" that could not only slow down the mining process but also make feature selection hard to complete. In this paper, we propose a direct discriminative pattern mining approach, DDPMine, to tackle the efficiency issue arising from the two-step approach. DDPMine performs a branch-and-bound search for directly mining discriminative patterns without generating the complete pattern set. Instead of selecting best patterns in a batch, we introduce a "feature-centered" mining approach that generates discriminative patterns sequentially on a progressively shrinking FP-tree by incrementally eliminating training instances. The instance elimination effectively reduces the problem size iteratively and expedites the mining process. Empirical results show that DDPMine achieves orders of magnitude speedup without any downgrade of classification accuracy. It outperforms the state-of-the-art associative classification methods in terms of both accuracy and efficiency.
+
+#index 1206841
+#* SmallBlue: Social Network Analysis for Expertise Search and Collective Intelligence
+#@ 11546 17531 23256 4202 10508 9413
+#t 2009
+#c ICDE '09 Proceedings of the 2009 IEEE International Conference on Data Engineering
+#! SmallBlue is a social networking application that unlocks the valuable business intelligence of 'who knows what?', 'who knows whom?' and 'who knows what about whom' within an organization, without requiring explicit involvement of individuals. The aim of SmallBlue is to locate knowledgeable colleagues, communities, and knowledge networks in companies. The suite also helps users manage their personal networks, and reach out to their extended network (the friends of their friends) to find and access expertise and information.
+
+#index 1210516
+#* Graph Mining and Graph Kernels
+#@ 23711 9413
+#t 2008
+#c Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining
+
+#index 1328171
+#* Mining graph patterns efficiently via randomized summaries
+#@ 15196 29008 29048 29049 9413 961
+#t 2009
+#c Proceedings of the VLDB Endowment
+#% 300120
+#% 342604
+#% 431105
+#% 466644
+#% 480810
+#% 481290
+#% 481779
+#% 629708
+#% 745477
+#% 765429
+#% 769940
+#% 813990
+#% 823342
+#% 823347
+#% 841960
+#% 867050
+#% 869492
+#% 881466
+#% 894441
+#% 994157
+#% 1063501
+#% 1063502
+#% 1063512
+#% 1117006
+#% 1117010
+#% 1127358
+#% 1176876
+#! Graphs are prevalent in many domains such as Bioinformatics, social networks, Web and cyber-security. Graph pattern mining has become an important tool in the management and analysis of complexly structured data, where example applications include indexing, clustering and classification. Existing graph mining algorithms have achieved great success by exploiting various properties in the pattern space. Unfortunately, due to the fundamental role subgraph isomorphism plays in these methods, they may all enter into a pitfall when the cost to enumerate a huge set of isomorphic embeddings blows up, especially in large graphs. The solution we propose for this problem resorts to reduction on the data space. For each graph, we build a summary of it and mine this shrunk graph instead. Compared to other data reduction techniques that either reduce the number of transactions or compress between transactions, this new framework, called Summarize-Mine, suggests a third path by compressing within transactions. Summarize-Mine is effective in cutting down the size of graphs, thus decreasing the embedding enumeration cost. However, compression might lose patterns at the same time. We address this issue by generating randomized summaries and repeating the process for multiple rounds, where the main idea is that true patterns are unlikely to miss from all rounds. We provide strict probabilistic guarantees on pattern loss likelihood. Experiments on real malware trace data show that Summarize-Mine is very efficient, which can find interesting malware fingerprints that were not revealed previously.
+
+#index 1393168
+#* gPrune: a constraint pushing framework for graph pattern mining
+#@ 15170 9413 961 850
+#t 2007
+#c PAKDD'07 Proceedings of the 11th Pacific-Asia conference on Advances in knowledge discovery and data mining
+#% 248785
+#% 300120
+#% 310494
+#% 466644
+#% 481290
+#% 580588
+#% 629603
+#% 629623
+#% 629646
+#% 629708
+#% 674497
+#% 727845
+#% 727896
+#% 729938
+#% 765429
+#% 766666
+#% 769889
+#% 769940
+#% 769951
+#% 813034
+#% 813990
+#% 823357
+#% 1656291
+#% 1707794
+#! In graph mining applications, there has been an increasingly strong urge for imposing user-specified constraints on the mining results. However, unlike most traditional itemset constraints, structural constraints, such as density and diameter of a graph, are very hard to be pushed deep into the mining process. In this paper, we give the first comprehensive study on the pruning properties of both traditional and structural constraints aiming to reduce not only the pattern search space but the data search space as well. A new general framework, called gPrune, is proposed to incorporate all the constraints in such a way that they recursively reinforce each other through the entire mining process. A new concept, Pattern-inseparable Data-antimonotonicity, is proposed to handle the structural constraints unique in the context of graph, which, combined with known pruning properties, provides a comprehensive and unified classification framework for structural constraints. The exploration of these antimonotonicities in the context of graph pattern mining is a significant extension to the known classification of constraints, and deepens our understanding of the pruning properties of structural graph constraints.
+
+#index 1426574
+#* Towards proximity pattern mining in large graphs
+#@ 31015 9413 2451
+#t 2010
+#c Proceedings of the 2010 ACM SIGMOD International Conference on Management of data
+#% 152934
+#% 300120
+#% 443350
+#% 452821
+#% 466644
+#% 481290
+#% 502147
+#% 629603
+#% 629646
+#% 629708
+#% 742493
+#% 765429
+#% 769940
+#% 769951
+#% 813990
+#% 881466
+#% 937794
+#% 960305
+#% 1022280
+#% 1063502
+#% 1117010
+#% 1214624
+#% 1214633
+#% 1411112
+#! Mining graph patterns in large networks is critical to a variety of applications such as malware detection and biological module discovery. However, frequent subgraphs are often ineffective to capture association existing in these applications, due to the complexity of isomorphism testing and the inelastic pattern definition. In this paper, we introduce proximity pattern which is a significant departure from the traditional concept of frequent subgraphs. Defined as a set of labels that co-occur in neighborhoods, proximity pattern blurs the boundary between itemset and structure. It relaxes the rigid structure constraint of frequent subgraphs, while introducing connectivity to frequent itemsets. Therefore, it can benefit from both: efficient mining in itemsets and structure proximity from graphs. We developed two models to define proximity patterns. The second one, called Normalized Probabilistic Association (NmPA), is able to transform a complex graph mining problem to a simplified probabilistic itemset mining problem, which can be solved eficiently by a modified FP-tree algorithm, called pFP. NmPA and pFP are evaluated on real-life social and intrusion networks. Empirical results show that it not only finds interesting patterns that are ignored by the existing approaches, but also achieves high performance for finding proximity patterns in large-scale graphs.
+
+#index 1426635
+#* Mining knowledge from databases: an information network analysis approach
+#@ 961 19945 9413 850
+#t 2010
+#c Proceedings of the 2010 ACM SIGMOD International Conference on Management of data
+#% 268079
+#% 577273
+#% 865734
+#% 989654
+#% 1002279
+#% 1081580
+#% 1181261
+#% 1214701
+#% 1214717
+#% 1394202
+#! Most people consider a database is merely a data repository that supports data storage and retrieval. Actually, a database contains rich, inter-related, multi-typed data and information, forming one or a set of gigantic, interconnected, heterogeneous information networks. Much knowledge can be derived from such information networks if we systematically develop an effective and scalable database-oriented information network analysis technology. In this tutorial, we introduce database-oriented information network analysis methods and demonstrate how information networks can be used to improve data quality and consistency, facilitate data integration, and generate interesting knowledge. This tutorial presents an organized picture on how to turn a database into one or a set of organized heterogeneous information networks, how information networks can be used for data cleaning, data consolidation, and data qualify improvement, how to discover various kinds of knowledge from information networks, how to perform OLAP in information networks, and how to transform database data into knowledge by information network analysis. Moreover, we present interesting case studies on real datasets, including DBLP and Flickr, and show how interesting and organized knowledge can be generated from database-oriented information networks.
+
+#index 1451213
+#* Generative models for ticket resolution in expert networks
+#@ 31459 31460 9413 20766 10689 20767
+#t 2010
+#c Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 280817
+#% 458379
+#% 465754
+#% 730061
+#% 868135
+#% 879570
+#% 940104
+#% 1083691
+#% 1130922
+#% 1176887
+#% 1381853
+#% 1392465
+#% 1704240
+#% 1815596
+#! Ticket resolution is a critical, yet challenging, aspect of the delivery of IT services. A large service provider needs to handle, on a daily basis, thousands of tickets that report various types of problems. Many of those tickets bounce among multiple expert groups before being transferred to the group with the right expertise to solve the problem. Finding a methodology that reduces such bouncing and hence shortens ticket resolution time is a long-standing challenge. In this paper, we present a unified generative model, the Optimized Network Model (ONM), that characterizes the lifecycle of a ticket, using both the content and the routing sequence of the ticket. ONM uses maximum likelihood estimation, to represent how the information contained in a ticket is used by human experts to make ticket routing decisions. Based on ONM, we develop a probabilistic algorithm to generate ticket routing recommendations for new tickets in a network of expert groups. Our algorithm calculates all possible routes to potential resolvers and makes globally optimal recommendations, in contrast to existing classification methods that make static and locally optimal recommendations. Experiments show that our method significantly outperforms existing solutions.
+
+#index 1581921
+#* Neighborhood based fast graph search in large networks
+#@ 31015 28496 9413 20221 35356 20766
+#t 2011
+#c Proceedings of the 2011 ACM SIGMOD International Conference on Management of data
+#% 288780
+#% 333854
+#% 378391
+#% 397359
+#% 480918
+#% 601159
+#% 654452
+#% 654467
+#% 754117
+#% 765429
+#% 769891
+#% 810072
+#% 844291
+#% 864425
+#% 906561
+#% 937108
+#% 960305
+#% 989645
+#% 1022280
+#% 1044450
+#% 1127380
+#% 1206703
+#% 1318714
+#% 1426574
+#% 1506217
+#% 1523818
+#% 1523898
+#% 1523900
+#! Complex social and information network search becomes important with a variety of applications. In the core of these applications, lies a common and critical problem: Given a labeled network and a query graph, how to efficiently search the query graph in the target network. The presence of noise and the incomplete knowledge about the structure and content of the target network make it unrealistic to find an exact match. Rather, it is more appealing to find the top-k approximate matches. In this paper, we propose a neighborhood-based similarity measure that could avoid costly graph isomorphism and edit distance computation. Under this new measure, we prove that subgraph similarity search is NP hard, while graph similarity match is polynomial. By studying the principles behind this measure, we found an information propagation model that is able to convert a large network into a set of multidimensional vectors, where sophisticated indexing and similarity search algorithms are available. The proposed method, called Ness (Neighborhood Based Similarity Search), is appropriate for graphs with low automorphism and high noise, which are common in many social and information networks. Ness is not only efficient, but also robust against structural noise and information loss. Empirical results show that it can quickly and accurately find high-quality matches in large networks, with negligible cost.
+
+#index 1581924
+#* Assessing and ranking structural correlations in graphs
+#@ 20221 35359 8123 213 9413
+#t 2011
+#c Proceedings of the 2011 ACM SIGMOD International Conference on Management of data
+#% 152934
+#% 220708
+#% 252401
+#% 310514
+#% 577329
+#% 729923
+#% 729968
+#% 730089
+#% 823347
+#% 824711
+#% 881472
+#% 881553
+#% 995140
+#% 1073984
+#% 1083624
+#% 1130854
+#% 1217126
+#% 1328169
+#% 1399940
+#% 1399993
+#% 1446960
+#% 1451243
+#% 1835483
+#! Real-life graphs not only have nodes and edges, but also have events taking place, e.g., product sales in social networks and virus infection in communication networks. Among different events, some exhibit strong correlation with the network structure, while others do not. Such structural correlation will shed light on viral influence existing in the corresponding network. Unfortunately, the traditional association mining concept is not applicable in graphs since it only works on homogeneous datasets like transactions and baskets. We propose a novel measure for assessing such structural correlations in heterogeneous graph datasets with events. The measure applies hitting time to aggregate the proximity among nodes that have the same event. In order to calculate the correlation scores for many events in a large network, we develop a scalable framework, called gScore, using sampling and approximation. By comparing to the situation where events are randomly distributed in the same network, our method is able to discover events that are highly correlated with the graph structure. gScore is scalable and was successfully applied to the co-author DBLP network and social networks extracted from TaoBao.com, the largest online shopping network in China, with many interesting discoveries.
+
+#index 1673591
+#* Community mining from multi-relational networks
+#@ 8278 15094 10859 9413 961
+#t 2005
+#c PKDD'05 Proceedings of the 9th European conference on Principles and Practice of Knowledge Discovery in Databases
+#% 146494
+#% 342596
+#% 1499466
+#! Social network analysis has attracted much attention in recent years. Community mining is one of the major directions in social network analysis. Most of the existing methods on community mining assume that there is only one kind of relation in the network, and moreover, the mining results are independent of the users’ needs or preferences. However, in reality, there exist multiple, heterogeneous social networks, each representing a particular kind of relationship, and each kind of relationship may play a distinct role in a particular task. In this paper, we systematically analyze the problem of mining hidden communities on heterogeneous social networks. Based on the observation that different relations have different importance with respect to a certain query, we propose a new method for learning an optimal linear combination of these relations which can best meet the user’s expectation. With the obtained relation, better performance can be achieved for community mining.
+
+#index 1770362
+#* Towards effective partition management for large graphs
+#@ 28774 9413 40559 31015
+#t 2012
+#c SIGMOD '12 Proceedings of the 2012 ACM SIGMOD International Conference on Management of Data
+#% 124743
+#% 202286
+#% 243166
+#% 253560
+#% 273374
+#% 274612
+#% 322846
+#% 330305
+#% 340175
+#% 345693
+#% 467185
+#% 479973
+#% 519567
+#% 577329
+#% 754117
+#% 871315
+#% 893106
+#% 1022236
+#% 1206875
+#% 1215445
+#% 1318636
+#% 1426479
+#% 1426513
+#% 1464649
+#% 1506217
+#% 1523799
+#% 1581837
+#% 1581871
+#% 1586117
+#! Searching and mining large graphs today is critical to a variety of application domains, ranging from community detection in social networks, to de novo genome sequence assembly. Scalable processing of large graphs requires careful partitioning and distribution of graphs across clusters. In this paper, we investigate the problem of managing large-scale graphs in clusters and study access characteristics of local graph queries such as breadth-first search, random walk, and SPARQL queries, which are popular in real applications. These queries exhibit strong access locality, and therefore require specific data partitioning strategies. In this work, we propose a Self Evolving Distributed Graph Management Environment (Sedge), to minimize inter-machine communication during graph query processing in multiple machines. In order to improve query response time and throughput, Sedge introduces a two-level partition management architecture with complimentary primary partitions and dynamic secondary partitions. These two kinds of partitions are able to adapt in real time to changes in query workload. (Sedge) also includes a set of workload analyzing algorithms whose time complexity is linear or sublinear to graph size. Empirical results show that it significantly improves distributed graph processing on today's commodity clusters.
+
+#index 1846724
+#* Mining Knowledge from Data: An Information Network Analysis Approach
+#@ 961 19945 9413 850
+#t 2012
+#c ICDE '12 Proceedings of the 2012 IEEE 28th International Conference on Data Engineering
+#! Most objects and data in the real world are interconnected, forming complex, heterogeneous but often semistructured information networks. However, many database researchers consider a database merely as a data repository that supports storage and retrieval rather than an information-rich, inter-related and multi-typed information network that supports comprehensive data analysis, whereas many network researchers focus on homogeneous networks. Departing from both, we view interconnected, semi-structured datasets as heterogeneous, information-rich networks and study how to uncover hidden knowledge in such networks. For example, a university database can be viewed as a heterogeneous information network, where objects of multiple types, such as students, professors, courses, departments, and multiple typed relationships, such as teach and advise are intertwined together, providing abundant information. In this tutorial, we present an organized picture on mining heterogeneous information networks and introduce a set of interesting, effective and scalable network mining methods. The topics to be covered include (i) database as an information network, (ii) mining information networks: clustering, classification, ranking, similarity search, and meta path-guided analysis, (iii) construction of quality, informative networks by data mining, (iv) trend and evolution analysis in heterogeneous information networks, and (v) research frontiers. We show that heterogeneous information networks are informative, and link analysis on such networks is powerful at uncovering critical knowledge hidden in large semi-structured datasets. Finally, we also present a few promising research directions.
+
+#index 1846725
+#* Emerging Graph Queries in Linked Data
+#@ 31015 21403 9413
+#t 2012
+#c ICDE '12 Proceedings of the 2012 IEEE 28th International Conference on Data Engineering
+#! In a wide array of disciplines, data can be modeled as an interconnected network of entities, where various attributes could be associated with both the entities and the relations among them. Knowledge is often hidden in the complex structure and attributes inside these networks. While querying and mining these linked datasets are essential for various applications, traditional graph queries may not be able to capture the rich semantics in these networks. With the advent of complex information networks, new graph queries are emerging, including graph pattern matching and mining, similarity search, ranking and expert finding, graph aggregation and OLAP. These queries require both the topology and content information of the network data, and hence, different from classical graph algorithms such as shortest path, reach ability and minimum cut, which depend only on the structure of the network. In this tutorial, we shall give an introduction of the emerging graph queries, their indexing and resolution techniques, the current challenges and the future research directions.
+
+#index 1872391
+#* Integrating meta-path selection with user-guided object clustering in heterogeneous information networks
+#@ 19945 41828 961 9413 850 28701
+#t 2012
+#c Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 280819
+#% 313959
+#% 464631
+#% 466574
+#% 722902
+#% 722929
+#% 722934
+#% 769881
+#% 770782
+#% 829025
+#% 840892
+#% 876018
+#% 916785
+#% 989618
+#% 989654
+#% 995140
+#% 1002279
+#% 1063503
+#% 1117695
+#% 1125382
+#% 1181261
+#% 1214701
+#% 1474171
+#% 1565432
+#! Real-world, multiple-typed objects are often interconnected, forming heterogeneous information networks. A major challenge for link-based clustering in such networks is its potential to generate many different results, carrying rather diverse semantic meanings. In order to generate desired clustering, we propose to use meta-path, a path that connects object types via a sequence of relations, to control clustering with distinct semantics. Nevertheless, it is easier for a user to provide a few examples ("seeds") than a weighted combination of sophisticated meta-paths to specify her clustering preference. Thus, we propose to integrate meta-path selection with user-guided clustering to cluster objects in networks, where a user first provides a small set of object seeds for each cluster as guidance. Then the system learns the weights for each meta-path that are consistent with the clustering result implied by the guidance, and generates clusters under the learned weights of meta-paths. A probabilistic approach is proposed to solve the problem, and an effective and efficient iterative algorithm, PathSelClus, is proposed to learn the model, where the clustering quality and the meta-path weights are mutually enhancing each other. Our experiments with several clustering tasks in two real networks demonstrate the power of the algorithm in comparison with the baselines.
+
+#index 1872402
+#* Latent association analysis of document pairs
+#@ 31459 20221 31460 9413 20766 20767 10508
+#t 2012
+#c Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 280819
+#% 340899
+#% 722904
+#% 769906
+#% 983644
+#% 987287
+#% 1055681
+#% 1055743
+#% 1074110
+#% 1083684
+#% 1211794
+#% 1338620
+#% 1417061
+#% 1432248
+#% 1482402
+#% 1598401
+#% 1697450
+#! This paper presents Latent Association Analysis (LAA), a generative model that analyzes the topics within two document sets simultaneously, as well as the correlations between the two topic structures, by considering the semantic associations among document pairs. LAA defines a correlation factor that represents the connection between two documents, and considers the topic proportion of paired documents based on this factor. Words in the documents are assumed to be randomly generated by particular topic assignments and topic-to-word probability distributions. The paper also presents a new ranking algorithm, based on LAA, that can be used to retrieve target documents that are potentially associated with a given source document. The ranking algorithm uses the latent factor in LAA to rank target documents by the strength of their semantic associations with the source document. We evaluate the LAA algorithm with real datasets, specifically, the IT-Change and the IT-Solution document sets from the IBM IT service environment and the Symptom-Treatment document sets from Google Health. Experimental results demonstrate that the LAA algorithm significantly outperforms existing algorithms.
+
+#index 1880456
+#* Measuring two-event structural correlations on graphs
+#@ 20221 9413 42234
+#t 2012
+#c Proceedings of the VLDB Endowment
+#% 86786
+#% 220708
+#% 268079
+#% 466644
+#% 629708
+#% 765430
+#% 818916
+#% 1328169
+#% 1399940
+#% 1426574
+#% 1446960
+#% 1475163
+#% 1562244
+#% 1581924
+#! Real-life graphs usually have various kinds of events happening on them, e.g., product purchases in online social networks and intrusion alerts in computer networks. The occurrences of events on the same graph could be correlated, exhibiting either attraction or repulsion. Such structural correlations can reveal important relationships between different events. Unfortunately, correlation relationships on graph structures are not well studied and cannot be captured by traditional measures. In this work, we design a novel measure for assessing two-event structural correlations on graphs. Given the occurrences of two events, we choose uniformly a sample of "reference nodes" from the vicinity of all event nodes and employ the Kendall's τ rank correlation measure to compute the average concordance of event density changes. Significance can be efficiently assessed by τ's nice property of being asymptotically normal under the null hypothesis. In order to compute the measure in large scale networks, we develop a scalable framework using different sampling strategies. The complexity of these strategies is analyzed. Experiments on real graph datasets with both synthetic and real events demonstrate that the proposed framework is not only efficacious, but also efficient and scalable.
+
+#index 1895106
+#* Mining knowledge from interconnected data: a heterogeneous information network analysis approach
+#@ 19945 961 9413 850
+#t 2012
+#c Proceedings of the VLDB Endowment
+#% 1063512
+#% 1081580
+#% 1176876
+#% 1181261
+#% 1214701
+#% 1451159
+#% 1495579
+#% 1581917
+#% 1606073
+#% 1635098
+#% 1693927
+#% 1707456
+#% 1730734
+#% 1872391
+#! Most objects and data in the real world are interconnected, forming complex, heterogeneous but often semi-structured information networks. However, most people consider a database merely as a data repository that supports data storage and retrieval rather than one or a set of heterogeneous information networks that contain rich, inter-related, multi-typed data and information. Most network science researchers only study homogeneous networks, without distinguishing the different types of objects and links in the networks. In this tutorial, we view database and other interconnected data as heterogeneous information networks, and study how to leverage the rich semantic meaning of types of objects and links in the networks. We systematically introduce the technologies that can effectively and efficiently mine useful knowledge from such information networks.
+
+#index 1978779
+#* Inferring the Underlying Structure of Information Cascades
+#@ 40559 21403 3884 9413
+#t 2012
+#c ICDM '12 Proceedings of the 2012 IEEE 12th International Conference on Data Mining
+#! In social networks, information and influence diffuse among users as cascades. While the importance of studying cascades has been recognized in various applications, it is difficult to observe the complete structure of cascades in practice. In this paper we study the cascade inference problem following the independent cascade model, and provide a full treatment from complexity to algorithms: (a) we propose the idea of consistent trees as the inferred structures for cascades, these trees connect source nodes and observed nodes with paths satisfying the constraints from the observed temporal information. (b) We introduce metrics to measure the likelihood of consistent trees as inferred cascades, as well as several optimization problems for finding them. (c) We show that the decision problems for consistent trees are in general NP-complete, and that the optimization problems are hard to approximate. (d) We provide approximation algorithms with performance guarantees on the quality of the inferred cascades, as well as heuristics. We experimentally verify the efficiency and effectiveness of our inference algorithms, using real and synthetic data.
+

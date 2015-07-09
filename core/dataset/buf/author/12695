@@ -1,0 +1,850 @@
+#index 807389
+#* Multiple strategies detection in ontology mapping
+#@ 12695 12696 12697
+#t 2005
+#c WWW '05 Special interest tracks and posters of the 14th international conference on World Wide Web
+#% 348187
+#% 732227
+#! Ontology mapping is the task of finding semantic relationships between entities (i.e. concept, attribute and relation) of two ontologies. In the existing literatures, many (semi-)automatic approaches have found considerable interest by combining several mapping strategies (namely multi-strategy mapping). However, experiments show that multi-strategy based mapping does not always outperform its single-strategy counterpart. We here mainly consider the following questions: For a new, unseen mapping task, should one use a multi-strategy or a single-strategy? And if the task is suitable for multi-strategy, then which strategies should be selected in the combined scenario? This paper proposes an approach of multiple strategies detection for ontology mapping. The results obtained so far show that multi-strategy detection improves both on precision and recall significantly.
+
+#index 823374
+#* Email data cleaning
+#@ 12695 4267 12517 13872
+#t 2005
+#c Proceedings of the eleventh ACM SIGKDD international conference on Knowledge discovery in data mining
+#% 104443
+#% 190581
+#% 197394
+#% 211044
+#% 246836
+#% 248882
+#% 271060
+#% 340394
+#% 348147
+#% 420072
+#% 452992
+#% 464434
+#% 466892
+#% 577281
+#% 578773
+#% 643004
+#% 729939
+#% 741065
+#% 747788
+#% 766442
+#% 786564
+#% 817438
+#% 817555
+#% 817577
+#% 854636
+#! Addressed in this paper is the issue of 'email data cleaning' for text mining. Many text mining applications need take emails as input. Email data is usually noisy and thus it is necessary to clean it before mining. Several products offer email cleaning features, however, the types of noises that can be eliminated are restricted. Despite the importance of the problem, email cleaning has received little attention in the research community. A thorough and systematic investigation on the issue is thus needed. In this paper, email cleaning is formalized as a problem of non-text filtering and text normalization. In this way, email cleaning becomes independent from any specific text mining processing. A cascaded approach is proposed, which cleans up an email in four passes including non-text filtering, paragraph normalization, sentence normalization, and word normalization. As far as we know, non-text filtering and paragraph normalization have not been investigated previously. Methods for performing the tasks on the basis of Support Vector Machines (SVM) have also been proposed in this paper. Features in the models have been defined. Experimental results indicate that the proposed SVM based methods can significantly outperform the baseline methods for email cleaning. The proposed method has been applied to term extraction, a typical text mining processing. Experimental results show that the accuracy of term extraction can be significantly improved by using the data cleaning method.
+
+#index 1083734
+#* ArnetMiner: extraction and mining of academic social networks
+#@ 12695 13149 20818 20819 10893 20130
+#t 2008
+#c Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 197394
+#% 220708
+#% 280819
+#% 387427
+#% 464434
+#% 643007
+#% 722904
+#% 760866
+#% 766409
+#% 769881
+#% 769906
+#% 788094
+#% 805885
+#% 809459
+#% 817555
+#% 874510
+#% 879570
+#% 879587
+#% 939393
+#% 956501
+#% 989621
+#% 1117023
+#% 1250184
+#! This paper addresses several key issues in the ArnetMiner system, which aims at extracting and mining academic social networks. Specifically, the system focuses on: 1) Extracting researcher profiles automatically from the Web; 2) Integrating the publication data into the network from existing digital libraries; 3) Modeling the entire academic network; and 4) Providing search services for the academic network. So far, 448,470 researcher profiles have been extracted using a unified tagging approach. We integrate publications from online Web databases and propose a probabilistic framework to deal with the name ambiguity problem. Furthermore, we propose a unified modeling approach to simultaneously model topical aspects of papers, authors, and publication venues. Search services such as expertise search and people association search have been provided based on the modeling results. In this paper, we describe the architecture and main features of the system. We also present the empirical evaluation of the proposed methods.
+
+#index 1117023
+#* Social Network Extraction of Academic Researchers
+#@ 12695 20185 20818
+#t 2007
+#c ICDM '07 Proceedings of the 2007 Seventh IEEE International Conference on Data Mining
+#! This paper addresses the issue of extraction of an academic researcher social network. By researcher social network extraction, we are aimed at finding, extracting, and fusing the `semantic'-based profiling information of a researcher from the Web. Previously, social network extraction was often undertaken separately in an ad-hoc fashion. This paper first gives a formalization of the entire problem. Specifically, it identifies the `relevant documents' from the Web by a classifier. It then proposes a unified approach to perform the researcher profiling using Conditional Random Fields (CRF). It integrates publications from the existing bibliography datasets. In the integration, it proposes a constraints-based probabilistic model to name disambiguation. Experimental results on an online system show that the unified approach to researcher profiling significantly outperforms the baseline methods of using rule learning or classification. Experimental results also indicate that our method to name disambiguation performs better than the baseline method using unsupervised learning. The methods have been applied to expert finding. Experiments show that the accuracy of expert finding can be significantly improved by using the proposed methods.
+
+#index 1176930
+#* A Topic Modeling Approach and Its Integration into the Random Walk Framework for Academic Search
+#@ 12695 10198 13149
+#t 2008
+#c ICDM '08 Proceedings of the 2008 Eighth IEEE International Conference on Data Mining
+#! In this paper, we propose a unified topic modeling approach and its integration into the random walk framework for academic search. Specifically, we present a topic model for simultaneously modeling papers, authors, and publication venues. We combine the proposed topic model into the random walk framework. Experimental results show that our proposed approach for academic search significantly outperforms the baseline methods of using BM25 and language model, and those of using the existing topic models (including pLSI, LDA, and the AT model).
+
+#index 1195999
+#* A Discriminative Approach to Topic-Based Citation Recommendation
+#@ 12695 13149
+#t 2009
+#c PAKDD '09 Proceedings of the 13th Pacific-Asia Conference on Advances in Knowledge Discovery and Data Mining
+#% 92145
+#% 415107
+#% 450888
+#% 766409
+#% 891060
+#% 987287
+#% 1083734
+#! In this paper, we present a study of a novel problem, i.e. topic-based citation recommendation, which involves recommending papers to be referred to. Traditionally, this problem is usually treated as an engineering issue and dealt with using heuristics. This paper gives a formalization of topic-based citation recommendation and proposes a discriminative approach to this problem. Specifically, it proposes a two-layer Restricted Boltzmann Machine model, called RBM-CS, which can discover topic distributions of paper content and citation relationship simultaneously. Experimental results demonstrate that RBM-CS can significantly outperform baseline methods for citation recommendation.
+
+#index 1214702
+#* Social influence analysis in large-scale networks
+#@ 12695 10508 24023 24024
+#t 2009
+#c Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 92145
+#% 280819
+#% 283833
+#% 310514
+#% 492962
+#% 722904
+#% 766409
+#% 956521
+#% 956540
+#% 963669
+#% 1055681
+#% 1055737
+#% 1083624
+#% 1083641
+#% 1083734
+#% 1176930
+#% 1176961
+#% 1810385
+#! In large social networks, nodes (users, entities) are influenced by others for various reasons. For example, the colleagues have strong influence on one's work, while the friends have strong influence on one's daily life. How to differentiate the social influences from different angles(topics)? How to quantify the strength of those social influences? How to estimate the model on real large networks? To address these fundamental questions, we propose Topical Affinity Propagation (TAP) to model the topic-level social influence on large networks. In particular, TAP can take results of any topic modeling and the existing network structure to perform topic-level influence propagation. With the help of the influence analysis, we present several important applications on real data sets such as 1) what are the representative nodes on a given topic? 2) how to identify the social influences of neighboring nodes on a particular node? To scale to real large networks, TAP is designed with efficient distributed learning algorithms that is implemented and tested under the Map-Reduce framework. We further present the common characteristics of distributed learning algorithms for Map-Reduce. Finally, we demonstrate the effectiveness and efficiency of TAP on real large data sets.
+
+#index 1217197
+#* A gauss function based approach for unbalanced ontology matching
+#@ 24152 11345 20819 24153 12695 4842 10894
+#t 2009
+#c Proceedings of the 2009 ACM SIGMOD International Conference on Management of data
+#% 333990
+#% 405391
+#% 413582
+#% 465914
+#% 479783
+#% 480645
+#% 660001
+#% 790852
+#% 810078
+#% 824775
+#% 830529
+#% 896031
+#% 941135
+#% 956571
+#% 960271
+#% 993982
+#% 1063532
+#% 1409921
+#% 1705186
+#% 1728980
+#% 1730033
+#! Ontology matching, aiming to obtain semantic correspondences between two ontologies, has played a key role in data exchange, data integration and metadata management. Among numerous matching scenarios, especially the applications cross multiple domains, we observe an important problem, denoted as unbalanced ontology matching which requires to find the matches between an ontology describing a local domain knowledge and another ontology covering the information over multiple domains, is not well studied in the community. In this paper, we propose a novel Gauss Function based ontology matching approach to deal with this unbalanced ontology matching issue. Given a relative lightweight ontology which represents the local domain knowledge, we extract a "similar" sub-ontology from the corresponding heavyweight ontology and then carry out the matching procedure between this lightweight ontology and the newly generated sub-ontology. The sub-ontology generation is based on the influences between concepts in the heavyweight ontology. We propose a Gauss Function based method to properly calculate the influence values between concepts. In addition, we perform an extensive experiment to verify the effectiveness and efficiency of our proposed approach by using OAEI2007 tasks. Experimental results clearly demonstrate that our solution outperforms the existing methods in terms of precision, recall and elapsed time.
+
+#index 1305623
+#* Towards ontology learning from folksonomies
+#@ 12695 1530 3887 28545 28546
+#t 2009
+#c IJCAI'09 Proceedings of the 21st international jont conference on Artifical intelligence
+#% 406493
+#% 445448
+#% 722904
+#% 726213
+#% 840967
+#% 855601
+#% 956589
+#% 1055681
+#% 1409951
+#! A folksonomy refers to a collection of user-defined tags with which users describe contents published on the Web. With the flourish of Web 2.0, folksonomies have become an important mean to develop the Semantic Web. Because tags in folksonomies are authored freely, there is a need to understand the structure and semantics of these tags in various applications. In this paper, we propose a learning approach to create an ontology that captures the hierarchical semantic structure of folksonomies. Our experimental results on two different genres of real world data sets show that our method can effectively learn the ontology structure from the folksonomies.
+
+#index 1318662
+#* Topic Distributions over Links on Web
+#@ 12695 13149 4839 24024 18499 28656 10893 20130
+#t 2009
+#c ICDM '09 Proceedings of the 2009 Ninth IEEE International Conference on Data Mining
+#! It is well known that Web users create links with different intentions. However, a key question, which is not well studied, is how to categorize the links and how to quantify the strength of the influence of a web page on another if there is a link between the two linked web pages. In this paper, we focus on the problem of link semantics analysis, and propose a novel supervised learning approach to build a model, based on a training link-labeled and link-weighted graph where a link-label represents the category of a link and a link-weight represents the influence of one web page on the other in a link. Based on the model built, we categorize links and quantify the influence of web pages on the others in a large graph in the same application domain. We discuss our proposed approach, namely Pairwise Restricted Boltzmann Machines (PRBMs), and conduct extensive experimental studies to demonstrate the effectiveness of our approach using large real datasets.
+
+#index 1411069
+#* A mixture model for expert finding
+#@ 13149 12695 30464 20819
+#t 2008
+#c PAKDD'08 Proceedings of the 12th Pacific-Asia conference on Advances in knowledge discovery and data mining
+#% 200694
+#% 387427
+#% 413573
+#% 457933
+#% 466574
+#% 766409
+#% 768898
+#% 769895
+#% 769967
+#% 869504
+#% 879570
+#% 956501
+#% 987261
+#% 1117023
+#% 1390152
+#% 1650298
+#% 1656345
+#! This paper addresses the issue of identifying persons with expertise knowledge on a given topic. Traditional methods usually estimate the relevance between the query and the support documents of candidate experts using, for example, a language model. However, the language model lacks the ability of identifying semantic knowledge, thus results in some right experts cannot be found due to not occurrence of the query terms in the support documents. In this paper, we propose a mixture model based on Probabilistic Latent Semantic Analysis (PLSA) to estimate a hidden semantic theme layer between the terms and the support documents. The hidden themes are used to capture the semantic relevance between the query and the experts. We evaluate our mixture model in a real-world system, ArnetMiner. Experimental results indicate that the proposed model outperforms the language models.
+
+#index 1451159
+#* Mining advisor-advisee relationships from research publication networks
+#@ 24023 961 31407 12695 20185 24022 31408
+#t 2010
+#c Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 261205
+#% 268079
+#% 387427
+#% 727824
+#% 801324
+#% 891559
+#% 1000502
+#% 1176886
+#% 1214701
+#% 1214703
+#% 1269756
+#% 1465175
+#% 1810385
+#! Information network contains abundant knowledge about relationships among people or entities. Unfortunately, such kind of knowledge is often hidden in a network where different kinds of relationships are not explicitly categorized. For example, in a research publication network, the advisor-advisee relationships among researchers are hidden in the coauthor network. Discovery of those relationships can benefit many interesting applications such as expert finding and research community analysis. In this paper, we take a computer science bibliographic network as an example, to analyze the roles of authors and to discover the likely advisor-advisee relationships. In particular, we propose a time-constrained probabilistic factor graph model (TPFG), which takes a research publication network as input and models the advisor-advisee relationship mining problem using a jointly likelihood objective function. We further design an efficient learning algorithm to optimize the objective function. Based on that our model suggests and ranks probable advisors for every author. Experimental results show that the proposed approach infer advisor-advisee relationships efficiently and achieves a state-of-the-art accuracy (80-90%). We also apply the discovered advisor-advisee relationships to bole search, a specific expert finding task and empirical study shows that the search performance can be effectively improved (+4.09% by NDCG@5).
+
+#index 1451245
+#* Social action tracking via noise tolerant time-varying factor graphs
+#@ 31489 12695 10508 31490 31491
+#t 2010
+#c Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 246836
+#% 283833
+#% 342596
+#% 351347
+#% 464434
+#% 528019
+#% 577217
+#% 729923
+#% 754107
+#% 853535
+#% 1035581
+#% 1055737
+#% 1083624
+#% 1083641
+#% 1083675
+#% 1083734
+#% 1190127
+#% 1214658
+#% 1214696
+#% 1214699
+#% 1214702
+#% 1214703
+#% 1214722
+#% 1355040
+#! It is well known that users' behaviors (actions) in a social network are influenced by various factors such as personal interests, social influence, and global trends. However, few publications systematically study how social actions evolve in a dynamic social network and to what extent different factors affect the user actions. In this paper, we propose a Noise Tolerant Time-varying Factor Graph Model (NTT-FGM) for modeling and predicting social actions. NTT-FGM simultaneously models social network structure, user attributes and user action history for better prediction of the users' future actions. More specifically, a user's action at time t is generated by her latent state at t, which is influenced by her attributes, her own latent state at time t-1 and her neighbors' states at time t and t-1. Based on this intuition, we formalize the social action tracking problem using the NTT-FGM model; then present an efficient algorithm to learn the model, by combining the ideas from both continuous linear system and Markov random field. Finally, we present a case study of our model on predicting future social actions. We validate the model on three different types of real-world data sets. Qualitatively, our model can uncover some interesting patterns of the social dynamics. Quantitatively, experimental results show that the proposed method outperforms several baseline methods for action prediction.
+
+#index 1481049
+#* A Combination Approach to Web User Profiling
+#@ 12695 20818 20185 13149
+#t 2010
+#c ACM Transactions on Knowledge Discovery from Data (TKDD)
+#% 73441
+#% 197394
+#% 234992
+#% 246836
+#% 280819
+#% 340948
+#% 375017
+#% 387427
+#% 419139
+#% 452448
+#% 464434
+#% 466892
+#% 722904
+#% 760866
+#% 766409
+#% 769881
+#% 769906
+#% 788094
+#% 805885
+#% 809459
+#% 816181
+#% 817555
+#% 854636
+#% 874510
+#% 879570
+#% 881505
+#% 937552
+#% 939393
+#% 989621
+#% 1019190
+#% 1022353
+#% 1083734
+#% 1176930
+#% 1250184
+#% 1272187
+#% 1696329
+#! In this article, we study the problem of Web user profiling, which is aimed at finding, extracting, and fusing the “semantic”-based user profile from the Web. Previously, Web user profiling was often undertaken by creating a list of keywords for the user, which is (sometimes even highly) insufficient for main applications. This article formalizes the profiling problem as several subtasks: profile extraction, profile integration, and user interest discovery. We propose a combination approach to deal with the profiling tasks. Specifically, we employ a classification model to identify relevant documents for a user from the Web and propose a Tree-Structured Conditional Random Fields (TCRF) to extract the profile information from the identified documents; we propose a unified probabilistic model to deal with the name ambiguity problem (several users with the same name) when integrating the profile information extracted from different sources; finally, we use a probabilistic topic model to model the extracted user profiles, and construct the user interest model. Experimental results on an online system show that the combination approach to different profiling tasks clearly outperforms several baseline methods. The extracted profiles have been applied to expert finding, an important application on the Web. Experiments show that the accuracy of expert finding can be improved (ranging from +6&percnt; to +26&percnt; in terms of MAP) by taking advantage of the profiles.
+
+#index 1482198
+#* Mining topic-level influence in heterogeneous networks
+#@ 31936 12695 961 31937 31938
+#t 2010
+#c CIKM '10 Proceedings of the 19th ACM international conference on Information and knowledge management
+#% 27724
+#% 342596
+#% 348173
+#% 577217
+#% 729923
+#% 754098
+#% 754107
+#% 956540
+#% 983833
+#% 1055737
+#% 1083624
+#% 1083641
+#% 1083672
+#% 1083684
+#% 1083738
+#% 1181261
+#% 1214638
+#% 1214696
+#% 1214701
+#% 1214702
+#% 1214703
+#% 1214714
+#% 1214722
+#% 1355040
+#% 1399993
+#% 1400031
+#% 1451243
+#! Influence is a complex and subtle force that governs the dynamics of social networks as well as the behaviors of involved users. Understanding influence can benefit various applications such as viral marketing, recommendation, and information retrieval. However, most existing works on social influence analysis have focused on verifying the existence of social influence. Few works systematically investigate how to mine the strength of direct and indirect influence between nodes in heterogeneous networks. To address the problem, we propose a generative graphical model which utilizes the heterogeneous link information and the textual content associated with each node in the network to mine topic-level direct influence. Based on the learned direct influence, a topic-level influence propagation and aggregation algorithm is proposed to derive the indirect influence between nodes. We further study how the discovered topic-level influence can help the prediction of user behaviors. We validate the approach on three different genres of data sets: Twitter, Digg, and citation networks. Qualitatively, our approach can discover interesting influence patterns in heterogeneous networks. Quantitatively, the learned topic-level influence can greatly improve the accuracy of user behavior prediction.
+
+#index 1482370
+#* Recommendation based on object typicality
+#@ 32022 1530 4768 12695 20819
+#t 2010
+#c CIKM '10 Proceedings of the 19th ACM international conference on Information and knowledge management
+#% 220707
+#% 220709
+#% 220711
+#% 234992
+#% 280447
+#% 280852
+#% 301259
+#% 330687
+#% 578684
+#% 813966
+#% 818216
+#% 879627
+#% 987197
+#% 1083734
+#% 1145231
+#% 1305617
+#% 1650298
+#! Current recommendation methods are mainly classified into content-based, collaborative filtering and hybrid methods. These methods are based on similarity measurements among items or users. In this paper, we investigate recommendation systems from a new perspective based on object typicality and propose a novel typicality-based recommendation approach. Experiments show that our method outperforms compared methods on recommendation quality.
+
+#index 1482379
+#* Community-based topic modeling for social tagging
+#@ 32151 32152 10394 12695 32153 32154 32155 20819 32156
+#t 2010
+#c CIKM '10 Proceedings of the 19th ACM international conference on Information and knowledge management
+#% 722904
+#% 788094
+#% 1083734
+#% 1176930
+#% 1399996
+#! Exploring community is fundamental for uncovering the connections between structure and function of complex networks and for practical applications in many disciplines such as biology and sociology. In this paper, we propose a TTR-LDA-Community model which combines the Latent Dirichlet Allocation model (LDA) and the Girvan-Newman community detection algorithm with an inference mechanism. The model is then applied to data from Delicious, a popular social tagging system, over the time period of 2005-2008. Our results show that 1) users in the same community tend to be interested in similar set of topics in all time periods; and 2) topics may divide into several sub-topics and scatter into different communities over time. We evaluate the effectiveness of our model and show that the TTR-LDA-Community model is meaningful for understanding communities and outperforms TTR-LDA and LDA models in tag prediction.
+
+#index 1482397
+#* Understanding retweeting behaviors in social networks
+#@ 24024 31408 18499 12695 20819 10893 20130
+#t 2010
+#c CIKM '10 Proceedings of the 19th ACM international conference on Information and knowledge management
+#% 1083672
+#% 1214702
+#% 1379671
+#% 1595769
+#% 1810385
+#! Retweeting is an important action (behavior) on Twitter, indicating the behavior that users re-post microblogs of their friends. While much work has been conducted for mining textual content that users generate or analyzing the social network structure, few publications systematically study the underlying mechanism of the retweeting behaviors. In this paper, we perform an interesting analysis for the problem on Twitter. We have found that almost 25.5% of the tweets posted by users are actually retweeted from friends' blog spaces. Our investigation unveils that for the retweet behaviors, some statistics still follows the power law distribution, while some others violate the state-of-the-art distribution for Web. Based on these important observations, we propose a factor graph model to predict users' retweeting behaviors. Experimental results on the Twitter data set show that our method can achieve a precision of 28.81% and recall of 37.33% for prediction of the retweet behaviors.
+
+#index 1482407
+#* Identifying new categories in community question answering archives: a topic modeling approach
+#@ 32182 20207 12695 32183
+#t 2010
+#c CIKM '10 Proceedings of the 19th ACM international conference on Information and knowledge management
+#% 280819
+#% 769967
+#% 879593
+#% 1019165
+#% 1055683
+#% 1074110
+#% 1074111
+#% 1190068
+#% 1190249
+#% 1227599
+#% 1227600
+#% 1227698
+#! Community Question Answering (CQA) services have evolved into a popular way of information seeking and providing. User-posted questions in CQA are generally organized into hierarchical categories. In this paper, we define and study a novel problem which is referred to as New Category Identification (NCI) in CQA question archives. New Category Identification is primarily concerned with detecting and characterizing new or emerging categories which are not included in the existing category hierarchy. We define this problem formally, and propose both unsupervised and semi-supervised topic modeling methods to solve it. Experiments with a ground-truth set built from Yahoo! Answers show that our methods identify and interpret new categories effectively.
+
+#index 1482446
+#* Combining link and content for collective active learning
+#@ 17491 32246 12695
+#t 2010
+#c CIKM '10 Proceedings of the 19th ACM international conference on Information and knowledge management
+#% 464434
+#% 769942
+#% 842682
+#% 961278
+#% 1030882
+#% 1214681
+#% 1400012
+#% 1673032
+#! In this paper, we study a novel problem Collective Active Learning, in which we aim to select a batch set of "informative" instances from a networking data set to query the user in order to improve the accuracy of the learned classification model. We perform a theoretical investigation of the problem and present three criteria (i.e., minimum redundancy, maximum uncertainty and maximum impact) to quantify the informativeness of a set of selected instances. We define an objective function based on the three criteria and present an efficient algorithm to optimize the objective function with a bounded approximation rate. Experimental results on a real-world data sets demonstrate the effectiveness of our proposed approach.
+
+#index 1535327
+#* Term Filtering with Bounded Error
+#@ 24024 4538 12695 20819
+#t 2010
+#c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+#! In this paper, we consider a novel problem referred to as term filtering with bounded error to reduce the term (feature) space by eliminating terms without (or with bounded) information loss. Different from existing works, the obtained term space provides a complete view of the original term space. More interestingly, several important questions can be answered such as: 1) how different terms interact with each other and 2) how the filtered terms can be represented by the other terms. We perform a theoretical investigation of the term filtering problem and link it to the Geometric Covering By Discs problem, and prove its NP-hardness. We present two novel approaches for both loss less and lossy term filtering with bounds on the introduced error. Experimental results on multiple text mining tasks validate the effectiveness of the proposed approaches.
+
+#index 1535341
+#* MoodCast: Emotion Prediction via Dynamic Continuous Factor Graph Model
+#@ 34651 12695 10508 34652 23566
+#t 2010
+#c ICDM '10 Proceedings of the 2010 IEEE International Conference on Data Mining
+#! Human emotion is one important underlying force affecting and affected by the dynamics of social networks. An interesting question is “can we predict a person’s mood based on his historic emotion log and his social network?”. In this paper, we propose a Mood Cast method based on a dynamic continuous factor graph model for modeling and predicting users’ emotions in a social network. Mood Cast incorporates users’ dynamic status information (e.g., locations, activities, and attributes) and social influence from users’ friends into a unified model. Based on the historical information (e.g., network structure and users’ status from time 0 to t−1), Mood Cast learns a discriminative model for predicting users’ emotion status at time t. To the best of our knowledge, this work takes the first step in designing a principled model for emotion prediction in social networks. Our experimental results on both real social network and virtual web-based network show that we can accurately predict emotion status of more than 62% of users and 8+% improvement than the baseline methods.
+
+#index 1598359
+#* Social context summarization
+#@ 24024 18499 12695 10893 20130 20819
+#t 2011
+#c Proceedings of the 34th international ACM SIGIR conference on Research and development in Information Retrieval
+#% 194251
+#% 262112
+#% 266370
+#% 316520
+#% 340884
+#% 340971
+#% 679873
+#% 790703
+#% 816173
+#% 816181
+#% 818226
+#% 854186
+#% 943826
+#% 992317
+#% 1040837
+#% 1074087
+#% 1074088
+#% 1190068
+#% 1214702
+#% 1275213
+#% 1292504
+#% 1297059
+#% 1306081
+#% 1355042
+#% 1379671
+#% 1399992
+#% 1481542
+#% 1482397
+#% 1484279
+#% 1824959
+#! We study a novel problem of social context summarization for Web documents. Traditional summarization research has focused on extracting informative sentences from standard documents. With the rapid growth of online social networks, abundant user generated content (e.g., comments) associated with the standard documents is available. Which parts in a document are social users really caring about? How can we generate summaries for standard documents by considering both the informativeness of sentences and interests of social users? This paper explores such an approach by modeling Web documents and social contexts into a unified framework. We propose a dual wing factor graph (DWFG) model, which utilizes the mutual reinforcement between Web documents and their associated social contexts to generate summaries. An efficient algorithm is designed to learn the proposed factor graph model.Experimental results on a Twitter data set validate the effectiveness of the proposed model. By leveraging the social context information, our approach obtains significant improvement (averagely +5.0%-17.3%) over several alternative methods (CRF, SVM, LR, PR, and DocLead) on the performance of summarization.
+
+#index 1598481
+#* Recommending interesting activity-related local entities
+#@ 12695 4381 17435
+#t 2011
+#c Proceedings of the 34th international ACM SIGIR conference on Research and development in Information Retrieval
+#% 818256
+#% 956495
+#% 1055920
+#% 1125717
+#% 1130854
+#! When searching for entities with a strong local character (e.g., a museum), people may also be interested in discovering proximal activity-related entities (e.g., a café). Geographical proximity is a necessary, but not sufficient, qualifier for recommending other entities such that they are related in a useful manner (e.g., interest in a fish market does not imply interest in nearby bookshops, but interest in other produce stores is more likely). We describe and evaluate methods to identify such activity-related local entities.
+
+#index 1603766
+#* Knowledge transfer across multilingual corpora via latent topics
+#@ 36023 12695 1350
+#t 2011
+#c PAKDD'11 Proceedings of the 15th Pacific-Asia conference on Advances in knowledge discovery and data mining - Volume Part I
+#% 262870
+#% 280826
+#% 384972
+#% 722904
+#% 732847
+#% 770848
+#% 818313
+#% 939570
+#% 983644
+#% 983828
+#% 983865
+#% 983899
+#% 989585
+#% 1074129
+#% 1083655
+#% 1190212
+#% 1261539
+#% 1297066
+#% 1328329
+#% 1338620
+#% 1377376
+#% 1650298
+#! This paper explores bridging the content of two different languages via latent topics. Specifically, we propose a unified probabilistic model to simultaneously model latent topics from bilingual corpora that discuss comparable content and use the topics as features in a cross-lingual, dictionary-less text categorization task. Experimental results on multilingual Wikipedia data show that the proposed topic model effectively discovers the topic information from the bilingual corpora, and the learned topics successfully transfer classification knowledge to other languages, for which no labeled training data are available.
+
+#index 1606004
+#* Topic-level social network search
+#@ 12695 36131 36132 36133
+#t 2011
+#c Proceedings of the 17th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 729923
+#% 769887
+#% 1083734
+#% 1214641
+#% 1214702
+#% 1481049
+#% 1538534
+#% 1696329
+#% 1755323
+#% 1810385
+#! We study the problem of topic-level social network search, which aims to find who are the most influential users in a network on a specific topic and how the influential users connect with each other. We employ a topic model to find topical aspects of each user and a retrieval method to identify influential users by combining the language model and the topic model. An influence maximization algorithm is then presented to find the sub network that closely connects the influential users. Two demonstration systems have been developed and are online available. Empirical analysis based on the user's viewing time and the number of clicks validates the proposed methodologies.
+
+#index 1606084
+#* User-level sentiment analysis incorporating social networks
+#@ 31489 4073 12695 27245 4066 16088
+#t 2011
+#c Proceedings of the 17th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 577356
+#% 938687
+#% 939346
+#% 1127964
+#% 1176920
+#% 1261563
+#% 1277969
+#% 1299754
+#% 1310464
+#% 1346155
+#% 1470673
+#% 1535408
+#% 1544009
+#% 1544032
+#% 1591944
+#! We show that information about social relationships can be used to improve user-level sentiment analysis. The main motivation behind our approach is that users that are somehow "connected" may be more likely to hold similar opinions; therefore, relationship information can complement what we can extract about a user's viewpoints from their utterances. Employing Twitter as a source for our experimental data, and working within a semi-supervised framework, we propose models that are induced either from the Twitter follower/followee network or from the network in Twitter formed by users referring to each other using "@" mentions. Our transductive learning results reveal that incorporating social-network information can indeed lead to statistically significant sentiment classification improvements over the performance of an approach based on Support Vector Machines having access only to textual features.
+
+#index 1607976
+#* Learning to advertise: how many ads are enough?
+#@ 23345 36258 12695 18368 16224 28547
+#t 2011
+#c PAKDD'11 Proceedings of the 15th Pacific-Asia conference on Advances in knowledge discovery and data mining - Volume Part II
+#% 730041
+#% 956546
+#% 956552
+#% 1035578
+#% 1055694
+#% 1074092
+#% 1074101
+#% 1130909
+#% 1190055
+#% 1190056
+#% 1190057
+#% 1190161
+#% 1214642
+#% 1214702
+#% 1227620
+#% 1227642
+#% 1227651
+#% 1292566
+#% 1355048
+#% 1399955
+#! Sponsored advertisement(ad) has already become the major source of revenue for most popular search engines. One fundamental challenge facing all search engines is how to achieve a balance between the number of displayed ads and the potential annoyance to the users. Displaying more ads would improve the chance for the user clicking an ad. However, when the ads are not really relevant to the users' interests, displaying more may annoy them and even "train" them to ignore ads. In this paper, we study an interesting problem that how many ads should be displayed for a given query. We use statistics on real ads click-through data to show the existence of the problem and the possibility to predict the ideal number. There are two main observations: 1) when the click entropy of a query exceeds a threshold, the CTR of that query will be very near zero; 2) the threshold of click entropy can be automatically determined when the number of removed ads is given. Further, we propose a learning approach to rank the ads and to predict the number of displayed ads for a given query. The experimental results on a commercial search engine dataset validate the effectiveness of the proposed approach.
+
+#index 1617365
+#* Learning to infer social ties in large networks
+#@ 36485 36486 12695
+#t 2011
+#c ECML PKDD'11 Proceedings of the 2011 European conference on Machine learning and knowledge discovery in databases - Volume Part III
+#% 283136
+#% 283833
+#% 342596
+#% 729923
+#% 955712
+#% 1000502
+#% 1083734
+#% 1194122
+#% 1214702
+#% 1269756
+#% 1399997
+#% 1400031
+#% 1451159
+#% 1451162
+#% 1451245
+#% 1536568
+#% 1650318
+#% 1673048
+#! In online social networks, most relationships are lack of meaning labels (e.g., "colleague" and "intimate friends"), simply because users do not take the time to label them. An interesting question is: can we automatically infer the type of social relationships in a large network? what are the fundamental factors that imply the type of social relationships? In this work, we formalize the problem of social relationship learning into a semi-supervised framework, and propose a Partially-labeled Pairwise Factor Graph Model (PLP-FGM) for learning to infer the type of social ties. We tested the model on three different genres of data sets: Publication, Email and Mobile. Experimental results demonstrate that the proposed PLP-FGM model can accurately infer 92.7% of advisoradvisee relationships from the coauthor network (Publication), 88.0% of manager-subordinate relationships from the email network (Email), and 83.1% of the friendships from the mobile network (Mobile). Finally, we develop a distributed learning algorithm to scale up the model to real large networks.
+
+#index 1644299
+#* A Voltage Control Scheme of Distribution Static Synchronous Compensator Based on Current Sensorless
+#@ 36595 12695 36596
+#t 2011
+#c ICDMA '11 Proceedings of the 2011 Second International Conference on Digital Manufacturing & Automation
+#! Distribution static synchronous compensator can bu used to improve the voltage quaLity through exchanging the reactive power between the D-STATCOM and the power system. Keep the voltage of the point of common coulpLing constant and balance is a very important power quaLity issues. The voltage controll strategy which has the function of voltage compensation and balance of the D-STATCOM is investigated in detail in this paper. The power exchange in D-STATCOM system is analysed based on intantaneous power theory. The relationship between the positive and negtive sequence of the output voltage of D-STATCOM is derived. Then the voltage control strategy witHout current regulator is prsented which has the merits of simply structure and easy to design. The voltage controller of D-STATCOM consists of positive and negtive sequence voltage controller. which can regulate and balance the voltage simultaneously. Theory analysis and digital sinulation results verified the feasibiLity and vaLidity of the voltage control strategy proposed in this paper.
+
+#index 1684732
+#* Semantic similarity based ontology cache
+#@ 30608 12695 20819 30510
+#t 2006
+#c APWeb'06 Proceedings of the 8th Asia-Pacific Web conference on Frontiers of WWW Research and Development
+#% 86945
+#% 348167
+#% 349494
+#% 388301
+#% 481916
+#% 571216
+#! This paper addresses the issue of ontology caching on semantic web. The Semantic Web is an extension of the current web in which information is given well-defined meaning, better enabling computers and people to work in cooperation. Ontology serves as the metadata for defining the information on semantic web. Ontology based semantic information retrieval (semantic retrieval) is becoming more and more important. Many research and industrial works have been made so far on semantic retrieval. Ontology based retrieval improves the performance of search engine and web mining. In semantic retrieval, a great number of accesses to ontologies usually lead the ontology servers to be very low efficient. To address this problem, it is indeed necessary to cache concepts and instances when ontology server is running. Existing caching methods from database community can be used in the ontology cache. However, they are not sufficient for dealing with the problem. In the task of caching in database, usually the most frequently accessed data are cached and the recently less frequently accessed data in the cache are removed from it. Different from that, in ontology base, data are organized as objects and relations between objects. User may request one object, and then request another object according to a relation of that object. He may also possibly request a similar object that has not any relations to the object. Ontology caching should consider more factors and is more difficult. In this paper, ontology caching is formalized as a problem of classification. In this way, ontology caching becomes independent from any specific semantic web application. An approach is proposed by using machine learning methods. When an object (e.g. concept or instance) is requested, we view its similar objects as candidates. A classification model is then used to predict whether each of these candidates should be cached or not. Features in classification models are defined. Experimental results indicate that the proposed methods can significantly outperform the baseline methods for ontology caching. The proposed method has been applied to a research project that is called SWARMS.
+
+#index 1684753
+#* Weighted ontology-based search exploiting semantic similarity
+#@ 18368 12695 37682 20819 20837
+#t 2006
+#c APWeb'06 Proceedings of the 8th Asia-Pacific Web conference on Frontiers of WWW Research and Development
+#% 25942
+#% 46803
+#% 156337
+#% 187767
+#% 375017
+#% 387427
+#% 434033
+#% 447948
+#% 449217
+#% 495443
+#% 577373
+#% 733833
+#% 754095
+#! This paper is concerned with the problem of semantic search. By semantic search, we mean searching for instances from knowledge base. Given a query, we are to retrieve ‘relevant’ instances, including those that contain the query keywords and those that do not contain the keywords. This is contrast to the traditional approaches of generating a ranked list of documents that contain the keywords. Specifically, we first employ keyword based search method to retrieve instances for a query; then a proposed method of semantic feedback is performed to refine the search results; and then we conduct re-retrieval by making use of relations and instance similarities. To make the search more effective, we use weighted ontology as the underlying data model in which importances are assigned to different concepts and relations. As far as we know, exploiting instance similarities in search on weighted ontology has not been investigated previously. For the task of instance similarity calculation, we exploit both concept hierarchy and properties. We applied our methods to a software domain. Empirical evaluation indicates that the proposed methods can improve the search performance significantly.
+
+#index 1684788
+#* Table detection from plain text using machine learning and document structure
+#@ 20819 12695 37740 37741
+#t 2006
+#c APWeb'06 Proceedings of the 8th Asia-Pacific Web conference on Frontiers of WWW Research and Development
+#% 237328
+#% 348146
+#% 643004
+#% 658664
+#% 755816
+#% 786564
+#% 939790
+#% 1705176
+#! Addressed in this paper is the issue of table extraction from plain text. Table is one of the commonest modes for presenting information. Table extraction has applications in information retrieval, knowledge acquisition, and text mining. Automatic information extraction from table is a challenge. Existing methods was mainly focusing on table extraction from web pages (formatted table extraction). So far the problem of table extraction on plain text, to the best of our knowledge, has not received sufficient attention. In this paper, unformatted table extraction is formalized as unformatted table block detection and unformatted table row identification. We concentrate particularly on the table extraction from Chinese documents. We propose to conduct the task of table extraction by combining machine learning methods and document structure. We first view the task as classification and propose a statistical approach to deal with it based on Naïve Bayes. We define features in the classification model. Next, we use document structure to improve the detection performance. Experimental results indicate that the proposed methods can significantly outperform the baseline methods for unformatted table extraction.
+
+#index 1688429
+#* Detecting Community Kernels in Large Social Networks
+#@ 37939 37940 12695 37941
+#t 2011
+#c ICDM '11 Proceedings of the 2011 IEEE 11th International Conference on Data Mining
+#! In many social networks, there exist two types of users that exhibit different influence and different behavior. For instance, statistics have shown that less than 1% of the Twitter users (e.g. entertainers, politicians, writers) produce 50% of its content, while the others (e.g. fans, followers, readers) have much less influence and completely different social behavior. In this paper, we define and explore a novel problem called community kernel detection in order to uncover the hidden community structure in large social networks. We discover that influential users pay closer attention to those who are more similar to them, which leads to a natural partition into different community kernels. We propose Greedy and We BA, two efficient algorithms for finding community kernels in large social networks. Greedy is based on maximum cardinality search, while We BA formalizes the problem in an optimization framework. We conduct experiments on three large social networks: Twitter, Wikipedia, and Coauthor, which show that We BA achieves an average 15%-50% performance improvement over the other state-of-the-art algorithms, and We BA is on average 6-2,000 times faster in detecting community kernels.
+
+#index 1688430
+#* ADANA: Active Name Disambiguation
+#@ 37942 12695 9360 850
+#t 2011
+#c ICDM '11 Proceedings of the 2011 IEEE 11th International Conference on Data Mining
+#! Name ambiguity has long been viewed as a challenging problem in many applications, such as scientific literature management, people search, and social network analysis. When we search a person name in these systems, many documents (e.g., papers, web pages) containing that person's name may be returned. It is hard to determine which documents are about the person we care about. Although much research has been conducted, the problem remains largely unsolved, especially with the rapid growth of the people information available on the Web. In this paper, we try to study this problem from a new perspective and propose an ADANA method for disambiguating person names via active user interactions. In ADANA, we first introduce a pairwise factor graph (PFG) model for person name disambiguation. The model is flexible and can be easily extended by incorporating various features. Based on the PFG model, we propose an active name disambiguation algorithm, aiming to improve the disambiguation performance by maximizing the utility of the user's correction. Experimental results on three different genres of data sets show that with only a few user corrections, the error rate of name disambiguation can be reduced to 3.1%. A real system has been developed based on the proposed method and is available online.
+
+#index 1764761
+#* A conversation with Professors Deyi Li and Jie Tang
+#@ 7320 12695
+#t 2012
+#c ACM SIGKDD Explorations Newsletter
+#% 501206
+#% 1083734
+#% 1214702
+#% 1587256
+
+#index 1872384
+#* Cross-domain collaboration recommendation
+#@ 12695 36131 10508 32043
+#t 2012
+#c Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 220708
+#% 220709
+#% 280819
+#% 283833
+#% 387427
+#% 722904
+#% 734594
+#% 769906
+#% 788043
+#% 844334
+#% 867050
+#% 879570
+#% 881526
+#% 955712
+#% 956521
+#% 989621
+#% 1083734
+#% 1214703
+#% 1227601
+#% 1399997
+#% 1451163
+#% 1451238
+#% 1538534
+#% 1588381
+#% 1598567
+#% 1605963
+#% 1625374
+#% 1642411
+#% 1650437
+#! Interdisciplinary collaborations have generated huge impact to society. However, it is often hard for researchers to establish such cross-domain collaborations. What are the patterns of cross-domain collaborations? How do those collaborations form? Can we predict this type of collaborations? Cross-domain collaborations exhibit very different patterns compared to traditional collaborations in the same domain: 1) sparse connection: cross-domain collaborations are rare; 2) complementary expertise: cross-domain collaborators often have different expertise and interest; 3) topic skewness: cross-domain collaboration topics are focused on a subset of topics. All these patterns violate fundamental assumptions of traditional recommendation systems. In this paper, we analyze the cross-domain collaboration data from research publications and confirm the above patterns. We propose the Cross-domain Topic Learning (CTL) model to address these challenges. For handling sparse connections, CTL consolidates the existing cross-domain collaborations through topic layers instead of at author layers, which alleviates the sparseness issue. For handling complementary expertise, CTL models topic distributions from source and target domains separately, as well as the correlation across domains. For handling topic skewness, CTL only models relevant topics to the cross-domain collaboration. We compare CTL with several baseline approaches on large publication datasets from different domains. CTL outperforms baselines significantly on multiple recommendation metrics. Beyond accurate recommendation performance, CTL is also insensitive to parameter tuning as confirmed in the sensitivity analysis.
+
+#index 1872393
+#* PatentMiner: topic-driven patent analysis and mining
+#@ 12695 23345 33702 37973 41829 41830 36132 22253 37741 37974 37975
+#t 2012
+#c Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 262112
+#% 280819
+#% 312701
+#% 340948
+#% 375017
+#% 466574
+#% 722904
+#% 766409
+#% 769906
+#% 840967
+#% 955502
+#% 956510
+#% 963669
+#% 1083734
+#% 1176930
+#% 1214702
+#% 1481049
+#% 1538534
+#! Patenting is one of the most important ways to protect company's core business concepts and proprietary technologies. Analyzing large volume of patent data can uncover the potential competitive or collaborative relations among companies in certain areas, which can provide valuable information to develop strategies for intellectual property (IP), R&D, and marketing. In this paper, we present a novel topic-driven patent analysis and mining system. Instead of merely searching over patent content, we focus on studying the heterogeneous patent network derived from the patent database, which is represented by several types of objects (companies, inventors, and technical content) jointly evolving over time. We design and implement a general topic-driven framework for analyzing and mining the heterogeneous patent network. Specifically, we propose a dynamic probabilistic model to characterize the topical evolution of these objects within the patent network. Based on this modeling framework, we derive several patent analytics tools that can be directly used for IP and R&D strategy planning, including a heterogeneous network co-ranking method, a topic-level competitor evolution analysis algorithm, and a method to summarize the search results. We evaluate the proposed methods on a real-world patent database. The experimental results show that the proposed techniques clearly outperform the corresponding baseline methods.
+
+#index 1874834
+#* Learning to diversify expert finding with subtopics
+#@ 32043 12695 41898
+#t 2012
+#c PAKDD'12 Proceedings of the 16th Pacific-Asia conference on Advances in Knowledge Discovery and Data Mining - Volume Part I
+#% 124073
+#% 174161
+#% 262112
+#% 280819
+#% 387427
+#% 642975
+#% 722904
+#% 879570
+#% 879587
+#% 1074025
+#% 1083734
+#% 1166473
+#% 1176930
+#% 1268491
+#% 1312812
+#% 1451162
+#% 1481049
+#% 1606004
+#% 1606043
+#! Expert finding is concerned about finding persons who are knowledgeable on a given topic. It has many applications in enterprise search, social networks, and collaborative management. In this paper, we study the problem of diversification for expert finding. Specifically, employing an academic social network as the basis for our experiments, we aim to answer the following question: Given a query and an academic social network, how to diversify the ranking list, so that it captures the whole spectrum of relevant authors' expertise? We precisely define the problem and propose a new objective function by incorporating topic-based diversity into the relevance ranking measurement. A learning-based model is presented to solve the objective function. Our empirical study in a real system validates the effectiveness of the proposed method, which can achieve significant improvements (+15.3%-+94.6% by MAP) over alternative methods.
+
+#index 1874879
+#* Instant social graph search
+#@ 36131 12695 36132
+#t 2012
+#c PAKDD'12 Proceedings of the 16th Pacific-Asia conference on Advances in Knowledge Discovery and Data Mining - Volume Part II
+#% 220708
+#% 328257
+#% 729923
+#% 769887
+#% 805841
+#% 853538
+#% 869503
+#% 1001363
+#% 1083734
+#% 1166473
+#% 1190093
+#% 1214641
+#% 1214702
+#% 1451159
+#% 1451234
+#% 1606004
+#% 1606043
+#% 1617365
+#% 1693935
+#! In this paper, we study a new problem of instant social graph search, which aims to find a sub graph that closely connects two and more persons in a social network. This is a natural requirement in our real daily life, such as "Who can be my referrals for applying for a job position?". In this paper, we formally define the problem and present a series of approximate algorithms to solve this problem: Path, Influence, and Diversity. To evaluate the social graph search results, we have developed two prototype systems, which are online available and have attracted thousands of users. In terms of both user's viewing time and the number of user clicks, we demonstrate that the three algorithms can significantly outperform (+34.56%-+131.37%) the baseline algorithm.
+
+#index 1880397
+#* Proceedings of the ACM SIGKDD Workshop on Mining Data Semantics
+#@ 10394 961 12695 850
+#t 2012
+#c The 18th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining
+
+#index 1880401
+#* There is more than complex contagion: an indirect influence analysis on Twitter
+#@ 42200 33608 10394 42201 42202 12695
+#t 2012
+#c Proceedings of the ACM SIGKDD Workshop on Mining Data Semantics
+#% 754107
+#% 1083624
+#% 1083641
+#% 1190127
+#% 1482198
+#% 1482397
+#% 1550712
+#% 1560424
+#! Social influence in social networks has been extensively researched. Most studies have focused on direct influence, while another interesting question can be raised as whether indirect influence exists between two users who're not directly connected in the network and what affects such influence. In addition, the theory of complex contagion tells us that more spreaders will enhance the indirect influence between two users. Our observation of intensity of indirect influence, propagated by n parallel spreaders and quantified by retweeting probability in two Twitter social networks, shows that complex contagion is validated globally but is violated locally. In other words, the retweeting probability increases non-monotonically with some local drops. A quantum cognition based probabilistic model is proposed to account for these local drops.
+
+#index 1915002
+#* Proceedings of the First ACM International Workshop on Hot Topics on Interdisciplinary Social Networks Research
+#@ 43634 43635 12695
+#t 2012
+#c The 18th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining
+#! With the blessing of information technology, we are living in an increasingly networked world. People, information and other entities are connected via World Wide Web, email networks, instant messaging networks, mobile communication networks, online social networks, etc. These online networks grow fast and possess huge amount of recorded information, which presents great opportunities in understanding the science of these networks, and in developing new applications from these networks and for these networks. The increasingly networked society has fundamentally changed our way of thinking, individual behaviors and social activities. It is foreseen that the public health relating to epidemic diseases is greatly impacted by this emerging connectivity as they are by nature mediated by direct or indirect human interactions and mobility. However, new challenges have to be met --- the networks are huge and information is noisy, and they demand new methodologies in accessing and analyzing these networks, and in developing theories and applications for the networks. To meet with these challenges, researchers from a wide range of academic fields, including theory and algorithms, data mining and machine learning, computer systems and networks, statistical physics and complex systems, sociology, social psychology, economics and managerial science, etc. are all actively studying various aspects concerning social and information networks. However, we lack the proper opportunities for people from these diverse backgrounds to directly interact with each other. The diversity of approaches and methodologies to study various social networks has raised the need for an interdisciplinary effort to create the required expertise to address the fundamental open questions in this field. This workshop is intended to present such an opportunity and serve as a forum to bring together people from various fields to exchange their latest research results and to sparkle new ideas and directions to properly understand these networks. It will be held on August 12, 2012, in conjunction with ACM KDD 2012, August 12-16, Beijing, China.
+
+#index 1925637
+#* Inferring geographic coincidence in ephemeral social networks
+#@ 36486 42019 36131 1204 43725 12695
+#t 2012
+#c ECML PKDD'12 Proceedings of the 2012 European conference on Machine Learning and Knowledge Discovery in Databases - Volume Part II
+#% 464434
+#% 787175
+#% 813844
+#% 1083734
+#% 1089822
+#% 1135166
+#% 1214702
+#% 1267770
+#% 1425621
+#% 1451232
+#% 1451245
+#% 1531162
+#% 1535341
+#% 1606049
+#% 1617365
+#% 1693935
+#% 1886573
+#! We study users' behavioral patterns in ephemeral social networks, which are temporarily built based on events such as conferences. From the data distribution and social theory perspectives, we found several interesting patterns. For example, the duration of two random persons staying at the same place and at the same time obeys a two-stage power-law distribution. We develop a framework to infer the likelihood of two users to meet together, and we apply the framework to two mobile social networks: UbiComp and Reality. The former is formed by researchers attending UbiComp 2011 and the latter is a network of students published by MIT. On both networks, we validate the proposed predictive framework, which significantly improve the accuracy for predicting geographic coincidence by comparing with two baseline methods.
+
+#index 1978832
+#* Link Prediction and Recommendation across Heterogeneous Social Networks
+#@ 38347 12695 36131 32185 5856 23566 20798
+#t 2012
+#c ICDM '12 Proceedings of the 2012 IEEE 12th International Conference on Data Mining
+#! Link prediction and recommendation is a fundamental problem in social network analysis. The key challenge of link prediction comes from the sparsity of networks due to the strong disproportion of links that they have potential to form to links that do form. Most previous work tries to solve the problem in single network, few research focus on capturing the general principles of link formation across heterogeneous networks. In this work, we give a formal definition of link recommendation across heterogeneous networks. Then we propose a ranking factor graph model (RFG) for predicting links in social networks, which effectively improves the predictive performance. Motivated by the intuition that people make friends in different networks with similar principles, we find several social patterns that are general across heterogeneous networks. With the general social patterns, we develop a transfer-based RFG model that combines them with network structure information. This model provides us insight into fundamental principles that drive the link formation and network evolution. Finally, we verify the predictive performance of the presented transfer model on 12 pairs of transfer cases. Our experimental results demonstrate that the transfer of general social patterns indeed help the prediction of links.
+
+#index 1979049
+#* Accurate Product Name Recognition from User Generated Content
+#@ 36131 44511 12695
+#t 2012
+#c ICDMW '12 Proceedings of the 2012 IEEE 12th International Conference on Data Mining Workshops
+#! This paper presents the solution of the team "ISSSID" for the Consumer Products Contest #1(CPROD1) of ICDM 2012. The contest provides a dataset including hundreds of thousands of text items, a product catalog with over fifteen million products, and hundreds of manually annotated product mentions. The goal of the competition is to automatically recognize product mentions in the textual content and disambiguate which product(s) in the product catalog are referenced by the mentions. We propose a hybrid approach which combines the results obtained by several separately trained recognition models. Specifically, the approach uses a standard matching model, a rule template model, and a conditional random field model, and finally combines the results using a blending model. The proposed approach achieves the best performance in the contest.
+

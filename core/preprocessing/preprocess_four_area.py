@@ -27,13 +27,21 @@ def valid_format(input_file, output_file):
 		print "finally: ", cnt
 
 
-def extract_title_abstract(input_file, output_file):
-	with open(input_file,'r') as fin, open(output_file, 'w') as fout:
+def extract_title_abstract(input_file, output_file, output_map):
+	with open(input_file,'r') as fin, open(output_file, 'w') as fout, open(output_map, 'w') as fout_map:
 		papers = fin.read().split('\n\n')
 		for paper in papers:
 			attr = paper.split('\n')
+			paper_id = int(attr[0].split()[1])
+			print paper_id
+			corpus_cnt = 1
 			fout.write("{title}\n".format(title=attr[1][3:]))
-			fout.write("{abstract}\n".format(abstract=attr[-1][3:]))
+			last_prefix = attr[-1].split()[0]
+			if last_prefix == '#!':
+				fout.write("{abstract}\n".format(abstract=attr[-1][3:]))
+				corpus_cnt = 2
+			fout_map.write("{paper_id} {cnt}\n".format(paper_id=paper_id, cnt=corpus_cnt))
+
 
 
 def sort_vocabulary_tfidf(input_file, output_file):
@@ -206,9 +214,6 @@ venue_name_id = {
 	'ECMLPKDD' : 22,
 }
 
-def reindex_paper(input_file, output_file):
-	pass
-
 def delete_invalid_citations(input_file, output_file):
 	with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
 		papers = fin.read().split('\n\n')
@@ -237,12 +242,39 @@ def delete_invalid_citations(input_file, output_file):
 			fout.write("\n")
 		print "ahahaha finally ", absent_cnt, total_cnt
 
+def reindex_paper(input_file, output_file):
+	with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
+		papers = fin.read().split('\n\n')
+		paper_ids = dict()
+		new_id = 0
+		for paper in papers:
+			meta = paper.split('\n')
+			print meta[0]
+			old_id = int(meta[0].split()[1])
+			paper_ids[old_id] = new_id
+			new_id += 1
+
+		for paper in papers:
+			meta = paper.split('\n')
+			old_id = int(meta[0].split()[1])
+			fout.write("#index {new_id}\n".format(new_id=paper_ids[old_id]))
+			fout.write("{before_citation}\n".format(before_citation='\n'.join(meta[1:5])))
+			for line in meta[5:-1]:
+				old_cite_id = int(line.split()[1])
+				fout.write("#% {new_cite_id}\n".format(new_cite_id=paper_ids[old_cite_id]))
+			last_line_prefix = meta[-1].split()[0]
+			if last_line_prefix == '#!':
+				fout.write("{abstract}\n".format(abstract=meta[-1]))
+			fout.write("\n")
+
 
 if __name__ == "__main__":
 	#valid_format(DATA_PATH + 'AP_after_1996_four_area_index_new',
 	#	DATA_PATH + 'AP_after_1996_four_area_index_new_valid_abstract')
 	#valid_format(DATA_PATH + 'AP_after_1996_four_area_index_new_valid_abstract', DATA_PATH+'aaa')
-	#extract_title_abstract(DATA_PATH + 'latest_so_far', DATA_PATH + 'latest_raw_corpus')
+	extract_title_abstract(DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex.txt', 
+		DATA_PATH + 'title_abstract_corpus_raw',
+		DATA_PATH + 'paper_cnt_map')
 	#sort_vocabulary_tfidf(DATA_PATH + 'raw_corpus', 'sorted_tfidf_dict')
 	#blah(DATA_PATH + 'topic_ir', 1)
 	#filter_phrases(DATA_PATH + 'parsed.txt', DATA_PATH + 'parsed_phrases.txt')
@@ -292,4 +324,8 @@ if __name__ == "__main__":
 		['ECML PKDD', 'ECML/PKDD'],
 		[],
 		)'''
-	delete_invalid_citations(DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid.txt', DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites.txt')
+	#delete_invalid_citations(DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid.txt', DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites.txt')
+	#reindex_paper(DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites.txt', DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex.txt')
+
+
+

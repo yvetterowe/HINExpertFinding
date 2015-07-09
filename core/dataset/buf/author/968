@@ -1,0 +1,1035 @@
+#index 248012
+#* A new framework for itemset generation
+#@ 968 850
+#t 1998
+#c PODS '98 Proceedings of the seventeenth ACM SIGACT-SIGMOD-SIGART symposium on Principles of database systems
+#% 152934
+#% 172386
+#% 210160
+#% 227917
+#% 227919
+#% 443082
+#% 443164
+#% 461909
+#% 462238
+#% 481290
+#% 481758
+
+#index 273891
+#* Fast algorithms for projected clustering
+#@ 968 2168 850 2169 849
+#t 1999
+#c SIGMOD '99 Proceedings of the 1999 ACM SIGMOD international conference on Management of data
+#% 36672
+#% 42408
+#% 202011
+#% 210173
+#% 237187
+#% 248790
+#% 248792
+#% 252400
+#% 451052
+#% 462243
+#% 479659
+#% 481281
+#% 527022
+#! The clustering problem is well known in the database literature for its numerous applications in problems such as customer segmentation, classification and trend analysis. Unfortunately, all known algorithms tend to break down in high dimensional spaces because of the inherent sparsity of the points. In such high dimensional spaces not all dimensions may be relevant to a given cluster. One way of handling this is to pick the closely correlated dimensions and find clusters in the corresponding subspace. Traditional feature selection algorithms attempt to achieve this. The weakness of this approach is that in typical high dimensional data mining applications different sets of points may cluster better for different subsets of dimensions. The number of dimensions in each such cluster-specific subspace may also vary. Hence, it may be impossible to find a single small subset of dimensions for all the clusters. We therefore discuss a generalization of the clustering problem, referred to as the projected clustering problem, in which the subsets of dimensions selected are specific to the clusters themselves. We develop an algorithmic framework for solving the projected clustering problem, and test its performance on synthetic data.
+
+#index 273920
+#* A new method for similarity indexing of market basket data
+#@ 968 2168 850
+#t 1999
+#c SIGMOD '99 Proceedings of the 1999 ACM SIGMOD international conference on Management of data
+#% 23321
+#% 67565
+#% 86950
+#% 115462
+#% 115466
+#% 152934
+#% 201876
+#% 217292
+#% 227939
+#% 248796
+#% 248797
+#% 427199
+#% 435141
+#% 462239
+#% 464195
+#% 480093
+#% 480274
+#% 481290
+#% 482109
+#% 527028
+#! In recent years, many data mining methods have been proposed for finding useful and structured information from market basket data. The association rule model was recently proposed in order to discover useful patterns and dependencies in such data. This paper discusses a method for indexing market basket data efficiently for similarity search. The technique is likely to be very useful in applications which utilize the similarity in customer buying behavior in order to make peer recommendations. We propose an index called the signature table, which is very flexible in supporting a wide range of similarity functions. The construction of the index structure is independent of the similarity function, which can be specified at query time. The resulting similarity search algorithm shows excellent scalability with increasing memory availability and database size.
+
+#index 280447
+#* Horting hatches an egg: a new graph-theoretic approach to collaborative filtering
+#@ 968 2168 2451 850
+#t 1999
+#c KDD '99 Proceedings of the fifth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 1921
+#% 70370
+#% 202011
+#% 220706
+#% 220711
+#% 273891
+#% 564279
+#% 565631
+
+#index 280492
+#* On the merits of building categorization systems by supervised clustering
+#@ 968 2483 850
+#t 1999
+#c KDD '99 Proceedings of the fifth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 118771
+#% 232655
+#% 262050
+#% 300131
+#% 465747
+#% 571073
+
+#index 300131
+#* Finding generalized projected clusters in high dimensional spaces
+#@ 968 850
+#t 2000
+#c SIGMOD '00 Proceedings of the 2000 ACM SIGMOD international conference on Management of data
+#% 36672
+#% 201893
+#% 210173
+#% 232764
+#% 248790
+#% 248792
+#% 248798
+#% 249321
+#% 273891
+#% 280417
+#% 462243
+#% 479962
+#% 479973
+#% 481281
+#! High dimensional data has always been a challenge for clustering algorithms because of the inherent sparsity of the points. Recent research results indicate that in high dimensional data, even the concept of proximity or clustering may not be meaningful. We discuss very general techniques for projected clustering which are able to construct clusters in arbitrarily aligned subspaces of lower dimensionality. The subspaces are specific to the clusters themselves. This definition is substantially more general and realistic than currently available techniques which limit the method to only projections from the original set of attributes. The generalized projected clustering technique may also be viewed as a way of trying to redefine clustering for high dimensional applications by searching for hidden subspaces with clusters which are created by inter-attribute correlations. We provide a new concept of using extended cluster feature vectors in order to make the algorithm scalable for very large databases. The running time and space requirements of the algorithm are adjustable, and are likely ta tradeoff with better accuracy.
+
+#index 310507
+#* Depth first generation of long patterns
+#@ 67 968 3547
+#t 2000
+#c Proceedings of the sixth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 152934
+#% 172386
+#% 210160
+#% 210162
+#% 213977
+#% 227917
+#% 227919
+#% 248012
+#% 248791
+#% 273898
+#% 273899
+#% 280436
+#% 280454
+#% 300120
+#% 329598
+#% 459020
+#% 462234
+#% 462238
+#% 464714
+#% 481290
+#% 481754
+#% 481758
+#% 631986
+
+#index 310509
+#* The IGrid index: reversing the dimensionality curse for similarity indexing in high dimensional space
+#@ 968 850
+#t 2000
+#c Proceedings of the sixth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 68091
+#% 86950
+#% 201876
+#% 217292
+#% 227939
+#% 248796
+#% 273891
+#% 273920
+#% 280419
+#% 280452
+#% 300131
+#% 406493
+#% 427199
+#% 435141
+#% 464195
+#% 479649
+#% 479973
+#% 480093
+#% 480132
+#% 481455
+#% 481956
+#% 632043
+
+#index 332094
+#* Re-designing distance functions and distance-based applications for high dimensional data
+#@ 968
+#t 2001
+#c ACM SIGMOD Record
+#! In recent years, the detrimental effects of the curse of high dimensionality have been studied in great detail on several problems such as clustering, nearest neighbor search, and indexing. In high dimensional space the data becomes sparse, and traditional indexing and algorithmic techniques fail from the performance perspective. Recent research results show that in high dimensional space, the concept of proximity may not even be qualitatively meaningful [6]. In this paper, we try to outline the effects of generalizing low dimensional techniques to high dimensional applications and the natural effects of sparsity on distance based applications. We outline the guidelines required in order to re-design either the distance functions or the distance-based applications in a meaningful way for high dimensional domains. We provide novel perspectives and insights on some new lines of work for broadening application definitions in order to effectively deal with the dimensionality curse.
+
+#index 333876
+#* On the design and quantification of privacy preserving data mining algorithms
+#@ 3840 968
+#t 2001
+#c PODS '01 Proceedings of the twentieth ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems
+#% 1868
+#% 264246
+#% 264267
+#% 285061
+#% 300184
+#% 365897
+#% 840577
+#! The increasing ability to track and collect large amounts of data with the use of current hardware technology has lead to an interest in the development of data mining algorithms which preserve user privacy. A recently proposed technique addresses the issue of privacy preservation by perturbing the data and reconstructing distributions at an aggregate level in order to perform the mining. This method is able to retain privacy while accessing the information implicit in the original attributes. The distribution reconstruction process naturally leads to some loss of information which is acceptable in many practical situations. This paper discusses an Expectation Maximization (EM) algorithm for distribution reconstruction which is more effective than the currently available method in terms of the level of information loss. Specifically, we prove that the EM algorithm converges to the maximum likelihood estimate of the original distribution based on the perturbed data. We show that when a large amount of data is available, the EM algorithm provides robust estimates of the original distribution. We propose metrics for quantification and measurement of privacy-preserving data mining algorithms. Thus, this paper provides the foundations for measurement of the effectiveness of privacy preserving data mining algorithms. Our privacy metrics illustrate some interesting results on the relative effectiveness of different perturbing distributions.
+
+#index 333929
+#* Outlier detection for high dimensional data
+#@ 968 850
+#t 2001
+#c SIGMOD '01 Proceedings of the 2001 ACM SIGMOD international conference on Management of data
+#% 114994
+#% 152934
+#% 210173
+#% 248790
+#% 248792
+#% 273891
+#% 300131
+#% 300136
+#% 300183
+#% 332094
+#% 369236
+#% 459025
+#% 479791
+#% 479986
+#% 480132
+#% 480307
+#% 481281
+#% 686757
+#! The outlier detection problem has important applications in the field of fraud detection, network robustness analysis, and intrusion detection. Most such applications are high dimensional domains in which the data can contain hundreds of dimensions. Many recent algorithms use concepts of proximity in order to find outliers based on their relationship to the rest of the data. However, in high dimensional space, the data is sparse and the notion of proximity fails to retain its meaningfulness. In fact, the sparsity of high dimensional data implies that every point is an almost equally good outlier from the perspective of proximity-based definitions. Consequently, for high dimensional data, the notion of finding meaningful outliers becomes substantially more complex and non-obvious. In this paper, we discuss new techniques for outlier detection which find the outliers by studying the behavior of projections from the data set.
+
+#index 340309
+#* On the effects of dimensionality reduction on high dimensional similarity search
+#@ 968
+#t 2001
+#c PODS '01 Proceedings of the twentieth ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems
+#% 68091
+#% 201876
+#% 201893
+#% 248027
+#% 248798
+#% 273699
+#% 280822
+#% 300131
+#% 310509
+#% 427199
+#% 435141
+#% 479649
+#% 480093
+#% 480132
+#% 480307
+#% 481956
+#! The dimensionality curse has profound effects on the effectiveness of high-dimensional similarity indexing from the performance perspective. One of the well known techniques for improving the indexing performance is the method of dimensionality reduction. In this technique, the data is transformed to a lower dimensional space by finding a new axis-system in which most of the data variance is preserved in a few dimensions. This reduction may also have a positive effect on the quality of similarity for certain data domains such as text. For other domains, it may lead to loss of information and degradation of search quality. Recent research indicates that the improvement for the text domain is caused by the re-enforcement of the semantic concepts in the data. In this paper, we provide an intuitive model of the effects of dimensionality reduction on arbitrary high dimensional problems. We provide an effective diagnosis of the causality behind the qualitative effects of dimensionality reduction on a given data set. The analysis suggests that these effects are very data dependent. Our analysis also indicates that currently accepted techniques of picking the reduction which results in the least loss of information are useful for maximizing precision and recall, but are not necessarily optimum from a qualitative perspective. We demonstrate that by making simple changes to the implementation details of dimensionality reduction techniques, we can considerably improve the quality of similarity search.
+
+#index 342613
+#* A human-computer cooperative system for effective high dimensional clustering
+#@ 968
+#t 2001
+#c Proceedings of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 210160
+#% 248792
+#% 273891
+#% 300131
+#% 332094
+#% 436509
+#! High dimensional data has always been a challenge for clustering algorithms because of the inherent sparsity of the points. Therefore, techniques have recently been proposed to find clusters in hidden subspaces of the data. However, since the behavior of the data may vary considerably in different subspaces, it is often difficult to define the notion of a cluster with the use of simple mathematical formalizations. In fact, the meaningfulness and definition of a cluster is best characterized with the use of human intuition. In this paper, we propose a system which performs high dimensional clustering by effective cooperation between the human and the computer. The complex task of cluster creation is accomplished by a combination of human intuition and the computational support provided by the computer. The result is a system which leverages the best abilities of both the human and the computer in order to create very meaningful sets of clusters in high dimensionality.
+
+#index 342614
+#* Mining massively incomplete data sets by conceptual reconstruction
+#@ 968 4208
+#t 2001
+#c Proceedings of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 17144
+#% 136350
+#% 248027
+#% 248798
+#% 300184
+#% 668895
+#! Incomplete data sets have become almost ubiquitous in a wide variety of application domains. Common examples can be found in climate and image data sets, sensor data sets and medical data sets. The incompleteness in these data sets may arise from a number of factors: in some cases it may simply be a reflection of certain measurements not being available at the time; in others the information may be lost due to partial system failure; or it may simply be a result of users being unwilling to specify attributes due to privacy concerns. When a significant fraction of the entries are missing in all of the attributes, it becomes very difficult to perform any kind of reasonable extrapolation on the original data. For such cases, we introduce the novel idea of conceptual reconstruction, in which we create effective conceptual representations on which the data mining algorithms can be directly applied. The attraction behind the idea of conceptual reconstruction is to use the correlation structure of the data in order to express it in terms of concepts rather the original dimensions. As a result, the reconstruction procedure estimates only those conceptual aspects of the data which can be mined from the incomplete data set, rather than force errors created by extrapolation. We demonstrate the effectiveness of the approach on a variety of real data sets.
+
+#index 345858
+#* Towards effective and interpretable data mining by visual interaction
+#@ 968
+#t 2002
+#c ACM SIGKDD Explorations Newsletter
+#% 36672
+#% 169940
+#% 210160
+#% 227939
+#% 248792
+#% 273891
+#% 300131
+#% 310509
+#% 310517
+#% 310525
+#% 342613
+#% 435141
+#% 436509
+#% 438134
+#% 462238
+#% 463742
+#% 465017
+#% 479649
+#% 480132
+#% 480302
+#% 480303
+#% 480307
+#% 481956
+#% 482109
+#% 840583
+#! The primary aim of most data mining algorithms is to facilitate the discovery of concise and interpretable information from large amounts of data. However, many of the current formalizations of data mining algorithms have not quite reached this goal. One of the reasons for this is that the focus on using purely automated techniques has imposed several constraints on data mining algorithms. For example, any data mining problem such as clustering or association rules requires the specification of particular problem formulations, objective functions, and parameters. Such systems fail to take the user's needs into account very effectively. This makes it necessary to keep the user in the loop in a way which is both efficient and interpretable. One unique way of achieving this is by leveraging human visual perceptions on intermediate data mining results. Such a system combines the computational power of a computer and the intuitive abilities of a human to provide solutions which cannot be achieved by either. This paper will discuss a number of recent approaches to several data mining algorithms along these lines.
+
+#index 345872
+#* Towards long pattern generation in dense databases
+#@ 968
+#t 2001
+#c ACM SIGKDD Explorations Newsletter
+#% 152934
+#% 227917
+#% 248791
+#% 300120
+#% 300124
+#% 310494
+#% 310507
+#% 310559
+#% 329598
+#% 443350
+#% 459020
+#% 464714
+#% 464989
+#% 465003
+#% 481290
+#% 481754
+#% 481779
+#% 631970
+#% 631986
+#! This paper discusses the problem of long pattern generation in dense databases. In recent years, there has been an increase of interest in techniques for maximal pattern generation. We present a survey of this class of methods for long pattern generation which differ considerably from the level-wise approach of traditional methods. Many of these techniques are rooted in combinatorial tricks which can be applied only when the generation of frequent patterns is not forced to be level wise. We present an overview of the different kinds of methods which can be used in order to improve the counting and search space exploration methods for long patterns.
+
+#index 397387
+#* Hierarchical subspace sampling: a unified framework for high dimensional data reduction, selectivity estimation and nearest neighbor search
+#@ 968
+#t 2002
+#c Proceedings of the 2002 ACM SIGMOD international conference on Management of data
+#% 86950
+#% 201876
+#% 201893
+#% 248822
+#% 300131
+#% 300193
+#% 333881
+#% 333946
+#% 333954
+#% 342828
+#% 479648
+#% 480124
+#% 480307
+#% 481290
+#% 482092
+#! With the increased abilities for automated data collection made possible by modern technology, the typical sizes of data collections have continued to grow in recent years. In such cases, it may be desirable to store the data in a reduced format in order to improve the storage, transfer time, and processing requirements on the data. One of the challenges of designing effective data compression techniques is to be able to preserve the ability to use the reduced format directly for a wide range of database and data mining applications. In this paper, we propose the novel idea of hierarchical subspace sampling in order to create a reduced representation of the data. The method is naturally able to estimate the local implicit dimensionalities of each point very effectively, and thereby create a variable dimensionality reduced representation of the data. Such a technique has the advantage that it is very adaptive about adjusting its representation depending upon the behavior of the immediate locality of a data point. An interesting property of the subspace sampling technique is that unlike all other data reduction techniques, the overall efficiency of compression improves with increasing database size. This is a highly desirable property for any data reduction system since the problem itself is motivated by the large size of data sets. Because of its sampling approach, the procedure is extremely fast and scales linearly both with data set size and dimensionality. Furthermore, the subspace sampling technique is able to reveal important local subspace characteristics of high dimensional data which can be harnessed for effective solutions to problems such as selectivity estimation and approximate nearest neighbor search.
+
+#index 462238
+#* Online Generation of Association Rules
+#@ 968 850
+#t 1998
+#c ICDE '98 Proceedings of the Fourteenth International Conference on Data Engineering
+
+#index 466638
+#* On Effective Conceptual Indexing and Similarity Search in Text Data
+#@ 968 850
+#t 2001
+#c ICDM '01 Proceedings of the 2001 IEEE International Conference on Data Mining
+#! Similarity search in text has proven to be an interesting problem from the qualitative perspective because of inherent redundancies and ambiguities in textual descriptions. The methods used in search engines in order to retrieve documents most similar to user-defined sets of keywords are not applicable to targets which are medium to large size documents, because of even greater noise effects stemming from the presence of a large number of words unrelated to the overall topic in the document. The inverted representation is the dominant method for indexing text, but it is not as suitable for document-to-document similarity search, as for short user-queries. One way of improving the quality of similarity search is Latent Semantic Indexing (LSI), which maps the documents from the original set of words to a concept space. U fortunately, LSI maps the data into a domain in which it is not possible to provide effectiveindexing techniques. In this paper, we investigate new ways of providing conceptual search among documents bycreating a representation in terms of conceptual word-chains. This technique also allows effective indexing techniques so that similarity queries ca be performed on large collectionsof documents by accessing a small amount of data. We demonstrate that our scheme outperforms standard textual similarity search o the inverted representation both in terms of quality a d search efficiency.
+
+#index 480132
+#* What Is the Nearest Neighbor in High Dimensional Spaces?
+#@ 2203 968 449
+#t 2000
+#c VLDB '00 Proceedings of the 26th International Conference on Very Large Data Bases
+#% 67565
+#% 131061
+#% 169940
+#% 238764
+#% 252304
+#% 273891
+#% 300131
+#% 427199
+#% 443248
+#% 479649
+#% 481947
+#% 481956
+#% 482109
+
+#index 501506
+#* Data Mining Techniques for Associations, Clustering and Classification
+#@ 968 850
+#t 1999
+#c PAKDD '99 Proceedings of the Third Pacific-Asia Conference on Methodologies for Knowledge Discovery and Data Mining
+#% 36672
+#% 90661
+#% 152934
+#% 210160
+#% 210173
+#% 227919
+#% 237187
+#% 248012
+#% 248791
+#% 443164
+#% 449588
+#% 462238
+#% 481281
+#% 481290
+#% 481754
+#% 481758
+#% 481945
+#% 527022
+#% 566123
+#! This paper provides a survey of various data mining techniques for advanced database applications. These include association rule generation, clustering and classification. With the recent increase in large online repositories of information, such techniques have great importance. The focus is on high dimensional data spaces with large volumes of data. The paper discusses past research on the topic and also studies the corresponding algorithms and applications.
+
+#index 576115
+#* On nearest neighbor indexing of nonlinear trajectories
+#@ 968 3840
+#t 2003
+#c Proceedings of the twenty-second ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems
+#% 2115
+#% 86950
+#% 227939
+#% 273706
+#% 287466
+#% 299979
+#% 300174
+#% 353133
+#% 427199
+#% 480093
+#% 481956
+#% 503869
+#% 527195
+#! In recent years, the problem of indexing mobile objects has assumed great importance because of its relevance to a wide variety of applications. Most previous results in this area have proposed indexing schemes for objects with linear trajectories in one or two dimensions. In this paper, we present methods for indexing objects with nonlinear trajectories. Specifically, we identify a useful condition called the convex hull property and show that any trajectory satisfying this condition can be indexed by storing a careful representation of these objects in a traditional index structure. Since a wide variety of relevant nonlinear trajectories satisfy this condition, our result significantly expands the class of trajectories for which nearest neighbor indexing schemes can be devised. We also show that even though many non-linear trajectories do not satisfy the convex hull condition, an approximate representation can often be found which satisfies it. We discuss examples of techniques which can be utilized to find representations that satisfy the convex hull property. We present empirical results to demonstrate the effectiveness of our indexing method.
+
+#index 577227
+#* On effective classification of strings with wavelets
+#@ 968
+#t 2002
+#c Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 4868
+#% 136350
+#% 235941
+#% 273900
+#% 280408
+#% 280482
+#% 300181
+#% 333941
+#% 463903
+#% 466668
+#% 479787
+#% 481290
+#% 481609
+#% 566132
+#% 631926
+#% 632089
+#! In recent years, the technological advances in mapping genes have made it increasingly easy to store and use a wide variety of biological data. Such data are usually in the form of very long strings for which it is difficult to determine the most relevant features for a classification task. For example, a typical DNA string may be millions of characters long, and there may be thousands of such strings in a database. In many cases, the classification behavior of the data may be hidden in the compositional behavior of certain segments of the string which cannot be easily determined apriori. Another problem which complicates the classification task is that in some cases the classification behavior is reflected in global behavior of the string, whereas in others it is reflected in local patterns. Given the enormous variation in the behavior of the strings over different data sets, it is useful to develop an approach which is sensitive to both the global and local behavior of the strings for the purpose of classification. For this purpose, we will exploit the multi-resolution property of wavelet decomposition in order to create a scheme which can mine classification characteristics at different levels of granularity. The resulting scheme turns out to be very effective in practice on a wide range of problems.
+
+#index 577255
+#* Collaborative crawling: mining user experiences for topical resource discovery
+#@ 968
+#t 2002
+#c Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 281251
+#% 330599
+#% 577255
+#! The rapid growth of the world wide web had made the problem of topic specific resource discovery an important one in recent years. In this problem, it is desired to find web pages which satisfy a predicate specified by the user. Such a predicate could be a keyword query, a topical query, or some arbitrary contraint. Several techniques such as focussed crawling and intelligent crawling have recently been proposed for topic specific resource discovery. All these crawlers are linkage based, since they use the hyperlink behavior in order to perform resource discovery. Recent studies have shown that the topical correlations in hyperlinks are quite noisy and may not always show the consistency necessary for a reliable resource discovery process. In this paper, we will approach the problem of resource discovery from an entirely different perspective; we will mine the significant browsing patterns of world wide web users in order to model the likelihood of web pages belonging to a specified predicate. This user behavior can be mined from the freely available traces of large public domain proxies on the world wide web. We refer to this technique as collaborative crawling because it mines the collective user experiences in order to find topical resources. Such a strategy is extremely effective because the topical consistency in world wide web browsing patterns turns out to very reliable. In addition, the user-centered crawling system can be combined with linkage based systems to create an overall system which works more effectively than a system based purely on either user behavior or hyperlinks.
+
+#index 654489
+#* A framework for diagnosing changes in evolving data streams
+#@ 968
+#t 2003
+#c Proceedings of the 2003 ACM SIGMOD international conference on Management of data
+#% 227859
+#% 273693
+#% 297183
+#% 308435
+#% 310488
+#% 310500
+#% 345857
+#% 464204
+#% 481290
+#% 481931
+#% 527177
+#% 630974
+#% 632056
+#% 632090
+#! In recent years, the progress in hardware technology has made it possible for organizations to store and record large streams of transactional data. This results in databases which grow without limit at a rapid rate. This data can often show important changes in trends over time. In such cases, it is useful to understand, visualize and diagnose the evolution of these trends. When the data streams are fast and continuous, it becomes important to analyze and predict the trends quickly in online fashion. In this paper, we discuss the concept of velocity density estimation, a technique used to understand, visualize and determine trends in the evolution of fast data streams. We show how to use velocity density estimation in order to create both temporal velocity profiles and spatial velocity profiles at periodic instants in time. These profiles are then used in order to predict three kinds of data evolution: dissolution, coagulation and shift. Methods are proposed to visualize the changing data trends in a single online scan of the data stream, and a computational requirement which is linear in the number of data points. In addition, batch processing techniques are proposed in order to identify combinations of dimensions which show the greatest amount of global evolution. The techniques discussed in this paper can be easily extended to spatio-temporal data, changes in data snapshots at fixed instances in time, or any other data which has a temporal component during its evolution.
+
+#index 662748
+#* Proceedings of the 8th ACM SIGMOD workshop on Research issues in data mining and knowledge discovery
+#@ 2478 968
+#t 2003
+#c 8th ACM SIGMOD Workshop on Research Issues in Data Mining and Knowledge Discovery ( held in conjunction with MOD/PODS 2003 conference / co-located with FCRC 2003 Conference )
+
+#index 729910
+#* Towards systematic design of distance functions for data mining applications
+#@ 968
+#t 2003
+#c Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 4868
+#% 218982
+#% 310509
+#% 332094
+#% 334059
+#% 406493
+#% 436509
+#% 465017
+#% 477968
+#% 480132
+#% 480302
+#% 481609
+#% 482109
+#! Distance function computation is a key subtask in many data mining algorithms and applications. The most effective form of the distance function can only be expressed in the context of a particular data domain. It is also often a challenging and non-trivial task to find the most effective form of the distance function. For example, in the text domain, distance function design has been considered such an important and complex issue that it has been the focus of intensive research over three decades. The final design of distance functions in this domain has been reached only by detailed empirical testing and consensus over the quality of results provided by the different variations. With the increasing ability to collect data in an automated way, the number of new kinds of data continues to increase rapidly. This makes it increasingly difficult to undertake such efforts for each and every new data type. The most important aspect of distance function design is that since a human is the end-user for any application, the design must satisfy the user requirements with regard to effectiveness. This creates the need for a systematic framework to design distance functions which are sensitive to the particular characteristics of the data domain. In this paper, we discuss such a framework. The goal is to create distance functions in an automated waywhile minimizing the work required from the user. We will show that this framework creates distance functions which are significantly more effective than popularly used functions such as the Euclidean metric.
+
+#index 729941
+#* XRules: an effective structural classifier for XML data
+#@ 2478 968
+#t 2003
+#c Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 4868
+#% 136350
+#% 262071
+#% 273900
+#% 280437
+#% 311027
+#% 466483
+#% 479640
+#% 481290
+#% 552188
+#% 577218
+#% 577227
+#% 629656
+#! XML documents have recently become ubiquitous because of their varied applicability in a number of applications. Classification is an important problem in the data mining domain, but current classification methods for XML documents use IR-based methods in which each document is treated as a bag of words. Such techniques ignore a significant amount of information hidden inside the documents. In this paper we discuss the problem of rule based classification of XML data by using frequent discriminatory substructures within XML documents. Such a technique is more capable of finding the classification characteristics of documents. In addition, the technique can also be extended to cost sensitive classification. We show the effectiveness of the method with respect to other classifiers. We note that the methodology discussed in this paper is applicable to any kind of semi-structured data.
+
+#index 769927
+#* On demand classification of data streams
+#@ 968 961 4625 850
+#t 2004
+#c Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 210173
+#% 310500
+#% 342600
+#% 378388
+#% 654489
+#% 729437
+#% 1015261
+#! Current models of the classification problem do not effectively handle bursts of particular classes coming in at different times. In fact, the current model of the classification problem simply concentrates on methods for one-pass classification modeling of very large data sets. Our model for data stream classification views the data stream classification problem from the point of view of a dynamic approach in which simultaneous training and testing streams are used for dynamic classification of data sets. This model reflects real life situations effectively, since it is desirable to classify test streams in real time over an evolving training and test stream. The aim here is to create a classification system in which the training model can adapt quickly to the changes of the underlying data stream. In order to achieve this goal, we propose an on-demand classification process which can dynamically select the appropriate window of past training data to build the classifier. The empirical results indicate that the system maintains a high classification accuracy in an evolving data stream, while providing an efficient solution to the classification task.
+
+#index 823378
+#* Towards exploratory test instance specific algorithms for high dimensional classification
+#@ 968
+#t 2005
+#c Proceedings of the eleventh ACM SIGKDD international conference on Knowledge discovery in data mining
+#% 310517
+#% 481290
+#! In an interactive classification application, a user may find it more valuable to develop a diagnostic decision support method which can reveal significant classification behavior of exemplar records. Such an approach has the additional advantage of being able to optimize the decision process for the individual record in order to design more effective classification methods. In this paper, we propose the Subspace Decision Path method which provides the user with the ability to interactively explore a small number of nodes of a hierarchical decision process so that the most significant classification characteristics for a given test instance are revealed. In addition, the SD-Path method can provide enormous interpretability by constructing views of the data in which the different classes are clearly separated out. Even in cases where the classification behavior of the test instance is ambiguous, the SD-Path method provides a diagnostic understanding of the characteristics which result in this ambiguity. Therefore, this method combines the abilities of the human and the computer in creating an effective diagnostic tool for instance-centered high dimensional classification.
+
+#index 824726
+#* On k-anonymity and the curse of dimensionality
+#@ 968
+#t 2005
+#c VLDB '05 Proceedings of the 31st international conference on Very large data bases
+#% 264246
+#% 300184
+#% 333876
+#% 342614
+#% 481290
+#% 577233
+#% 577289
+#% 800515
+#% 801690
+#! In recent years, the wide availability of personal data has made the problem of privacy preserving data mining an important one. A number of methods have recently been proposed for privacy preserving data mining of multidimensional data records. One of the methods for privacy preserving data mining is that of anonymization, in which a record is released only if it is indistinguishable from k other entities in the data. We note that methods such as k-anonymity are highly dependent upon spatial locality in order to effectively implement the technique in a statistically robust way. In high dimensional space the data becomes sparse, and the concept of spatial locality is no longer easy to define from an application point of view. In this paper, we view the k-anonymization problem from the perspective of inference attacks over all possible combinations of attributes. We show that when the data contains a large number of attributes which may be considered quasi-identifiers, it becomes difficult to anonymize the data without an unacceptably high amount of information loss. This is because an exponential number of combinations of dimensions can be used to make precise inference attacks, even when individual attributes are partially specified within a range. We provide an analysis of the effect of dimensionality on k-anonymity methods. We conclude that when a data set contains a large number of attributes which are open to inference attacks, we are faced with a choice of either completely suppressing most of the data or losing the desired level of anonymity. Thus, this paper shows that the curse of high dimensionality also applies to the problem of privacy preserving data mining.
+
+#index 864498
+#* On the Inverse Classification Problem and its Applications
+#@ 968 15196 961
+#t 2006
+#c ICDE '06 Proceedings of the 22nd International Conference on Data Engineering
+#! In this paper, we discuss the inverse classification problem, in which we desire to define the features of an incomplete record in such a way that will result in a desired class label. Such an approach is useful in applications in which it is an objective to determine a set of actions to be taken in order to guide the data mining application towards a desired solution. This system can be used for a variety of decision support applications which have pre-determined task criteria.
+
+#index 881507
+#* On privacy preservation against adversarial data mining
+#@ 968 3214 7430
+#t 2006
+#c Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 1868
+#% 300184
+#% 333876
+#% 342614
+#% 577233
+#% 577289
+#% 740764
+#% 769885
+#% 800515
+#% 993988
+#! Privacy preserving data processing has become an important topic recently because of advances in hardware technology which have lead to widespread proliferation of demographic and sensitive data. A rudimentary way to preserve privacy is to simply hide the information in some of the sensitive fields picked by a user. However, such a method is far from satisfactory in its ability to prevent adversarial data mining. Real data records are not randomly distributed. As a result, some fields in the records may be correlated with one another. If the correlation is sufficiently high, it may be possible for an adversary to predict some of the sensitive fields using other fields.In this paper, we study the problem of privacy preservation against adversarial data mining, which is to hide a minimal set of entries so that the privacy of the sensitive fields are satisfactorily preserved. In other words, even by data mining, an adversary still cannot accurately recover the hidden data entries. We model the problem concisely and develop an efficient heuristic algorithm which can find good solutions in practice. An extensive performance study is conducted on both synthetic and real data sets to examine the effectiveness of our approach.
+
+#index 893138
+#* On biased reservoir sampling in the presence of stream evolution
+#@ 968
+#t 2006
+#c VLDB '06 Proceedings of the 32nd international conference on Very large data bases
+#% 1331
+#% 227883
+#% 248812
+#% 248822
+#% 273907
+#% 333983
+#% 379444
+#% 379445
+#% 397385
+#% 428155
+#% 480805
+#% 576112
+#% 578390
+#% 824686
+#% 993960
+#% 1016200
+#! The method of reservoir based sampling is often used to pick an unbiased sample from a data stream. A large portion of the unbiased sample may become less relevant over time because of evolution. An analytical or mining task (eg. query estimation) which is specific to only the sample points from a recent time-horizon may provide a very inaccurate result. This is because the size of the relevant sample reduces with the horizon itself. On the other hand, this is precisely the most important case for data stream algorithms, since recent history is frequently analyzed. In such cases, we show that an effective solution is to bias the sample with the use of temporal bias functions. The maintenance of such a sample is non-trivial, since it needs to be dynamically maintained, without knowing the total number of points in advance. We prove some interesting theoretical properties of a large class of memory-less bias functions, which allow for an efficient implementation of the sampling algorithm. We also show that the inclusion of bias in the sampling process introduces a maximum requirement on the reservoir size. This is a nice property since it shows that it may often be possible to maintain the maximum relevant sample with limited storage requirements. We not only illustrate the advantages of the method for the problem of query estimation, but also show that the approach has applicability to broader data mining problems such as evolution analysis and classification.
+
+#index 989574
+#* On string classification in data streams
+#@ 968 850
+#t 2007
+#c Proceedings of the 13th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 235941
+#% 310500
+#% 333943
+#% 342600
+#% 481290
+#% 577227
+#% 682435
+#% 682712
+#% 769927
+#! String data has recently become important because of its use in a number of applications such as computational and molecular biology, protein analysis, and market basket data. In many cases, these strings contain a wide variety of substructures which may have physical significance for that application. For example, such substructures could represent important fragments of a DNA string or an interesting portion of a fraudulent transaction. In such a case, it is desirable to determine the identity, location, and extent of that substructure in the data. This is a much more difficult generalization of the classification problem, since the latter problem labels entire strings rather than deal with the more complex task of determining string fragments with a particular kind of behavior. The problem becomes even more complicated when different kinds of substrings show complicated nesting patterns. Therefore, we define a somewhat different problem which we refer to as the generalized classification problem. We propose a scalable approach based on hidden markov models for this problem. We show how to implement the generalized string classification procedure for very large data bases and data streams. We present experimental results over a number of large data sets and data streams.
+
+#index 989575
+#* Xproj: a framework for projected structural clustering of xml documents
+#@ 968 18595 4625 17624 3661
+#t 2007
+#c Proceedings of the 13th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 36672
+#% 210173
+#% 262071
+#% 273891
+#% 413582
+#% 464996
+#% 466483
+#% 480126
+#% 481281
+#% 577218
+#% 629656
+#% 631985
+#% 729627
+#% 729941
+#% 740767
+#% 745515
+#% 1712591
+#! XML has become a popular method of data representation both on the web and in databases in recent years. One of the reasons for the popularity of XML has been its ability to encode structural information about data records. However, this structural characteristic of data sets also makes it a challenging problem for a variety of data mining problems. One such problem is that of clustering, in which the structural aspects of the data result in a high implicit dimensionality of the data representation. As a result, it becomes more difficult to cluster the data in a meaningful way. In this paper, we propose an effective clustering algorithm for XML data which uses substructures of the documents in order to gain insights about the important underlying structures. We propose new ways of using multiple sub-structuralinformation in XML documents to evaluate the quality of intermediate cluster solutions, and guide the algorithms to a final solution which reflects the true structural behavior in individual partitions. We test the algorithm on a variety of real and synthetic data sets.
+
+#index 989675
+#* A framework for classification and segmentation of massive audio data streams
+#@ 968
+#t 2007
+#c Proceedings of the 13th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 210173
+#% 1015261
+#! In recent years, the proliferation of VOIP data has created a number of applications in which it is desirable to perform quick online classification and recognition of massive voice streams. Typically such applications are encountered in real time intelligence and surveillance. In many cases, the data streams can be in compressed format, and the rate of data processing can often run at the rate of Gigabits per second. All known techniques for speaker voice analysis require the use of an offline training phase in which the system is trained with known segments of speech. The state-of-the-art method for text-independent speaker recognition is known as Gaussian Mixture Modeling (GMM), and it requires an iterative Expectation Maximization Procedure for training, which cannot be implemented in real time. In this paper, we discuss the details of such an online voice recognition system. For this purpose, we use our micro-clustering algorithms to design concise signatures of the target speakers. One of the surprising and insightful observations from our experiences with such a system is that while it was originally designed only for efficiency, we later discovered that it was also more accurate than the widely used Gaussian Mixture Model (GMM). This was because of the conciseness of the micro-cluster model, which made it less prone to over training. This is evidence of the fact that it is often possible to get the best of both worlds and do better than complex models both from an efficiency and accuracy perspective.
+
+#index 994022
+#* An automated system for web portal personalization
+#@ 968 850
+#t 2002
+#c VLDB '02 Proceedings of the 28th international conference on Very Large Data Bases
+#% 202011
+#% 220706
+#% 220709
+#% 220711
+#% 241033
+#% 280447
+#% 280500
+#% 280513
+#% 300131
+#% 406493
+#% 463734
+#% 464839
+#% 466638
+#% 482113
+#% 505719
+#% 564279
+#% 565631
+#! This paper proposes a system for personalization of web portals. A specic implementation is discussed in reference to a web portal containing a news feed service. Techniques are proposed for effective categorization, management, and personalization of news feeds obtained from a live news wire service. The process consists of two steps: first manual input is required to build the domain knowledge which could be site-specific; then the automated component uses this domain knowledge in order to perform the personalization, categorization and presentation. Effective schemes for advertising are proposed, where the targeting is done using both the information about the user and the content of the web page on which the advertising icon appears. Automated techniques for identifying sudden variations in news patterns are described; these may be used for supporting news-alerts. A description of a version of this software for our customer web site is provided.
+
+#index 1015261
+#* A framework for clustering evolving data streams
+#@ 968 961 4625 850
+#t 2003
+#c VLDB '03 Proceedings of the 29th international conference on Very large data bases - Volume 29
+#% 36672
+#% 210173
+#% 248790
+#% 273890
+#% 310488
+#% 310500
+#% 320942
+#% 378388
+#% 481281
+#% 594012
+#% 654489
+#% 659972
+#! The clustering problem is a difficult problem for the data stream domain. This is because the large volumes of data arriving in a stream renders most traditional algorithms too inefficient. In recent years, a few one-pass clustering algorithms have been developed for the data stream problem. Although such methods address the scalability issues of the clustering problem, they are generally blind to the evolution of the data and do not address the following issues: (1) The quality of the clusters is poor when the data evolves considerably over time. (2) A data stream clustering algorithm requires much greater functionality in discovering and exploring clusters over different portions of the stream. The widely used practice of viewing data stream clustering algorithms as a class of one-pass clustering algorithms is not very useful from an application point of view. For example, a simple one-pass clustering algorithm over an entire data stream of a few years is dominated by the outdated history of the stream. The exploration of the stream over different time windows can provide the users with a much deeper understanding of the evolving behavior of the clusters. At the same time, it is not possible to simultaneously perform dynamic clustering over all possible time horizons for a data stream of even moderately large volume. This paper discusses a fundamentally different philosophy for data stream clustering which is guided by application-centered requirements. The idea is divide the clustering process into an online component which periodically stores detailed summary statistics and an offine component which uses only this summary statistics. The offine component is utilized by the analyst who can use a wide variety of inputs (such as time horizon or number of clusters) in order to provide a quick understanding of the broad clusters in the data stream. The problems of efficient choice, storage, and use of this statistical data for a fast data stream turns out to be quite tricky. For this purpose, we use the concepts of a pyramidal time frame in conjunction with a microclustering approach. Our performance experiments over a number of real and synthetic data sets illustrate the effectiveness, efficiency, and insights provided by our approach.
+
+#index 1016200
+#* A framework for projected clustering of high dimensional data streams
+#@ 968 961 4625 850
+#t 2004
+#c VLDB '04 Proceedings of the Thirtieth international conference on Very large data bases - Volume 30
+#% 36672
+#% 210173
+#% 248790
+#% 248792
+#% 273890
+#% 273891
+#% 302724
+#% 310488
+#% 310500
+#% 320942
+#% 378388
+#% 481281
+#% 594012
+#% 654489
+#% 659943
+#% 659972
+#% 740767
+#% 1015261
+#! The data stream problem has been studied extensively in recent years, because of the great ease in collection of stream data. The nature of stream data makes it essential to use algorithms which require only one pass over the data. Recently, single-scan, stream analysis methods have been proposed in this context. However, a lot of stream data is high-dimensional in nature. High-dimensional data is inherently more complex in clustering, classification, and similarity search. Recent research discusses methods for projected clustering over high-dimensional data sets. This method is however difficult to generalize to data streams because of the complexity of the method and the large volume of the data streams. In this paper, we propose a new, high-dimensional, projected data stream clustering method, called HPStream. The method incorporates a fading cluster structure, and the projection based clustering methodology. It is incrementally updatable and is highly scalable on both the number of dimensions and the size of the data streams, and it achieves better clustering quality in comparison with the previous stream clustering methods. Our performance study with both real and synthetic data sets demonstrates the efficiency and effectiveness of our proposed framework and implementation methods.
+
+#index 1022302
+#* Challenges and experience in prototyping a multi-modal stream analytic and monitoring application on System S
+#@ 2451 19210 2485 850 968 19211 19143 17691 19182 4545 4558
+#t 2007
+#c VLDB '07 Proceedings of the 33rd international conference on Very large data bases
+#% 397353
+#% 654507
+#% 769927
+#% 838409
+#% 844301
+#% 844373
+#% 850523
+#% 875006
+#% 881469
+#% 938461
+#% 960275
+#% 1016200
+#% 1180866
+#! In this paper, we describe the challenges of prototyping a reference application on System S, a distributed stream processing middleware under development at IBM Research. With a large number of stream PEs (Processing Elements) implementing various stream analytic algorithms, running on a large-scale, distributed cluster of nodes, and collaboratively digesting several multi-modal source streams with vastly differing rates, prototyping a reference application on System S faces many challenges. Specifically, we focus on our experience in prototyping DAC (Disaster Assistance Claim monitoring), a reference application dealing with multi-modal stream analytic and monitoring. We describe three critical challenges: (1) How do we generate correlated, multi-modal source streams for DAC? (2) How do we design and implement a comprehensive stream application, like DAC, from many divergent stream analytic PEs? (3) How do we deploy DAC in light of source streams with extremely different rates? We report our experience in addressing these challenges, including modeling a disaster claim processing center to generate correlated source streams, constructing the PE flow graph, utilizing programming supports from System S, adopting parallelism, and exploiting resource-adaptive computation.
+
+#index 1206640
+#* A Framework for Clustering Uncertain Data Streams
+#@ 968 850
+#t 2008
+#c ICDE '08 Proceedings of the 2008 IEEE 24th International Conference on Data Engineering
+#! In recent years, uncertain data management applications have grown in importance because of the large number of hardware applications which measure data approximately. For example, sensors are typically expected to have considerable noise in their readings because of inaccuracies in data retrieval, transmission, and power failures. In many cases, the estimated error of the underlying data stream is available. This information is very useful for the mining process, since it can be used in order to improve the quality of the underlying results. In this paper we will propose a method for clustering uncertain data streams. We use a very general model of the uncertainty in which we assume that only a few statistical measures of the uncertainty are available. We will show that the use of even modest uncertainty information during the mining process is sufficient to greatly improve the quality of the underlying results. We show that our approach is more effective than a purely deterministic method such as the CluStream approach. We will test the approach on a variety of real and synthetic data sets and illustrate the advantages of the method in terms of effectiveness and efficiency.
+
+#index 1206689
+#* On High Dimensional Indexing of Uncertain Data
+#@ 968 850
+#t 2008
+#c ICDE '08 Proceedings of the 2008 IEEE 24th International Conference on Data Engineering
+#! In this paper, we will examine the problem of distance function computation and indexing uncertain data in high dimensionality for nearest neighbor and range queries. Because of the inherent noise in uncertain data, traditional distance function measures such as the Lq-metric and their probabilistic variants are not qualitatively effective. This problem is further magnified by the sparsity issue in high dimensionality. In this paper, we examine methods of computing distance functions for high dimensional data which are qualitatively effective and friendly to the use of indexes. In this paper, we show how to construct an effective index structure in order to handle uncertain similarity and range queries in high dimensionality. Typical range queries in high dimensional space use only a subset of the ranges in order to resolve the queries. Furthermore, it is often desirable to run similarity queries with only a subset of the large number of dimensions. Such queries are difficult to resolve with traditional index structures which use the entire set of dimensions. We propose query-processing techniques which use effective search methods on the index in order to compute the final results. We discuss the experimental results on a number of real and synthetic data sets in terms of effectiveness and efficiency. We show that the proposed distance measures are not only more effective than traditional Lq-norms, but can also be computed more efficiently over our proposed index structure.
+
+#index 1206714
+#* On Unifying Privacy and Uncertain Data Models
+#@ 968
+#t 2008
+#c ICDE '08 Proceedings of the 2008 IEEE 24th International Conference on Data Engineering
+#! The problem of privacy-preserving data mining has been studied extensively in recent years because of the increased amount of personal information which is available to corporations and individuals. Most privacy transformations use some form of data perturbation or representational ambiguity in order to reduce the risk of identification. The final results from privacy transformation methods often require the underlying applications to be modified in order to work with the new representation of the data. Since the end results of privacy-transformation methods have not been standardized, the required modifications may vary with the method used for the privacy transformation. In some cases, it can be an enormous effort to re-design applications to work with the anonymized data. While the results of privacy-transformation methods are a natural form of uncertain data, the two problems have generally been studied independently. In this paper, we make a first attempt to unify the two fields, and propose a privacy transformation for which existing uncertain data management tools can be directly used. This is a great advantage, since it means that the wide spectrum of research available for uncertain data management can also be used for privacy-preserving data mining. We propose an uncertain version of the k-anonymity model which is related to the well known deterministic model of k-anonymity. The uncertain version of the k-anonymity model has the additional feature of introducing greater uncertainty for the adversary over an equivalent deterministic model.
+
+#index 1206729
+#* LOCUST: An Online Analytical Processing Framework for High Dimensional Classification of Data Streams
+#@ 968 850
+#t 2008
+#c ICDE '08 Proceedings of the 2008 IEEE 24th International Conference on Data Engineering
+#! In recent years, data streams have become ubiquitous because of advances in hardware and software technology. The ability to adapt conventional mining problems to data streams is a great challenge in a data stream environment. Many data streams are inherently high dimensional, which creates a special challenge for data mining algorithms. In this paper, we consider the problem of classification of high dimensional data streams. For the high dimensional case, even traditional classifiers do not work very well on fixed data sets. We discuss a number of insights for the intractability of the high dimensional case. We use these insights to propose a new classification method (LOCUST) which avoids many of these weaknesses. The key is to develop a subspace-based instance centered classification approach which can be implemented efficiently for a fast data stream. We propose a methodology to effectively process the data stream in an organized way, so that the intermediate data structures can be used to sample locally discriminative subspaces for the classification process. We show that LOCUST is able to work effectively in the high dimensional case, and is also flexible in terms of increased robustness with greater resource availability.
+
+#index 1206897
+#* On High Dimensional Projected Clustering of Uncertain Data Streams
+#@ 968
+#t 2009
+#c ICDE '09 Proceedings of the 2009 IEEE International Conference on Data Engineering
+#! In this paper, we will study the problem of projected clustering of uncertain data streams. The use of uncertainty is especially important in the high dimensional scenario, because the sparsity property of high dimensional data is aggravated by the uncertainty. The uncertainty information is important for not only the determination of the assignment of data points to clusters, but also that of the valid projections across which the data is naturally clustered. The problem is especially challenging in the case where the data is not available on disk and arrives in the form of a fast stream. In such cases, the one-pass constraint in data stream computation poses special challenges to the algorithmic sophistication required for incorporating uncertainty information into the high dimensional computations. We will show that the projected clustering problem can be effectively solved in the context of uncertain data streams.
+
+#index 1207014
+#* On Efficient Query Processing of Stream Counts on the Cell Processor
+#@ 23408 12392 968 850
+#t 2009
+#c ICDE '09 Proceedings of the 2009 IEEE International Conference on Data Engineering
+#! In recent years, the sketch-based technique has been presented as an effective method for counting stream items on processors with limited storage and processing capabilities, such as the network processors. In this paper, we examine the implementation of a sketch-based counting algorithm on the heterogeneous multi-core Cell processor. Like the network processors, the Cell also contains on-chip special processors with limited local memories. These special processors enable parallel processing of stream items using short-vector data-parallel (SIMD) operations. We demonstrate that the inaccuracies of the estimates computed by straightforward adaptations of current sketch-based counting approaches are exacerbated by increased inaccuracies in approximating counts of low frequency items, and by the inherent space limitations of the Cell processor. To address these concerns, we implement a sketch-based counting algorithm, FCM, that is specifically adapted for the Cell processor architecture. FCM incorporates novel capabilities for improving estimation accuracy using limited space by dynamically identifying low- and high-frequency stream items, and using a variable number of hash functions per item as determined by an item's current frequency phase. We experimentally demonstrate that with similar space consumption, FCM computes better frequency estimates of both the low- and high-frequency items than a naive parallelization of an existing stream counting algorithm. Using FCM as the kernel, our parallel algorithm is able to scale the over all performance linearly as well as improve the estimate accuracy as the number of processors is increased. Thus, this work demonstrates the importance of adapting the algorithm to the specifics of the underlying architecture.
+
+#index 1214624
+#* Frequent pattern mining with uncertain data
+#@ 968 13500 4625 17546
+#t 2009
+#c Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 248791
+#% 300120
+#% 329598
+#% 466490
+#% 481290
+#% 832571
+#% 866990
+#% 1063531
+#% 1179162
+#! This paper studies the problem of frequent pattern mining with uncertain data. We will show how broad classes of algorithms can be extended to the uncertain data setting. In particular, we will study candidate generate-and-test algorithms, hyper-structure algorithms and pattern growth based algorithms. One of our insightful observations is that the experimental behavior of different classes of algorithms is very different in the uncertain case as compared to the deterministic case. In particular, the hyper-structure and the candidate generate-and-test algorithms perform much better than tree-based algorithms. This counter-intuitive behavior is an important observation from the perspective of algorithm design of the uncertain variation of the problem. We will test the approach on a number of real and synthetic data sets, and show the effectiveness of two of our approaches over competitive techniques.
+
+#index 1523882
+#* On dense pattern mining in graph streams
+#@ 968 32947 850 10198
+#t 2010
+#c Proceedings of the VLDB Endowment
+#% 443393
+#% 498852
+#% 729938
+#% 785339
+#% 823347
+#% 824711
+#% 844308
+#% 956459
+#% 1016146
+#% 1063501
+#% 1117010
+#% 1207028
+#% 1372657
+#! Many massive web and communication network applications create data which can be represented as a massive sequential stream of edges. For example, conversations in a telecommunication network or messages in a social network can be represented as a massive stream of edges. Such streams are typically very large, because of the large amount of underlying activity in such networks. An important application in these domains is to determine frequently occurring dense structures in the underlying graph stream. In general, we would like to determine frequent and dense patterns in the underlying interactions. We introduce a model for dense pattern mining and propose probabilistic algorithms for determining such structural patterns effectively and efficiently. The purpose of the probabilistic approach is to create a summarization of the graph stream, which can be used for further pattern mining. We show that this summarization approach leads to effective and efficient results for stream pattern mining over a number of real and synthetic data sets.
+
+#index 1594621
+#* On dimensionality reduction of massive graphs for indexing and retrieval
+#@ 968 4558
+#t 2011
+#c ICDE '11 Proceedings of the 2011 IEEE 27th International Conference on Data Engineering
+#! In this paper, we will examine the problem of dimensionality reduction of massive disk-resident data sets. Graph mining has become important in recent years because of its numerous applications in community detection, social networking, and web mining. Many graph data sets are defined on massive node domains in which the number of nodes in the underlying domain is very large. As a result, it is often difficult to store and hold the information necessary in order to retrieve and index the data. Most known methods for dimensionality reduction are effective only for data sets defined on modest domains. Furthermore, while the problem of dimensionality reduction is most relevant to the problem of massive data sets, these algorithms are inherently not designed for the case of disk-resident data in terms of the order in which the data is accessed on disk. This is a serious limitation which restricts the applicability of current dimensionality reduction methods. Furthermore, since dimensionality reduction methods are typically designed for database applications such as indexing, it is important to design the underlying data reduction method, so that it can be effectively used for such applications. In this paper, we will examine the difficult problem of dimensionality reduction of graph data in the difficult case in which the underlying number of nodes are very large and the data set is disk-resident. We will propose an effective sampling algorithm for dimensionality reduction and show how to perform the dimensionality reduction in a limited number of passes on disk. We will also design the technique to be highly interpretable and friendly for indexing applications. We will illustrate the effectiveness and efficiency of the approach on a number of real data sets.
+
+#index 1594652
+#* Outlier detection in graph streams
+#@ 968 31931 850
+#t 2011
+#c ICDE '11 Proceedings of the 2011 IEEE 27th International Conference on Data Engineering
+#! A number of applications in social networks, telecommunications, and mobile computing create massive streams of graphs. In many such applications, it is useful to detect structural abnormalities which are different from the "typical" behavior of the underlying network. In this paper, we will provide first results on the problem of structural outlier detection in massive network streams. Such problems are inherently challenging, because the problem of outlier detection is specially challenging because of the high volume of the underlying network stream. The stream scenario also increases the computational challenges for the approach. We use a structural connectivity model in order to define outliers in graph streams. In order to handle the sparsity problem of massive networks, we dynamically partition the network in order to construct statistically robust models of the connectivity behavior. We design a reservoir sampling method in order to maintain structural summaries of the underlying network. These structural summaries are designed in order to create robust, dynamic and efficient models for outlier detection in graph streams. We present experimental results illustrating the effectiveness and efficiency of our approach.
+
+#index 1606039
+#* Discovering highly reliable subgraphs in uncertain graphs
+#@ 10198 23991 968
+#t 2011
+#c Proceedings of the 17th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 165487
+#% 237380
+#% 277018
+#% 322536
+#% 370988
+#% 729923
+#% 754098
+#% 818916
+#% 823357
+#% 985041
+#% 1080074
+#% 1083509
+#% 1100170
+#% 1117041
+#% 1117057
+#% 1179162
+#% 1217126
+#% 1451203
+#% 1464049
+#% 1506189
+#% 1523884
+#% 1592313
+#% 1697228
+#% 1710570
+#! In this paper, we investigate the highly reliable subgraph problem, which arises in the context of uncertain graphs. This problem attempts to identify all induced subgraphs for which the probability of connectivity being maintained under uncertainty is higher than a given threshold. This problem arises in a wide range of network applications, such as protein-complex discovery, network routing, and social network analysis. Since exact discovery may be computationally intractable, we introduce a novel sampling scheme which enables approximate discovery of highly reliable subgraphs with high probability. Furthermore, we transform the core mining task into a new frequent cohesive set problem in deterministic graphs. Such transformation enables the development of an efficient two-stage approach which combines novel peeling techniques for maximal set discovery with depth-first search for further enumeration. We demonstrate the effectiveness and efficiency of the proposed algorithms on real and synthetic data sets.
+
+#index 1606065
+#* On dynamic data-driven selection of sensor streams
+#@ 968 29053 850
+#t 2011
+#c Proceedings of the 17th ACM SIGKDD international conference on Knowledge discovery and data mining
+#% 36672
+#% 481281
+#% 632090
+#% 654488
+#% 765445
+#% 801695
+#% 810058
+#% 918001
+#% 938511
+#% 990806
+#% 993961
+#% 1016178
+#% 1269936
+#% 1414128
+#% 1491381
+#! Sensor nodes have limited local storage, computational power, and battery life, as a result of which it is desirable to minimize the storage, processing and communication from these nodes during data collection. The problem is further magnified by the large volumes of data collected. In real applications, sensor streams are often highly correlated with one another or may have other kinds of functional dependencies. For example, a group of sound sensors in a given geographical proximity may pick almost the same set of signals. Clearly, since there are considerable functional dependencies between different sensors, there are huge redundancies in the data collected by sensors. These redundancies may also change as the data evolve over time. In this paper, we discuss real time algorithms for reducing the volume of the data collected in sensor networks. The broad idea is to determine the functional dependencies between sensor streams efficiently in real time, and actively collect the data only from a minimal set of sensors. The remaining sensors collect the data passively at low sampling rates in order to detect any changing trends in the underlying data. We present real time algorithms in order to minimize the power consumption in reducing the data collected and show that the resulting data retains almost the same amount of information at a much lower cost.
+
+#index 1654051
+#* gSketch: on query estimation in graph streams
+#@ 18038 968 1064
+#t 2011
+#c Proceedings of the VLDB Endowment
+#% 1331
+#% 36698
+#% 214073
+#% 283833
+#% 293720
+#% 379443
+#% 397354
+#% 754117
+#% 798044
+#% 809258
+#% 816392
+#% 866773
+#% 874902
+#% 894646
+#% 918001
+#% 935763
+#% 993960
+#% 1063716
+#% 1127369
+#% 1127608
+#% 1214643
+#% 1372657
+#% 1428692
+#% 1523882
+#% 1567510
+#% 1734153
+#! Many dynamic applications are built upon large network infrastructures, such as social networks, communication networks, biological networks and the Web. Such applications create data that can be naturally modeled as graph streams, in which edges of the underlying graph are received and updated sequentially in a form of a stream. It is often necessary and important to summarize the behavior of graph streams in order to enable effective query processing. However, the sheer size and dynamic nature of graph streams present an enormous challenge to existing graph management techniques. In this paper, we propose a new graph sketch method, gSketch, which combines well studied synopses for traditional data streams with a sketch partitioning technique, to estimate and optimize the responses to basic queries on graph streams. We consider two different scenarios for query estimation: (1) A graph stream sample is available; (2) Both a graph stream sample and a query workload sample are available. Algorithms for different scenarios are designed respectively by partitioning a global sketch to a group of localized sketches in order to optimize the query estimation accuracy. We perform extensive experimental studies on both real and synthetic data sets and demonstrate the power and robustness of gSketch in comparison with the state-of-the-art global sketch method.
+
+#index 1663613
+#* On temporal evolution in data streams
+#@ 968
+#t 2006
+#c PKDD'06 Proceedings of the 10th European conference on Principle and Practice of Knowledge Discovery in Databases
+#! In recent years, the progress in hardware technology has made it possible for organizations to store and record large streams of transactional data. This results in databases which grow without limit at a rapid rate. This data can often show important changes in trends over time. In such cases, it is useful to understand, visualize, and diagnose the evolution of these trends. In this talk, we discuss a method to diagnose the changes in the underlying data stream and other related methods for change detection in streams. We also discuss the problem of data stream evolution in the context of mining algorithms such as clustering and classification. In many cases, mining algorithms may not function as effectively because of the change in the underlying data. We discuss the effects of evolution on mining and synopsis construction algorithms and a number of opportunities which may be available for further research on the topic.
+
+#index 1665121
+#* On temporal evolution in data streams
+#@ 968
+#t 2006
+#c ECML'06 Proceedings of the 17th European conference on Machine Learning
+#! In recent years, the progress in hardware technology has made it possible for organizations to store and record large streams of transactional data. This results in databases which grow without limit at a rapid rate. This data can often show important changes in trends over time. In such cases, it is useful to understand, visualize, and diagnose the evolution of these trends. In this talk, we discuss a method to diagnose the changes in the underlying data stream and other related methods for change detection in streams. We also discuss the problem of data stream evolution in the context of mining algorithms such as clustering and classification. In many cases, mining algorithms may not function as effectively because of the change in the underlying data. We discuss the effects of evolution on mining and synopsis construction algorithms and a number of opportunities which may be available for further research on the topic.
+
+#index 1688249
+#* On futuristic query processing in data streams
+#@ 968
+#t 2006
+#c EDBT'06 Proceedings of the 10th international conference on Advances in Database Technology
+#% 273902
+#% 300193
+#% 310488
+#% 310500
+#% 320942
+#% 378388
+#% 397354
+#% 480628
+#% 654489
+#% 659972
+#% 993958
+#% 993960
+#% 993969
+#% 1015261
+#! Recent advances in hardware technology have resulted in the ability to collect and process large amounts of data. In many cases, the collection of the data is a continuous process over time. Such continuous collections of data are referred to as data streams. One of the interesting problems in data stream mining is that of predictive query processing. This is useful for a variety of data mining applications which require us to estimate the future behavior of the data stream. In this paper, we will discuss the problem from the point of view of predictive summarization. In predictive summarization, we would like to store statistical characteristics of the data stream which are useful for estimation of queries representing the behavior of the stream in the future. The example utilized for this paper is the case of selectivity estimation of range queries. For this purpose, we propose a technique which utilizes a local predictive approach in conjunction with a careful choice of storing and summarizing particular statistical characteristics of the data. We use this summarization technique to estimate the future selectivity of range queries, though the results can be utilized to estimate a variety of futuristic queries. We test the results on a variety of data sets and illustrate the effectiveness of the approach.
+
+#index 1688471
+#* On the Hardness of Graph Anonymization
+#@ 968 32947 850
+#t 2011
+#c ICDM '11 Proceedings of the 2011 IEEE 11th International Conference on Data Mining
+#! In this paper, we examine the problem of node re-identification from anonymized graphs. Typical graphs encountered in real applications are massive and sparse. In this paper, we will show that massive and sparse graphs have certain theoretical properties which make them susceptible to re-identification attacks. We design a systematic way to exploit these theoretical properties in order to construct {\em re-identification signatures}, which are also known as characteristic vectors. These signatures have the property that they are extremely robust to perturbations, especially for massive and sparse graphs. Our results show that even low levels of anonymization require perturbation levels which are significant enough to result in a massive loss of utility. Our experimental results also show that the true anonymization level of graphs is much lower than is implied by measures such as $k$-anonymity. Thus, the results of this paper establish that the problem of massive graph anonymization has fundamental theoretical barriers which prevent a fully effective solution.
+
+#index 1707456
+#* Relation strength-aware clustering of heterogeneous information networks with incomplete attributes
+#@ 19945 968 961
+#t 2012
+#c Proceedings of the VLDB Endowment
+#% 36672
+#% 722902
+#% 769881
+#% 881460
+#% 881514
+#% 989586
+#% 989618
+#% 989636
+#% 995140
+#% 1055681
+#% 1055741
+#% 1117695
+#% 1186295
+#% 1214655
+#% 1214701
+#% 1214714
+#% 1289267
+#% 1318691
+#% 1328161
+#% 1328169
+#% 1650298
+#! With the rapid development of online social media, online shopping sites and cyber-physical systems, heterogeneous information networks have become increasingly popular and content-rich over time. In many cases, such networks contain multiple types of objects and links, as well as different kinds of attributes. The clustering of these objects can provide useful insights in many applications. However, the clustering of such networks can be challenging since (a) the attribute values of objects are often incomplete, which implies that an object may carry only partial attributes or even no attributes to correctly label itself; and (b) the links of different types may carry different kinds of semantic meanings, and it is a difficult task to determine the nature of their relative importance in helping the clustering for a given purpose. In this paper, we address these challenges by proposing a model-based clustering algorithm. We design a probabilistic model which clusters the objects of different types into a common hidden space, by using a user-specified set of attributes, as well as the links from different relations. The strengths of different types of links are automatically learned, and are determined by the given purpose of clustering. An iterative algorithm is designed for solving the clustering problem, in which the strengths of different types of links and the quality of clustering results mutually enhance each other. Our experimental results on real and synthetic data sets demonstrate the effectiveness and efficiency of the algorithm.
+
+#index 1728735
+#* On clustering techniques for change diagnosis in data streams
+#@ 968 850
+#t 2005
+#c WebKDD'05 Proceedings of the 7th international conference on Knowledge Discovery on the Web: advances in Web Mining and Web Usage Analysis
+#% 122671
+#% 210173
+#% 227859
+#% 249110
+#% 273693
+#% 280419
+#% 281214
+#% 310500
+#% 342600
+#% 378388
+#% 549441
+#% 577360
+#% 587723
+#% 632036
+#% 654489
+#% 659943
+#% 679842
+#% 727930
+#% 729923
+#% 769927
+#% 823344
+#% 1015261
+#! In recent years, data streams have become ubiquitous in a variety of applications because of advances in hardware technology. Since data streams may be generated by applications which are time-changing in nature, it is often desirable to explore the underlying changing trends in the data. In this paper, we will explore and survey some of our recent methods for change detection. In particular, we will study methods for change detection which use clustering in order to provide a concise understanding of the underlying trends. We discuss our recent techniques which use micro-clustering in order to diagnose the changes in the underlying data. We also discuss the extension of this method to text and categorical data sets as well community detection in graph data streams.
+
+#index 1846760
+#* Community Detection with Edge Content in Social Media Networks
+#@ 16711 968 27092
+#t 2012
+#c ICDE '12 Proceedings of the 2012 IEEE 28th International Conference on Data Engineering
+#! The problem of community detection in social media has been widely studied in the social networking community in the context of the structure of the underlying graphs. Most community detection algorithms use the links between the nodes in order to determine the dense regions in the graph. These dense regions are the communities of social media in the graph. Such methods are typically based purely on the linkage structure of the underlying social media network. However, in many recent applications, edge content is available in order to provide better supervision to the community detection process. Many natural representations of edges in social interactions such as shared images and videos, user tags and comments are naturally associated with content on the edges. While some work has been done on utilizing node content for community detection, the presence of edge content presents unprecedented opportunities and flexibility for the community detection process. We will show that such edge content can be leveraged in order to greatly improve the effectiveness of the community detection process in social media networks. We present experimental results illustrating the effectiveness of our approach.
+
+#index 1846813
+#* On Text Clustering with Side Information
+#@ 968 31931 850
+#t 2012
+#c ICDE '12 Proceedings of the 2012 IEEE 28th International Conference on Data Engineering
+#! Text clustering has become an increasingly important problem in recent years because of the tremendous amount of unstructured data which is available in various forms in online forums such as the web, social networks, and other information networks. In most cases, the data is not purely available in text form. A lot of side-information is available along with the text documents. Such side-information may be of different kinds, such as the links in the document, user-access behavior from web logs, or other non-textual attributes which are embedded into the text document. Such attributes may contain a tremendous amount of information for clustering purposes. However, the relative importance of this side-information may be difficult to estimate, especially when some of the information is noisy. In such cases, it can be risky to incorporate side-information into the clustering process, because it can either improve the quality of the representation for clustering, or can add noise to the process. Therefore, we need a principled way to perform the clustering process, so as to maximize the advantages from using this side information. In this paper, we design an algorithm which combines classical partitioning algorithms with probabilistic models in order to create an effective clustering approach. We present experimental results on a number of real data sets in order to illustrate the advantages of using such an approach.
+
