@@ -65,12 +65,16 @@ def blah(input_file, label):
 def filter_phrases(input_file, paper_cnt_map, output_file):
 	with open(input_file, 'r') as fin, open(paper_cnt_map, 'r') as fmap, open(output_file, 'w') as fout:
 		lines = fin.read().split('\n')
-		#for line in lines:
-		for line_id in xrange(len(lines)):
-			if line_id % 2:
-				continue
-			print line_id
-			phrases = list(set(re.findall(r'\[(.+?)\]', lines[line_id]) + re.findall(r'\[(.+?)\]', lines[line_id + 1])))
+		paper_cnts = fmap.read().split('\n')
+		line_id = 0
+		for paper_cnt in paper_cnts:
+			cnt = int(paper_cnt.split()[1]) # either 1 or 2
+			phrases = [p.lower() for p in re.findall(r'\[(.+?)\]', lines[line_id])] 
+			if cnt == 2:
+				line_id += 1
+				phrases += [p.lower() for p in re.findall(r'\[(.+?)\]', lines[line_id])]
+			line_id+= 1
+			phrases = list(set(phrases))
 			fout.write("{phrases}\n".format(phrases=';'.join(phrases)))
 
 # map each paper's title & abstract -> preprocessed phrases
@@ -293,7 +297,7 @@ if __name__ == "__main__":
 	#combine_labeld_phrases([DATA_PATH + 'TopMine_results/phrase_positive'], DATA_PATH + 'labeled_phrases_positive', 1)
 	#combine_labeld_phrases([DATA_PATH + 'TopMine_results/phrase_negative'], DATA_PATH + 'labeled_phrases_negative', 0)
 
-	filter_phrases(DATA_PATH + 'title_abstract_corpus_seg', DATA_PATH + 'title_abstract_corpus_phrases')
+	filter_phrases(DATA_PATH + 'title_abstract_corpus_seg', DATA_PATH + 'paper_cnt_map', DATA_PATH + 'title_abstract_corpus_phrases')
 
 	#map_raw_title_abstract_to_phrases(DATA_PATH + 'latest_so_far', DATA_PATH + 'title_abstract_phrases', DATA_PATH + 'latest_so_far_phrases')
 

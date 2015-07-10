@@ -32,5 +32,6 @@ print tfidf_vect.get_feature_names()
 for word in y:
 	print tfidf_vect.get_feature_names()[word]'''
 
-x = "aaa bbb ccc 1345"
-print ' '.join(x.split()[:-1])
+a = [1,2,3]
+a += [3,4,5]
+print a
