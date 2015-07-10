@@ -267,16 +267,32 @@ def reindex_paper(input_file, output_file):
 				fout.write("{abstract}\n".format(abstract=meta[-1]))
 			fout.write("\n")
 
+def combine_labeld_phrases(input_files, output_file, label):
+	phrases = set()
+	fout = open(output_file, 'w')
+	for input_file in input_files:
+		with open(input_file, 'r') as fin:
+			lines = fin.read().split('\n')
+			for line in lines:
+				phrase = (' '.join(line.split()[:-1])).lower()
+				if not phrase in phrases:
+					phrases.add(phrase)
+					fout.write("{phrase} {label}\n".format(phrase=phrase, label=label))
+	fout.close()
 
 if __name__ == "__main__":
 	#valid_format(DATA_PATH + 'AP_after_1996_four_area_index_new',
 	#	DATA_PATH + 'AP_after_1996_four_area_index_new_valid_abstract')
 	#valid_format(DATA_PATH + 'AP_after_1996_four_area_index_new_valid_abstract', DATA_PATH+'aaa')
-	extract_title_abstract(DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex.txt', 
+	'''extract_title_abstract(DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex.txt', 
 		DATA_PATH + 'title_abstract_corpus_raw',
-		DATA_PATH + 'paper_cnt_map')
+		DATA_PATH + 'paper_cnt_map')'''
 	#sort_vocabulary_tfidf(DATA_PATH + 'raw_corpus', 'sorted_tfidf_dict')
 	#blah(DATA_PATH + 'topic_ir', 1)
+
+	#combine_labeld_phrases([DATA_PATH + 'TopMine_results/phrase_positive'], DATA_PATH + 'labeled_phrases_positive', 1)
+	combine_labeld_phrases([DATA_PATH + 'TopMine_results/phrase_negative'], DATA_PATH + 'labeled_phrases_negative', 0)
+
 	#filter_phrases(DATA_PATH + 'parsed.txt', DATA_PATH + 'parsed_phrases.txt')
 	#filter_phrases(DATA_PATH + 'segment_title_abstract_corpus', DATA_PATH + 'title_abstract_phrases')
 

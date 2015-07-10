@@ -1,0 +1,739 @@
+data mining	1379
+digital library	1295
+search engine	1089
+data streams	998
+social networks	983
+information retrieval	930
+recommender systems	927
+web pages	838
+database systems	761
+query processing	748
+machine learning	685
+time series	647
+clustering 1
+classification 1
+regression 1
+learning 1
+k means 1
+database 1
+perceptron 1
+bagging 1
+boosting 1
+vc dimension 1
+Independent components analysis 1
+gaussian mixture model 1
+gaussian kernel
+probabilistic graphical model 1
+support vector machines	628
+knowledge base	578
+feature selection	576
+learning algorithms	547
+query optimization	514
+web search	509
+Bayesian networks	490
+XML documents	484
+training data	483
+decision tree	476
+data management	475
+clustering algorithm	469
+data structure	466
+relational database	457
+association rules	442
+data warehouse	435
+topic models	431
+query language	411
+search results	409
+language model	408
+data analysis	405
+query results	395
+information extraction	384
+active learning	377
+collaborative filtering	368
+knowledge discovery	362
+social media	361
+query answering	359
+index structure	354
+search space	354
+schema mappings	354
+large scale	353
+sensor networks	353
+user queries	352
+information systems	349
+data points	349
+probabilistic model	348
+web search engines	346
+data integration	346
+reinforcement learning	331
+document collections	323
+XML data	314
+similarity search	309
+feature space	308
+answering queries	300
+text classification	300
+domain knowledge	292
+structured data	292
+query evaluation	291
+optimization problem	290
+large databases	281
+range queries	270
+large datasets	267
+neural networks	264
+probability distribution	263
+lower bound	262
+Semantic Web	262
+classification problems	256
+user interaction	255
+text categorization	255
+data distribution	254
+Markov decision processes	254
+retrieval systems	252
+data items	251
+frequent itemsets	247
+large graphs	244
+association rule mining	244
+objective function	242
+nearest neighbor	240
+graphical models	238
+feature extraction	237
+training set	236
+keyword search	234
+named entity	234
+data cube	234
+clustering methods	232
+predictive models	232
+document clustering	232
+information sources	232
+Web documents	231
+search algorithm	230
+text mining	230
+hidden Markov models	230
+unlabeled data	228
+labeled data	227
+query terms	225
+upper bound	224
+dimensionality reduction	224
+relevance feedback	224
+question answering	223
+query logs	223
+World Wide Web	223
+naive Bayes	221
+mining algorithms	220
+information retrieval systems	219
+relational data	218
+query expansion	214
+learning methods	214
+natural language processing	214
+high dimensional	212
+SQL queries	210
+data mining techniques	210
+relevant documents	209
+logic programming	208
+uncertain data	208
+ranking functions	207
+learning model	206
+outlier detection	205
+mixture model	203
+classification accuracy	200
+decision making	200
+query execution	200
+database applications	199
+random walk	199
+database management systems	199
+optimization techniques	196
+information retrieval  IR	196
+statistical model	195
+supervised learning	194
+distance measure	194
+time series data	193
+streaming data	192
+natural language	191
+tree structure	191
+query plans	191
+distance function	188
+sliding window	187
+conjunctive queries	186
+transfer learning	185
+state space	185
+Web applications	184
+cost model	184
+loss function	184
+feature vectors	182
+similarity queries	181
+text documents	180
+local search	178
+learning to rank	177
+pattern mining	177
+matrix factorization	176
+retrieval performance	176
+Markov chain	176
+frequent patterns	175
+classification algorithms	174
+moving objects	173
+keyword queries	173
+materialized views	172
+image retrieval	172
+machine learning algorithms	172
+approximation algorithm	172
+integrity constraints	171
+data mining algorithms	170
+classification tasks	170
+aggregate queries	169
+skyline queries	168
+big data	168
+training examples	163
+anomaly detection	163
+sequential patterns	163
+partial order	161
+subspace clustering	161
+Conditional Random Fields	160
+retrieval models	159
+search tasks	158
+continuous queries	158
+model selection	157
+class labels	156
+data mining applications	156
+artificial intelligence	155
+relevance judgments	153
+random sampling	152
+user feedback	152
+learning tasks	152
+link prediction	152
+learning approach	152
+online social networks	151
+structural information	151
+ranked list	151
+probabilistic databases	150
+learning problem	150
+dynamic programming	150
+data warehousing	150
+graph databases	149
+schema matching	149
+prior knowledge	148
+high dimensional data	145
+join algorithms	144
+database research	144
+planning problems	144
+information networks	144
+ranking algorithm	143
+constraint satisfaction problems	143
+semantic relations	142
+clustering results	142
+EM algorithm	142
+computationally expensive	142
+paper reports	141
+logistic regression	141
+genetic algorithm	141
+XML query	140
+machine learning techniques	140
+knowledge representation	140
+application areas	139
+regular expressions	139
+error rate	138
+predictive performance	138
+event detection	138
+indexing techniques	137
+scoring function	137
+selectivity estimation	136
+distance metric	136
+hierarchical structure	136
+retrieval effectiveness	136
+concurrency control	135
+mutual information	135
+user search	134
+classification model	134
+shortest path	133
+framework based	131
+indexing scheme	131
+classification methods	131
+feature set	131
+data mining tasks	130
+model learning	130
+principal component analysis	130
+network structure	130
+query time	130
+sensor data	130
+previous methods	130
+query performance	129
+query rewriting	129
+XML Schema	129
+optimization algorithm	129
+pattern discovery	128
+heuristic search	128
+Latent Dirichlet Allocation	128
+Gaussian process	127
+ranking model	127
+concept drift	127
+number of clusters	126
+spectral clustering	126
+evaluation algorithms	126
+sentiment analysis	125
+information integration	125
+aggregate functions	125
+Monte Carlo	125
+access control	124
+distributed data	123
+database community	122
+database technology	121
+dynamical systems	121
+classification performance	121
+greedy algorithm	120
+hierarchical clustering	120
+vector space	118
+missing values	117
+pattern matching	116
+large set	116
+inference algorithm	115
+graph structured	115
+database schema	115
+bipartite graph	114
+spatial and temporal	114
+join operations	114
+kernel function	114
+web data	114
+similarity functions	113
+join queries	113
+linear combination	112
+spatial data	112
+record linkage	112
+inverted index	112
+query workload	112
+complex queries	112
+error bound	111
+image databases	110
+query interfaces	110
+relational database systems	110
+load balancing	110
+relational query	110
+commercial search engine	109
+contextual information	109
+decision problems	108
+retrieved documents	108
+function approximation	108
+density estimation	108
+random variables	107
+directed graph	107
+matching queries	106
+Euclidean distance	106
+storage systems	106
+search interface	105
+search logs	105
+online learning	105
+similarity join	105
+transaction database	105
+belief networks	104
+knowledge management	104
+decision support	104
+spatial databases	104
+social network analysis	104
+pattern recognition	104
+data records	103
+text retrieval	103
+deep web	103
+tag recommendation	103
+IR systems	103
+parameter estimation	102
+extract information	102
+model parameters	102
+probabilistic inference	102
+dimension reduction	102
+mining association rules	102
+large networks	102
+constraint satisfaction	102
+database server	102
+learning techniques	101
+unsupervised learning	101
+web search results	101
+cost function	101
+item sets	100
+data management systems	100
+web content	100
+evaluating queries	100
+sequential pattern mining	99
+database query	99
+missing data	99
+recommendation algorithms	99
+gene expression data	99
+document ranking	99
+Microsoft SQL Server	97
+nearest neighbor queries	97
+frequent pattern mining	97
+query processor	97
+business intelligence	97
+document classification	96
+online advertising	96
+relational algebra	96
+information filtering	96
+large class	96
+support vector	96
+clustering based	96
+regression model	96
+implicit feedback	96
+duplicate detection	95
+learning process	95
+structured documents	95
+entity resolution	94
+network traffic	94
+graph mining	94
+transaction processing	94
+frequent itemset mining	94
+knowledge acquisition	93
+data fusion	93
+linear programming	93
+graph data	93
+latent variables	93
+pruning techniques	92
+SVM classifier	92
+intrusion detection	92
+nearest neighbor search	92
+probability estimates	91
+prototype implementation	91
+activity recognition	91
+optimal query	91
+digital library system	91
+equivalence classes	91
+automatic construction	90
+query formulation	90
+transaction data	90
+training samples	90
+metric space	90
+latent semantic analysis	90
+user click	89
+term weighting	89
+link structure	89
+data publishing	89
+link analysis	88
+clustering problem	88
+spatial join	88
+Markov models	88
+stream processing	88
+anchor text	88
+discovered patterns	88
+linear regression	87
+query reformulation	87
+maximum likelihood	87
+high probability	87
+hidden variables	87
+personalized recommendations	87
+ensemble classifier	87
+relevance assessments	87
+query translation	87
+multimedia databases	87
+semantic annotations	86
+classifier training	86
+semistructured data	86
+XML database	86
+discriminant analysis	86
+Latent Semantic Indexing	86
+cardinality estimation	86
+inductive logic programming	85
+edit distance	85
+community detection	84
+query point	84
+temporal data	84
+kernel methods	84
+text data	84
+large margin	84
+semantic similarity	83
+gene expression	83
+document relevance	83
+temporal patterns	83
+order to improve	83
+search system	82
+sentiment classification	82
+learning Bayesian networks	82
+Bloom filter	82
+object databases	82
+web graph	82
+collaborative filtering  CF	82
+subsequence matching	82
+learning framework	81
+data representation	81
+latent topics	81
+causal models	81
+term frequency	81
+web mining	81
+graph model	81
+cluster structure	81
+community structure	80
+categorical data	80
+machine learning approach	80
+relevance scores	80
+Speculative execution	80
+temporal constraints	79
+time interval	79
+belief state	79
+text collections	79
+prune the search space	79
+semantic information	79
+database operations	78
+speech recognition	78
+class distribution	78
+numeric attributes	78
+similarity metric	78
+expert system	78
+query engine	77
+graph partitioning	77
+named entity recognition	77
+fraud detection	77
+relation extraction	77
+click models	76
+ranking methods	76
+conditional probability	76
+Markov random fields	76
+data mining problem	75
+personalized search	75
+random forests	75
+interesting patterns	75
+private information	75
+sequence data	74
+opinion mining	74
+belief propagation	74
+high dimensional space	74
+Information and Knowledge Management	73
+ensemble methods	73
+vector space model	73
+web databases	73
+text databases	73
+mobile computing	73
+conditional independence	72
+clustering techniques	72
+suffix tree	72
+tree pattern	72
+machine learning methods	72
+spatial queries	72
+frequent subgraphs	71
+approximate inference	71
+information gain	71
+indexing methods	71
+probabilistic framework	71
+original query	71
+subgroup discovery	71
+directed acyclic graph	71
+temporal logic	70
+word sense disambiguation	70
+social tagging	70
+sampling method	70
+concept hierarchy	70
+rank aggregation	70
+maximum margin	70
+heterogeneous data sources	69
+data compression	69
+feature weighting	69
+social graph	69
+heterogeneous data	68
+heterogeneous information networks	68
+feature selection algorithms	68
+Markov networks	68
+web queries	68
+boosting algorithm	68
+language modeling approach	67
+text classifier	67
+distributed database	67
+image annotation	67
+query operators	67
+classification techniques	67
+maximum entropy	67
+graph clustering	67
+data partitioning	67
+query graph	66
+Social Web	66
+plan recognition	66
+distributed computing	66
+clustering approach	66
+indexing and retrieval	65
+rough set	65
+relational model	65
+transitive closure	65
+propositional logic	65
+relational tables	64
+probabilistic approach	64
+query processing techniques	64
+text clustering	64
+ensemble learning	64
+database management	64
+rule induction	64
+Linear Discriminant Analysis	64
+Bayesian inference	63
+naive Bayes classifier	63
+SQL Server	63
+multidimensional data	63
+statistical analysis	63
+cluster analysis	62
+query refinement	62
+graph pattern	62
+data mining methods	62
+Euclidean space	61
+gradient descent	61
+information loss	61
+mined patterns	61
+information flow	61
+video retrieval	61
+metric learning	61
+kernel matrix	60
+decision support systems	60
+data graph	60
+text streams	60
+topic hierarchy	60
+query expressions	59
+optimization framework	59
+event sequences	59
+binary classifiers	59
+parameter tuning	59
+probabilistic data	59
+network analysis	58
+connected components	58
+hash table	58
+rating prediction	58
+fault tolerance	58
+temporal reasoning	58
+nonnegative matrix factorization	58
+classification rules	57
+voting rules	57
+dynamic Bayesian networks	57
+label propagation	57
+XML query languages	57
+face recognition	57
+pruning strategies	57
+temporal databases	57
+machine translation	57
+search techniques	57
+game theory	56
+association mining	56
+information diffusion	56
+unstructured data	56
+text summarization	56
+clickthrough data	56
+query generation	56
+data storage	56
+structure learning	56
+data sparsity	55
+statistical methods	55
+random projection	55
+inverted lists	55
+mining frequent itemsets	55
+event streams	55
+heuristic function	55
+image search	54
+database instances	54
+XML streams	54
+object recognition	54
+curse of dimensionality	54
+influence maximization	54
+time windows	54
+microarray data	54
+network topology	54
+undirected graph	54
+data extraction	54
+Mining frequent patterns	54
+fuzzy sets	54
+unstructured text	54
+extracting knowledge	54
+sampling techniques	53
+edge weights	53
+rule extraction	53
+convex hull	53
+bag of words	53
+classifier learning	53
+item recommendation	53
+domain ontology	52
+retrieval functions	52
+Dynamic Time Warping	52
+graph construction	52
+generate recommendations	52
+workflow management system	52
+weighted sample	52
+knowledge engineering	52
+class imbalance	52
+web log	52
+distance computation	52
+evaluation functions	52
+detect outliers	52
+Bayesian approach	52
+window size	51
+spam filtering	51
+protein sequences	51
+sequential scan	51
+relational learning	51
+online analytical processing	51
+bitmap indexes	51
+tree kernels	51
+relevance ranking	51
+data reduction	51
+linear models	51
+graph kernels	51
+query patterns	50
+decision rule	50
+subgraph isomorphism	50
+term dependencies	50
+kernel learning	50
+confidence intervals	50
+image classification	50
+reverse nearest neighbor	49
+detecting anomalies	49
+knowledge transfer	49
+posterior probability	49
+latent space	49
+MapReduce jobs	49
+heterogeneous networks	49
+time series databases	49
+transition probabilities	49
+resource management	49
+information visualization	48
+inverted file	48
+Ranking SVM	48
+classification scheme	48
+Gibbs sampling	48
+support threshold	48
+energy consumption	48
+OLAP queries	48
+biological sequences	47
+binary classification	47
+optimal plan	47
+hierarchical classification	47
+passage retrieval	47
+Expectation Maximization	47
+data mining research	47
+weighted graph	47
+collaborative filtering algorithms	47
+distributed information retrieval	47
+expansion terms	47
+knowledge extraction	47
+mining data streams	46
+Kalman filter	46
+principal component	46
+periodic patterns	46
+textual data	46
+expert finding	46
+social networking sites	46
+locally optimal	46
+hash functions	46
+sequence databases	46
+long tail	46
+Bayesian classifier	46
+reinforcement learning algorithms	46
+natural language text	45
+linear classification 1
+regularization 1
+bias and variance 1
+kernel 1
+kernel optimization 1
+optimization 1
+associative learning 1
+bayes rule 1
+subset selection 1
+web crawling 1
+text similarity measures 1
+Spelling correction 1
+bm25 1
+pagerank 1
+hits algorithm 1
+mapreduce 1
+map reduce 1
+decision boundaries 1
+Distributed word representations 1
+Database operators 1
+memory management 1
+transactions 1
+Transactions and locking 1
+Optimistic concurrency control 1
+Normalization 1
