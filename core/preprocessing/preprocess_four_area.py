@@ -297,9 +297,11 @@ if __name__ == "__main__":
 	#combine_labeld_phrases([DATA_PATH + 'TopMine_results/phrase_positive'], DATA_PATH + 'labeled_phrases_positive', 1)
 	#combine_labeld_phrases([DATA_PATH + 'TopMine_results/phrase_negative'], DATA_PATH + 'labeled_phrases_negative', 0)
 
-	filter_phrases(DATA_PATH + 'title_abstract_corpus_seg', DATA_PATH + 'paper_cnt_map', DATA_PATH + 'title_abstract_corpus_phrases')
+	#filter_phrases(DATA_PATH + 'title_abstract_corpus_seg', DATA_PATH + 'paper_cnt_map', DATA_PATH + 'title_abstract_corpus_phrases')
 
-	#map_raw_title_abstract_to_phrases(DATA_PATH + 'latest_so_far', DATA_PATH + 'title_abstract_phrases', DATA_PATH + 'latest_so_far_phrases')
+	map_raw_title_abstract_to_phrases(DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex.txt', 
+		DATA_PATH + 'title_abstract_corpus_phrases', 
+		DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex-phrases.txt')
 
 	#map_venue_name_to_id(DATA_PATH + 'latest_so_far_phrases', DATA_PATH + 'latest_so_far_phrases_ids', {})
 
