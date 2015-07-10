@@ -62,8 +62,8 @@ def blah(input_file, label):
 			phrase_cnt[-1] = str(label)
 			print ' '.join(phrase_cnt)
 
-def filter_phrases(input_file, output_file):
-	with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
+def filter_phrases(input_file, paper_cnt_map, output_file):
+	with open(input_file, 'r') as fin, open(paper_cnt_map, 'r') as fmap, open(output_file, 'w') as fout:
 		lines = fin.read().split('\n')
 		#for line in lines:
 		for line_id in xrange(len(lines)):
@@ -291,10 +291,9 @@ if __name__ == "__main__":
 	#blah(DATA_PATH + 'topic_ir', 1)
 
 	#combine_labeld_phrases([DATA_PATH + 'TopMine_results/phrase_positive'], DATA_PATH + 'labeled_phrases_positive', 1)
-	combine_labeld_phrases([DATA_PATH + 'TopMine_results/phrase_negative'], DATA_PATH + 'labeled_phrases_negative', 0)
+	#combine_labeld_phrases([DATA_PATH + 'TopMine_results/phrase_negative'], DATA_PATH + 'labeled_phrases_negative', 0)
 
-	#filter_phrases(DATA_PATH + 'parsed.txt', DATA_PATH + 'parsed_phrases.txt')
-	#filter_phrases(DATA_PATH + 'segment_title_abstract_corpus', DATA_PATH + 'title_abstract_phrases')
+	filter_phrases(DATA_PATH + 'title_abstract_corpus_seg', DATA_PATH + 'title_abstract_corpus_phrases')
 
 	#map_raw_title_abstract_to_phrases(DATA_PATH + 'latest_so_far', DATA_PATH + 'title_abstract_phrases', DATA_PATH + 'latest_so_far_phrases')
 
