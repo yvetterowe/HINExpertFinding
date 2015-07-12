@@ -1,6 +1,6 @@
 #import numpy as np
 #from scipy.sparse import csr_matrix
-#from sklearn.preprocessing import normalize
+from sklearn.preprocessing import normalize
 #import random
 import re
 
@@ -32,6 +32,5 @@ print tfidf_vect.get_feature_names()
 for word in y:
 	print tfidf_vect.get_feature_names()[word]'''
 
-a = [1,2,3]
-a += [3,4,5]
-print a
+x = [0.4, 0.3, 0.24, 0.16, 0.08]
+print sum(normalize(x, norm='l1')

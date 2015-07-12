@@ -1,0 +1,10 @@
+data_mining 1.0
+knowledge_discovery 1.0
+association_rule 0.8
+pattern_mining 0.8
+data_warehouse 0.8
+text_mining 0.7
+graph_mining 0.7
+social_network_analysis 0.7
+big_data 0.6
+data_streams 0.5

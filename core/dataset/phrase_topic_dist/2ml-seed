@@ -1,0 +1,16 @@
+ machine_learning 1.0
+ supervised_learning 0.95
+ unsupervised_learning 0.95
+ active_learning 0.95
+ reinforcement_learning 0.95
+ neural_networks 0.9
+ support_vector_machines 0.9
+ classification_problem 0.9
+ clustering_methods 0.9
+ regression 0.9
+ logistic_regression 0.9
+ feature_selection 0.9
+ dimension_reduction 0.9
+ probabilistic_models 0.8
+ matrix_factorization 0.8
+ sampling_methods 0.7

@@ -1,0 +1,6 @@
+information_retrieval 1.0
+retrieval_models 0.95
+query_expansion 0.95
+multimedia_retrieval 0.95
+web_search 0.9
+vector_space_model 0.9

@@ -1,0 +1,4 @@
+database 1.0
+concurrency_control 0.8
+query_optimization 0.8
+cache 0.7
