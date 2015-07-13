@@ -4,7 +4,7 @@ import re
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-DATA_PATH = os.path.dirname(__file__) + '/../dataset/'
+DATA_PATH = os.path.dirname(__file__) + '../dataset/'
 
 # filter out papers without abstract information
 def valid_format(input_file, output_file):
@@ -77,6 +77,13 @@ def filter_phrases(input_file, paper_cnt_map, output_file):
 			phrases = list(set(phrases))
 			fout.write("{phrases}\n".format(phrases=';'.join(phrases)))
 
+"""
+#index 2502
+#* Proceedings of the seventh international conference on Information and knowledge management
+#@ 4070 4069 4173 4174 4175 4176
+#t 1998
+#c 1
+"""
 # map each paper's title & abstract -> preprocessed phrases
 def map_raw_title_abstract_to_phrases(input_raw, input_phrase, output):
 	with open(input_raw, 'r') as fin_raw, open(input_phrase, 'r') as fin_phrase, open(output, 'w') as fout:
@@ -85,7 +92,11 @@ def map_raw_title_abstract_to_phrases(input_raw, input_phrase, output):
 		paper_id = 0
 		for paper in papers:
 			meta = paper.split('\n')
-			new_meta = meta[0] + '\n' + '\n'.join(meta[2:-1]) + '\n' + '#! ' + phrases[paper_id]
+			if meta[-1][1] == '!':
+				middle = '\n'.join(meta[2:-1])
+			else:
+				middle = '\n'.join(meta[2:])
+			new_meta = meta[0] + '\n' + middle + '\n' + '#! ' + phrases[paper_id]
 			paper_id += 1
 			fout.write("{paper_meta}\n\n".format(paper_meta=new_meta))
 
@@ -299,8 +310,8 @@ if __name__ == "__main__":
 
 	#filter_phrases(DATA_PATH + 'title_abstract_corpus_seg', DATA_PATH + 'paper_cnt_map', DATA_PATH + 'title_abstract_corpus_phrases')
 
-	map_raw_title_abstract_to_phrases(DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex.txt', 
-		DATA_PATH + 'title_abstract_corpus_phrases', 
+	map_raw_title_abstract_to_phrases(DATA_PATH + 'AMiner-Paper-after1996-23venues-buffer/AMiner-Paper-after1996-23venues-authorid-validcites-reindex.txt', 
+		DATA_PATH + 'title_abstract_corpus_buffer/title_abstract_corpus_phrases', 
 		DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex-phrases.txt')
 
 	#map_venue_name_to_id(DATA_PATH + 'latest_so_far_phrases', DATA_PATH + 'latest_so_far_phrases_ids', {})

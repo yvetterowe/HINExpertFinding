@@ -9,6 +9,7 @@ PHRASE_DIST_PATH = DATA_PATH + 'phrase_topic_dist/'
 
 w2v_model_filtered = Word2Vec.load_word2vec_format(DATA_PATH + 'keyphrase-vector-text-filtered.bin', binary=False)
 
+
 def extend_seed_phrases(model, input_file, topn, output_file):
 	# read seed phrases
 	seed_phrase_weights = dict()
