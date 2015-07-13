@@ -1,10 +1,10 @@
 import os
 
-import hefbib.build_hin as bhin
 import hefbib.bibrank as bibrank
+import hefbib.build_hin as bhin
 import hefbib.doc_meta as dmeta
 import hefbib.expert_finder as efinder
-import utils.file_io as fio
+import hefbib.file_io as fio
 
 def run_hefbib(input_file, output_file):
 	# read data 

@@ -4,7 +4,7 @@ import re
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-DATA_PATH = os.path.dirname(__file__) + '../dataset/'
+DATA_PATH = os.path.dirname(__file__) + '/../dataset/'
 
 # filter out papers without abstract information
 def valid_format(input_file, output_file):
@@ -295,6 +295,24 @@ def combine_labeld_phrases(input_files, output_file, label):
 					fout.write("{phrase} {label}\n".format(phrase=phrase, label=label))
 	fout.close()
 
+def index_phrases(input_file, output_file, output_phrase_dict):
+	phrase_dict = dict()
+	phrase_id = 0
+	with open(input_file, 'r') as fin, open(output_file, 'w') as fout, open(output_phrase_dict, 'w') as fout_dict:
+		papers = fin.read().split('\n\n')
+		for paper in papers:
+			attr_lst = paper.split('\n')
+			phrases = attr_lst[-1][3:].split(';')
+			for phrase in phrases:
+				if not phrase in phrase_dict:
+					phrase_dict[phrase] = phrase_id
+					fout_dict.write("{phrase} {phrase_id}\n".format(phrase=phrase, phrase_id=phrase_id))
+					phrase_id += 1
+			phrase_ids = [str(phrase_dict[p]) for p in phrases]
+			phrase_id_line = '#! ' + ' '.join(phrase_ids)
+			new_paper = '\n'.join(attr_lst[:-1]) + '\n' + phrase_id_line
+			fout.write("{new_paper}\n\n".format(new_paper=new_paper))
+
 if __name__ == "__main__":
 	#valid_format(DATA_PATH + 'AP_after_1996_four_area_index_new',
 	#	DATA_PATH + 'AP_after_1996_four_area_index_new_valid_abstract')
@@ -310,9 +328,9 @@ if __name__ == "__main__":
 
 	#filter_phrases(DATA_PATH + 'title_abstract_corpus_seg', DATA_PATH + 'paper_cnt_map', DATA_PATH + 'title_abstract_corpus_phrases')
 
-	map_raw_title_abstract_to_phrases(DATA_PATH + 'AMiner-Paper-after1996-23venues-buffer/AMiner-Paper-after1996-23venues-authorid-validcites-reindex.txt', 
+	'''map_raw_title_abstract_to_phrases(DATA_PATH + 'AMiner-Paper-after1996-23venues-buffer/AMiner-Paper-after1996-23venues-authorid-validcites-reindex.txt', 
 		DATA_PATH + 'title_abstract_corpus_buffer/title_abstract_corpus_phrases', 
-		DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex-phrases.txt')
+		DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex-phrases.txt')'''
 
 	#map_venue_name_to_id(DATA_PATH + 'latest_so_far_phrases', DATA_PATH + 'latest_so_far_phrases_ids', {})
 
@@ -359,5 +377,10 @@ if __name__ == "__main__":
 	#delete_invalid_citations(DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid.txt', DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites.txt')
 	#reindex_paper(DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites.txt', DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex.txt')
 
+	index_phrases(
+		DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex-phrases.txt',
+		DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex-phrases-index.txt',
+		DATA_PATH + 'phrase_id'
+		)
 
 

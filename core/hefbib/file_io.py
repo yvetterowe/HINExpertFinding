@@ -26,6 +26,38 @@ def read_data(input_file):
 				citations=citations))
 	return doc_meta_lst
 
+
+def read_topical_phrase_dists(phrase_dist_files, background_prob_lst, tot_num_phrase,):
+	topical_phrase_dist = []
+	for idx, phrase_dist_file in enumerate(phrase_dist_files):
+		topical_phrase_dist.append(calc_topical_phrase_dist(
+			phrase_dist_file,
+			background_prob_lst[idx],
+			tot_num_phrase))
+
+# back_ground_prob: the total probability of all phrases
+# that do no appear input_file (should be very small)
+def calc_topical_phrase_dist(phrase_dist_file, background_prob, tot_num_phrase):
+    phrase_dist = [0] * tot_num_phrase
+    num_topic_phrase = 0
+    with open(phrase_dist_file, 'r') as fin:
+        norm_factor = 0.0
+        for line in fin:
+            phrase_info = line.strip().split()
+            phrase_id, phrase_prob = int(phrase_info[1]), float(phrase_info[2])
+            norm_factor += phrase_prob
+            phrase_dist[phrase_id] = phrase_prob
+            num_topic_phrase += 1
+        
+        non_topic_phrase_prob = back_ground_prob * 1.0 / (tot_num_phrase - num_topic_phrase)
+        norm_factor = (1.0 - back_ground_prob) / norm_factor
+        for phrase_id in xrange(tot_num_phrase):
+            if phrase_dist[phrase_id] != 0.0:
+                phrase_dist[phrase_id] = phrase_dist[phrase_id] * norm_factor
+            else:
+                phrase_dist[phrase_id] = non_topic_phrase_prob
+    return phrase_dist
+
 def write_results(output_file):
 	pass
 
