@@ -62,6 +62,28 @@ class ExpertFinder(object):
                 for (p, cnt) in doc_meta.phrases.items():
                     self.n_z_p[z][p] += cnt
 
+    def save(self, output_dir):
+        self.n_z.save(output_dir + 'n_z')
+        self.n_z_a.save(output_dir + 'n_z_a')
+        self.n_z_v.save(output_dir + 'n_z_v')
+        self.z_d.save(output_dir + 'z_d')
+        self.dist_z_a.save(output_dir + 'dist_z_a')
+        self.dist_z_v.save(output_dir + 'dist_z_v')
+        self.dist_z_p.save(output_dir + 'dist_z_p')
+
+    @staticmethod
+    def load(input_dir):
+        n_z = np.load(output_dir + 'n_z')
+        n_z_a = np.load(output_dir + 'n_z_a')
+        n_z_v = np.load(output_dir + 'n_z_v')
+        z_d = np.load(output_dir + 'z_d')
+        dist_z_a = np.load(output_dir + 'dist_z_a')
+        dist_z_v = np.load(output_dir + 'dist_z_v')
+        dist_z_p = np.load(output_dir + 'dist_z_p')
+        return ExpertFinder()
+            
+
+
     def infer(self):
         """learning once interation"""
         # sample topic label for each paper
@@ -117,7 +139,7 @@ def expert_finding_learning(expert_finder, iteration):
         print 'iter: ', i
         #print 'topics: ', expert_finder.z_d
         #print 'author: ', expert_finder.dist_z_a
-        fout.write("iter {i}: {dist}\n".format(i=i, dist=expert_finder.dist_z_a[1]))
+        #fout.write("iter {i}: {dist}\n".format(i=i, dist=expert_finder.dist_z_a[1]))
         #print 'venues: ', expert_finder.dist_z_v[0]
         #print '\n'
     fout.close()

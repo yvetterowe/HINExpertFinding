@@ -28,18 +28,18 @@ class BibRank(object):
 		# two strategies: 
 		#    1) either 1 or 0 
         #    2) topical ranking distributino inferred from ExpertFinder
-		#self.init_rank_papers = normalize(np.array([1.0 if z == topic_label else 0.0 
-		#							      			for z in expert_finder.z_d]),
-		#								  norm='l1').transpose()
-		#self.init_rank_authors = normalize(expert_finder.dist_z_a[topic_label], norm='l1').transpose()
-		#self.init_rank_venues = normalize(expert_finder.dist_z_v[topic_label], norm='l2').transpose()
+		self.init_rank_papers = normalize(np.array([1.0 if z == topic_label else 0.0 
+									      			for z in expert_finder.z_d]),
+										  norm='l1').transpose()
+		self.init_rank_authors = normalize(expert_finder.dist_z_a[topic_label], norm='l1').transpose()
+		self.init_rank_venues = normalize(expert_finder.dist_z_v[topic_label], norm='l1').transpose()
 
 		# test
-		self.init_rank_papers = normalize(np.ones(len(expert_finder.z_d)), norm='l1').transpose()
+		'''self.init_rank_papers = normalize(np.ones(len(expert_finder.z_d)), norm='l1').transpose()
 		self.init_rank_authors = normalize(np.ones(6), norm='l1').transpose()
 		self.init_rank_venues = normalize(np.array([1000.0, 20.0, 1.0]), norm='l1').transpose()
 		print "initial authors: ", self.init_rank_authors
-		print "initial venues: ", self.init_rank_venues
+		print "initial venues: ", self.init_rank_venues'''
 
 		# iterative rank scores of papers, authors and venues
 		self.rank_papers = self.init_rank_papers
@@ -64,6 +64,7 @@ def format_list(lst, num_col):
 
 def propagte_with_bibrank(bibrank, iteration):
 	for i in xrange(iteration):
+		print 'iter: ', i
 		#fout_paper.write("iter {i}\n".format(i=i))
 		#fout_author.write("iter {i}\n".format(i=i))
 		#fout_venue.write("iter {i}\n".format(i=i))

@@ -51,33 +51,39 @@ def run_read_data():
 """
 2. read topical phrases and distribute the ranking scores through all vocabularies...
 """
-def read_topical_phrase_dists(phrase_dist_files, background_prob_lst, tot_num_phrase, use_background_topic=True):
+def read_topical_phrase_dists(phrase_dist_files, phrase_dict_file, background_prob_lst, tot_num_phrase, use_background_topic=True):
+	phrase_name_idx, phrase_idx_name = read_dictionary_file(phrase_dict_file)
+
 	topical_phrase_dist = []
 	for idx, phrase_dist_file in enumerate(phrase_dist_files):
 		topical_phrase_dist.append(calc_topical_phrase_dist(
 			phrase_dist_file,
+			phrase_name_idx,
 			background_prob_lst[idx],
 			tot_num_phrase))
 	if use_background_topic:
 		topical_phrase_dist.append([1.0/tot_num_phrase] * tot_num_phrase)
 	return topical_phrase_dist
-# back_ground_prob: the total probability of all phrases
+
+# background_prob: the total probability of all phrases
 # that do no appear input_file (should be very small)
-def calc_topical_phrase_dist(phrase_dist_file, background_prob, tot_num_phrase):
+# file format:
+# 	phrase_dist_file: phrase score
+
+def calc_topical_phrase_dist(phrase_dist_file, phrase_dict, background_prob, tot_num_phrase):
     phrase_dist = [0] * tot_num_phrase
     num_topic_phrase = 0
     with open(phrase_dist_file, 'r') as fin:
         norm_factor = 0.0
         for line in fin:
             phrase_info = line.strip().split()
-            print phrase_info
-            phrase_id, phrase_prob = int(phrase_info[1]), float(phrase_info[2])
+            phrase_id, phrase_prob = phrase_dict[phrase_info[0]], float(phrase_info[1])
             norm_factor += phrase_prob
             phrase_dist[phrase_id] = phrase_prob
             num_topic_phrase += 1
         
-        non_topic_phrase_prob = back_ground_prob * 1.0 / (tot_num_phrase - num_topic_phrase)
-        norm_factor = (1.0 - back_ground_prob) / norm_factor
+        non_topic_phrase_prob = background_prob * 1.0 / (tot_num_phrase - num_topic_phrase)
+        norm_factor = (1.0 - background_prob) / norm_factor
         for phrase_id in xrange(tot_num_phrase):
             if phrase_dist[phrase_id] != 0.0:
                 phrase_dist[phrase_id] = phrase_dist[phrase_id] * norm_factor
@@ -100,7 +106,23 @@ def run_read_topical_phrase_dist():
 
 
 """
-3. log writes to files...
+3. read dictionary file
+	file -> dict(key=id, value=name)
+			and dict(key=name, value=id)
+"""
+def read_dictionary_file(input_file):
+	name_idx_dict = dict()
+	idx_name_dict = dict()
+	with open(input_file, 'r') as fin:
+		for line in fin:
+			line_split = line.strip().split()
+			name, idx = line_split[0], int(line_split[1])
+			name_idx_dict[name] = idx
+			idx_name_dict[idx] = name
+	return name_idx_dict, idx_name_dict
+
+"""
+4. log writes to files...
 """
 def write_results(output_file):
 	pass

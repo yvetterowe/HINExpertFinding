@@ -33,7 +33,5 @@ print tfidf_vect.get_feature_names()
 for word in y:
 	print tfidf_vect.get_feature_names()[word]'''
 
-lst = [1,2,3,4,5]
-dt = {2:'a', 4:'5'}
-ll = [p for p in lst if p in dt]
-print ll
+x=np.ones((3,4))
+print x[0][0]
