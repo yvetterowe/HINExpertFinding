@@ -27,7 +27,7 @@ def read_data(input_file):
 	return doc_meta_lst
 
 
-def read_topical_phrase_dists(phrase_dist_files, background_prob_lst, tot_num_phrase,):
+def read_topical_phrase_dists(phrase_dist_files, background_prob_lst, tot_num_phrase):
 	topical_phrase_dist = []
 	for idx, phrase_dist_file in enumerate(phrase_dist_files):
 		topical_phrase_dist.append(calc_topical_phrase_dist(
@@ -44,6 +44,7 @@ def calc_topical_phrase_dist(phrase_dist_file, background_prob, tot_num_phrase):
         norm_factor = 0.0
         for line in fin:
             phrase_info = line.strip().split()
+            print phrase_info
             phrase_id, phrase_prob = int(phrase_info[1]), float(phrase_info[2])
             norm_factor += phrase_prob
             phrase_dist[phrase_id] = phrase_prob
@@ -63,10 +64,22 @@ def write_results(output_file):
 
 
 if __name__ == '__main__':
-	DATA_PATH = os.path.dirname(__file__) + '../dataset/'
-	doc_meta_lst = read_data(DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex-phrases.txt')
+	DATA_PATH = os.path.dirname(__file__) + '/../dataset/'
+	PHRASE_DIST_PATH = DATA_PATH + 'topical_phrase_dist/'
+	'''doc_meta_lst = read_data(DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex-phrases.txt')
 	print len(doc_meta_lst)
 	for doc_meta in doc_meta_lst[:3]:
 		print doc_meta.doc_id
 		print doc_meta.phrases
-		print "\n"
+		print "\n"'''
+
+	phrase_dist_files = [PHRASE_DIST_PATH + '1dm-extend',
+		PHRASE_DIST_PATH + '2ml-extend',
+		PHRASE_DIST_PATH + '3db-extend',
+		PHRASE_DIST_PATH + '4ir-extend'
+		]
+
+	topical_phrase_dists = read_topical_phrase_dists(
+		phrase_dist_files,
+		[0.3] * len(phrase_dist_files),
+		7566)
