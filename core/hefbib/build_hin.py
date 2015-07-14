@@ -23,8 +23,7 @@ AUTHOR_ORDER_WEIGHT = {
 	4:1,
 }
 
-#TODO: map conference to conference id = =
-#TODO: add #！abtract to all papers
+
 """
 Parameters:
 	citation_dampen: the score authors receive for citing their own papers

@@ -43,7 +43,8 @@ def build_topic_hierarchy(w2v_model_file, seed_phrase_files, topns):
 		extend_seed_phrases(w2v_model, seed_phrase_file, topns[idx], extend_phrase_file)
 
 
-
+# in our case: filtered vector.bin with salient.csv (Segphrase output)
+# this dictionary is used to align and filter phrases in the raw corpus
 def build_phrase_dictionary(w2v_vector_file, output_dict_file, filter_file=None):
 	with open(w2v_vector_file, 'r') as fin, open(output_dict_file, 'w') as fout:
 		# create valid phrase dictionary
@@ -70,6 +71,7 @@ def build_phrase_dictionary(w2v_vector_file, output_dict_file, filter_file=None)
 """
 	example runs...
 """
+# 一键生成topical phrases
 def run_build_topic_hierarchy():
 	seed_phrase_files = [PHRASE_DIST_PATH + '1dm-seed',
 		PHRASE_DIST_PATH + '2ml-seed',
@@ -80,6 +82,7 @@ def run_build_topic_hierarchy():
 		[1000] * len(seed_phrase_files),
 		)
 
+# 一键生成phrase dictionary
 def run_build_phrase_dictionary():
 	build_phrase_dictionary(DATA_PATH + 'keyphrase-vector-text-filtered.bin',
 		DATA_PATH + 'id_phrase',
