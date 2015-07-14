@@ -43,7 +43,34 @@ def build_topic_hierarchy(w2v_model_file, seed_phrase_files, topns):
 		extend_seed_phrases(w2v_model, seed_phrase_file, topns[idx], extend_phrase_file)
 
 
-if __name__ == '__main__':
+
+def build_phrase_dictionary(w2v_vector_file, output_dict_file, filter_file=None):
+	with open(w2v_vector_file, 'r') as fin, open(output_dict_file, 'w') as fout:
+		# create valid phrase dictionary
+		valid_phrases = set()
+		if filter_file != None:
+			ffilter = open(filter_file, 'r')
+			for line in ffilter:
+				phrase = line.split(',')[0]
+				valid_phrases.add(phrase)
+			ffilter.close()
+
+		# filter phrases accordng to this dictionary
+		file_start = True
+		phrase_id = 0
+		for line in fin:
+			if file_start:  # jump the first line
+				file_start = False
+				continue
+			phrase = line.split()[0]
+			if filter_file == None or (filter_file != None and phrase in valid_phrases):
+				fout.write("{phrase} {phrase_id}\n".format(phrase=phrase, phrase_id=phrase_id))
+				phrase_id += 1
+
+"""
+	example runs...
+"""
+def run_build_topic_hierarchy():
 	seed_phrase_files = [PHRASE_DIST_PATH + '1dm-seed',
 		PHRASE_DIST_PATH + '2ml-seed',
 		PHRASE_DIST_PATH + '3db-seed',
@@ -52,3 +79,13 @@ if __name__ == '__main__':
 		seed_phrase_files,
 		[1000] * len(seed_phrase_files),
 		)
+
+def run_build_phrase_dictionary():
+	build_phrase_dictionary(DATA_PATH + 'keyphrase-vector-text-filtered.bin',
+		DATA_PATH + 'id_phrase',
+		)
+
+if __name__ == '__main__':
+	# run_build_topic_hierarchy()
+
+	run_build_phrase_dictionary()

@@ -1,5 +1,6 @@
 import os
 import re
+import string
 
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -295,23 +296,50 @@ def combine_labeld_phrases(input_files, output_file, label):
 					fout.write("{phrase} {label}\n".format(phrase=phrase, label=label))
 	fout.close()
 
-def index_phrases(input_file, output_file, output_phrase_dict):
+# eg. data-mining -> data_mining
+def link_phrase(input_file, output_file):
+	with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
+		for line in fin:
+			line_split = line.split()
+			phrase, phrase_id = string.replace('_'.join(line_split[:-1]), '-', '_'), int(line_split[-1])
+			fout.write("{phrase} {phrase_id}\n".format(phrase=phrase, phrase_id=phrase_id))
+
+# file -> dict(key=phrase, value=phrase_id)
+def dict_file_to_set(input_file):
 	phrase_dict = dict()
-	phrase_id = 0
-	with open(input_file, 'r') as fin, open(output_file, 'w') as fout, open(output_phrase_dict, 'w') as fout_dict:
+	with open(input_file, 'r') as fin:
+		for line in fin:
+			line_split = line.split()
+			phrase, idx = line_split[0], int(line_split[1])
+			phrase_dict[phrase] = idx
+	return phrase_dict
+
+'''def check_invalid(corpus_dict_file, word2vec_dict_file, output_invalid):
+	corpus_phrases = dict_file_to_set(corpus_dict_file)
+	word2vec_phrases = dict_file_to_set(word2vec_dict_file)
+	invalid_corpus_phrases = corpus_phrases - word2vec_phrases
+
+	with open(output_invalid, 'w') as fout:
+		for p in invalid_corpus_phrases:
+			fout.write("{phrase}\n".format(phrase=p))'''
+
+def norm_and_index_phrases(input_file, input_phrase_dict, output_file, indexify=True):
+	phrase_dict = dict_file_to_set(input_phrase_dict)
+	with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
 		papers = fin.read().split('\n\n')
 		for paper in papers:
 			attr_lst = paper.split('\n')
 			phrases = attr_lst[-1][3:].split(';')
-			for phrase in phrases:
-				if not phrase in phrase_dict:
-					phrase_dict[phrase] = phrase_id
-					fout_dict.write("{phrase} {phrase_id}\n".format(phrase=phrase, phrase_id=phrase_id))
-					phrase_id += 1
-			phrase_ids = [str(phrase_dict[p]) for p in phrases]
-			phrase_id_line = '#! ' + ' '.join(phrase_ids)
-			new_paper = '\n'.join(attr_lst[:-1]) + '\n' + phrase_id_line
+			# norm1: data-mining -> data_mining
+			phrases = [string.replace(p, '-', '_') for p in phrases]
+			# norm2: filtered out ones that not in dictionary
+			filtered_phrases = [p for p in phrases if p in phrase_dict]
+			if indexify:
+				filtered_phrases = [str(phrase_dict[p]) for p in filtered_phrases]
+			phrase_line = '#! ' + ' '.join(filtered_phrases)
+			new_paper = '\n'.join(attr_lst[:-1]) + '\n' + phrase_line
 			fout.write("{new_paper}\n\n".format(new_paper=new_paper))
+
 
 if __name__ == "__main__":
 	#valid_format(DATA_PATH + 'AP_after_1996_four_area_index_new',
@@ -377,10 +405,18 @@ if __name__ == "__main__":
 	#delete_invalid_citations(DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid.txt', DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites.txt')
 	#reindex_paper(DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites.txt', DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex.txt')
 
-	index_phrases(
+	'''index_phrases(
 		DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex-phrases.txt',
 		DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex-phrases-index.txt',
 		DATA_PATH + 'phrase_id'
-		)
+		)'''
+	
+	#link_phrase(DATA_PATH + 'id_phrase_old_old.txt', DATA_PATH + 'id_phrase_old')
+	#check_invalid(DATA_PATH + 'id_phrase_old', DATA_PATH + 'id_phrase', DATA_PATH + 'invalid')
+	
+	norm_and_index_phrases(
+		DATA_PATH + 'AMiner-Paper-after1996-23venues-buffer/AMiner-Paper-after1996-23venues-authorid-validcites-reindex-phrases.txt',
+		DATA_PATH + 'id_phrase',
+		DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex-phrases-index.txt')
 
 

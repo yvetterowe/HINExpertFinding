@@ -3,12 +3,13 @@
 from sklearn.preprocessing import normalize
 #import random
 import re
+import string
 
 import numpy as np
 from sklearn.feature_extraction.text import TfidfTransformer, TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.datasets import fetch_20newsgroups
-from textblob import TextBlob
+#from sklearn.datasets import fetch_20newsgroups
+#from textblob import TextBlob
 
 '''count_vect = CountVectorizer()
 twenty_train = ["aaa bbb ccc aaa", "aaa ccc ddd ddd ddd"]
@@ -32,5 +33,7 @@ print tfidf_vect.get_feature_names()
 for word in y:
 	print tfidf_vect.get_feature_names()[word]'''
 
-x = [0.4, 0.3, 0.24, 0.16, 0.08]
-print sum(normalize(x, norm='l1')
+lst = [1,2,3,4,5]
+dt = {2:'a', 4:'5'}
+ll = [p for p in lst if p in dt]
+print ll
