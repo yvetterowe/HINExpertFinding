@@ -34,4 +34,6 @@ for word in y:
 	print tfidf_vect.get_feature_names()[word]'''
 
 x=np.ones((3,4))
-print x[0][0]
+y = np.ones(3)
+print x.shape[0],x.shape[1]
+print y.shape[0]

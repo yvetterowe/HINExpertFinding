@@ -46,8 +46,15 @@ def run_hefbib(input_corpus,
 	efinder.expert_finding_learning(expert_finder, ef_iter)
 	print "ExpertFinder topic modeling complete."
 
+	expert_finder.save(DATA_PATH + 'savetest/')
+	print "Save model complete."
+
+	expert_finder_copy = efinder.ExpertFinder.load(DATA_PATH + 'savetest/')
+	print "Load model complete."
+	print expert_finder_copy.K, expert_finder_copy.A, expert_finder_copy.V, expert_finder_copy.P
+
 	# build global HIN
-	hin = bhin.HIN(
+	'''hin = bhin.HIN(
 		p=tot_num_phrases,
 		a=tot_num_authors,
 		v=tot_num_venues,
@@ -66,7 +73,7 @@ def run_hefbib(input_corpus,
 	print "Bibrank propagation complete."
 
 	# output results
-	#fio.write_results(bibrank, output_file)
+	#fio.write_results(bibrank, output_file)'''
 
 
 
@@ -110,6 +117,6 @@ if __name__ == '__main__':
 		ef_beta=np.ones(38491), 
 		ef_gamma=venue_topical_prior,
 		ef_omega=None, 
-		ef_iter=10,
+		ef_iter=1,
 		br_iter=100,
 		output_file=DATA_PATH + 'logs/ahaha')
