@@ -1,10 +1,14 @@
 import os.path
 
+import numpy as np 
+
 import doc_meta as dmeta
 
 DATA_PATH = os.path.dirname(__file__) + '/../dataset/'
 PHRASE_DIST_PATH = DATA_PATH + 'topical_phrase_dist/'
-	
+RESULT_PATH = os.path.dirname(__file__) + '/../../result/'
+LOG_PATH = RESULT_PATH + 'logs/'
+
 """
 1. read corpus data (paper meta information)
 
@@ -110,13 +114,20 @@ def run_read_topical_phrase_dist():
 	file -> dict(key=id, value=name)
 			and dict(key=name, value=id)
 """
+dict_file = {
+	'author' : 'id_author',
+	'venue' : 'id_venue',
+}
+
 def read_dictionary_file(input_file):
 	name_idx_dict = dict()
 	idx_name_dict = dict()
 	with open(input_file, 'r') as fin:
 		for line in fin:
+			if not line:
+				continue
 			line_split = line.strip().split()
-			name, idx = line_split[0], int(line_split[1])
+			name, idx = ' '.join(line_split[:-1]), int(line_split[-1])
 			name_idx_dict[name] = idx
 			idx_name_dict[idx] = name
 	return name_idx_dict, idx_name_dict
@@ -126,6 +137,21 @@ def read_dictionary_file(input_file):
 """
 def write_results(output_file):
 	pass
+
+def log_ranking(dist_arr, log_name, iter_id, topn=50):
+	name_idx_dict, idx_name_dict = read_dictionary_file(
+		DATA_PATH + dict_file[log_name])
+	sorted_dist_arr_idx = np.argsort(dist_arr)  # from low to high
+	num_topics = dist_arr.shape[0]
+	log_fouts = [open(LOG_PATH + log_name + str(i), 'a') for i in xrange(num_topics)]
+	for z in xrange(num_topics):
+		log_fouts[z].write("iteration {iter}:\n".format(iter=iter_id))
+		for i in xrange(topn):
+			top_i_idx = sorted_dist_arr_idx[z][-1-i]
+			top_i_score = dist_arr[z][top_i_idx]
+			top_i_name = idx_name_dict[top_i_idx]
+			log_fouts[z].write("{name} {score}\n".format(name=top_i_name, score=top_i_score))
+		log_fouts[z].write("\n")
 
 
 if __name__ == '__main__':

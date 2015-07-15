@@ -33,7 +33,6 @@ print tfidf_vect.get_feature_names()
 for word in y:
 	print tfidf_vect.get_feature_names()[word]'''
 
-x=np.ones((3,4))
-y = np.ones(3)
-print x.shape[0],x.shape[1]
-print y.shape[0]
+x = np.array([[2,5,4,3,1],[5,2,3,1,4]])
+
+print np.argsort(x)

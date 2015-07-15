@@ -9,7 +9,7 @@ import os
 import numpy as np
 
 from doc_meta import DocMeta
-
+import file_io as fio
 
 class ExpertFinder(object):
 
@@ -174,16 +174,17 @@ class ExpertFinder(object):
                          xrange(self.K)])
 
 def expert_finding_learning(expert_finder, iteration):
-    fout = open('author_log', 'w')
     for i in xrange(iteration):
-        expert_finder.infer()
         print 'iter: ', i
+        fio.log_ranking(expert_finder.dist_z_a, 'author', i)
+        fio.log_ranking(expert_finder.dist_z_v, 'venue', i, topn=23)
+        expert_finder.infer()
         #print 'topics: ', expert_finder.z_d
         #print 'author: ', expert_finder.dist_z_a
         #fout.write("iter {i}: {dist}\n".format(i=i, dist=expert_finder.dist_z_a[1]))
         #print 'venues: ', expert_finder.dist_z_v[0]
         #print '\n'
-    fout.close()
+    #fout.close()
     print "final docs: "
     print expert_finder.z_d
     print "final venues: "

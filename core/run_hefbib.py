@@ -117,6 +117,6 @@ if __name__ == '__main__':
 		ef_beta=np.ones(38491), 
 		ef_gamma=venue_topical_prior,
 		ef_omega=None, 
-		ef_iter=1,
+		ef_iter=2,
 		br_iter=100,
 		output_file=DATA_PATH + 'logs/ahaha')
