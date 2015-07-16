@@ -180,3 +180,4 @@ def expert_finding_learning(expert_finder, iteration):
         fio.log_ranking(expert_finder.dist_z_a, 'author', i)
         fio.log_ranking(expert_finder.dist_z_v, 'venue', i, topn=23)
         expert_finder.infer()
+        expert_finder.save(fio.MODEL_PATH + 'tmp_model/')

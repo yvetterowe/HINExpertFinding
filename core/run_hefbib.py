@@ -31,7 +31,7 @@ def run_hefbib(input_corpus,
 	
 	# run ExpertFinder 
 	print "Running ExpertFinder..."
-	'''expert_finder = efinder.ExpertFinder(
+	expert_finder = efinder.ExpertFinder(
 		K=tot_num_topics + 1,	# including background topic
         docs_meta=doc_meta_lst,
         P=tot_num_phrases,
@@ -46,10 +46,10 @@ def run_hefbib(input_corpus,
 	efinder.expert_finding_learning(expert_finder, ef_iter)
 	print "ExpertFinder topic modeling complete."
 
-	expert_finder.save(DATA_PATH + 'savetest/')
-	print "Save model complete."'''
+	expert_finder.save(fio.MODEL_PATH + 'final_model/')
+	print "Save model complete."
 
-	expert_finder = efinder.ExpertFinder.load(DATA_PATH + 'savetest/')
+	'''expert_finder = efinder.ExpertFinder.load(DATA_PATH + 'savetest/')
 	print "Load model complete."
 	print expert_finder.K, expert_finder.A, expert_finder.V, expert_finder.P
 
@@ -117,6 +117,6 @@ if __name__ == '__main__':
 		ef_beta=np.ones(38491), 
 		ef_gamma=venue_topical_prior,
 		ef_omega=None, 
-		ef_iter=3,
+		ef_iter=2,
 		br_iter=3,
 		output_file=DATA_PATH + 'logs/ahaha')

@@ -8,6 +8,7 @@ DATA_PATH = os.path.dirname(__file__) + '/../dataset/'
 PHRASE_DIST_PATH = DATA_PATH + 'topical_phrase_dist/'
 RESULT_PATH = os.path.dirname(__file__) + '/../../result/'
 LOG_PATH = RESULT_PATH + 'logs/'
+MODEL_PATH = RESULT_PATH + 'models/'
 
 dict_file = {
 	'author' : 'id_author',
@@ -149,7 +150,7 @@ def log_ranking(dist_arr, log_type, iter_id, topn=50):
 			)
 
 # log a single topic ranking
-def log_topical_ranking(dist_arr, log_type, topic_label, idx_name_dict, iter_id, topn=50):
+def log_topical_ranking(dist_arr, log_type, topic_label, idx_name_dict, iter_id, topn=20):
 	if idx_name_dict == None:
 		name_idx_dict, idx_name_dict = read_dictionary_file(DATA_PATH + dict_file[log_type])
 	log_file_path = LOG_PATH + log_type + str(topic_label)
@@ -159,7 +160,7 @@ def log_topical_ranking(dist_arr, log_type, topic_label, idx_name_dict, iter_id,
 		#print sorted_dist_arr_idx
 		for i in xrange(topn):
 			i_idx = sorted_dist_arr_idx[-1-i]
-			i_name, i_score = idx_name_dict[i_idx], dist_arr[i_idx][0]
+			i_name, i_score = idx_name_dict[i_idx], dist_arr[i_idx]
 			fout.write("{name} {score}\n".format(name=i_name, score=i_score))
 		fout.write('\n')
 
