@@ -173,26 +173,10 @@ class ExpertFinder(object):
                 np.array([np.random.dirichlet(self.n_z_p[z]) for z in
                          xrange(self.K)])
 
+
 def expert_finding_learning(expert_finder, iteration):
     for i in xrange(iteration):
         print 'iter: ', i
         fio.log_ranking(expert_finder.dist_z_a, 'author', i)
         fio.log_ranking(expert_finder.dist_z_v, 'venue', i, topn=23)
         expert_finder.infer()
-        #print 'topics: ', expert_finder.z_d
-        #print 'author: ', expert_finder.dist_z_a
-        #fout.write("iter {i}: {dist}\n".format(i=i, dist=expert_finder.dist_z_a[1]))
-        #print 'venues: ', expert_finder.dist_z_v[0]
-        #print '\n'
-    #fout.close()
-    print "final docs: "
-    print expert_finder.z_d
-    print "final venues: "
-    log_final_result(expert_finder.K, expert_finder.dist_z_v)
-    print "final authors: "
-    log_final_result(expert_finder.K, expert_finder.dist_z_a)
-
-def log_final_result(num_topic, result_to_log):
-    for i in xrange(num_topic):
-        print 'topic {i} : {result_i}'.format(i=i, result_i=result_to_log[i])
-    print '\n'

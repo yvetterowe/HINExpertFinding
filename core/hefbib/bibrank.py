@@ -7,6 +7,8 @@
 import numpy as np
 from sklearn.preprocessing import normalize
 
+import file_io as fio
+
 class BibRank(object):
 	def __init__(self, expert_finder, topic_label, hin,
 				 eps_d=0.15, eps_a=0.15, eps_v=0.15,
@@ -20,6 +22,7 @@ class BibRank(object):
 		self.eps_d, self.eps_a, self.eps_v = eps_d, eps_a, eps_v
 		self.gamma_da, self.gamma_dv, self.gamma_dd = gamma_da, gamma_dv, gamma_dd
 		self.gamma_ad, self.gamma_aa = gamma_ad, gamma_aa
+		self.topic_label = topic_label
 
 		# reference to global hin
 		self.hin = hin
@@ -63,12 +66,20 @@ def format_list(lst, num_col):
 	return '\n'.join([(' '.join([str(round(x,3)) for x in lst[i*num_col:(i+1)*num_col]])) for i in xrange(num_row)])
 
 def propagte_with_bibrank(bibrank, iteration):
+	print "Topic {i} Bibrank propagating...".format(i=bibrank.topic_label)
 	for i in xrange(iteration):
 		print 'iter: ', i
-		#fout_paper.write("iter {i}\n".format(i=i))
-		#fout_author.write("iter {i}\n".format(i=i))
-		#fout_venue.write("iter {i}\n".format(i=i))
-		#fout_paper.write("{rank}\n\n".format(rank=format_list(bibrank.rank_papers, 10)))
-		#fout_author.write("{rank}\n\n".format(rank=bibrank.rank_authors))
-		#fout_venue.write("{rank}\n\n".format(rank=bibrank.rank_venues))
+		fio.log_topical_ranking(
+			dist_arr=bibrank.rank_authors, 
+			log_type='author', 
+			topic_label=bibrank.topic_label, 
+			idx_name_dict=None, 
+			iter_id=i)
+		fio.log_topical_ranking(
+			dist_arr=bibrank.rank_venues, 
+			log_type='venue', 
+			topic_label=bibrank.topic_label, 
+			idx_name_dict=None, 
+			iter_id=i,
+			topn=23)
 		bibrank.run()

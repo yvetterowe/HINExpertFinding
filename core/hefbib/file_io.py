@@ -9,6 +9,11 @@ PHRASE_DIST_PATH = DATA_PATH + 'topical_phrase_dist/'
 RESULT_PATH = os.path.dirname(__file__) + '/../../result/'
 LOG_PATH = RESULT_PATH + 'logs/'
 
+dict_file = {
+	'author' : 'id_author',
+	'venue' : 'id_venue',
+}
+
 """
 1. read corpus data (paper meta information)
 
@@ -114,11 +119,6 @@ def run_read_topical_phrase_dist():
 	file -> dict(key=id, value=name)
 			and dict(key=name, value=id)
 """
-dict_file = {
-	'author' : 'id_author',
-	'venue' : 'id_venue',
-}
-
 def read_dictionary_file(input_file):
 	name_idx_dict = dict()
 	idx_name_dict = dict()
@@ -135,27 +135,36 @@ def read_dictionary_file(input_file):
 """
 4. log writes to files...
 """
-def write_results(output_file):
-	pass
-
-def log_ranking(dist_arr, log_name, iter_id, topn=50):
-	name_idx_dict, idx_name_dict = read_dictionary_file(
-		DATA_PATH + dict_file[log_name])
-	sorted_dist_arr_idx = np.argsort(dist_arr)  # from low to high
+def log_ranking(dist_arr, log_type, iter_id, topn=50):
+	name_idx_dict, idx_name_dict = read_dictionary_file(DATA_PATH + dict_file[log_type])
 	num_topics = dist_arr.shape[0]
-	log_fouts = [open(LOG_PATH + log_name + str(i), 'a') for i in xrange(num_topics)]
 	for z in xrange(num_topics):
-		log_fouts[z].write("iteration {iter}:\n".format(iter=iter_id))
+		log_topical_ranking(
+			dist_arr[z], 
+			log_type,
+			z,
+			idx_name_dict,
+			iter_id,
+			topn
+			)
+
+# log a single topic ranking
+def log_topical_ranking(dist_arr, log_type, topic_label, idx_name_dict, iter_id, topn=50):
+	if idx_name_dict == None:
+		name_idx_dict, idx_name_dict = read_dictionary_file(DATA_PATH + dict_file[log_type])
+	log_file_path = LOG_PATH + log_type + str(topic_label)
+	with open(log_file_path, 'a') as fout:
+		fout.write("iteration {iter}:\n".format(iter=iter_id))
+		sorted_dist_arr_idx = np.argsort(dist_arr, axis=None)
+		#print sorted_dist_arr_idx
 		for i in xrange(topn):
-			top_i_idx = sorted_dist_arr_idx[z][-1-i]
-			top_i_score = dist_arr[z][top_i_idx]
-			top_i_name = idx_name_dict[top_i_idx]
-			log_fouts[z].write("{name} {score}\n".format(name=top_i_name, score=top_i_score))
-		log_fouts[z].write("\n")
+			i_idx = sorted_dist_arr_idx[-1-i]
+			i_name, i_score = idx_name_dict[i_idx], dist_arr[i_idx][0]
+			fout.write("{name} {score}\n".format(name=i_name, score=i_score))
+		fout.write('\n')
 
 
 if __name__ == '__main__':
 	#run_read_data()
-	
 	run_read_topical_phrase_dist()
 
