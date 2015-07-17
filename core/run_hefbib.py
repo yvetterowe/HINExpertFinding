@@ -30,7 +30,7 @@ def run_hefbib(input_corpus,
 	print "Read topical phrases complete."
 	
 	# run ExpertFinder 
-	print "Running ExpertFinder..."
+	'''print "Running ExpertFinder..."
 	expert_finder = efinder.ExpertFinder(
 		K=tot_num_topics + 1,	# including background topic
         docs_meta=doc_meta_lst,
@@ -47,9 +47,9 @@ def run_hefbib(input_corpus,
 	print "ExpertFinder topic modeling complete."
 
 	expert_finder.save(fio.MODEL_PATH + 'final_model/')
-	print "Save model complete."
+	print "Save model complete."'''
 
-	'''expert_finder = efinder.ExpertFinder.load(DATA_PATH + 'savetest/')
+	expert_finder = efinder.ExpertFinder.load(fio.MODEL_PATH + 'final_model/')
 	print "Load model complete."
 	print expert_finder.K, expert_finder.A, expert_finder.V, expert_finder.P
 
@@ -64,6 +64,8 @@ def run_hefbib(input_corpus,
 
 	# run BibRank for each topic (including background topic)
 	for topic_label in xrange(tot_num_topics + 1):
+		if topic_label == 0:
+			continue
 		topic_bibrank = bibrank.BibRank(expert_finder,
 			topic_label,
 			hin,
@@ -118,5 +120,5 @@ if __name__ == '__main__':
 		ef_gamma=venue_topical_prior,
 		ef_omega=None, 
 		ef_iter=1500,
-		br_iter=3,
+		br_iter=110,
 		output_file=DATA_PATH + 'logs/ahaha')
