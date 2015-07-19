@@ -1,0 +1,6 @@
+data_streams 1.0
+sliding_window 1.0
+data_flow 1.0
+stream_mining 1.0
+information_flow 0.8
+concept_drift 0.8

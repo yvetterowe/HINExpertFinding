@@ -4,6 +4,7 @@ from sklearn.preprocessing import normalize
 #import random
 import re
 import string
+import random
 
 import numpy as np
 from sklearn.feature_extraction.text import TfidfTransformer, TfidfVectorizer
@@ -33,6 +34,7 @@ print tfidf_vect.get_feature_names()
 for word in y:
 	print tfidf_vect.get_feature_names()[word]'''
 
-x = np.array([[2,5,4,3,1],[5,2,3,1,4]])
-
-print np.argsort(x)
+a = set([1,2,3])
+b = ['a', 'b', 'c']
+print random.sample(a,1)[0]
+print random.choice(b)

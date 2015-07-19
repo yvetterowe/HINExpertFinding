@@ -1,10 +1,13 @@
 import os
 import operator
+import random
 
 from gensim.models import Word2Vec
 
-DATA_PATH = os.path.dirname(__file__) + '../dataset/'
-PHRASE_DIST_PATH = DATA_PATH + 'topical_phrase_dist/'
+DATA_PATH = os.path.dirname(__file__) + '/../dataset/'
+PHRASE_DIST_PATH = DATA_PATH + '/topical_phrase_dist/'
+LOG_PATH =  os.path.dirname(__file__) + '/../../result/logs/'
+
 
 def extend_seed_phrases(model, input_file, topn, output_file, norm=False):
 	# read seed phrases
@@ -71,24 +74,57 @@ def build_phrase_dictionary(w2v_vector_file, output_dict_file, filter_file=None)
 """
 	example runs...
 """
-# 一键生成topical phrases
 def run_build_topic_hierarchy():
-	seed_phrase_files = [PHRASE_DIST_PATH + '1dm-seed',
+	'''seed_phrase_files = [PHRASE_DIST_PATH + '1dm-seed',
 		PHRASE_DIST_PATH + '2ml-seed',
 		PHRASE_DIST_PATH + '3db-seed',
-		PHRASE_DIST_PATH + '4ir-seed']
+		PHRASE_DIST_PATH + '4ir-seed']'''
+	seed_phrase_files = [PHRASE_DIST_PATH + '1dm-1fp-seed',
+		PHRASE_DIST_PATH + '1dm-2ds-seed',
+		PHRASE_DIST_PATH + '1dm-3net-seed',
+		]
 	build_topic_hierarchy(DATA_PATH + 'keyphrase-vector-text-filtered.bin',
 		seed_phrase_files,
-		[1000] * len(seed_phrase_files),
+		#[100] * len(seed_phrase_files),
+		[50, 50, 100]
 		)
 
-# 一键生成phrase dictionary
 def run_build_phrase_dictionary():
 	build_phrase_dictionary(DATA_PATH + 'keyphrase-vector-text-filtered.bin',
 		DATA_PATH + 'id_phrase',
 		)
 
-if __name__ == '__main__':
-	# run_build_topic_hierarchy()
+"""
+	generate dataset for intruder tests...
+"""
+def create_intruder_test_data(curr_topic_file, sibling_topic_files, sample_top, n, curr_n, output_file):
+	curr_samples = sample_from_file(curr_topic_file, sample_top, curr_n)
+	sibling_samples = sample_from_file(random.choice(sibling_topic_files), sample_top, n - curr_n)
+	tot_samples = set.union(curr_samples, sibling_samples)
+	with open(output_file, 'w') as fout:
+		for sample in tot_samples:
+			fout.write("{sample}\n".format(sample=sample))
 
-	run_build_phrase_dictionary()
+def sample_from_file(input_file, sample_top, n):
+	assert n <= sample_top
+	with open(input_file, 'r') as fin:
+		tot_samples = set([' '.join(line.split()[:-1]) for line in fin.read().split('\n')[1:sample_top]])
+		print tot_samples
+		return set(random.sample(tot_samples,n))
+
+def run_create_intruder_test_data(num_topic, intrude_type):
+	sample_files = [LOG_PATH + 'bib_' + intrude_type + str(i) for i in xrange(1, num_topic+1)]
+	
+	for i in xrange(1, num_topic+1):
+		create_intruder_test_data(sample_files[i-1], 
+			sample_files[:i-1]+sample_files[i:], 
+			10, 5, 4, 
+			DATA_PATH + 'intruder_test/' + intrude_type + str(i)
+			)
+
+if __name__ == '__main__':
+	run_build_topic_hierarchy()
+
+	#run_build_phrase_dictionary()
+
+	#run_create_intruder_test_data(4, 'author')

@@ -8,6 +8,9 @@ import hefbib.doc_meta as dmeta
 import hefbib.expert_finder as efinder
 import hefbib.file_io as fio
 
+DATA_PATH = os.path.dirname(__file__) + 'dataset/'
+PHRASE_DIST_PATH = DATA_PATH + 'topical_phrase_dist/'
+
 def run_hefbib(input_corpus, 
 	input_phrase_dists, 
 	background_prob_lst,
@@ -77,12 +80,7 @@ def run_hefbib(input_corpus,
 	# output results
 	#fio.write_results(bibrank, output_file)'''
 
-
-
-if __name__ == '__main__':
-	DATA_PATH = os.path.dirname(__file__) + 'dataset/'
-	PHRASE_DIST_PATH = DATA_PATH + 'topical_phrase_dist/'
-	
+def run_level1():
 	phrase_dist_files = [
 		PHRASE_DIST_PATH + '1dm-seed-ext',
 		PHRASE_DIST_PATH + '2ml-seed-ext',
@@ -122,3 +120,12 @@ if __name__ == '__main__':
 		ef_iter=1500,
 		br_iter=110,
 		output_file=DATA_PATH + 'logs/ahaha')
+
+
+def run_level2_dm():
+
+
+if __name__ == '__main__':
+	# run_level1()
+
+	run_level2_dm():

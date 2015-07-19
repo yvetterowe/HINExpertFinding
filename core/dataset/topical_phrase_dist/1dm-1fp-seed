@@ -1,0 +1,8 @@
+knowledge_discovery 1.0
+association_rule 1.0
+pattern_mining 1.0
+frequent_pattern 1.0
+graph_patterns 1.0
+closed_patterns 1.0
+sequential_patterns 1.0
+temporal_patterns 1.0
