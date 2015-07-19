@@ -33,8 +33,8 @@ def run_hefbib(input_corpus,
 	print "Read topical phrases complete."
 	
 	# run ExpertFinder 
-	'''print "Running ExpertFinder..."
-	expert_finder = efinder.ExpertFinder(
+	print "Running ExpertFinder..."
+	'''expert_finder = efinder.ExpertFinder(
 		K=tot_num_topics + 1,	# including background topic
         docs_meta=doc_meta_lst,
         P=tot_num_phrases,
@@ -80,6 +80,47 @@ def run_hefbib(input_corpus,
 	# output results
 	#fio.write_results(bibrank, output_file)'''
 
+def run_level2_dm():
+	phrase_dist_files = [
+		PHRASE_DIST_PATH + '1dm-1fp-seed',
+		PHRASE_DIST_PATH + '1dm-2ds-seed',
+		PHRASE_DIST_PATH + '1dm-3net-seed'
+	]
+	
+	# set venue prior
+	venue_name_idx, venue_idx_name = fio.read_dictionary_file(DATA_PATH + 'id_venue')
+	venue_topical_prior = np.ones((4, 23))
+	# dm - frequent pattern
+	venue_topical_prior[1][venue_name_idx['KDD']] = 100
+	venue_topical_prior[1][venue_name_idx['ICDE']] = 70
+	venue_topical_prior[1][venue_name_idx['CIKM']] = 50
+	# dm - data stream
+	venue_topical_prior[2][venue_name_idx['KDD']] = 100
+	venue_topical_prior[2][venue_name_idx['ICDE']] = 70
+	venue_topical_prior[2][venue_name_idx['CIKM']] = 50
+	# dm - social network
+	venue_topical_prior[3][venue_name_idx['KDD']] = 100
+	venue_topical_prior[3][venue_name_idx['ICDE']] = 70
+	venue_topical_prior[3][venue_name_idx['CIKM']] = 50
+	print "Set priors complete."
+
+	run_hefbib(
+		input_corpus=DATA_PATH + 'AMiner-Paper-after1996-23venues-authorid-validcites-reindex-phrases-index.txt', 
+		input_phrase_dists=phrase_dist_files, 
+		background_prob_lst=[0.2] * 3,
+		tot_num_topics=3,
+		tot_num_phrases=5100,
+		tot_num_authors=38491,
+		tot_num_venues=23,
+		ef_alpha=np.ones(4),  # always be tot_num_topics + 1
+		ef_beta=np.ones(38491), 
+		ef_gamma=venue_topical_prior,
+		ef_omega=None, 
+		ef_iter=2000,
+		br_iter=110,
+		output_file=DATA_PATH + 'logs/ahaha')
+
+
 def run_level1():
 	phrase_dist_files = [
 		PHRASE_DIST_PATH + '1dm-seed-ext',
@@ -117,15 +158,12 @@ def run_level1():
 		ef_beta=np.ones(38491), 
 		ef_gamma=venue_topical_prior,
 		ef_omega=None, 
-		ef_iter=1500,
+		ef_iter=1000,
 		br_iter=110,
 		output_file=DATA_PATH + 'logs/ahaha')
-
-
-def run_level2_dm():
 
 
 if __name__ == '__main__':
 	# run_level1()
 
-	run_level2_dm():
+	run_level2_dm()
