@@ -34,7 +34,7 @@ def run_hefbib(input_corpus,
 	
 	# run ExpertFinder 
 	print "Running ExpertFinder..."
-	'''expert_finder = efinder.ExpertFinder(
+	expert_finder = efinder.ExpertFinder(
 		K=tot_num_topics + 1,	# including background topic
         docs_meta=doc_meta_lst,
         P=tot_num_phrases,
@@ -50,9 +50,9 @@ def run_hefbib(input_corpus,
 	print "ExpertFinder topic modeling complete."
 
 	expert_finder.save(fio.MODEL_PATH + 'final_model/')
-	print "Save model complete."'''
+	print "Save model complete."
 
-	expert_finder = efinder.ExpertFinder.load(fio.MODEL_PATH + 'final_model/')
+	'''expert_finder = efinder.ExpertFinder.load(fio.MODEL_PATH + 'final_model/')
 	print "Load model complete."
 	print expert_finder.K, expert_finder.A, expert_finder.V, expert_finder.P
 
@@ -67,7 +67,7 @@ def run_hefbib(input_corpus,
 
 	# run BibRank for each topic (including background topic)
 	for topic_label in xrange(tot_num_topics + 1):
-		if topic_label == 0:
+		if topic_label == 0 or topic_label == 2:
 			continue
 		topic_bibrank = bibrank.BibRank(expert_finder,
 			topic_label,
@@ -82,9 +82,9 @@ def run_hefbib(input_corpus,
 
 def run_level2_dm():
 	phrase_dist_files = [
-		PHRASE_DIST_PATH + '1dm-1fp-seed',
-		PHRASE_DIST_PATH + '1dm-2ds-seed',
-		PHRASE_DIST_PATH + '1dm-3net-seed'
+		PHRASE_DIST_PATH + '1dm-1fp-seed-ext',
+		PHRASE_DIST_PATH + '1dm-2ds-seed-ext',
+		PHRASE_DIST_PATH + '1dm-3net-seed-ext'
 	]
 	
 	# set venue prior
@@ -116,7 +116,7 @@ def run_level2_dm():
 		ef_beta=np.ones(38491), 
 		ef_gamma=venue_topical_prior,
 		ef_omega=None, 
-		ef_iter=2000,
+		ef_iter=1500,
 		br_iter=110,
 		output_file=DATA_PATH + 'logs/ahaha')
 
