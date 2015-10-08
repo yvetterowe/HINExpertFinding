@@ -1,2 +1,3 @@
-# Master thesis
-UIUC Master thesis
+#Expert Finding in Heterogeneous Information Network
+
+For research purposes only. 
